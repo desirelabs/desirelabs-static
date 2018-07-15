@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Commentaires sur : Ajouter une classe css personnalisée aux articles WordPress</title>
+	<atom:link href="/ajouter-une-classe-personnalisee-aux-articles-wordpress/feed/" rel="self" type="application/rss+xml" />
+	<link>/ajouter-une-classe-personnalisee-aux-articles-wordpress/</link>
+	<description>Développement web, marketing digital, et référencement</description>
+	<lastBuildDate>Thu, 13 Apr 2017 19:39:14 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.4</generator>
+	<item>
+		<title>Par : Franck</title>
+		<link>/ajouter-une-classe-personnalisee-aux-articles-wordpress/#comment-2617</link>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+		<pubDate>Wed, 22 Feb 2017 19:02:53 +0000</pubDate>
+		<guid isPermaLink="false">/?p=17#comment-2617</guid>
+		<description><![CDATA[Oui, le code se place dans le fichier `functions.php`.
+Vérifiez que le thème utilise bien la fonction `post_class()` dans le template.]]></description>
+		<content:encoded><![CDATA[<p>Oui, le code se place dans le fichier <code>functions.php</code>.<br />
+Vérifiez que le thème utilise bien la fonction <code>post_class()</code> dans le template.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>Par : cécé</title>
+		<link>/ajouter-une-classe-personnalisee-aux-articles-wordpress/#comment-2614</link>
+		<dc:creator><![CDATA[cécé]]></dc:creator>
+		<pubDate>Wed, 22 Feb 2017 15:17:51 +0000</pubDate>
+		<guid isPermaLink="false">/?p=17#comment-2614</guid>
+		<description><![CDATA[Ca ne marche pas, tu l&#039;as mis dans le function.php ?]]></description>
+		<content:encoded><![CDATA[<p>Ca ne marche pas, tu l&rsquo;as mis dans le function.php ?</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

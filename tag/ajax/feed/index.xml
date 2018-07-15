@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>ajax &#8211; DesireLabs</title>
+	<atom:link href="/tag/ajax/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Développement web, marketing digital, et référencement</description>
+	<lastBuildDate>Tue, 06 Jun 2017 17:34:36 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.4</generator>
+<site xmlns="com-wordpress:feed-additions:1">67143140</site>	<item>
+		<title>jQuery Ajax, setInterval() et Internet Explorer</title>
+		<link>/jquery-ajax-setinterval-internet-explorer/</link>
+		<comments>/jquery-ajax-setinterval-internet-explorer/#respond</comments>
+		<pubDate>Wed, 08 Oct 2014 21:41:45 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[jQuery]]></category>
+		<category><![CDATA[ajax]]></category>
+		<category><![CDATA[internet explorer]]></category>
+		<category><![CDATA[setInterval]]></category>
+
+		<guid isPermaLink="false">/?p=258</guid>
+		<description><![CDATA[<p>Mes requêtes ajax ne passent pas sous IE alors qu&#8217;avec Firefox et Chrome aucun problème. Ce genre de cas de figure, lorsqu&#8217;on y est confronté peut devenir un vrai casse tête&#8230; quand on ne sait pas où chercher. Récemment j&#8217;ai travaillé sur un projet de taille dans lequel étaient générées des requêtes ajax, en boucle &#8230; <a href="/jquery-ajax-setinterval-internet-explorer/" class="more-link">Continuer la lecture de <span class="screen-reader-text">jQuery Ajax, setInterval() et Internet Explorer</span></a></p>
+<p>L’article <a rel="nofollow" href="/jquery-ajax-setinterval-internet-explorer/">jQuery Ajax, setInterval() et Internet Explorer</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Mes requêtes ajax ne passent pas sous IE alors qu&rsquo;avec Firefox et Chrome aucun problème. Ce genre de cas de figure, lorsqu&rsquo;on y est confronté peut devenir un vrai casse tête&#8230; quand on ne sait pas où chercher.<span id="more-258"></span></p>
+<p>Récemment j&rsquo;ai travaillé sur un projet de taille dans lequel étaient générées des requêtes ajax, en boucle tant que la réponse n&rsquo;était pas celle attendue. Grossomodo, ça ressemblait à ça :</p>
+<p></p><pre class="crayon-plain-tag">// Mon timer qui lance la requete ajax toutes les secondes
+var timer = setInterval(function(){
+    request()
+}, 1000);
+
+// Tant que la response n'est pas success, on recommence
+function request() {
+    $.ajax({
+        url,
+        data,
+        success: function(response) {
+            if(response === 'success')
+                clearInterval(timer);
+        }
+    });
+}</pre><p></p>
+<p>Sauf que setInterval() s&rsquo;exécute toutes les secondes, peu importe que la requête ait aboutie ou pas. Traduction, si la requête met plus d&rsquo;une seconde à s&rsquo;exécuter, mon timer s&rsquo;exécutera quand même, et donc on aura des requêtes multiples. Et ça, bah IE, il aime pas.</p>
+<p>En réalité dans ce genre de cas, c&rsquo;est setTimout() qu&rsquo;il faut utiliser en lieu et place de setInterval().</p>
+<p></p><pre class="crayon-plain-tag">// Mon timer qui lance la requete ajax toutes les secondes
+var timer = setTimeout(function(){
+    request()
+}, 1000);</pre><p></p>
+<p>A la difference de setInterval(), setTimeout() ne s&rsquo;exécute qu&rsquo;une fois que la requête a retourné une réponse. Du coup l&rsquo;interval entre les requêtes peut varier, en fonction de la vitesse à laquelle les réponses sont renvoyées, mais au moins pas de risque de voir des requêtes croisées, et hop ! plus de caca nerveux de IE.</p>
+<p>Alors bon, j&rsquo;ai quand même bien sué pour débugguer <del>cette bouse</del> ce casse tête mais c&rsquo;était une super expérience et une réelle satisfaction <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Au passage, ce qui m&rsquo;a mis sur la voie ce sont les requêtes dans la partie Network de la console de Firefox/Chrome (parce que celle d&rsquo;iE, merci&#8230;)</p>
+<p>hope this&rsquo;ll help <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>L’article <a rel="nofollow" href="/jquery-ajax-setinterval-internet-explorer/">jQuery Ajax, setInterval() et Internet Explorer</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/jquery-ajax-setinterval-internet-explorer/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">258</post-id>	</item>
+	</channel>
+</rss>

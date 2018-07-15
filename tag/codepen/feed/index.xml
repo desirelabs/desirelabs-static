@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>codepen &#8211; DesireLabs</title>
+	<atom:link href="/tag/codepen/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Développement web, marketing digital, et référencement</description>
+	<lastBuildDate>Tue, 06 Jun 2017 17:34:36 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.4</generator>
+<site xmlns="com-wordpress:feed-additions:1">67143140</site>	<item>
+		<title>Astuce &#8211; Tester son code frontend dans toutes les versions d&#8217;Internet Explorer via CodePen.io</title>
+		<link>/tester-son-site-sur-toutes-les-versions-dinternet-explorer-via-codepen-io/</link>
+		<comments>/tester-son-site-sur-toutes-les-versions-dinternet-explorer-via-codepen-io/#respond</comments>
+		<pubDate>Thu, 02 Apr 2015 10:22:07 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[En ligne]]></category>
+		<category><![CDATA[codepen]]></category>
+
+		<guid isPermaLink="false">/?p=319</guid>
+		<description><![CDATA[<p>Découverte assez intéressante que j&#8217;ai faite aujourd&#8217;hui et qui permet de tester ses snippets html/css/js dans toutes les versions d&#8217;Internet Explorer. L&#8217;astuce est simple puisqu&#8217;elle utilise des VM (Machines Virtuelles) pour émuler les différentes versions d&#8217;IE. Pour résumer, on se connecte à son compte CodePen.io, on choisit son Pen, puis dans le menu à droite, &#8230; <a href="/tester-son-site-sur-toutes-les-versions-dinternet-explorer-via-codepen-io/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Astuce &#8211; Tester son code frontend dans toutes les versions d&#8217;Internet Explorer via CodePen.io</span></a></p>
+<p>L’article <a rel="nofollow" href="/tester-son-site-sur-toutes-les-versions-dinternet-explorer-via-codepen-io/">Astuce &#8211; Tester son code frontend dans toutes les versions d&rsquo;Internet Explorer via CodePen.io</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Découverte assez intéressante que j&rsquo;ai faite aujourd&rsquo;hui et qui permet de tester ses snippets html/css/js dans toutes les versions d&rsquo;Internet Explorer. <span id="more-319"></span>L&rsquo;astuce est simple puisqu&rsquo;elle utilise des VM (Machines Virtuelles) pour émuler les différentes versions d&rsquo;IE. Pour résumer, on se connecte à son compte CodePen.io, on choisit son Pen, puis dans le menu à droite, en fin de liste, on a « Open on CrossBrowserTesting ».</p>
+<p><a href="/wp-content/uploads/2015/03/codepen-crossbrowser-testing.png"><img class="aligncenter" src="/wp-content/uploads/2015/03/codepen-crossbrowser-testing.png" alt="codepen-crossbrowser-testing" /></a></p>
+<p>Suite à ça on est redirigé vers le site <a title="app.crossbrowsertesting.com" href="http://app.crossbrowsertesting.com/" target="_blank">app.crossbrowsertesting.com</a> sur lequel on créé un compte gratuit puis on sélectionne la version du navigateur ainsi que l&rsquo;OS voulu pour le test. C&rsquo;est simple et efficace !</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>L’article <a rel="nofollow" href="/tester-son-site-sur-toutes-les-versions-dinternet-explorer-via-codepen-io/">Astuce &#8211; Tester son code frontend dans toutes les versions d&rsquo;Internet Explorer via CodePen.io</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/tester-son-site-sur-toutes-les-versions-dinternet-explorer-via-codepen-io/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">319</post-id>	</item>
+	</channel>
+</rss>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>compass &#8211; DesireLabs</title>
+	<atom:link href="/tag/compass/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Développement web, marketing digital, et référencement</description>
+	<lastBuildDate>Tue, 06 Jun 2017 17:34:36 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.4</generator>
+<site xmlns="com-wordpress:feed-additions:1">67143140</site>	<item>
+		<title>Utiliser SASS dans ses projets WordPress</title>
+		<link>/utiliser-sass-projets-wordpress/</link>
+		<comments>/utiliser-sass-projets-wordpress/#respond</comments>
+		<pubDate>Sun, 10 Jan 2016 20:05:15 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[HTML/CSS]]></category>
+		<category><![CDATA[Non classé]]></category>
+		<category><![CDATA[sass]]></category>
+		<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[compass]]></category>
+
+		<guid isPermaLink="false">/?p=456</guid>
+		<description><![CDATA[<p>Sass est devenu pour moi un outil du quotidien. Je l&#8217;utilise dans presque tous mes projets. Le fait est que je travaille beaucoup avec WordPress. Il est donc devenu évident qu&#8217;il fallait que je développe une méthodologie pour le faire entrer dans ces projets-ci. Aujourd&#8217;hui je vous propose de découvrir de quelle manière intégrer Sass &#8230; <a href="/utiliser-sass-projets-wordpress/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Utiliser SASS dans ses projets WordPress</span></a></p>
+<p>L’article <a rel="nofollow" href="/utiliser-sass-projets-wordpress/">Utiliser SASS dans ses projets WordPress</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Sass est devenu pour moi un outil du quotidien. Je l&rsquo;utilise dans presque tous mes projets. Le fait est que je travaille beaucoup avec WordPress. Il est donc devenu évident qu&rsquo;il fallait que je développe une méthodologie pour le faire entrer dans ces projets-ci. Aujourd&rsquo;hui je vous propose de découvrir de quelle manière intégrer Sass dans vos projets WordPress.<span id="more-456"></span></p>
+<p>Un thème WordPress nécessite normalement 1 seul et unique fichier CSS, à la racine : style.css. Mais tout mettre au kilomètre dans ce fichier c&rsquo;est la garantie de rendre le projet difficile à maintenir et à faire évoluer. C&rsquo;est pourquoi on préfèrera découper son design en modules. Plusieurs méthodologies existent, mais celle qui fait sens à mes yeux se rapproche de SMACSS. Je vous invite à aller faire un tour sur <a href="https://smacss.com/" target="_blank">leur site</a>, on y apprend des choses très intéressantes sur les manières possibles de découper son design CSS.</p>
+<p>La puissance des préprocesseurs CSS n&rsquo;est plus à démontrer : ils nous permettent de s&rsquo;affranchir des préfixes vendeurs, d&rsquo;apporter de la logique dans nos feuilles de styles, de séparer proprement notre architecture, bref, de tout calibrer au plus juste sans se répéter. C&rsquo;est la méthode DRY (Don&rsquo;t repeat yourself). Globalement, on gagne en productivité, en stabilité, on limite les régressions et en plus on s&rsquo;éclate. Que demander de plus ?</p>
+<p><strong>Sass embrasse parfaitement cette philosophie du DRY et de la scalabilité. Mais pour l’installer sur WordPress comment ça se passe ?</strong></p>
+<p>Premièrement, il faut avoir déjà installé et configuré les outils sur sa machine. Dans mon cas, j&rsquo;utilise le framework COMPASS. Il est réputé pour être l&rsquo;un des plus complets avec une palette de mixins très étendue, et même si pas mal lui reprochent d&rsquo;être assez lourd / lent à la compilation, de mon point de vue c&rsquo;est à la marge. Car si vous n&rsquo;avez jamais utilisé SASS / COMPASS, il faut savoir que le code que vous générez est compilé à la volée en fichier css standards.</p>
+<p>Je pars du principe que les personnes qui lisent cet articles ont déjà COMPASS d&rsquo;installé et sont prêts à se lancer.</p>
+<p>Pour démarrer le projet (thème ou plugin) en mode SASS, il suffit d&rsquo;initialiser un projet COMPASS à la racine. Si je construit un thème, j&rsquo;ouvrirai le terminal à la racine de mon thème et je taperai :</p>
+<p></p><pre class="crayon-plain-tag">compass init</pre><p></p>
+<p>A la suite de quoi, je me retrouve avec un fichier config.rb, ainsi que 2 nouveaux dossiers : sass et stylesheets. Le dossier sass est celui dans lequel on va travailler à l&rsquo;avenir, mais avant, il faut aller un peu plus loin :</p>
+<p>Les fichiers scss contenu dans le dossier sass vont entrainer la création / modification de leur alter égo css contenu dans le dossier stylesheets, à chaque fois que j&rsquo;ajouterai / modifierai un fichier scss. Je vais donc devoir demander à compass de se mettre en « écoute », de manière à <em>catcher</em> les modifications au fur et à mesure. Je tape donc dans mon terminal, toujours à la racine de mon thème :</p>
+<p></p><pre class="crayon-plain-tag">compass watch</pre><p></p>
+<p>Le watcher est à présent en mode « écoute », et toutes les modifications effectuées dans le dossier sass seront automatiquement compilées dans le dossier stylesheets. Mais cela ne suffit pas. Il faut dès maintenant indiquer à WordPress comment récupérer / lire les fichiers css créés.</p>
+<p><strong>Voici la logique que j&rsquo;appliqu</strong>e :</p>
+<p>Mon fichier style.css à la racine de mon thème va dès à présent me servir de passerelle, en appelant un seul et unique fichier contenu dans le dossier stylesheets. Bien sûr, la création de ce fichier se passe d&rsquo;abord dans le dossier sass : je créé un fichier nommé « main.scss », et automatiquement, son copain « main.css » est créé. Il me suffit alors d&rsquo;importer ce fichier css dans mon « style.css » :</p>
+<p></p><pre class="crayon-plain-tag">@import url(stylesheets/main.css);</pre><p></p>
+<p>Mais alors, et les autres fichiers aussi il va falloir  les importer ? Oui et non. En fait ce qu&rsquo;on va faire c&rsquo;est créer uniquement des fichiers scss qui ne seront pas compilés en fichiers css. Le but n&rsquo;est pas de remplir le dossier stylesheets, mais de le maintenir avec un seul fichier : notre fameux main.css, et de dire à ce dernier de faire tous les imports des fichiers qu&rsquo;on va créer par la suite.</p>
+<p>Du coup on va préfixer tous nos nouveux fichiers scss avec un underscore « _ ». Par exemple, si je veux un fichier scss dédié à la navigation et un autre à mes modules, je vais les nommer respectivement « _navigation.scss » et « _modules.scss ». De cette manière je suis tranquille, je sais qu&rsquo;ils ne seront pas compilés en css. Il ne reste plus qu&rsquo;à les importer dans l&rsquo;ordre qui nous convient, dans le fichier main.scss (qui lui ne possède pas d&rsquo;underscore, et est donc compiler en main.css).</p>
+<p>Voici ce que j&rsquo;écris dans mon main.scss :</p>
+<p></p><pre class="crayon-plain-tag">@import "compass";
+@import "navigation";
+@import "modules";</pre><p></p>
+<p>Première chose à noter, j&rsquo;importe les fichiers en les appelant par leur nom, sans l&rsquo;underscore et sans leur extension. C&rsquo;est tout à fait normal. De plus je n&rsquo;utilise pas « url(nom du fichier) », je met directement le nom de mon fichier entre guillemets, et c&rsquo;est tout ! L&rsquo;import de « compass » est nécessaire mais non obligatoire : le fait d&rsquo;utiliser le compilateur de COMPASS ne vous oblige nullement à utiliser les mixins fournies, mais bon, ce serait dommage de se priver <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Pour ma part je recommande de ne pas importer COMPASS entièrement, mais de sélectionner les outils qui vous intéressent. Je vous laisse jeter un oeil à la <a href="http://compass-style.org/help/" target="_blank">documentation de compass</a> à ce sujet.</p>
+<p><strong>Si on récapitule :</strong></p>
+<p>j&rsquo;ai un fichier style.css qui importe le fichier main.css, qui lui même est issu de la compilation de main.scss, et c&rsquo;est dans main.scss qu&rsquo;on importe autres feuilles de style scss. C&rsquo;est aussi simple que ça ! Les modules importés sont préfixés d&rsquo;un underscore, de manière à ne pas générer un fichier css pour rien, mais de tout centraliser grâce à un seul et unique fichier : main.scss</p>
+<p>C&rsquo;est ainsi que je procède dans mes projets, une fois que tout est en place, il ne me reste qu&rsquo;à lancer mon watcher et tout se fait dans le dossier sass à la racine du thème. On ne peut faire plus simple, enfin pas tant que les navigateurs ne parleront pas autre chose que du css <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>L’article <a rel="nofollow" href="/utiliser-sass-projets-wordpress/">Utiliser SASS dans ses projets WordPress</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/utiliser-sass-projets-wordpress/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">456</post-id>	</item>
+	</channel>
+</rss>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>html &#8211; DesireLabs</title>
+	<atom:link href="/tag/html/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Développement web, marketing digital, et référencement</description>
+	<lastBuildDate>Tue, 06 Jun 2017 17:34:36 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.4</generator>
+<site xmlns="com-wordpress:feed-additions:1">67143140</site>	<item>
+		<title>Outil &#8211; Générateur de grille responsive fluide</title>
+		<link>/generateur-de-grille-responsive-fluide/</link>
+		<comments>/generateur-de-grille-responsive-fluide/#comments</comments>
+		<pubDate>Thu, 02 Apr 2015 10:58:32 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[HTML/CSS]]></category>
+		<category><![CDATA[Outils]]></category>
+		<category><![CDATA[css]]></category>
+		<category><![CDATA[html]]></category>
+		<category><![CDATA[responsive design]]></category>
+
+		<guid isPermaLink="false">/?p=323</guid>
+		<description><![CDATA[<p>Parce que parfois on a juste besoin d&#8217;une grille responsive qui fasse le job, il y a Gridpak.Le principe est simple, tout autant que l&#8217;interface : on rentre le nombre de colonnes, la taille des gouttières ainsi que la largeur finale (pas forcément utile vu que c&#8217;est un système fluide), et on génère. Le zip &#8230; <a href="/generateur-de-grille-responsive-fluide/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Outil &#8211; Générateur de grille responsive fluide</span></a></p>
+<p>L’article <a rel="nofollow" href="/generateur-de-grille-responsive-fluide/">Outil &#8211; Générateur de grille responsive fluide</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Parce que parfois on a juste besoin d&rsquo;une grille responsive qui fasse le job, il y a <a href="http://gridpak.com/">Gridpak</a>.<span id="more-323"></span>Le principe est simple, tout autant que l&rsquo;interface : on rentre le nombre de colonnes, la taille des gouttières ainsi que la largeur finale (pas forcément utile vu que c&rsquo;est un système fluide), et on génère. Le zip final contient un css, un less, un sass et un js. Autre petit plus que j&rsquo;ai particulièrement apprécié, la possibilité de générer ses grilles au format psd et ai, un must <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Juste ce qu&rsquo;il faut pour démarrer vite fait bien fait !</p>
+<p>L’article <a rel="nofollow" href="/generateur-de-grille-responsive-fluide/">Outil &#8211; Générateur de grille responsive fluide</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/generateur-de-grille-responsive-fluide/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">323</post-id>	</item>
+	</channel>
+</rss>

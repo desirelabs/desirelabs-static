@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>versioning &#8211; DesireLabs</title>
+	<atom:link href="/tag/versioning/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Développement web, marketing digital, et référencement</description>
+	<lastBuildDate>Tue, 06 Jun 2017 17:34:36 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.4</generator>
+<site xmlns="com-wordpress:feed-additions:1">67143140</site>	<item>
+		<title>Principales commandes Git</title>
+		<link>/principales-commandes-git/</link>
+		<comments>/principales-commandes-git/#respond</comments>
+		<pubDate>Sun, 02 Mar 2014 11:42:56 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Git]]></category>
+		<category><![CDATA[versioning]]></category>
+
+		<guid isPermaLink="false">/?p=112</guid>
+		<description><![CDATA[<p>Cet article qui sera mis à jour régulièrement fait état des commandes git les plus utiles, en tout cas, celles dont je me sers le plus souvent. Si nécessaire, je créerai des articles connexes afin de développer certaines d&#8217;entres elles. Créer un dépot git local [crayon-5abddf5f15a51319278844/] Article connexe sur la création d&#8217;un dépôt sur serveur &#8230; <a href="/principales-commandes-git/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Principales commandes Git</span></a></p>
+<p>L’article <a rel="nofollow" href="/principales-commandes-git/">Principales commandes Git</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Cet article qui sera mis à jour régulièrement fait état des commandes git les plus utiles, en tout cas, celles dont je me sers le plus souvent. Si nécessaire, je créerai des articles connexes afin de développer certaines d&rsquo;entres elles.<span id="more-112"></span></p>
+<h2>Créer un dépot git local</h2>
+<p></p><pre class="crayon-plain-tag">mkdir &lt;mon_depot_git&gt;
+cd &lt;mon_depot_git&gt;
+git init</pre><p></p>
+<p><a title="Versionnez vos projets sur serveur personnel avec Git" href="/versionnez-vos-projets-sur-serveur-personnel-avec-git/">Article connexe sur la création d&rsquo;un dépôt sur serveur privé.</a></p>
+<h2>Communiquer avec le dépôt git distant</h2>
+<h4>Cloner un dépôt git distant vers sa machine</h4>
+<p></p><pre class="crayon-plain-tag">git clone &lt;url du dépôt&gt;:&lt;dépôt git&gt;</pre><p></p>
+<h4>Sauvegarder son travail : procéder à des ajoutes et les commiter</h4>
+<p></p><pre class="crayon-plain-tag">git add .
+git commit -a</pre><p></p>
+<p>La première commande dit d&rsquo;ajouter tout ce qui se trouve dans le répertoire courant lors du prochain commit (exception faite des fichiers ou dossier précisés dans le fichier .gitignore)</p>
+<p>La seconde effectue la sauvegarde de tout ce qui a été modifié ou ajouté.</p>
+<h4>Envoyer son travail commité vers le dépôt distant</h4>
+<p></p><pre class="crayon-plain-tag">git push</pre><p></p>
+<h4>Procéder à une vérification des données disponibles sur le serveur distant et les rappatrier en local</h4>
+<p></p><pre class="crayon-plain-tag">git fetch
+git pull</pre><p></p>
+<h2>Changer le dépôt git distant d&rsquo;un projet</h2>
+<p></p><pre class="crayon-plain-tag">git remote set-url origin &lt;url du nouveau dépôt&gt;:&lt;nom du nouveau dépôt&gt;
+
+//exemple sur un serveur privé :
+git remote set-url origin git@desirelabs.fr:monprojet.git</pre><p></p>
+<h2>Utiliser les branches (version soft)</h2>
+<h4>Créer une nouvelle branche</h4>
+<p></p><pre class="crayon-plain-tag">git branch &lt;nom_de_la_branche&gt;</pre><p></p>
+<h4>Changer de branche</h4>
+<p></p><pre class="crayon-plain-tag">git checkout &lt;nom_de_la_branche&gt;</pre><p></p>
+<h4>Créer une branche et la choisir en même temps</h4>
+<p></p><pre class="crayon-plain-tag">git checkout -b &lt;nom_de_la_branche&gt;</pre><p></p>
+<h4>Afficher les branches disponibles</h4>
+<p></p><pre class="crayon-plain-tag">git branch</pre><p></p>
+<h4>Fusionner deux branches</h4>
+<p></p><pre class="crayon-plain-tag">// on retourne sur la branche principale
+git checkout master
+
+// et on 'merge' avec la branche souhaitée
+git merge &lt;branche_a_fusionner&gt;</pre><p></p>
+<h4>Supprimer une branche</h4>
+<p></p><pre class="crayon-plain-tag">git branch -D &lt;nom_de_la_branche&gt;</pre><p></p>
+<p>&nbsp;</p>
+<p>L’article <a rel="nofollow" href="/principales-commandes-git/">Principales commandes Git</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/principales-commandes-git/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">112</post-id>	</item>
+		<item>
+		<title>Versionnez vos projets sur serveur personnel avec Git</title>
+		<link>/versionnez-vos-projets-sur-serveur-personnel-avec-git/</link>
+		<comments>/versionnez-vos-projets-sur-serveur-personnel-avec-git/#respond</comments>
+		<pubDate>Thu, 12 Dec 2013 16:26:37 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Git]]></category>
+		<category><![CDATA[versioning]]></category>
+
+		<guid isPermaLink="false">/?p=30</guid>
+		<description><![CDATA[<p>Si tout comme moi vous avez un peu galéré lors du passage à git, pour créer vos dépôts perso sur votre petit serveur à vous, voici en quelques lignes de code comment je procède : Pour info, j&#8217;ai un dédié chez OVH sur lequel j&#8217;ai installé et « configuré » git, et même chose chez moi sur &#8230; <a href="/versionnez-vos-projets-sur-serveur-personnel-avec-git/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Versionnez vos projets sur serveur personnel avec Git</span></a></p>
+<p>L’article <a rel="nofollow" href="/versionnez-vos-projets-sur-serveur-personnel-avec-git/">Versionnez vos projets sur serveur personnel avec Git</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Si tout comme moi vous avez un peu galéré lors du passage à git, pour créer vos dépôts perso sur votre petit serveur à vous, voici en quelques lignes de code comment je procède :<br />
+<span id="more-30"></span></p>
+<p>Pour info, j&rsquo;ai un dédié chez OVH sur lequel j&rsquo;ai installé et « configuré » git, et même chose chez moi sur ma bécane tournant sous Linux Mint. Amis Windowsiens, je vous invite à utiliser un outil comme <a title="MySysGit" href="http://msysgit.github.io/" target="_blank">MySysGit</a>. Il y a plusieurs façons de faire et je ne prétends pas détenir de vérité absolue, et vos retours et avis sont les bienvenus <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Je pars du principe que de votre côté, tout est configuré, accès ssh et tout et tout, et que vous êtes des cracks de la ligne de commande (pas comme moi ^^).</p>
+<p>On va dire que j&rsquo;ai un projet chez moi sur ma machine et que je veux le versionner. On l’appellera « monprojet » (désolé pour l&rsquo;inspiration). Qu&rsquo;il soit vide ou plein n&rsquo;a pas d&rsquo;importance. Mais avec un peu de matière dedans c&rsquo;est mieux.</p>
+<p>En ligne de commande, je me positionne à l&rsquo;intérieur de mon dossier local :</p>
+<p></p><pre class="crayon-plain-tag">franck@studio:/var/www$ cd monprojet/
+franck@studio:/var/www/monprojet$</pre><p></p>
+<p>et j&rsquo;initialise mon dépôt local :</p>
+<p></p><pre class="crayon-plain-tag">franck@studio:/var/www/monprojet$ git init
+Initialized empty Git repository in /var/www/monprojet/.git/</pre><p></p>
+<p>Voilà, vous avez créé votre repository local.</p>
+<p>Maintenant on se connecte en ssh sur son serveur, on créé un dossier qui va contenir tous nos dépôts. Chez moi, c&rsquo;est dans /home/franck/</p>
+<p>je répète l&rsquo;opération comme suit :</p>
+<p></p><pre class="crayon-plain-tag">franck@server:/home/franck$ mkdir monprojet
+franck@server:/home/franck$ cd monprojet
+franck@server:/home/franck/monprojet$</pre><p></p>
+<p>Peu importe comment vous allez l&rsquo;appeler, l&rsquo;essentiel étant que vous sachiez vous à quoi il fait référence en définitive, mais je vous conseille d&rsquo;adopter une terminologie qui colle et qui vous évite de vous embrouiller.</p>
+<p>Une fois dans le dossier, on initialise, mais cette fois avec l&rsquo;option « &#8211;bare » pour préciser que ce sera le dépôt sur lequel on pushera notre boulot.</p>
+<p></p><pre class="crayon-plain-tag">franck@serveur:/home/franck/monprojet$ git init --bare
+Initialized empty Git repository in /home/franck/monprojet/</pre><p></p>
+<p>Retour sur la bécane locale, on lance la commande suivante :</p>
+<p></p><pre class="crayon-plain-tag">franck@studio:/var/www/monprojet$ git add .</pre><p></p>
+<p>Ça va ajouter tout le contenu du dossier « monprojet » à la liste des choses à commiter grâce au « . »</p>
+<p>Reste donc à faire notre premier commit :</p>
+<p></p><pre class="crayon-plain-tag">franck@studio:/var/www/monprojet$ git commit -a</pre><p></p>
+<p>avec le « -a » on dit qu&rsquo;on commit tout.</p>
+<p>Renseignez le message de commit comme il se doit, sauvegardez (pour mysysgit, tapez sur la touche Esc, puis maintenez la touche majuscule enfoncée et tapez 2 fois sur « Z » pour sauvegarder).</p>
+<p>On vérifie rapidement que tout a bien été commité :</p>
+<p></p><pre class="crayon-plain-tag">franck@studio:/var/www/monprojet$ git status
+# On branch master
+nothing to commit, working directory clean</pre><p></p>
+<p>Ok. Reste plus qu&rsquo;à lier notre dépot local à celui sur notre serveur et pusher notre projet <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p></p><pre class="crayon-plain-tag">franck@studio:/var/www/monprojet$ git remote add origin franck@serveur:monprojet
+franck@studio:/var/www/monprojet$ git push franck@serveur:monprojet master</pre><p></p>
+<p>Si un mot de passe vous est demandé, c&rsquo;est celui de votre session ssh.</p>
+<p>Voilà ! Votre projet est versionné et vous pouvez cloner, puller, pusher à volonté !</p>
+<p>Bon git !</p>
+<p>L’article <a rel="nofollow" href="/versionnez-vos-projets-sur-serveur-personnel-avec-git/">Versionnez vos projets sur serveur personnel avec Git</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/versionnez-vos-projets-sur-serveur-personnel-avec-git/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">30</post-id>	</item>
+	</channel>
+</rss>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>securité &#8211; DesireLabs</title>
+	<atom:link href="/tag/securite/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Développement web, marketing digital, et référencement</description>
+	<lastBuildDate>Tue, 06 Jun 2017 17:34:36 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.4</generator>
+<site xmlns="com-wordpress:feed-additions:1">67143140</site>	<item>
+		<title>Outil &#8211; Scanner de vulnérabilités WordPress</title>
+		<link>/trouver-vulnerabilites-wordpress/</link>
+		<comments>/trouver-vulnerabilites-wordpress/#respond</comments>
+		<pubDate>Tue, 05 Aug 2014 13:16:58 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Outils]]></category>
+		<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[faille]]></category>
+		<category><![CDATA[securité]]></category>
+		<category><![CDATA[wpscan]]></category>
+
+		<guid isPermaLink="false">/?p=221</guid>
+		<description><![CDATA[<p>Bonjour, retour de vacances pour moi, et le moment de faire le point sur les projets en cours et faire un peu de ménage dans ceux passés. Du coup je me penche sur la sécurité. Et à ce propos, je viens de découvrir un outil fort pratique pour déceler les vulnérabilités d&#8217;un site WordPress. Il &#8230; <a href="/trouver-vulnerabilites-wordpress/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Outil &#8211; Scanner de vulnérabilités WordPress</span></a></p>
+<p>L’article <a rel="nofollow" href="/trouver-vulnerabilites-wordpress/">Outil &#8211; Scanner de vulnérabilités WordPress</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Bonjour, retour de vacances pour moi, et le moment de faire le point sur les projets en cours et faire un peu de ménage dans ceux passés. Du coup je me penche sur la sécurité. Et à ce propos, je viens de découvrir un outil fort pratique pour déceler les vulnérabilités d&rsquo;un site WordPress.<span id="more-221"></span></p>
+<p>Il s&rsquo;agit de WpScan. Tout en ruby, il s’installe sur une machine Linux. Tout site WP peut être scanner. Ce qui fait de cet outil un joujou de choix pour les hackers potentiels. Je l’ai installé sur mon serveur pour tester, et c’est plutôt efficace. De plus toutes les failles qu’il remonte sont documentées avec plusieurs sources. Bravo aux développeurs de cette perle !</p>
+<p>Je vous encourage à le tester. Voici le site ainsi que leur GitHub :</p>
+<p><a href="http://wpscan.org/">http://wpscan.org/</a></p>
+<p><a href="https://github.com/wpscanteam/wpscan">https://github.com/wpscanteam/wpscan</a></p>
+<p>Si vous aussi connaissez des outils similaires, n&rsquo;hésitez surtout pas à les partager !</p>
+<p>A+</p>
+<p>L’article <a rel="nofollow" href="/trouver-vulnerabilites-wordpress/">Outil &#8211; Scanner de vulnérabilités WordPress</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/trouver-vulnerabilites-wordpress/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">221</post-id>	</item>
+	</channel>
+</rss>

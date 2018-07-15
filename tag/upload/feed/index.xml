@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>upload &#8211; DesireLabs</title>
+	<atom:link href="/tag/upload/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Développement web, marketing digital, et référencement</description>
+	<lastBuildDate>Tue, 06 Jun 2017 17:34:36 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.4</generator>
+<site xmlns="com-wordpress:feed-additions:1">67143140</site>	<item>
+		<title>Intégrer un uploader des fichiers dans Drupal avec le module wysiwyg</title>
+		<link>/integrer-uploader-fichiers-module-wysiwyg-drupal/</link>
+		<comments>/integrer-uploader-fichiers-module-wysiwyg-drupal/#respond</comments>
+		<pubDate>Thu, 08 May 2014 11:20:34 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Drupal]]></category>
+		<category><![CDATA[drupal]]></category>
+		<category><![CDATA[module]]></category>
+		<category><![CDATA[upload]]></category>
+
+		<guid isPermaLink="false">/?p=139</guid>
+		<description><![CDATA[<p>C&#8217;est une problématique que les Drupalien connaissent bien : Uploader des fichiers dans drupal via l&#8217;éditeur Wysiwyg de Drupal est une calamité ! A défaut d&#8217;une fonction out-of-ze-box, je vous propose de vous expliquer comment mettre en place un uploader de fichiers le plus simplement du monde ! Les prérequis : Avoir déjà installé le &#8230; <a href="/integrer-uploader-fichiers-module-wysiwyg-drupal/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Intégrer un uploader des fichiers dans Drupal avec le module wysiwyg</span></a></p>
+<p>L’article <a rel="nofollow" href="/integrer-uploader-fichiers-module-wysiwyg-drupal/">Intégrer un uploader des fichiers dans Drupal avec le module wysiwyg</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>C&rsquo;est une problématique que les Drupalien connaissent bien : Uploader des fichiers dans drupal via l&rsquo;éditeur Wysiwyg de Drupal est une calamité ! A défaut d&rsquo;une fonction out-of-ze-box, je vous propose de vous expliquer comment mettre en place un uploader de fichiers le plus simplement du monde !<span id="more-139"></span></p>
+<h2>Les prérequis :</h2>
+<p>Avoir déjà installé le module Wysiwyg et l&rsquo;éditeur de texte de votre choix. Je ne traiterai pas cette partie, d&rsquo;autres sites le font déjà très bien. Ici, j&rsquo;ai choisi TinyMce 3.5.</p>
+<h3>La suite de module suivante :</h3>
+<ul>
+<li><a href="https://drupal.org/project/ctools">Chaos Tool Suite</a></li>
+<li><a href="https://drupal.org/project/media">Media</a></li>
+<li><a href="https://drupal.org/project/file_entity">File Entity</a></li>
+</ul>
+<h3>L&rsquo;installation :</h3>
+<p>Une fois ces modules installés, activez-lez et rendez-vous dans :</p>
+<p><em>Administration » Configuration » Rédaction de contenu <em>»</em> Formats de texte<br />
+</em></p>
+<p>Éditez la configuration du format de texte souhaité, et cochez la case <em>Convert Media tags to markup.</em></p>
+<p><a href="/wp-content/uploads/2014/05/2014-05-07_221738.png"><img class="aligncenter size-full wp-image-141" src="/wp-content/uploads/2014/05/2014-05-07_221738.png" alt="2014-05-07_221738" width="916" height="261" srcset="/wp-content/uploads/2014/05/2014-05-07_221738.png 916w, /wp-content/uploads/2014/05/2014-05-07_221738-300x85.png 300w, /wp-content/uploads/2014/05/2014-05-07_221738-624x177.png 624w" sizes="(max-width: 916px) 100vw, 916px" /></a></p>
+<p>Sur la même page, tout en bas, dans <em>Balises HTML autorisées , </em>ajoutez la balise &lt;img&gt;.</p>
+<p><a href="/wp-content/uploads/2014/05/2014-05-07_221752.png"><img class="aligncenter size-full wp-image-142" src="/wp-content/uploads/2014/05/2014-05-07_221752.png" alt="2014-05-07_221752" width="570" height="96" srcset="/wp-content/uploads/2014/05/2014-05-07_221752.png 570w, /wp-content/uploads/2014/05/2014-05-07_221752-300x50.png 300w" sizes="(max-width: 570px) 100vw, 570px" /></a></p>
+<p>Rendez-vous enfin dans <em> Administration » Configuration » Rédaction de contenu <em>»</em> WYSIWYG Profile </em>et modifié le format de texte précédemment sélectionné. Dans la partie<em> <span class="fieldset-legend"><span class="fieldset-legend-prefix element-invisible">Afficher</span> Buttons and plugins, </span></em><span class="fieldset-legend">ajoutez à votre </span><span class="fieldset-legend">éditeur la fonction</span><em><span class="fieldset-legend"> Media browser.</span></em></p>
+<p><a href="/wp-content/uploads/2014/05/2014-05-07_221642.png"><img class="aligncenter size-full wp-image-143" src="/wp-content/uploads/2014/05/2014-05-07_221642.png" alt="2014-05-07_221642" width="638" height="253" srcset="/wp-content/uploads/2014/05/2014-05-07_221642.png 638w, /wp-content/uploads/2014/05/2014-05-07_221642-300x118.png 300w, /wp-content/uploads/2014/05/2014-05-07_221642-624x247.png 624w" sizes="(max-width: 638px) 100vw, 638px" /></a></p>
+<p>Pensez également à cocher l&rsquo;option <em>image </em>afin de pouvoir par la suite éditer votre fichier dans l&rsquo;éditeur de texte.</p>
+<p>Vous voilà paré ! Testez l&rsquo;édition d&rsquo;un contenu pour voir apparaître la nouvelle icône.</p>
+<p><a href="/wp-content/uploads/2014/05/2014-05-07_221619.png"><img class="aligncenter size-full wp-image-144" src="/wp-content/uploads/2014/05/2014-05-07_221619.png" alt="2014-05-07_221619" width="782" height="250" srcset="/wp-content/uploads/2014/05/2014-05-07_221619.png 782w, /wp-content/uploads/2014/05/2014-05-07_221619-300x95.png 300w, /wp-content/uploads/2014/05/2014-05-07_221619-624x199.png 624w" sizes="(max-width: 782px) 100vw, 782px" /></a></p>
+<p>Les fonctions sont assez sommaires, vous pouvez uploader du contenu ou parcourir le contenu précédemment uploadé et l&rsquo;insérer dans tout type de contenu pour lequel votre format de texte est activé.</p>
+<p>Voilà, vous pouvez à présent uploader des fichiers dans drupal. Enjoy !</p>
+<p>L’article <a rel="nofollow" href="/integrer-uploader-fichiers-module-wysiwyg-drupal/">Intégrer un uploader des fichiers dans Drupal avec le module wysiwyg</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/integrer-uploader-fichiers-module-wysiwyg-drupal/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">139</post-id>	</item>
+	</channel>
+</rss>

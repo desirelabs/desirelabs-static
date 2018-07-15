@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Non classé &#8211; DesireLabs</title>
+	<atom:link href="/category/non-classe/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Développement web, marketing digital, et référencement</description>
+	<lastBuildDate>Tue, 06 Jun 2017 17:34:36 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.4</generator>
+<site xmlns="com-wordpress:feed-additions:1">67143140</site>	<item>
+		<title>Créer un menu off-canvas entièrement en css</title>
+		<link>/creer-menu-off-canvas-entierement-css/</link>
+		<comments>/creer-menu-off-canvas-entierement-css/#respond</comments>
+		<pubDate>Thu, 22 Dec 2016 13:07:20 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Experiments]]></category>
+		<category><![CDATA[Non classé]]></category>
+		<category><![CDATA[sass]]></category>
+		<category><![CDATA[css target]]></category>
+
+		<guid isPermaLink="false">/?p=550</guid>
+		<description><![CDATA[<p>Ce que j&#8217;aime par dessus tout avec CSS3, c&#8217;est cette capacité qu&#8217;il offre de nous affranchir de javascript pour tout ce qui touche aux animations. Après m&#8217;être penché sur une solution de menus accordéons en full css (dont je parlerai bientôt), je vous propose une version revisitée du menu « off canvas » via css3, sans javascript. &#8230; <a href="/creer-menu-off-canvas-entierement-css/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Créer un menu off-canvas entièrement en css</span></a></p>
+<p>L’article <a rel="nofollow" href="/creer-menu-off-canvas-entierement-css/">Créer un menu off-canvas entièrement en css</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Ce que j&rsquo;aime par dessus tout avec CSS3, c&rsquo;est cette capacité qu&rsquo;il offre de nous affranchir de javascript pour tout ce qui touche aux animations. Après m&rsquo;être penché sur une solution de menus accordéons en full css (dont je parlerai bientôt), je vous propose une version revisitée du menu « off canvas » via css3, sans javascript.<span id="more-550"></span></p>
+<p data-height="265" data-theme-id="0" data-slug-hash="pNGadw" data-default-tab="css,result" data-user="neovea" data-embed-version="2" data-pen-title="Pure css off-canvas menu" class="codepen">See the Pen <a href="http://codepen.io/neovea/pen/pNGadw/">Pure css off-canvas menu</a> by Franck (<a href="http://codepen.io/neovea">@neovea</a>) on <a href="http://codepen.io/">CodePen</a>.</p>
+<p><script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script></p>
+<p>Cette solution m&rsquo;a été inspirée par <a href="http://csswizardry.com/2016/10/pure-css-content-filter/" target="_blank">csswizardry et ses filtres de contenu en full css grâce au sélecteur « :target »</a>. Je pense que les possibilités offertes par ce sélecteur sont nombreuses, et je me suis dit que j&rsquo;en testerais bien une.</p>
+<p>Pour commencer, que propose ce sélecteur au juste ? <a href="https://developer.mozilla.org/fr/docs/Web/CSS/:target" target="_blank">D&rsquo;après Mozilla Developer Network</a> :</p>
+<blockquote><p>La <a href="https://developer.mozilla.org/fr/docs/Web/CSS/Pseudo-classes">pseudo-classe</a><strong><code>:target</code></strong> permet de cibler l&rsquo;unique élément (s&rsquo;il existe) dont l&rsquo;attribut <code>id</code> correspond au fragment d&rsquo;identifiant de l&rsquo;URI du document.</p></blockquote>
+<p>En clair, cela signifie que je peux cibler un élément identifié comme c&rsquo;est le cas avec une ancre. Je clique sur un lien qui pointe vers une ancre (exemple href= »#mon-id »), je serai à même d&rsquo;appliquer à l&rsquo;élément ciblé par cette ancre un style&#8230; ou un comportement dans notre cas <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Je tiens à préciser que j&rsquo;utilise massivement sass dans cet article. Je met le code complet à la fin de l&rsquo;article, avec la feuille de style css compilée <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<h2>Démonstration</h2>
+<p>Considérons le code qui suit pour la partie html :</p><pre class="crayon-plain-tag">&lt;!DOCTYPE html&gt;
+&lt;html lang="fr"&gt;
+&lt;head&gt;
+	&lt;meta charset="UTF-8"&gt;
+	&lt;title&gt;Pure off canvas css menu&lt;/title&gt;
+	&lt;link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet"&gt;
+	&lt;link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"&gt;
+	&lt;link rel="stylesheet" href="stylesheets/main.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	
+  &lt;div id="menu"&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=""&gt;Lorem.&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=""&gt;Suscipit!&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=""&gt;Sapiente.&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+
+  &lt;div class="button-group"&gt;  
+    &lt;a class="menu-button" href="#menu"&gt;
+      &lt;span&gt;
+      	&lt;i class="fa fa-bars" aria-hidden="true"&gt;&lt;/i&gt;
+      	&lt;i class="fa fa-times" aria-hidden="true"&gt;&lt;/i&gt;
+      &lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class="menu-button off" href="#off-menu"&gt;&lt;/a&gt;
+  &lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre><p>J&rsquo;ai créé un menu portant l&rsquo;id « menu » ainsi qu&rsquo;un double bouton permettant de l&rsquo;ouvrir et le fermer.</p>
+<p>Remarquez au passage ce qui suit : Dans la balise portant la classe « button-group » nous avons en réalité 2 liens. Cet artifice permettra par la suite d&rsquo;avoir un bouton pour fermer le menu. Je vous donne plus de détails dans la partie consacrée à css.<br />
+autre chose, le menu porte un id, car pour designer son comportement, nous allons faire appel au pseudo élément <code>:target</code>, ce qui en simplifiant, revient à créer une ancre.</p>
+<h3>A présent que notre structure html est prête, passons à la partie amusante : la css <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></h3>
+<p>Voici comment on va procéder : lorsque le bouton sera cliqué, l&rsquo;élément ciblé via son attribut <code>href</code> sera sélectionné. A ce moment, le menu s&rsquo;ouvrira, et par la même occasion, le second bouton passera en premier plan de manière à nous permettre de le rendre cliquable et de refermer le menu.</p>
+<p>Commençons par opérer un « reset » sur notre page :</p><pre class="crayon-plain-tag">* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+}</pre><p>Ainsi nous aurons bien un menu bord à bord avec notre fenêtre. Ajoutons à cela le design de notre menu :</p><pre class="crayon-plain-tag">#menu {
+  position: absolute;
+  height: 100vh;
+  width: 300px;
+  margin: 0;
+  background-color: #000;
+  transform: translateX(-100%); /* Rend le menu invisible */
+  a {
+    color:#fff;
+    font-family: Cutive Mono;
+    text-decoration: none;
+  }
+}</pre><p>Rien d&rsquo;exotique ici, nous avons seulement placé le tout en position absolue, stipulé une translation négative de 100% de la largeur de l&rsquo;élément afin de masquer le menu.</p>
+<p>Passons aux boutons :</p><pre class="crayon-plain-tag">.button-group{
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  top: 0;
+  left: 0;
+  margin: 8px; /* histoire de ne pas avoir le bouton collé */
+}
+
+.menu-button {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  text-align: center;
+  color: #fff; 
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  span {
+    display: block;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+
+    .fa-times {
+      display: none;
+    }
+  }
+  
+  &amp;.off {
+    z-index: -1;
+  }
+}</pre><p>Ce qui est important ici est le positionnement absolu de notre groupe de boutons, mais aussi et surtout ce dont je parlais plus tôt : le second bouton est placé derrière le premier grâce à un <code>z-index</code> négatif. Ainsi, lorsque nous cliquerons la première fois, nous ne risquerons pas de cibler le mauvais bouton.</p>
+<p>Désormais, tout est près pour accueillir notre comportement. Il suffit d&rsquo;utiliser le sélecteur css <code>:target</code> sur le menu pour jouer notre astuce.</p><pre class="crayon-plain-tag">#menu:target {
+  transform: translateX(0);
+  +.button-group {
+    left: 300px;
+    
+    .menu-button:first-child {
+      span {
+        .fa-times {
+          display: block;
+        }
+        .fa-bars {
+          display: none;
+        }
+      }
+    }
+    
+    .off {
+      z-index: 0;
+      background-color: transparent;
+    }
+  }
+}</pre><p>On a donc ajouté notre sélecteur qui dit que s&rsquo;il est ciblé, notre menu opérera une translation vers la droite. On en profite au passage pour faire passer notre second bouton &#8211; celui qui ferme &#8211; au premier plan, en redéfinissant sont <code>z-index</code> à 0. Pour le cibler, rien de plus simple : notre groupe de boutons se trouve exactement après le menu dans le DOM. Du coup, on peut agir sur ses enfants simplement en utilisant le sélecteur <code>+</code>. On re-style aussi ce dernier pour se positionner à 300px du bord gauche du document.</p>
+<p>Pas encore satisfait ? Allons un peu plus loin en tirant parti des facultés de css en termes d&rsquo;animation et rendons tout cela un peu plus touchy&rsquo; <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Et puisque nous faisons du scss, créons une petite <code>@mixin</code> qui se chargera de créer nos transitions :</p><pre class="crayon-plain-tag">* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+}
+
+@mixin animation() {  
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.button-group{
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  top: 0;
+  left: 0;
+  margin: 8px; /* just to give some space*/
+  @include animation();
+}
+
+.menu-button {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  text-align: center;
+  color: #fff; 
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  span {
+    display: block;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+
+    .fa-times {
+      display: none;
+    }
+  }
+  
+  &amp;.off {
+    z-index: -1;
+  }
+}
+
+#menu {
+  position: absolute;
+  height: 100vh;
+  width: 300px;
+  margin: 0;
+  background-color: #000;
+  transform: translateX(-100%);
+  a {
+    color:#fff;
+    font-family: Cutive Mono;
+    text-decoration: none;
+  }
+  @include animation();
+  
+  &amp;:target {
+    transform: translateX(0);
+    +.button-group {
+      left: 300px;
+      
+      .menu-button:first-child {
+        span {
+          .fa-times {
+            display: block;
+          }
+          .fa-bars {
+            display: none;
+          }
+        }
+      }
+      
+      .off {
+        z-index: 0;
+        background-color: transparent;
+      }
+    }
+  }
+}</pre><p>Je trouve cette expérimentation &#8211; à défaut d&rsquo;être respectueuse des règles d&rsquo;accessibilité &#8211; très intéressante dans la mesure où elle remet en question l&rsquo;usage de javascript pour des usages d&rsquo;ordre fonctionnel ou esthétique. Ceci tend à rendre la frontière entre css et javascript un peu plus floue en rendant css auto suffisant lors de traitements fonctionnels un tantinet complexes.</p>
+<p>En revanche, attention ! rechargez votre page et l&rsquo;état du menu ne sera pas réinitialisé. En effet étant donné que nous utilisons une ancre, celle ci reste dans la barre d&rsquo;adresse. De plus, l&rsquo;état de votre menu est de fait enregistré dans votre historique.</p>
+<p style="text-align: center;"><a href="/wp-content/uploads/2016/12/pure-css-off-canvas-menu.zip" target="_blank">Télécharger les sources</a></p>
+<p>L’article <a rel="nofollow" href="/creer-menu-off-canvas-entierement-css/">Créer un menu off-canvas entièrement en css</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/creer-menu-off-canvas-entierement-css/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">550</post-id>	</item>
+		<item>
+		<title>Ajouter enclosure dans le flux RSS de WordPress pour les newsletters MailChimp</title>
+		<link>/ajouter-flux-rss-de-wordpress/</link>
+		<comments>/ajouter-flux-rss-de-wordpress/#respond</comments>
+		<pubDate>Fri, 29 Jul 2016 11:50:33 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Non classé]]></category>
+
+		<guid isPermaLink="false">/?p=504</guid>
+		<description><![CDATA[<p>Si comme moi vous utilisez mailchimp, vous avez surement dû trouver rageant le fait de ne pas avoir la main sur les images par votre flux RSS WordPress dans votre newsletter. Qu&#8217;à celà ne tienne, voici un petit script à insérer dans le fichier functions.php de votre thème (via duogeekdev &#8211; GitHub Gist) [crayon-5abdde9301b90267535956/] Merci &#8230; <a href="/ajouter-flux-rss-de-wordpress/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Ajouter enclosure dans le flux RSS de WordPress pour les newsletters MailChimp</span></a></p>
+<p>L’article <a rel="nofollow" href="/ajouter-flux-rss-de-wordpress/">Ajouter enclosure dans le flux RSS de WordPress pour les newsletters MailChimp</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Si comme moi vous utilisez mailchimp, vous avez surement dû trouver rageant le fait de ne pas avoir la main sur les images par votre flux RSS WordPress dans votre newsletter. Qu&rsquo;à celà ne tienne, voici un petit script à insérer dans le fichier functions.php de votre thème (via <a href="https://duogeek.com/blog/add-featured-images-as-enclosures-in-wordpress-rss-feeds/" target="_blank">duogeekdev</a> &#8211; <a href="https://gist.github.com/duogeekdev/b51f035d3d6927f69e48#file-code-php" target="_blank">GitHub Gist</a>)</p><pre class="crayon-plain-tag">&lt;?php
+function add_featured_image_in_rss() {
+    if ( function_exists( 'get_the_image' ) &amp;&amp; ( $featured_image = get_the_image('format=array&amp;echo=0') ) ) {
+        $featured_image[0] = $featured_image['url'];
+    } elseif ( function_exists( 'has_post_thumbnail' ) and has_post_thumbnail() ) {
+        $featured_image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'post-thumbnail' );
+    } elseif ( function_exists( 'get_post_thumbnail_src' ) ) {
+        $featured_image = get_post_thumbnail_src();
+        if ( preg_match( '|^&lt;img src="([^"]+)"|', $featured_image[0], $m ) )
+            $featured_image[0] = $m[1];
+    } else {
+        $featured_image = false;
+    }
+    if ( ! empty( $featured_image ) ) {
+        echo "\t" . '&lt;enclosure url="' . $featured_image[0] . '" /&gt;' . "\n";
+    }
+    
+}
+add_action( 'rss2_item', 'add_featured_image_in_rss' );</pre><p>Merci à <a title="Posts by Sushi" href="https://duogeek.com/blog/author/duogeekadmin/" rel="author">Sushi</a> l&rsquo;auteur du script <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p><script src="https://gist.github.com/duogeekdev/b51f035d3d6927f69e48.js"></script></p>
+<p>L’article <a rel="nofollow" href="/ajouter-flux-rss-de-wordpress/">Ajouter enclosure dans le flux RSS de WordPress pour les newsletters MailChimp</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/ajouter-flux-rss-de-wordpress/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">504</post-id>	</item>
+		<item>
+		<title>Designers: earn your seat at the table &#8211; InVision Blog</title>
+		<link>/designers-earn-your-seat-at-the-table-invision-blog/</link>
+		<comments>/designers-earn-your-seat-at-the-table-invision-blog/#respond</comments>
+		<pubDate>Tue, 09 Feb 2016 07:21:02 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Non classé]]></category>
+
+		<guid isPermaLink="false">/?p=484</guid>
+		<description><![CDATA[<p>Design is a critical skillset for operating in the business world, but it’s up to you as the designer to show and tell this to your stakeholders. Source : Designers: earn your seat at the table &#8211; InVision Blog</p>
+<p>L’article <a rel="nofollow" href="/designers-earn-your-seat-at-the-table-invision-blog/">Designers: earn your seat at the table &#8211; InVision Blog</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<blockquote><p>Design is a critical skillset for operating in the business world, but it’s up to you as the designer to show and tell this to your stakeholders.</p></blockquote>
+<p>Source : <em><a href="http://blog.invisionapp.com/designers-earn-your-seat/">Designers: earn your seat at the table &#8211; InVision Blog</a></em></p>
+<p>L’article <a rel="nofollow" href="/designers-earn-your-seat-at-the-table-invision-blog/">Designers: earn your seat at the table &#8211; InVision Blog</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/designers-earn-your-seat-at-the-table-invision-blog/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">484</post-id>	</item>
+		<item>
+		<title>Utiliser SASS dans ses projets WordPress</title>
+		<link>/utiliser-sass-projets-wordpress/</link>
+		<comments>/utiliser-sass-projets-wordpress/#respond</comments>
+		<pubDate>Sun, 10 Jan 2016 20:05:15 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[HTML/CSS]]></category>
+		<category><![CDATA[Non classé]]></category>
+		<category><![CDATA[sass]]></category>
+		<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[compass]]></category>
+
+		<guid isPermaLink="false">/?p=456</guid>
+		<description><![CDATA[<p>Sass est devenu pour moi un outil du quotidien. Je l&#8217;utilise dans presque tous mes projets. Le fait est que je travaille beaucoup avec WordPress. Il est donc devenu évident qu&#8217;il fallait que je développe une méthodologie pour le faire entrer dans ces projets-ci. Aujourd&#8217;hui je vous propose de découvrir de quelle manière intégrer Sass &#8230; <a href="/utiliser-sass-projets-wordpress/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Utiliser SASS dans ses projets WordPress</span></a></p>
+<p>L’article <a rel="nofollow" href="/utiliser-sass-projets-wordpress/">Utiliser SASS dans ses projets WordPress</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Sass est devenu pour moi un outil du quotidien. Je l&rsquo;utilise dans presque tous mes projets. Le fait est que je travaille beaucoup avec WordPress. Il est donc devenu évident qu&rsquo;il fallait que je développe une méthodologie pour le faire entrer dans ces projets-ci. Aujourd&rsquo;hui je vous propose de découvrir de quelle manière intégrer Sass dans vos projets WordPress.<span id="more-456"></span></p>
+<p>Un thème WordPress nécessite normalement 1 seul et unique fichier CSS, à la racine : style.css. Mais tout mettre au kilomètre dans ce fichier c&rsquo;est la garantie de rendre le projet difficile à maintenir et à faire évoluer. C&rsquo;est pourquoi on préfèrera découper son design en modules. Plusieurs méthodologies existent, mais celle qui fait sens à mes yeux se rapproche de SMACSS. Je vous invite à aller faire un tour sur <a href="https://smacss.com/" target="_blank">leur site</a>, on y apprend des choses très intéressantes sur les manières possibles de découper son design CSS.</p>
+<p>La puissance des préprocesseurs CSS n&rsquo;est plus à démontrer : ils nous permettent de s&rsquo;affranchir des préfixes vendeurs, d&rsquo;apporter de la logique dans nos feuilles de styles, de séparer proprement notre architecture, bref, de tout calibrer au plus juste sans se répéter. C&rsquo;est la méthode DRY (Don&rsquo;t repeat yourself). Globalement, on gagne en productivité, en stabilité, on limite les régressions et en plus on s&rsquo;éclate. Que demander de plus ?</p>
+<p><strong>Sass embrasse parfaitement cette philosophie du DRY et de la scalabilité. Mais pour l’installer sur WordPress comment ça se passe ?</strong></p>
+<p>Premièrement, il faut avoir déjà installé et configuré les outils sur sa machine. Dans mon cas, j&rsquo;utilise le framework COMPASS. Il est réputé pour être l&rsquo;un des plus complets avec une palette de mixins très étendue, et même si pas mal lui reprochent d&rsquo;être assez lourd / lent à la compilation, de mon point de vue c&rsquo;est à la marge. Car si vous n&rsquo;avez jamais utilisé SASS / COMPASS, il faut savoir que le code que vous générez est compilé à la volée en fichier css standards.</p>
+<p>Je pars du principe que les personnes qui lisent cet articles ont déjà COMPASS d&rsquo;installé et sont prêts à se lancer.</p>
+<p>Pour démarrer le projet (thème ou plugin) en mode SASS, il suffit d&rsquo;initialiser un projet COMPASS à la racine. Si je construit un thème, j&rsquo;ouvrirai le terminal à la racine de mon thème et je taperai :</p>
+<p></p><pre class="crayon-plain-tag">compass init</pre><p></p>
+<p>A la suite de quoi, je me retrouve avec un fichier config.rb, ainsi que 2 nouveaux dossiers : sass et stylesheets. Le dossier sass est celui dans lequel on va travailler à l&rsquo;avenir, mais avant, il faut aller un peu plus loin :</p>
+<p>Les fichiers scss contenu dans le dossier sass vont entrainer la création / modification de leur alter égo css contenu dans le dossier stylesheets, à chaque fois que j&rsquo;ajouterai / modifierai un fichier scss. Je vais donc devoir demander à compass de se mettre en « écoute », de manière à <em>catcher</em> les modifications au fur et à mesure. Je tape donc dans mon terminal, toujours à la racine de mon thème :</p>
+<p></p><pre class="crayon-plain-tag">compass watch</pre><p></p>
+<p>Le watcher est à présent en mode « écoute », et toutes les modifications effectuées dans le dossier sass seront automatiquement compilées dans le dossier stylesheets. Mais cela ne suffit pas. Il faut dès maintenant indiquer à WordPress comment récupérer / lire les fichiers css créés.</p>
+<p><strong>Voici la logique que j&rsquo;appliqu</strong>e :</p>
+<p>Mon fichier style.css à la racine de mon thème va dès à présent me servir de passerelle, en appelant un seul et unique fichier contenu dans le dossier stylesheets. Bien sûr, la création de ce fichier se passe d&rsquo;abord dans le dossier sass : je créé un fichier nommé « main.scss », et automatiquement, son copain « main.css » est créé. Il me suffit alors d&rsquo;importer ce fichier css dans mon « style.css » :</p>
+<p></p><pre class="crayon-plain-tag">@import url(stylesheets/main.css);</pre><p></p>
+<p>Mais alors, et les autres fichiers aussi il va falloir  les importer ? Oui et non. En fait ce qu&rsquo;on va faire c&rsquo;est créer uniquement des fichiers scss qui ne seront pas compilés en fichiers css. Le but n&rsquo;est pas de remplir le dossier stylesheets, mais de le maintenir avec un seul fichier : notre fameux main.css, et de dire à ce dernier de faire tous les imports des fichiers qu&rsquo;on va créer par la suite.</p>
+<p>Du coup on va préfixer tous nos nouveux fichiers scss avec un underscore « _ ». Par exemple, si je veux un fichier scss dédié à la navigation et un autre à mes modules, je vais les nommer respectivement « _navigation.scss » et « _modules.scss ». De cette manière je suis tranquille, je sais qu&rsquo;ils ne seront pas compilés en css. Il ne reste plus qu&rsquo;à les importer dans l&rsquo;ordre qui nous convient, dans le fichier main.scss (qui lui ne possède pas d&rsquo;underscore, et est donc compiler en main.css).</p>
+<p>Voici ce que j&rsquo;écris dans mon main.scss :</p>
+<p></p><pre class="crayon-plain-tag">@import "compass";
+@import "navigation";
+@import "modules";</pre><p></p>
+<p>Première chose à noter, j&rsquo;importe les fichiers en les appelant par leur nom, sans l&rsquo;underscore et sans leur extension. C&rsquo;est tout à fait normal. De plus je n&rsquo;utilise pas « url(nom du fichier) », je met directement le nom de mon fichier entre guillemets, et c&rsquo;est tout ! L&rsquo;import de « compass » est nécessaire mais non obligatoire : le fait d&rsquo;utiliser le compilateur de COMPASS ne vous oblige nullement à utiliser les mixins fournies, mais bon, ce serait dommage de se priver <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Pour ma part je recommande de ne pas importer COMPASS entièrement, mais de sélectionner les outils qui vous intéressent. Je vous laisse jeter un oeil à la <a href="http://compass-style.org/help/" target="_blank">documentation de compass</a> à ce sujet.</p>
+<p><strong>Si on récapitule :</strong></p>
+<p>j&rsquo;ai un fichier style.css qui importe le fichier main.css, qui lui même est issu de la compilation de main.scss, et c&rsquo;est dans main.scss qu&rsquo;on importe autres feuilles de style scss. C&rsquo;est aussi simple que ça ! Les modules importés sont préfixés d&rsquo;un underscore, de manière à ne pas générer un fichier css pour rien, mais de tout centraliser grâce à un seul et unique fichier : main.scss</p>
+<p>C&rsquo;est ainsi que je procède dans mes projets, une fois que tout est en place, il ne me reste qu&rsquo;à lancer mon watcher et tout se fait dans le dossier sass à la racine du thème. On ne peut faire plus simple, enfin pas tant que les navigateurs ne parleront pas autre chose que du css <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>L’article <a rel="nofollow" href="/utiliser-sass-projets-wordpress/">Utiliser SASS dans ses projets WordPress</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/utiliser-sass-projets-wordpress/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">456</post-id>	</item>
+		<item>
+		<title>Pourquoi trouver un bon développeur frontend est si difficile ? [en]</title>
+		<link>/pourquoi-trouver-un-bon-developpeur-frontend-est-si-difficile-en/</link>
+		<comments>/pourquoi-trouver-un-bon-developpeur-frontend-est-si-difficile-en/#respond</comments>
+		<pubDate>Sun, 29 Nov 2015 19:24:14 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Non classé]]></category>
+		<category><![CDATA[frontend]]></category>
+
+		<guid isPermaLink="false">/?p=460</guid>
+		<description><![CDATA[<p>View story at Medium.com</p>
+<p>L’article <a rel="nofollow" href="/pourquoi-trouver-un-bon-developpeur-frontend-est-si-difficile-en/">Pourquoi trouver un bon développeur frontend est si difficile ? [en]</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><script async src="https://static.medium.com/embed.js"></script><a class="m-story" href="https://medium.com/creative-business/why-is-it-so-hard-to-find-a-front-end-developer-cb92848a7c6f#.td67c1l2b" target="_blank" data-width="660" data-border="1" data-collapsed="">View story at Medium.com</a></p>
+<p>L’article <a rel="nofollow" href="/pourquoi-trouver-un-bon-developpeur-frontend-est-si-difficile-en/">Pourquoi trouver un bon développeur frontend est si difficile ? [en]</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/pourquoi-trouver-un-bon-developpeur-frontend-est-si-difficile-en/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">460</post-id>	</item>
+		<item>
+		<title>En finir définitivement avec les problèmes de permissions de WordPress</title>
+		<link>/en-finir-definitivement-avec-les-problemes-de-permissions-de-wordpress/</link>
+		<comments>/en-finir-definitivement-avec-les-problemes-de-permissions-de-wordpress/#respond</comments>
+		<pubDate>Thu, 08 Oct 2015 15:38:59 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Non classé]]></category>
+
+		<guid isPermaLink="false">/?p=419</guid>
+		<description><![CDATA[<p>Bonjour à toutes et tous, cet article fait écho à celui que j&#8217;avais écrit il y a un petit moment de ça, et qui expliquait comment installer son dossier www dans le home. Le gros soucis est que lorsqu&#8217;on procède ainsi, il y a un conflit de droit pour l&#8217;écriture des fichiers et dossiers entre &#8230; <a href="/en-finir-definitivement-avec-les-problemes-de-permissions-de-wordpress/" class="more-link">Continuer la lecture de <span class="screen-reader-text">En finir définitivement avec les problèmes de permissions de WordPress</span></a></p>
+<p>L’article <a rel="nofollow" href="/en-finir-definitivement-avec-les-problemes-de-permissions-de-wordpress/">En finir définitivement avec les problèmes de permissions de WordPress</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Bonjour à toutes et tous, cet article fait écho à celui que j&rsquo;avais écrit il y a un petit moment de ça, et qui expliquait <a href="/mettre-son-dossier-www-dans-home-pour-chaque-utilisateur-linux/">comment installer son dossier www dans le home</a>. Le gros soucis est que lorsqu&rsquo;on procède ainsi, il y a un conflit de droit pour l&rsquo;écriture des fichiers et dossiers entre le user qui possède le dossier dans home, et le user apache. Mais ça c&rsquo;était avant !<span id="more-419"></span></p>
+<h3>Quelques explications</h3>
+<p>Avant de commencer il faut savoir que lorsque l&rsquo;on effectue une opération via WordPress, comme installer un thème, un plugin ou uploader un fichier dans la bibliothèque de médias, c&rsquo;est le user Apache qui écrit sur le disque. De fait, si le dossier www de notre site est installé dans le home, la chose devient impossible et on est forcé : soit de lui donner tous les droits (genre 777), soit de le rendre propriétaire du dossier, et dans ce cas là adieu la possibilité de faire des modifications directement en ftp par la user.</p>
+<h3>La solution</h3>
+<p>On va procéder par étape et dire que le user qui exécute Apache ne sera plus www-data, mais un user intermédiaire que l&rsquo;on nommera « wordpress ». On créé donc le user :</p>
+<p></p><pre class="crayon-plain-tag">sudo adduser wordpress</pre><p></p>
+<p>On ajoute le user « user » au groupe « wordpress »</p>
+<p></p><pre class="crayon-plain-tag">sudo usermod -a -G wordpress user</pre><p></p>
+<p>On va à présent modifier le user qui exécute apache. On édite le fichier envvars d&rsquo;apache</p>
+<p></p><pre class="crayon-plain-tag">sudo nano /etc/apache2/envvars</pre><p></p>
+<p>on repère les lignes</p>
+<p></p><pre class="crayon-plain-tag">export APACHE_RUN_USER=www-data
+export APACHE_RUN_GROUP=www-data</pre><p></p>
+<p>et on remplace « www-data » par le user « wordpress » comme ceci</p>
+<p></p><pre class="crayon-plain-tag">export APACHE_RUN_USER=wordpress
+export APACHE_RUN_GROUP=wordpress</pre><p></p>
+<p>puis on redémarre apache</p>
+<p></p><pre class="crayon-plain-tag">sudo service apache2 restart</pre><p></p>
+<p>A présent on se rend dans /home et on modifie le propriétaire du dossier www</p>
+<p></p><pre class="crayon-plain-tag">cd /home/user
+sudo chown -R user:wordpress www/</pre><p></p>
+<p>Le propriétaire est bien configuré, il ne reste plus qu&rsquo;à configurer les droits sur les fichiers et dossiers</p>
+<p></p><pre class="crayon-plain-tag">sudo find ./www -type d -exec chmod 0755 {} \; # applique 755 sur les dossiers 
+sudo find ./www -type f -exec chmod 0644 {} \; # applique 644 sur les fichiers</pre><p></p>
+<p>Et c&rsquo;est tout ! Fini les problèmes d&rsquo;écriture à la fois par apache et votre user.</p>
+<p>L’article <a rel="nofollow" href="/en-finir-definitivement-avec-les-problemes-de-permissions-de-wordpress/">En finir définitivement avec les problèmes de permissions de WordPress</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/en-finir-definitivement-avec-les-problemes-de-permissions-de-wordpress/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">419</post-id>	</item>
+		<item>
+		<title>WordPress 3.9, ou la sublimation des contenus</title>
+		<link>/wordpress-3-9-sublimation-contenus/</link>
+		<comments>/wordpress-3-9-sublimation-contenus/#respond</comments>
+		<pubDate>Fri, 18 Apr 2014 08:07:18 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Non classé]]></category>
+		<category><![CDATA[wordpress]]></category>
+
+		<guid isPermaLink="false">/?p=133</guid>
+		<description><![CDATA[<p>Ca y est c&#8217;est fait, WordPress débarque en version 3.9 avec au menu quelques améliorations loin d&#8217;être superflues ! Et c&#8217;est surtout au niveau des contenus de la médiathèque que le lifting s&#8217;est opéré. Et ce n&#8217;est pas pour déplaire !Parmi les évolutions qui méritent le détour selon moi : La possibilité de faire un &#8230; <a href="/wordpress-3-9-sublimation-contenus/" class="more-link">Continuer la lecture de <span class="screen-reader-text">WordPress 3.9, ou la sublimation des contenus</span></a></p>
+<p>L’article <a rel="nofollow" href="/wordpress-3-9-sublimation-contenus/">WordPress 3.9, ou la sublimation des contenus</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Ca y est c&rsquo;est fait, WordPress débarque en version 3.9 avec au menu quelques améliorations loin d&rsquo;être superflues ! Et c&rsquo;est surtout au niveau des contenus de la médiathèque que le lifting s&rsquo;est opéré. Et ce n&rsquo;est pas pour déplaire !<span id="more-133"></span>Parmi les évolutions qui méritent le détour selon moi :</p>
+<ul>
+<li>La possibilité de faire un glisser déposer de ses médias directement dans l&rsquo;éditeur de texte pour les uploader</li>
+<li>La prévisualisation de galeries directement dans l&rsquo;éditeur de texte, ça donne un véritable aperçu du résultat final</li>
+<li>L&rsquo;arrivée des listes de lecture pour la musique et la vidéo</li>
+<li>Un nouvel écran de prévisualisation des thèmes, avec possibilité d&rsquo;éditer la position et le contenu de ses widgets directement dans la fenêtre de prévisualisation du thème</li>
+<li>L&rsquo;intégration de la bibliothèque javascript Masonry 3</li>
+</ul>
+<p>Il y pas mal d&rsquo;autres petits détails sympas, mais je vous laisse aller <a href="http://www.wordpress-fr.net/2014/04/17/sortie-de-wordpress-3-9/">faire un tour ici</a> pour les découvrir, ou mieux, les tester par vous même <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>L’article <a rel="nofollow" href="/wordpress-3-9-sublimation-contenus/">WordPress 3.9, ou la sublimation des contenus</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/wordpress-3-9-sublimation-contenus/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">133</post-id>	</item>
+		<item>
+		<title>Transférer des fichiers d&#8217;un ftp à un autre</title>
+		<link>/transferer-des-fichiers-dun-ftp-a-un-autre/</link>
+		<comments>/transferer-des-fichiers-dun-ftp-a-un-autre/#respond</comments>
+		<pubDate>Thu, 09 Jan 2014 10:35:44 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Non classé]]></category>
+
+		<guid isPermaLink="false">/?p=56</guid>
+		<description><![CDATA[<p>J&#8217;aime bien pouvoir m&#8217;installer des instances de test des sites sur lesquels je travaille, mais en conditions réelles, soit sur un vrai serveur de production et non en local. Du coup, si je veux récupérer l&#8217;intégralité d&#8217;un site via ftp, j&#8217;utilise une petite astuce. Cette petite astuce n&#8217;en est pas vraiment une en fait et &#8230; <a href="/transferer-des-fichiers-dun-ftp-a-un-autre/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Transférer des fichiers d&#8217;un ftp à un autre</span></a></p>
+<p>L’article <a rel="nofollow" href="/transferer-des-fichiers-dun-ftp-a-un-autre/">Transférer des fichiers d&rsquo;un ftp à un autre</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>J&rsquo;aime bien pouvoir m&rsquo;installer des instances de test des sites sur lesquels je travaille, mais en conditions réelles, soit sur un vrai serveur de production et non en local. Du coup, si je veux récupérer l&rsquo;intégralité d&rsquo;un site via ftp, j&rsquo;utilise une petite astuce.<span id="more-56"></span></p>
+<p>Cette petite astuce n&rsquo;en est pas vraiment une en fait et nécessite d&rsquo;être exécutée en ligne de commande sous Linux Debian.</p>
+<h3>Donc faisons le point :</h3>
+<p>j&rsquo;ai d&rsquo;un côté mon serveur de test, une Debian 6  avec proftpd d&rsquo;installé (serveur ftp) ET lftp, qui lui est un client ftp.</p>
+<p>De l&rsquo;autre, un serveur de production avec dessus, le site que je veux aspirer.</p>
+<p>Je passerai sur la configuration de proftpd et lftp. Ça fera peut être l&rsquo;objet d&rsquo;un article dédié un de ces jours <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<h3>La solution</h3>
+<p>Une seule ligne de commande à exécuter côté serveur de test, soit, ma Debian :</p>
+<p></p><pre class="crayon-plain-tag">sudo lftp ftp://login_prod:pass_prod@host_prod -e "mirror /chemin/du/dossier/a/aspirer/prod /chemin/du/dossier/de/destination/debian ; quit"</pre><p></p>
+<p>où login_prod correspond au login ftp du site de prod, pass_prod correspond au pass ftp du site de prod et host_prod correspond au domaine ftp du site de prod.</p>
+<p>Le <strong>-e</strong> commande à lftp d&rsquo;exécuter ce qui est entre guillemets.<br />
+<span style="font-size: 1rem; line-height: 1;">Le </span><strong style="font-size: 1rem; line-height: 1;">mirror</strong><span style="font-size: 1rem; line-height: 1;"> crée une copie exacte.</span></p>
+<p>L&rsquo;avantage de cette commande exécutée avec mirror, c&rsquo;est qu&rsquo;on récupère toute l&rsquo;arborescence et les contenus des dsssiers.</p>
+<p>Si on veut récupérer seulement un fichier, on utilise get au lieu de mirror, et si ou souhaite envoyer, on utilisera put.</p>
+<p>Sources : <a href="http://doc.ubuntu-fr.org/lftp">http://doc.ubuntu-fr.org/lftp</a></p>
+<p>L’article <a rel="nofollow" href="/transferer-des-fichiers-dun-ftp-a-un-autre/">Transférer des fichiers d&rsquo;un ftp à un autre</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/transferer-des-fichiers-dun-ftp-a-un-autre/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">56</post-id>	</item>
+	</channel>
+</rss>

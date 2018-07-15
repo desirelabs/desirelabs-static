@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>microsoft &#8211; DesireLabs</title>
+	<atom:link href="/tag/microsoft/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Développement web, marketing digital, et référencement</description>
+	<lastBuildDate>Tue, 06 Jun 2017 17:34:36 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.4</generator>
+<site xmlns="com-wordpress:feed-additions:1">67143140</site>	<item>
+		<title>Edito &#8211; Windows 10 : une gratuité qui se paye</title>
+		<link>/windows-10-pas-gratuit/</link>
+		<comments>/windows-10-pas-gratuit/#respond</comments>
+		<pubDate>Mon, 24 Aug 2015 23:00:26 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Editorial]]></category>
+		<category><![CDATA[microsoft]]></category>
+		<category><![CDATA[vie privée]]></category>
+
+		<guid isPermaLink="false">/?p=399</guid>
+		<description><![CDATA[<p>Comme chaque matin, quand je bois mon premier café, je navigue sur mon compte Feedly pour m&#8217;informer de ce qui se passe dans le monde de l&#8217;informatique. Ce matin je suis tombé sur un fait assez intéressant pour être noté et me donner envie d&#8217;écrire un article au passage : Certains sites ne seront plus &#8230; <a href="/windows-10-pas-gratuit/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Edito &#8211; Windows 10 : une gratuité qui se paye</span></a></p>
+<p>L’article <a rel="nofollow" href="/windows-10-pas-gratuit/">Edito &#8211; Windows 10 : une gratuité qui se paye</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Comme chaque matin, quand je bois mon premier café, je navigue sur mon compte Feedly pour m&rsquo;informer de ce qui se passe dans le monde de l&rsquo;informatique. Ce matin je suis tombé sur un fait assez intéressant pour être noté et me donner envie d&rsquo;écrire un article au passage : Certains sites ne seront plus accessibles par l&rsquo;intermédiaire de Windows 10.<span id="more-399"></span></p>
+<p><strong>Je précise que je n&rsquo;ai pas pour habitude de sortir de ma ligne éditoriale, mais comme ça touche ici à un outil dont je me sers au quotidien dans mon travail, je pense que cela ne déviera pas trop du reste du blog.</strong></p>
+<p><a href="http://www.silicon.fr/sites-pirates-bloquent-windows-10-124634.html" target="_blank">Silicon.fr</a> relataient ainsi le fait :</p>
+<blockquote><p>« Les sites de partage de fichiers torrents [&#8230;] s’inquiètent des indiscrétions de Windows 10. Les conditions d’utilisation de Windows 10 autorisent effectivement Microsoft à capter toutes les informations présentes sur la machine et à les transmettre à ses partenaires. »</p></blockquote>
+<p>En mon for intérieur, je n&rsquo;ai pas pu m&#8217;empêcher de trouver ça un peu fort (haha). Non pas que je sois convaincu que Microsoft soit à ranger dans la catégorie des bons élèves en matière de respect de la vie privée et de sécurisation des données personnelles, mais j&rsquo;ai toujours trouvé que malgré ses travers, cette société avait, à tout le moins, un semblant de responsabilité vis à vis de ses utilisateurs. Très sceptique, je me suis rendu sur le site de Microsoft afin de constater qu&rsquo;ils avaient tout simplement éradiqué purement et simplement la notion de vie privée de leurs conditions générales.</p>
+<p>Je vous invite à y jeter un œil, c&rsquo;est vraiment pas long à lire (5 minutes tout au plus !) et très instructif : <a href="http://windows.microsoft.com/fr-fr/windows/preview-privacy-statement" target="_blank">http://windows.microsoft.com/fr-fr/windows/preview-privacy-statement</a><br />
+En gros ça dit qu&rsquo;ils peuvent accéder aux données stockées sur votre ordinateur, à celles de vos périphériques connectés (téléphones, tablettes etc), qu&rsquo;ils peuvent utiliser vos données vocales (Cortana, VoIP etc), les fichiers de tout types (images, documents word, excel etc), qu&rsquo;ils peuvent également collecter les informations de vos matériels (imprimantes et consorts), vos données de connexion, vos habitudes de navigation, d&rsquo;utilisation logicielles et matérielles&#8230; Bref tout vous avez bien compris. Le <em>Personal Computer</em> (PC) n&rsquo;a plus rien de personnel. Il devient simplement une boîte d&rsquo;écoute et de collecte de données vous concernant.</p>
+<p>En ce qui me concerne, j&rsquo;essaye d&rsquo;être assez vigilant quant à mes données, et je suis loin d&rsquo;être insensible à toute la mouvance autour de la vie privée qui se déroule depuis ces 3 dernières années. Et j&rsquo;ai le sentiment qu&rsquo;un contre courant est en train de naître : Par exemple avant, les sociétés noyaient leur politique de confidentialité sous les tonnes de texte indigeste de leur charte. Maintenant, étant donné que tout le monde est censé être au courant, il devient inutile de jouer les hypocrites. Et là ça devient carrément choquant je trouve, dans le sens où, en substance, on nous dit clairement : « vos données sont la monnaie d&rsquo;échange pour l&rsquo;utilisation de nos services et produits ». Alors j&rsquo;en vois déjà monter au créneau et me traiter de naïf, car on sait que c&rsquo;est le cas chez beaucoup de sociétés (Facebook, Google&#8230;), mais je tiens à souligner que si on regarde de plus près, on constate que Windows 10 est gratuit la première année, mais pas les suivantes. Et il sera facturé chaque année comme un service, entre 99 et 199$ selon la version. La gratuité entraîne dans un premier temps une conversion massive des consommateurs, puis vient le temps où il faut passer à la caisse. Et, en plus de ça, il faudra très certainement continuer de laisser s&rsquo;écouler nos données personnelles, professionnelles et comportementales, sans compter celles de nos proches qui se trouvent potentiellement sur nos machines (photos, documents). Dans de telles conditions, je ne peux m&#8217;empêcher de me sentir vraiment pris pour une buse. Je trouve cette politique particulièrement insultante envers ses utilisateurs. Heureusement pour moi, je ne tourne plus sous Windows mais sous Linux, qui est devenu avec les années une alternative libre extrêmement crédible à ses homologues propriétaires.</p>
+<p>L&rsquo;espèce humaine est en train de vivre une véritable révolution, très certainement la plus importante depuis son apparition. Nos appareils sont devenus non plus des outils, mais des extensions de nous même, grâce auxquelles nous accélérons les choses autour de nous, grâce auxquelles nous pouvons satisfaire nos envie de manière plus simple, et c&rsquo;est devenu naturel. Mais tout ce qui brille n&rsquo;est pas or, et il est très facile de se laisser faire pour peu qu&rsquo;un produit ou un service réponde assez bien à un besoin, ou un désire&#8230;</p>
+<p>L’article <a rel="nofollow" href="/windows-10-pas-gratuit/">Edito &#8211; Windows 10 : une gratuité qui se paye</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/windows-10-pas-gratuit/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">399</post-id>	</item>
+	</channel>
+</rss>

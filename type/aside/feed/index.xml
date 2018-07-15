@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>En passant &#8211; DesireLabs</title>
+	<atom:link href="/type/aside/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Développement web, marketing digital, et référencement</description>
+	<lastBuildDate>Tue, 06 Jun 2017 17:34:36 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.4</generator>
+<site xmlns="com-wordpress:feed-additions:1">67143140</site>	<item>
+		<title>Out of space !</title>
+		<link>/out-of-space/</link>
+		<comments>/out-of-space/#respond</comments>
+		<pubDate>Sat, 24 Oct 2015 13:03:45 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Linux]]></category>
+		<category><![CDATA[ubuntu tweak]]></category>
+		<category><![CDATA[xdiskusage]]></category>
+
+		<guid isPermaLink="false">/?p=429</guid>
+		<description><![CDATA[<p>L&#8217;un des problèmes majeurs que je rencontre avec Ubuntu, c&#8217;est que contrairement à Windows, non seulement il ne vous prévient pas quand votre disque sature, mais qu&#8217;en plus il peut cesser de fonctionner. Mais des remèdes existent !Depuis peu j&#8217;utilise essentiellement 2 utilitaires : xdiskusage Cet utilitaire permet de savoir rapidement quels sont les dossiers &#8230; <a href="/out-of-space/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Out of space !</span></a></p>
+<p>L’article <a rel="nofollow" href="/out-of-space/">Out of space !</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>L&rsquo;un des problèmes majeurs que je rencontre avec Ubuntu, c&rsquo;est que contrairement à Windows, non seulement il ne vous prévient pas quand votre disque sature, mais qu&rsquo;en plus il peut cesser de fonctionner. Mais des remèdes existent !<span id="more-429"></span>Depuis peu j&rsquo;utilise essentiellement 2 utilitaires :</p>
+<h3>xdiskusage</h3>
+<p>Cet utilitaire permet de savoir rapidement quels sont les dossiers / fichiers sur votre volume qui prennent le plus de place. Il vous affiche la liste des volumes avec en vis à vis l&rsquo;espace disque alloué et le pourcentage utilisé.</p>
+<p><a href="/wp-content/uploads/2015/10/Capture-du-2015-10-24-140435.png"><img class="aligncenter" src="/wp-content/uploads/2015/10/Capture-du-2015-10-24-140435.png" alt="Capture du 2015-10-24 14:04:35" /></a></p>
+<p>Pour savoir ensuite ce qui prend de la place sur le volume, il suffit d&rsquo;un simple clic sur le volume souhaité pour qu&rsquo;il affiche une nouvelle boîte de dialogue vous donnant un aperçu graphique de l&rsquo;arborescence occupant le plus d&rsquo;espace.</p>
+<p><a href="/wp-content/uploads/2015/10/Capture-du-2015-10-24-141648.png"><img class="aligncenter" src="/wp-content/uploads/2015/10/Capture-du-2015-10-24-141648.png" alt="Capture du 2015-10-24 14:16:48" /></a></p>
+<p>Il est ensuite tout à fait possible par double clic sur le dossier voulu, de descendre dans l&rsquo;arborescence et observer d&rsquo;où vient la fuite d&rsquo;espace disque. Je trouve vraiment cet utilitaire parfait car il fait une seule chose et il la fait bien <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Pour l&rsquo;installer et le lancer :</p>
+<p></p><pre class="crayon-plain-tag">sudo apt-get install xdiskusage
+sudo xdiskusage</pre><p></p>
+<h3>Ubuntu Tweak</h3>
+<p>Voici un autre utilitaire que j&rsquo;ai découvert assez tard, bien qu&rsquo;il soit assez célèbre. Les Ubunteros le connaissent bien, mais pour ceux qui ne le connaissent pas, je vous le présente ici.</p>
+<p>En plus d&rsquo;être très simple à prendre en main, cet utilitaire vous permet de vider tous les caches de votre système, de supprimer vos vieux kernels qui prennent de la place, ainsi que d&rsquo;apporter quelques modifications pratiques à votre OS. Je vous laisse découvrir tout ceci par vous même.</p>
+<p><a href="/wp-content/uploads/2015/10/Capture-du-2015-10-24-145329.png"><img class="aligncenter" src="/wp-content/uploads/2015/10/Capture-du-2015-10-24-145329.png" alt="Capture du 2015-10-24 14:53:29" /></a></p>
+<p><strong>Attention ! A l&rsquo;heure où j&rsquo;écris ces lignes, il n&rsquo;existe pas pour les versions ultérieurs à Ubuntu 14.10. Cependant, il est tout à fait possible d&rsquo;utiliser une version antérieures sur système 15.04.</strong></p>
+<p>Pour l&rsquo;installer (version 14.10 et inférieures) :</p>
+<p></p><pre class="crayon-plain-tag">sudo add-apt-repository ppa:tualatrix/next
+sudo apt-get update
+sudo apt-get install ubuntu-tweak</pre><p></p>
+<p>Pour les versions supérieures à 14.10 :</p>
+<p></p><pre class="crayon-plain-tag">sudo add-apt-repository ppa:tualatrix/next</pre><p></p>
+<p>Editez ensuite le ppa en modifiant la version de l&rsquo;os par la votre (remplacer vivid par votre version) :</p>
+<p></p><pre class="crayon-plain-tag">sudo nano /etc/apt/sources.list.d/tualatrix-ubuntu-next-vivid.list</pre><p></p>
+<p></p><pre class="crayon-plain-tag">deb http://ppa.launchpad.net/tualatrix/next/ubuntu trusty main
+# deb-src http://ppa.launchpad.net/tualatrix/next/ubuntu trusty main</pre><p></p>
+<p>devient :</p>
+<p></p><pre class="crayon-plain-tag">deb http://ppa.launchpad.net/tualatrix/next/ubuntu vivid main
+# deb-src http://ppa.launchpad.net/tualatrix/next/ubuntu vivid main</pre><p></p>
+<p>Vous avez d&rsquo;autres utilitaires intéressants ? n&rsquo;hésitez pas à les partager <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>L’article <a rel="nofollow" href="/out-of-space/">Out of space !</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/out-of-space/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">429</post-id>	</item>
+		<item>
+		<title>Edito &#8211; Windows 10 : une gratuité qui se paye</title>
+		<link>/windows-10-pas-gratuit/</link>
+		<comments>/windows-10-pas-gratuit/#respond</comments>
+		<pubDate>Mon, 24 Aug 2015 23:00:26 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Editorial]]></category>
+		<category><![CDATA[microsoft]]></category>
+		<category><![CDATA[vie privée]]></category>
+
+		<guid isPermaLink="false">/?p=399</guid>
+		<description><![CDATA[<p>Comme chaque matin, quand je bois mon premier café, je navigue sur mon compte Feedly pour m&#8217;informer de ce qui se passe dans le monde de l&#8217;informatique. Ce matin je suis tombé sur un fait assez intéressant pour être noté et me donner envie d&#8217;écrire un article au passage : Certains sites ne seront plus &#8230; <a href="/windows-10-pas-gratuit/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Edito &#8211; Windows 10 : une gratuité qui se paye</span></a></p>
+<p>L’article <a rel="nofollow" href="/windows-10-pas-gratuit/">Edito &#8211; Windows 10 : une gratuité qui se paye</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Comme chaque matin, quand je bois mon premier café, je navigue sur mon compte Feedly pour m&rsquo;informer de ce qui se passe dans le monde de l&rsquo;informatique. Ce matin je suis tombé sur un fait assez intéressant pour être noté et me donner envie d&rsquo;écrire un article au passage : Certains sites ne seront plus accessibles par l&rsquo;intermédiaire de Windows 10.<span id="more-399"></span></p>
+<p><strong>Je précise que je n&rsquo;ai pas pour habitude de sortir de ma ligne éditoriale, mais comme ça touche ici à un outil dont je me sers au quotidien dans mon travail, je pense que cela ne déviera pas trop du reste du blog.</strong></p>
+<p><a href="http://www.silicon.fr/sites-pirates-bloquent-windows-10-124634.html" target="_blank">Silicon.fr</a> relataient ainsi le fait :</p>
+<blockquote><p>« Les sites de partage de fichiers torrents [&#8230;] s’inquiètent des indiscrétions de Windows 10. Les conditions d’utilisation de Windows 10 autorisent effectivement Microsoft à capter toutes les informations présentes sur la machine et à les transmettre à ses partenaires. »</p></blockquote>
+<p>En mon for intérieur, je n&rsquo;ai pas pu m&#8217;empêcher de trouver ça un peu fort (haha). Non pas que je sois convaincu que Microsoft soit à ranger dans la catégorie des bons élèves en matière de respect de la vie privée et de sécurisation des données personnelles, mais j&rsquo;ai toujours trouvé que malgré ses travers, cette société avait, à tout le moins, un semblant de responsabilité vis à vis de ses utilisateurs. Très sceptique, je me suis rendu sur le site de Microsoft afin de constater qu&rsquo;ils avaient tout simplement éradiqué purement et simplement la notion de vie privée de leurs conditions générales.</p>
+<p>Je vous invite à y jeter un œil, c&rsquo;est vraiment pas long à lire (5 minutes tout au plus !) et très instructif : <a href="http://windows.microsoft.com/fr-fr/windows/preview-privacy-statement" target="_blank">http://windows.microsoft.com/fr-fr/windows/preview-privacy-statement</a><br />
+En gros ça dit qu&rsquo;ils peuvent accéder aux données stockées sur votre ordinateur, à celles de vos périphériques connectés (téléphones, tablettes etc), qu&rsquo;ils peuvent utiliser vos données vocales (Cortana, VoIP etc), les fichiers de tout types (images, documents word, excel etc), qu&rsquo;ils peuvent également collecter les informations de vos matériels (imprimantes et consorts), vos données de connexion, vos habitudes de navigation, d&rsquo;utilisation logicielles et matérielles&#8230; Bref tout vous avez bien compris. Le <em>Personal Computer</em> (PC) n&rsquo;a plus rien de personnel. Il devient simplement une boîte d&rsquo;écoute et de collecte de données vous concernant.</p>
+<p>En ce qui me concerne, j&rsquo;essaye d&rsquo;être assez vigilant quant à mes données, et je suis loin d&rsquo;être insensible à toute la mouvance autour de la vie privée qui se déroule depuis ces 3 dernières années. Et j&rsquo;ai le sentiment qu&rsquo;un contre courant est en train de naître : Par exemple avant, les sociétés noyaient leur politique de confidentialité sous les tonnes de texte indigeste de leur charte. Maintenant, étant donné que tout le monde est censé être au courant, il devient inutile de jouer les hypocrites. Et là ça devient carrément choquant je trouve, dans le sens où, en substance, on nous dit clairement : « vos données sont la monnaie d&rsquo;échange pour l&rsquo;utilisation de nos services et produits ». Alors j&rsquo;en vois déjà monter au créneau et me traiter de naïf, car on sait que c&rsquo;est le cas chez beaucoup de sociétés (Facebook, Google&#8230;), mais je tiens à souligner que si on regarde de plus près, on constate que Windows 10 est gratuit la première année, mais pas les suivantes. Et il sera facturé chaque année comme un service, entre 99 et 199$ selon la version. La gratuité entraîne dans un premier temps une conversion massive des consommateurs, puis vient le temps où il faut passer à la caisse. Et, en plus de ça, il faudra très certainement continuer de laisser s&rsquo;écouler nos données personnelles, professionnelles et comportementales, sans compter celles de nos proches qui se trouvent potentiellement sur nos machines (photos, documents). Dans de telles conditions, je ne peux m&#8217;empêcher de me sentir vraiment pris pour une buse. Je trouve cette politique particulièrement insultante envers ses utilisateurs. Heureusement pour moi, je ne tourne plus sous Windows mais sous Linux, qui est devenu avec les années une alternative libre extrêmement crédible à ses homologues propriétaires.</p>
+<p>L&rsquo;espèce humaine est en train de vivre une véritable révolution, très certainement la plus importante depuis son apparition. Nos appareils sont devenus non plus des outils, mais des extensions de nous même, grâce auxquelles nous accélérons les choses autour de nous, grâce auxquelles nous pouvons satisfaire nos envie de manière plus simple, et c&rsquo;est devenu naturel. Mais tout ce qui brille n&rsquo;est pas or, et il est très facile de se laisser faire pour peu qu&rsquo;un produit ou un service réponde assez bien à un besoin, ou un désire&#8230;</p>
+<p>L’article <a rel="nofollow" href="/windows-10-pas-gratuit/">Edito &#8211; Windows 10 : une gratuité qui se paye</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/windows-10-pas-gratuit/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">399</post-id>	</item>
+		<item>
+		<title>Combien de café pourriez vous assimiler avant d&#8217;en mourir ?</title>
+		<link>/combien-de-cafe-pourriez-vous-assimiler-avant-den-mourir/</link>
+		<comments>/combien-de-cafe-pourriez-vous-assimiler-avant-den-mourir/#respond</comments>
+		<pubDate>Sat, 22 Aug 2015 12:51:38 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Détente]]></category>
+
+		<guid isPermaLink="false">/?p=334</guid>
+		<description><![CDATA[<p>Saviez vous qu&#8217;on pouvait calculer la dose létale de café en fonction du poids du buveur et du type de café ?Un article qui n&#8217;est pas vraiment en lien avec ce dont je traite d&#8217;habitude, mais qui s&#8217;y apparente étant donné que je suis tombé dessus en faisant des recherches sur les tableaux responsives (cherchez &#8230; <a href="/combien-de-cafe-pourriez-vous-assimiler-avant-den-mourir/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Combien de café pourriez vous assimiler avant d&#8217;en mourir ?</span></a></p>
+<p>L’article <a rel="nofollow" href="/combien-de-cafe-pourriez-vous-assimiler-avant-den-mourir/">Combien de café pourriez vous assimiler avant d&rsquo;en mourir ?</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Saviez vous qu&rsquo;on pouvait calculer la dose létale de café en fonction du poids du buveur et du type de café ?<span id="more-334"></span>Un article qui n&rsquo;est pas vraiment en lien avec ce dont je traite d&rsquo;habitude, mais qui s&rsquo;y apparente étant donné que je suis tombé dessus en faisant des recherches sur les tableaux responsives (cherchez l&rsquo;erreur), et puis aussi parce que dans le métier on en boit pas mal <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p><a href="http://www.caffeineinformer.com/">Caffeineinformer</a> est un site qui parle de la consommation de café sous toutes ses formes et vous permet en fonction de votre consommation et votre poids de calculer le nombre maximum conseillé ainsi que la dose létale vous concernant. En ce qui me concerne, le nombre maximum est 2.9 tasses par jour, et je pourrais en mourir au bout de 73.8 tasses d&rsquo;environ 28cl. Je ne sais pas si ceci est avéré (je me suis arrêté à 5 tasses par jour), mais j&rsquo;ai trouvé ça fun et plutôt à propos <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Je vous sers une tasse ?</p>
+<p>L’article <a rel="nofollow" href="/combien-de-cafe-pourriez-vous-assimiler-avant-den-mourir/">Combien de café pourriez vous assimiler avant d&rsquo;en mourir ?</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/combien-de-cafe-pourriez-vous-assimiler-avant-den-mourir/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">334</post-id>	</item>
+		<item>
+		<title>Edito &#8211; La technologie n&#8217;est pas une fin en soi</title>
+		<link>/causes-echec-site/</link>
+		<comments>/causes-echec-site/#respond</comments>
+		<pubDate>Sat, 25 Jul 2015 09:40:36 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Editorial]]></category>
+		<category><![CDATA[framework]]></category>
+		<category><![CDATA[webdesign]]></category>
+
+		<guid isPermaLink="false">/?p=359</guid>
+		<description><![CDATA[<p>Ce matin je lisais un article fort intéressant en cela qu&#8217;il dissèque les raisons de l&#8217;échec d&#8217;un site : l&#8217;expérience utilisateur. Mais si effectivement l&#8217;auteur met en cause le choix d&#8217;une technologie, je pense qu&#8217;il est de bon aloi de revenir un peu en arrière et traiter plus en profondeur les raisons de son échec. &#8230; <a href="/causes-echec-site/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Edito &#8211; La technologie n&#8217;est pas une fin en soi</span></a></p>
+<p>L’article <a rel="nofollow" href="/causes-echec-site/">Edito &#8211; La technologie n&rsquo;est pas une fin en soi</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Ce matin je lisais un article fort intéressant en cela qu&rsquo;il dissèque les raisons de l&rsquo;échec d&rsquo;un site : l&rsquo;expérience utilisateur. Mais si effectivement l&rsquo;auteur met en cause le choix d&rsquo;une technologie, je pense qu&rsquo;il est de bon aloi de revenir un peu en arrière et traiter plus en profondeur les raisons de son échec.<span id="more-359"></span></p>
+<p><strong>Avant toute chose, je tiens à préciser que le but de cet article n&rsquo;est pas de critiquer gratuitement le travail d&rsquo;autrui, mais d&rsquo;utiliser son expérience pour appuyer mon propos. Car il n&rsquo;y a aucun doute pour ma part, sur le fait que cette personne est probablement très compétente. Mais elle décrit un écueil dans lequel il est très facile de tomber, même lorsqu&rsquo;on est rompu à la pratique du développement web. Par ailleurs, je tiens à souligner qu&rsquo;il n&rsquo;est pas évident de mettre en abîme son propre travail et de le critiquer publiquement. C&rsquo;est donc avec le plus grand respect que je traiterai ici de son échec à produire un site pour ses visiteurs.</strong></p>
+<p>C&rsquo;est parti donc, voici le site en question : <a href="http://aboutmeng.cf/" target="_blank">http://aboutmeng.cf/</a></p>
+<p>Je ne m&rsquo;arrêterai que brièvement dessus car l&rsquo;auteur lui même détaille très bien ce qui ne va pas. Je vous encourage d&rsquo;ailleurs à lire <a href="https://medium.com/the-things/post-mortem-of-a-failed-website-97e01ee0d8ea" target="_blank">son article</a>. Pour faire simple, l&rsquo;auteur a construit son site autour d&rsquo;un framework « Material Design ». Jusque là tout va bien, mais il a fait l&rsquo;impasse sur l&rsquo;indispensable lorsqu&rsquo;on construit un site : sa pré-conception, les tests et l&rsquo;optimisation.</p>
+<h2 class="western">Le choix des armes</h2>
+<p>Les framework front-end peuplent nos boîtes à outils de designer et nous avons tendance à les considérer sans faille et utilisables à tort et à travers sans jamais se poser la question de leur pertinence. « Est-ce un bon choix ? Répond-il à un besoin réel ? » ou encore « Quelles sont ses limites ? ». C&rsquo;est ce qui est arrivé à l&rsquo;auteur de cet article.</p>
+<p>Ce qui m&#8217;emmène au premier point lorsqu&rsquo;on développe un site : Le choix des outils. Ils doivent répondre à un besoin spécifique. Un site doit être développé pour ses utilisateurs, et pas seulement pour se faire plaisir. De fait la pertinence des choix à faire est primordiale. Avoir un site utilisable et qui permette à l&rsquo;utilisateur d&rsquo;accéder au contenu qui le concerne de manière simple, efficace et rapide doit être à mon avis au cœur des préoccupation du développeur. L&rsquo;accessibilité, trop souvent négligée au profit du beau, a tôt fait de pénaliser le site. Les internautes sont exigeants, mais pas plus en termes d&rsquo;esthétique que d&rsquo;utilisabilité. Car un site aura beau être beau, s&rsquo;il est inutilisable, ou tout du moins difficile à utiliser, il perd en pertinence et en crédibilité.</p>
+<p><strong>Choisir ses outils c&rsquo;est donc faire des choix crédibles vis à vis de l&rsquo;utilisabilité, mais aussi de la durabilité.</strong></p>
+<p>La pérennité est à considérer, car une librairie ou un framework qui est peu, pas ou mal maintenu aura un impact majeur sur le site qui l&rsquo;intègre, et à fortiori sur l&rsquo;expérience utilisateur (et je ne parle même pas de la sécurité).</p>
+<h2 class="western">Les tests navigateurs</h2>
+<p>Par ailleurs, et je suis extrêmement perplexe, car je pense que l&rsquo;auteur est compétent, mais il a, semble-t-il, eu une confiance quasiment aveugle en l&rsquo;outil utilisée au point de ne tester son design que dans un seul navigateur : Apple Safari. Je vous laisse méditer ceci 5 secondes.</p>
+<p>Ce que j&rsquo;ai appris avec le temps et l&rsquo;expérience, c&rsquo;est que la technologie n&rsquo;est pas une fin en soit, que chacune répond à un besoin spécifique comme je l&rsquo;ai déjà dit, et qu&rsquo;il faut se montrer à la fois humble et aussi peut être un peu paranoïaque (d&rsquo;où les tests, et multi-navigateur s&rsquo;il vous plaît !). Penser qu&rsquo;il suffit d&rsquo;intégrer un framework sans présupposer qu&rsquo;il possède des limites, c&rsquo;est se tirer une balle dans le pied.</p>
+<p><strong>Il est donc impératif de faire des tests multi-navigateur (voire multi-architecture).</strong></p>
+<p>Ceci est un impondérable lorsqu&rsquo;on développe un site. Au menu nous avons, Google Chrome, Apple Safari, Mozilla Firefox et le bien aimé Microsoft Internet Explorer. D&rsquo;ailleurs, pour ce dernier, il existe plusieurs versions utilisées de par le monde. Il est connu que la version la plus problématique aujourd&rsquo;hui reste la version 8. A celà vous pouvez aussi rajouter les navigateurs mobiles qui sont devenu autant voir plus utilisés que leurs homologues desktop. Avec l&rsquo;avènement de HTML 5 et CSS 3 il est très tentant de pousser toujours plus loin nos interfaces front-end. Mais beaucoup de nouvelles balises html et attribut css ne sont tout simplement pas compatibles avec tous les navigateurs. Heureusement, des librairies existent et offrent la possibilité de rendre au maximum ces outils compatibles avec un maximum de navigateurs. Je pense notamment à <a href="http://modernizr.com/" target="_blank">Modernizr</a> entre autres. D&rsquo;autres outils permettent aussi de savoir avec quelles versions de navigateurs sont compatibles certaines propriétés. Je vous renvois à l&rsquo;excellent <a href="http://caniuse.com/" target="_blank">caniuse</a>. Mais parfois, il peut aussi être judicieux de ne pas utiliser certaines propriétés offertes par ces langages. Ceci pourrait faire l&rsquo;objet d&rsquo;un débat, mais je pense que ce choix appartient à chacun, car finalement, quand on connaît les usagers finaux du site, on est normalement à même d&rsquo;avoir une idée des navigateurs utilisés. Et si ce n&rsquo;est pas le cas, il existe de très bons outils d’analyse, comme <a href="https://www.google.com/analytics/" target="_blank">Google Analytics</a> qui nous renseignent assez bien sur les comportement de nos visiteurs. Maintenant, je ne blâmerai pas ceux qui souaitent pousser l&rsquo;adoption de navigateurs modernes, mais je pense aussi qu&rsquo;il faut respecter ceux qui n&rsquo;ont pas cette possibilité. Chacun voit midi à sa porte comme on dit.</p>
+<h2 class="western">Analyser, tester, optimiser&#8230; recommencer</h2>
+<p>Alors certes, le but d&rsquo;un framework est de nous simplifier le travail, mais ça ne signifie pas qu&rsquo;il n&rsquo;y a pas de travail. Dans un projet par exemple, on a un ou plusieurs objectifs à atteindre. En fonction de ces besoins, on choisit les outils qu&rsquo;on pense pertinents. On fait le bilan des possibilités et des choses qu&rsquo;il va falloir nous même créer ou adapter pour coller aux autres pièces du puzzle. On déduit qu&rsquo;on va devoir développer soi-même ou adapter pour la version <a href="http://www.alsacreations.com/article/lire/1615-cest-quoi-le-responsive-web-design.html" target="_blank">Responsive</a> par exemple. On se lance, on teste, on corrige, on re-teste. Et une fois qu&rsquo;on a terminé on passe à la phase d&rsquo;optimisation ou « fine tuning ». C&rsquo;est par exemple à ce moment là qu&rsquo;on va se concentrer sur le poids des pages (ce qui implique qu&rsquo;on a déjà fait un travail d’optimisation de ses images, ou encore des librairies servies et de quelle manière on les sert) et éventuellement l&rsquo;optimisation côté serveur.</p>
+<p><strong>Il n&rsquo;y a pas de magie : il faut savoir se poser les bonnes questions avant même d&rsquo;avoir couché la moindre ligne de code. C&rsquo;est indispensable, car ceci constitue les fondations de tout projet, et par là même sa viabilité.</strong></p>
+<p>Il faut éviter aussi les amalgames : il ne pas confondre UI (user interface) et UX (user experience), car comme notre exemple nous le montre, on peut avoir un design du feu de dieu, pour une expérience utilisateur en carton pâte. Et l&rsquo;expérience nous prouve qu&rsquo;un utilisateur pour qui l&rsquo;interface n&rsquo;est pas adaptée, fera un gros <del>fuck</del> pied de nez à notre site. Donc un beau site n&rsquo;est pas à confondre avec un bon site.</p>
+<p>De fait quand on parle de « web design », on fait souvent un amalgame entre ce qui relève du « beau » de ce qui relève de « l&rsquo;utilisable ». Pourtant ces deux éléments sont les deux revers d&rsquo;une même médaille : c&rsquo;est ce qui fait qu&rsquo;un web designer peut, à mon avis, mériter ce titre. On ne peut pas (ou très difficilement) considérer ces deux qualités individuellement, car l&rsquo;une sans l&rsquo;autre n&rsquo;a aucune légitimité, ni aucune possibilité de promouvoir un site de manière pérenne.</p>
+<h2 class="western">Conclusion</h2>
+<p>Je terminerai en disant qu&rsquo;être web designer c&rsquo;est penser à la fois en termes de design (UI) et d&rsquo;ergonomie (UX). C&rsquo;est être capable de se poser les bonnes questions avant, ce qui permet de faire les bons choix et d&rsquo;avoir le moins de mauvaise surprise après coup. Et comme je l&rsquo;ai dit, faire preuve d&rsquo;humilité envers la technologie, car ce n&rsquo;est pas magique, mais pratique (ou pas).</p>
+<p>L’article <a rel="nofollow" href="/causes-echec-site/">Edito &#8211; La technologie n&rsquo;est pas une fin en soi</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/causes-echec-site/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">359</post-id>	</item>
+		<item>
+		<title>Outil &#8211; Générateur de grille responsive fluide</title>
+		<link>/generateur-de-grille-responsive-fluide/</link>
+		<comments>/generateur-de-grille-responsive-fluide/#comments</comments>
+		<pubDate>Thu, 02 Apr 2015 10:58:32 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[HTML/CSS]]></category>
+		<category><![CDATA[Outils]]></category>
+		<category><![CDATA[css]]></category>
+		<category><![CDATA[html]]></category>
+		<category><![CDATA[responsive design]]></category>
+
+		<guid isPermaLink="false">/?p=323</guid>
+		<description><![CDATA[<p>Parce que parfois on a juste besoin d&#8217;une grille responsive qui fasse le job, il y a Gridpak.Le principe est simple, tout autant que l&#8217;interface : on rentre le nombre de colonnes, la taille des gouttières ainsi que la largeur finale (pas forcément utile vu que c&#8217;est un système fluide), et on génère. Le zip &#8230; <a href="/generateur-de-grille-responsive-fluide/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Outil &#8211; Générateur de grille responsive fluide</span></a></p>
+<p>L’article <a rel="nofollow" href="/generateur-de-grille-responsive-fluide/">Outil &#8211; Générateur de grille responsive fluide</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Parce que parfois on a juste besoin d&rsquo;une grille responsive qui fasse le job, il y a <a href="http://gridpak.com/">Gridpak</a>.<span id="more-323"></span>Le principe est simple, tout autant que l&rsquo;interface : on rentre le nombre de colonnes, la taille des gouttières ainsi que la largeur finale (pas forcément utile vu que c&rsquo;est un système fluide), et on génère. Le zip final contient un css, un less, un sass et un js. Autre petit plus que j&rsquo;ai particulièrement apprécié, la possibilité de générer ses grilles au format psd et ai, un must <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Juste ce qu&rsquo;il faut pour démarrer vite fait bien fait !</p>
+<p>L’article <a rel="nofollow" href="/generateur-de-grille-responsive-fluide/">Outil &#8211; Générateur de grille responsive fluide</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/generateur-de-grille-responsive-fluide/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">323</post-id>	</item>
+		<item>
+		<title>Astuce &#8211; Faire fonctionner dailymotion avec prettyphoto</title>
+		<link>/faire-fonctionner-dailymotion-prettyphoto/</link>
+		<comments>/faire-fonctionner-dailymotion-prettyphoto/#respond</comments>
+		<pubDate>Wed, 10 Sep 2014 14:59:56 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[jQuery]]></category>
+		<category><![CDATA[dailymotion]]></category>
+		<category><![CDATA[prettyphoto]]></category>
+
+		<guid isPermaLink="false">/?p=240</guid>
+		<description><![CDATA[<p>Je n&#8217;aime pas beaucoup prettyphoto, si vous avez lu l&#8217;article précédent, vous connaissez déjà où va ma préférence 😉 Cependant, quand on travaille avec des thèmes WordPress qu&#8217;on n&#8217;a pas soi même développés, bah des fois, on n&#8217;a pas le choix. Et si en plus les-dits thèmes ont été développés par des personnes non francophones(philes &#8230; <a href="/faire-fonctionner-dailymotion-prettyphoto/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Astuce &#8211; Faire fonctionner dailymotion avec prettyphoto</span></a></p>
+<p>L’article <a rel="nofollow" href="/faire-fonctionner-dailymotion-prettyphoto/">Astuce &#8211; Faire fonctionner dailymotion avec prettyphoto</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Je n&rsquo;aime pas beaucoup prettyphoto, si vous avez lu l&rsquo;article précédent, vous connaissez déjà où va ma préférence <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Cependant, quand on travaille avec des thèmes WordPress qu&rsquo;on n&rsquo;a pas soi même développés, bah des fois, on n&rsquo;a pas le choix. Et si en plus les-dits thèmes ont été développés par des personnes non francophones(philes ?), vous devinerez aisément qu&rsquo;ils supportent rarement (jamais) les services comme dailymotion. Alors le combo prettyphoto + dailymotion, c&rsquo;est le calvaire assuré. Alors voici la solution :<span id="more-240"></span>Pour faire fonctionner dailymotion avec prettyphoto, c&rsquo;est tout bête en fait. Il suffit de récupérer ou construite le lien comme suit :</p>
+<p></p><pre class="crayon-plain-tag">www.dailymotion.com/embed/video/id_video</pre><p></p>
+<p>en remplaçant « id_video » par le vrai id, puis de lui adjoindre quelques paramètres pour préciser le format à renvoyer :</p>
+<p></p><pre class="crayon-plain-tag">?iframe=true&amp;width=720&amp;height=480</pre><p></p>
+<p>Ce qui nous donne :</p>
+<p></p><pre class="crayon-plain-tag">www.dailymotion.com/embed/video/id_video?iframe=true&amp;width=720&amp;height=480</pre><p></p>
+<p>Voilà, on a le lien complet avec la taille à utiliser (là, c&rsquo;est à vous de voir), il suffit à présent de créer la balise prettyphoto qui va bien en modifiant l&rsquo;attribut rel (ou data-rel) avec « prettyphoto[iframes] »  :</p>
+<p></p><pre class="crayon-plain-tag">&lt;a data-rel="prettyPhoto[iframes]" class="thumb_icon video" title="Dailymotion" href="http://www.dailymotion.com/embed/video/xebd4g?iframe=true&amp;width=720&amp;height=480" style="top: 120%;"&gt;</pre><p></p>
+<p>J&rsquo;ai un peu suer pour trouver mes petits donc si vous aussi, n&rsquo;hésitez pas à partager l&rsquo;astuce <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>L’article <a rel="nofollow" href="/faire-fonctionner-dailymotion-prettyphoto/">Astuce &#8211; Faire fonctionner dailymotion avec prettyphoto</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/faire-fonctionner-dailymotion-prettyphoto/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">240</post-id>	</item>
+		<item>
+		<title>Outil &#8211; Scanner de vulnérabilités WordPress</title>
+		<link>/trouver-vulnerabilites-wordpress/</link>
+		<comments>/trouver-vulnerabilites-wordpress/#respond</comments>
+		<pubDate>Tue, 05 Aug 2014 13:16:58 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Outils]]></category>
+		<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[faille]]></category>
+		<category><![CDATA[securité]]></category>
+		<category><![CDATA[wpscan]]></category>
+
+		<guid isPermaLink="false">/?p=221</guid>
+		<description><![CDATA[<p>Bonjour, retour de vacances pour moi, et le moment de faire le point sur les projets en cours et faire un peu de ménage dans ceux passés. Du coup je me penche sur la sécurité. Et à ce propos, je viens de découvrir un outil fort pratique pour déceler les vulnérabilités d&#8217;un site WordPress. Il &#8230; <a href="/trouver-vulnerabilites-wordpress/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Outil &#8211; Scanner de vulnérabilités WordPress</span></a></p>
+<p>L’article <a rel="nofollow" href="/trouver-vulnerabilites-wordpress/">Outil &#8211; Scanner de vulnérabilités WordPress</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Bonjour, retour de vacances pour moi, et le moment de faire le point sur les projets en cours et faire un peu de ménage dans ceux passés. Du coup je me penche sur la sécurité. Et à ce propos, je viens de découvrir un outil fort pratique pour déceler les vulnérabilités d&rsquo;un site WordPress.<span id="more-221"></span></p>
+<p>Il s&rsquo;agit de WpScan. Tout en ruby, il s’installe sur une machine Linux. Tout site WP peut être scanner. Ce qui fait de cet outil un joujou de choix pour les hackers potentiels. Je l’ai installé sur mon serveur pour tester, et c’est plutôt efficace. De plus toutes les failles qu’il remonte sont documentées avec plusieurs sources. Bravo aux développeurs de cette perle !</p>
+<p>Je vous encourage à le tester. Voici le site ainsi que leur GitHub :</p>
+<p><a href="http://wpscan.org/">http://wpscan.org/</a></p>
+<p><a href="https://github.com/wpscanteam/wpscan">https://github.com/wpscanteam/wpscan</a></p>
+<p>Si vous aussi connaissez des outils similaires, n&rsquo;hésitez surtout pas à les partager !</p>
+<p>A+</p>
+<p>L’article <a rel="nofollow" href="/trouver-vulnerabilites-wordpress/">Outil &#8211; Scanner de vulnérabilités WordPress</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/trouver-vulnerabilites-wordpress/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">221</post-id>	</item>
+		<item>
+		<title>Astuce &#8211; Appliquer des permissions à un ensemble de fichiers et dossiers de manière récursive dans WordPress</title>
+		<link>/wordpress-appliquer-permissions-fichiers-dossiers-maniere-recursive/</link>
+		<comments>/wordpress-appliquer-permissions-fichiers-dossiers-maniere-recursive/#respond</comments>
+		<pubDate>Thu, 03 Jul 2014 09:18:55 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Drupal]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[permissions]]></category>
+
+		<guid isPermaLink="false">/?p=190</guid>
+		<description><![CDATA[<p>Sur WordPress, mais aussi sur Drupal et d&#8217;autres CMS les fichiers doivent avoir des permissions spécifiques. Inutile de se fouler à les appliquer pour chaque dossier quand on peut appliquer des permissions à un ensemble de fichiers et dossiers de manière récursive en 2 lignes de commande.L&#8217;exemple suivant s&#8217;applique à WordPress, mais peut tout autant &#8230; <a href="/wordpress-appliquer-permissions-fichiers-dossiers-maniere-recursive/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Astuce &#8211; Appliquer des permissions à un ensemble de fichiers et dossiers de manière récursive dans WordPress</span></a></p>
+<p>L’article <a rel="nofollow" href="/wordpress-appliquer-permissions-fichiers-dossiers-maniere-recursive/">Astuce &#8211; Appliquer des permissions à un ensemble de fichiers et dossiers de manière récursive dans WordPress</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Sur WordPress, mais aussi sur Drupal et d&rsquo;autres CMS les fichiers doivent avoir des permissions spécifiques. Inutile de se fouler à les appliquer pour chaque dossier quand on peut appliquer des permissions à un ensemble de fichiers et dossiers de manière récursive en 2 lignes de commande.<span id="more-190"></span>L&rsquo;exemple suivant s&rsquo;applique à WordPress, mais peut tout autant l&rsquo;être à vos autres projets</p>
+<p></p><pre class="crayon-plain-tag">sudo find wordpress/ -type d -exec chmod 755 {} \;
+sudo find wordpress/ -type f -exec chmod 644 {} \;
+sudo find wordpress/wp-config.php -type f -exec chmod 444 {} \;</pre><p></p>
+<h3>Explications :</h3>
+<p><strong>find</strong> : c&rsquo;est la fonction de recherche<br />
+<strong>wordpress/</strong> : c&rsquo;est le répertoire à partir duquel chercher<br />
+<strong>-type</strong> : le type avec en argument  « f » pour « folder » et « d » pour « document »-exec : précise qu&rsquo;on va exécuter quelque chose pour les fichiers ou dossiers rencontrés<br />
+<strong>chmod</strong> : la commande pour changer les droits<br />
+<strong>755</strong> : permission pour les dossiers<br />
+<strong>644</strong> : permission pour les fichiers<br />
+<strong>444</strong> : permission pour les fichiers de configuration sensibles (qui contiennent vos identifiants mysql par exemple)</p>
+<p>Il va de soit que vous appliquez les permissions que vous voulez <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>L’article <a rel="nofollow" href="/wordpress-appliquer-permissions-fichiers-dossiers-maniere-recursive/">Astuce &#8211; Appliquer des permissions à un ensemble de fichiers et dossiers de manière récursive dans WordPress</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/wordpress-appliquer-permissions-fichiers-dossiers-maniere-recursive/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">190</post-id>	</item>
+	</channel>
+</rss>

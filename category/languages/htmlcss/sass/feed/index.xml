@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>sass &#8211; DesireLabs</title>
+	<atom:link href="/category/languages/htmlcss/sass/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Développement web, marketing digital, et référencement</description>
+	<lastBuildDate>Tue, 06 Jun 2017 17:34:36 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.4</generator>
+<site xmlns="com-wordpress:feed-additions:1">67143140</site>	<item>
+		<title>Créer un menu off-canvas entièrement en css</title>
+		<link>/creer-menu-off-canvas-entierement-css/</link>
+		<comments>/creer-menu-off-canvas-entierement-css/#respond</comments>
+		<pubDate>Thu, 22 Dec 2016 13:07:20 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Experiments]]></category>
+		<category><![CDATA[Non classé]]></category>
+		<category><![CDATA[sass]]></category>
+		<category><![CDATA[css target]]></category>
+
+		<guid isPermaLink="false">/?p=550</guid>
+		<description><![CDATA[<p>Ce que j&#8217;aime par dessus tout avec CSS3, c&#8217;est cette capacité qu&#8217;il offre de nous affranchir de javascript pour tout ce qui touche aux animations. Après m&#8217;être penché sur une solution de menus accordéons en full css (dont je parlerai bientôt), je vous propose une version revisitée du menu « off canvas » via css3, sans javascript. &#8230; <a href="/creer-menu-off-canvas-entierement-css/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Créer un menu off-canvas entièrement en css</span></a></p>
+<p>L’article <a rel="nofollow" href="/creer-menu-off-canvas-entierement-css/">Créer un menu off-canvas entièrement en css</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Ce que j&rsquo;aime par dessus tout avec CSS3, c&rsquo;est cette capacité qu&rsquo;il offre de nous affranchir de javascript pour tout ce qui touche aux animations. Après m&rsquo;être penché sur une solution de menus accordéons en full css (dont je parlerai bientôt), je vous propose une version revisitée du menu « off canvas » via css3, sans javascript.<span id="more-550"></span></p>
+<p data-height="265" data-theme-id="0" data-slug-hash="pNGadw" data-default-tab="css,result" data-user="neovea" data-embed-version="2" data-pen-title="Pure css off-canvas menu" class="codepen">See the Pen <a href="http://codepen.io/neovea/pen/pNGadw/">Pure css off-canvas menu</a> by Franck (<a href="http://codepen.io/neovea">@neovea</a>) on <a href="http://codepen.io/">CodePen</a>.</p>
+<p><script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script></p>
+<p>Cette solution m&rsquo;a été inspirée par <a href="http://csswizardry.com/2016/10/pure-css-content-filter/" target="_blank">csswizardry et ses filtres de contenu en full css grâce au sélecteur « :target »</a>. Je pense que les possibilités offertes par ce sélecteur sont nombreuses, et je me suis dit que j&rsquo;en testerais bien une.</p>
+<p>Pour commencer, que propose ce sélecteur au juste ? <a href="https://developer.mozilla.org/fr/docs/Web/CSS/:target" target="_blank">D&rsquo;après Mozilla Developer Network</a> :</p>
+<blockquote><p>La <a href="https://developer.mozilla.org/fr/docs/Web/CSS/Pseudo-classes">pseudo-classe</a><strong><code>:target</code></strong> permet de cibler l&rsquo;unique élément (s&rsquo;il existe) dont l&rsquo;attribut <code>id</code> correspond au fragment d&rsquo;identifiant de l&rsquo;URI du document.</p></blockquote>
+<p>En clair, cela signifie que je peux cibler un élément identifié comme c&rsquo;est le cas avec une ancre. Je clique sur un lien qui pointe vers une ancre (exemple href= »#mon-id »), je serai à même d&rsquo;appliquer à l&rsquo;élément ciblé par cette ancre un style&#8230; ou un comportement dans notre cas <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Je tiens à préciser que j&rsquo;utilise massivement sass dans cet article. Je met le code complet à la fin de l&rsquo;article, avec la feuille de style css compilée <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<h2>Démonstration</h2>
+<p>Considérons le code qui suit pour la partie html :</p><pre class="crayon-plain-tag">&lt;!DOCTYPE html&gt;
+&lt;html lang="fr"&gt;
+&lt;head&gt;
+	&lt;meta charset="UTF-8"&gt;
+	&lt;title&gt;Pure off canvas css menu&lt;/title&gt;
+	&lt;link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet"&gt;
+	&lt;link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"&gt;
+	&lt;link rel="stylesheet" href="stylesheets/main.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	
+  &lt;div id="menu"&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=""&gt;Lorem.&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=""&gt;Suscipit!&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=""&gt;Sapiente.&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+
+  &lt;div class="button-group"&gt;  
+    &lt;a class="menu-button" href="#menu"&gt;
+      &lt;span&gt;
+      	&lt;i class="fa fa-bars" aria-hidden="true"&gt;&lt;/i&gt;
+      	&lt;i class="fa fa-times" aria-hidden="true"&gt;&lt;/i&gt;
+      &lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class="menu-button off" href="#off-menu"&gt;&lt;/a&gt;
+  &lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre><p>J&rsquo;ai créé un menu portant l&rsquo;id « menu » ainsi qu&rsquo;un double bouton permettant de l&rsquo;ouvrir et le fermer.</p>
+<p>Remarquez au passage ce qui suit : Dans la balise portant la classe « button-group » nous avons en réalité 2 liens. Cet artifice permettra par la suite d&rsquo;avoir un bouton pour fermer le menu. Je vous donne plus de détails dans la partie consacrée à css.<br />
+autre chose, le menu porte un id, car pour designer son comportement, nous allons faire appel au pseudo élément <code>:target</code>, ce qui en simplifiant, revient à créer une ancre.</p>
+<h3>A présent que notre structure html est prête, passons à la partie amusante : la css <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></h3>
+<p>Voici comment on va procéder : lorsque le bouton sera cliqué, l&rsquo;élément ciblé via son attribut <code>href</code> sera sélectionné. A ce moment, le menu s&rsquo;ouvrira, et par la même occasion, le second bouton passera en premier plan de manière à nous permettre de le rendre cliquable et de refermer le menu.</p>
+<p>Commençons par opérer un « reset » sur notre page :</p><pre class="crayon-plain-tag">* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+}</pre><p>Ainsi nous aurons bien un menu bord à bord avec notre fenêtre. Ajoutons à cela le design de notre menu :</p><pre class="crayon-plain-tag">#menu {
+  position: absolute;
+  height: 100vh;
+  width: 300px;
+  margin: 0;
+  background-color: #000;
+  transform: translateX(-100%); /* Rend le menu invisible */
+  a {
+    color:#fff;
+    font-family: Cutive Mono;
+    text-decoration: none;
+  }
+}</pre><p>Rien d&rsquo;exotique ici, nous avons seulement placé le tout en position absolue, stipulé une translation négative de 100% de la largeur de l&rsquo;élément afin de masquer le menu.</p>
+<p>Passons aux boutons :</p><pre class="crayon-plain-tag">.button-group{
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  top: 0;
+  left: 0;
+  margin: 8px; /* histoire de ne pas avoir le bouton collé */
+}
+
+.menu-button {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  text-align: center;
+  color: #fff; 
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  span {
+    display: block;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+
+    .fa-times {
+      display: none;
+    }
+  }
+  
+  &amp;.off {
+    z-index: -1;
+  }
+}</pre><p>Ce qui est important ici est le positionnement absolu de notre groupe de boutons, mais aussi et surtout ce dont je parlais plus tôt : le second bouton est placé derrière le premier grâce à un <code>z-index</code> négatif. Ainsi, lorsque nous cliquerons la première fois, nous ne risquerons pas de cibler le mauvais bouton.</p>
+<p>Désormais, tout est près pour accueillir notre comportement. Il suffit d&rsquo;utiliser le sélecteur css <code>:target</code> sur le menu pour jouer notre astuce.</p><pre class="crayon-plain-tag">#menu:target {
+  transform: translateX(0);
+  +.button-group {
+    left: 300px;
+    
+    .menu-button:first-child {
+      span {
+        .fa-times {
+          display: block;
+        }
+        .fa-bars {
+          display: none;
+        }
+      }
+    }
+    
+    .off {
+      z-index: 0;
+      background-color: transparent;
+    }
+  }
+}</pre><p>On a donc ajouté notre sélecteur qui dit que s&rsquo;il est ciblé, notre menu opérera une translation vers la droite. On en profite au passage pour faire passer notre second bouton &#8211; celui qui ferme &#8211; au premier plan, en redéfinissant sont <code>z-index</code> à 0. Pour le cibler, rien de plus simple : notre groupe de boutons se trouve exactement après le menu dans le DOM. Du coup, on peut agir sur ses enfants simplement en utilisant le sélecteur <code>+</code>. On re-style aussi ce dernier pour se positionner à 300px du bord gauche du document.</p>
+<p>Pas encore satisfait ? Allons un peu plus loin en tirant parti des facultés de css en termes d&rsquo;animation et rendons tout cela un peu plus touchy&rsquo; <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Et puisque nous faisons du scss, créons une petite <code>@mixin</code> qui se chargera de créer nos transitions :</p><pre class="crayon-plain-tag">* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+}
+
+@mixin animation() {  
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.button-group{
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  top: 0;
+  left: 0;
+  margin: 8px; /* just to give some space*/
+  @include animation();
+}
+
+.menu-button {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  text-align: center;
+  color: #fff; 
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  span {
+    display: block;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+
+    .fa-times {
+      display: none;
+    }
+  }
+  
+  &amp;.off {
+    z-index: -1;
+  }
+}
+
+#menu {
+  position: absolute;
+  height: 100vh;
+  width: 300px;
+  margin: 0;
+  background-color: #000;
+  transform: translateX(-100%);
+  a {
+    color:#fff;
+    font-family: Cutive Mono;
+    text-decoration: none;
+  }
+  @include animation();
+  
+  &amp;:target {
+    transform: translateX(0);
+    +.button-group {
+      left: 300px;
+      
+      .menu-button:first-child {
+        span {
+          .fa-times {
+            display: block;
+          }
+          .fa-bars {
+            display: none;
+          }
+        }
+      }
+      
+      .off {
+        z-index: 0;
+        background-color: transparent;
+      }
+    }
+  }
+}</pre><p>Je trouve cette expérimentation &#8211; à défaut d&rsquo;être respectueuse des règles d&rsquo;accessibilité &#8211; très intéressante dans la mesure où elle remet en question l&rsquo;usage de javascript pour des usages d&rsquo;ordre fonctionnel ou esthétique. Ceci tend à rendre la frontière entre css et javascript un peu plus floue en rendant css auto suffisant lors de traitements fonctionnels un tantinet complexes.</p>
+<p>En revanche, attention ! rechargez votre page et l&rsquo;état du menu ne sera pas réinitialisé. En effet étant donné que nous utilisons une ancre, celle ci reste dans la barre d&rsquo;adresse. De plus, l&rsquo;état de votre menu est de fait enregistré dans votre historique.</p>
+<p style="text-align: center;"><a href="/wp-content/uploads/2016/12/pure-css-off-canvas-menu.zip" target="_blank">Télécharger les sources</a></p>
+<p>L’article <a rel="nofollow" href="/creer-menu-off-canvas-entierement-css/">Créer un menu off-canvas entièrement en css</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/creer-menu-off-canvas-entierement-css/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">550</post-id>	</item>
+		<item>
+		<title>Créer son propre système de grille flexible avec SASS</title>
+		<link>/creer-propre-systeme-de-grille-flexible-sass/</link>
+		<comments>/creer-propre-systeme-de-grille-flexible-sass/#respond</comments>
+		<pubDate>Tue, 18 Oct 2016 13:24:55 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[HTML/CSS]]></category>
+		<category><![CDATA[sass]]></category>
+		<category><![CDATA[grille responsive]]></category>
+
+		<guid isPermaLink="false">/?p=521</guid>
+		<description><![CDATA[<p>Dans la boîte à outils de l’intégrateur, il y a beaucoup de choses : des frameworks html et css, des générateurs de dégradés de couleur, un ou plusieurs préprocesseurs… et surtout il y a les grilles responsives. Quand on travaille avec un framework css, ces dernières sont souvent (voire systématiquement ) incluses. Impossible par ailleurs de &#8230; <a href="/creer-propre-systeme-de-grille-flexible-sass/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Créer son propre système de grille flexible avec SASS</span></a></p>
+<p>L’article <a rel="nofollow" href="/creer-propre-systeme-de-grille-flexible-sass/">Créer son propre système de grille flexible avec SASS</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p class="graf graf--p">Dans la boîte à outils de l’intégrateur, il y a beaucoup de choses : des frameworks html et css, des générateurs de dégradés de couleur, un ou plusieurs préprocesseurs… et surtout il y a les grilles responsives. Quand on travaille avec un framework css, ces dernières sont souvent (voire systématiquement ) incluses. Impossible par ailleurs de dénombrer les systèmes de grille existants tant il y en a. Ce qui est sûr, c’est que nous avons le choix ! Mais parfois, il arrive que l’on soit amené à créer sois même un système de grille pour des besoins très spécifiques… C’est ce qui m’est arrivé récemment.</p>
+<p class="graf graf--p">C’est pourquoi je vous propose une approche de création de grille reposant sur SASS. Il est entendu que c’est faisable en CSS, mais c’est beaucoup plus rapide en SASS, c’est la beauté de la chose <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p class="graf graf--p"><strong class="markup--strong markup--p-strong">Le découpage du travail sera comme suit</strong> : D’abord on définira les différentes variables nécessaires ainsi que les points de rupture de notre grille responsive. Ensuite, on s’attardera sur la mécanique standard pour la génération de la grille “desktop”. Enfin on fera de même pour nos <code>media-queries</code>.</p>
+<p class="graf graf--p"><strong class="markup--strong markup--p-strong">Définition de notre grille</strong> : Elle sera responsive bien sûr, on pourra choisir combien de colonnes on souhaite, la taille des gouttières, la largeur globale du conteneur, et les comportements des colonnes sur les différents appareils.</p>
+<p class="graf graf--p">Voici les variables que je définis en premier lieu :</p>
+<p></p><pre class="crayon-plain-tag">/* 1. valeurs de grille par d&eacute;faut */
+
+$cols: 12 !default;
+$gutter-width: 1.2rem !default;
+$max-width: 1180px !default;</pre><p></p>
+<p class="graf graf--p">On aura donc 12 colonnes, avec une gouttière de 1.2rem et une largeur maximum de 1200px. Ces valeurs sont suffisantes pour jeter les bases de la création de notre grille desktop. Ce que vous allons donc faire de ce pas :</p>
+<p></p><pre class="crayon-plain-tag">/* 2. D&eacute;finition de la grille */
+.container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: $max-width;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+  .row {
+  	margin-left: -$gutter-width / 2;
+  	margin-right: -$gutter-width / 2;
+  }
+  &amp;amp;:after {
+    content: &quot;&quot;;
+    display: table;
+    clear: both;
+  }
+  /* on divise la goutti&egrave;re par 2 car on en retire une partie de chaque c&ocirc;t&eacute; de la colonne */
+  .col {
+    float: left;
+    box-sizing: border-box;
+    padding: 0 $gutter-width / 2;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+
+    /* On va boucler sur les colonnes et calculer automatiquement leur taille en pourcentage
+     * un peu comme on pourrait le faire en javascript par exemple */
+    $i: 1;
+    @while $i &amp;lt;= $cols {
+      $perc: unquote((100 / ($cols / $i)) + &quot;%&quot;);
+      &amp;amp;.small-#{$i} {
+        width: $perc;
+      }
+      $i: $i + 1;
+    }
+  }
+}</pre><p></p>
+<p class="graf graf--p">Dans ce système, ce sont les paddings qui définissent la taille de la gouttière. Ce qui fait que l’on n’a pas à se casser la tête avec le calcul de marges, d’autant que ces dernières ne sont pas prises en compte par <code>box-sizing: border-box</code>. Et ça c’est c’est déjà un pas vers plus de flexibilité : on peut ajouter autant de colonnes que l’on souhaite à notre ligne. Par ailleurs, plus de <code>row</code> ou <code>row-fluid</code> à la Bootstrap 2 : désormais toutes nos lignes sont fluides. Point. Seul le conteneur définira la largeur maximale de rendu. Et étant donné que nos tailles sont calculées en % on est tranquilles <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p class="graf graf--p">A présent il ne reste plus qu’à générer cette grille pour les tailles d’écran choisies :</p>
+<p></p><pre class="crayon-plain-tag">@media screen and (min-width:721px) {
+
+      $i: 1;
+      @while $i &amp;lt;= $cols {
+        $perc: unquote((100 / ($cols / $i)) + &quot;%&quot;);
+        &amp;amp;.medium-#{$i} {
+          width: $perc;
+        }
+        $i: $i + 1
+      }
+    }
+
+    @media screen and (min-width:1025px) {
+
+      $i: 1;
+      @while $i &amp;lt;= $cols {
+        $perc: unquote((100 / ($cols / $i)) + &quot;%&quot;);
+        &amp;amp;.large-#{$i} {
+          width: $perc;
+        }
+        $i: $i + 1;
+      }
+    }</pre><p></p>
+<p class="graf graf--p">Et c’est tout ! Bon on pourrait aller beaucoup plus loin en définissant des comportements plus spécifiques, mais la base est là. Voici le résultat final :</p>
+<p></p><pre class="crayon-plain-tag">/* 1. valeurs de grille par d&eacute;faut */
+
+$cols: 12 !default;
+$gutter-width: 1.2rem !default;
+$max-width: 1200px !default;</pre><p></p><pre class="crayon-plain-tag">/* 2. D&eacute;finition de la grille */
+.container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: $max-width;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+  .row {
+  	margin-left: -$gutter-width / 2;
+  	margin-right: -$gutter-width / 2;
+  }
+  &amp;amp;:after {
+    content: &quot;&quot;;
+    display: table;
+    clear: both;
+  }
+  /* on divise la goutti&egrave;re par 2 car on en retire une partie de chaque c&ocirc;t&eacute; de la */
+  .col {
+    float: left;
+    box-sizing: border-box;
+    padding: 0 $gutter-width / 2;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+
+    /* On va boucler sur les colonnes et calculer automatiquement leur taille en pourcentage
+     * un peu comme on pourrait le faire en javascript par exemple */
+    $i: 1;
+    @while $i &amp;lt;= $cols {
+      $perc: unquote((100 / ($cols / $i)) + &quot;%&quot;);
+      &amp;amp;.small-#{$i} {
+        width: $perc;
+      }
+      $i: $i + 1;
+    }</pre><p></p><pre class="crayon-plain-tag">/* 3. Media Queries */
+    @media screen and (min-width:721px) {
+
+      $i: 1;
+      @while $i &amp;lt;= $cols {
+        $perc: unquote((100 / ($cols / $i)) + &quot;%&quot;);
+        &amp;amp;.medium-#{$i} {
+          width: $perc;
+        }
+        $i: $i + 1
+      }
+    }
+
+    @media screen and (min-width:1025px) {
+
+      $i: 1;
+      @while $i &amp;lt;= $cols {
+        $perc: unquote((100 / ($cols / $i)) + &quot;%&quot;);
+        &amp;amp;.large-#{$i} {
+          width: $perc;
+        }
+        $i: $i + 1;
+      }
+    }
+  }
+}</pre><p></p>
+<p class="graf graf--p">Il est entendu que la propriété flexbox tend à s’imposer pour ce qui est de la création de systèmes destinés à structurer le contenu. Je pense d’ailleurs qu’elle pourrait à terme remplacer nos systèmes de grille traditionnels. En revanche je pense que les systèmes comme celui que nous avons là on encore de beaux jours devant eux car ils restent à ce jour l’approche la plus stable car compatible avec n’importe quel navigateur / appareil.</p>
+<p class="graf graf--p">Mais je me penche depuis quelques temps déjà sur flexbox, il n’est donc pas impossible que je fasse un article sur le sujet dans les semaines à venir <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>L’article <a rel="nofollow" href="/creer-propre-systeme-de-grille-flexible-sass/">Créer son propre système de grille flexible avec SASS</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/creer-propre-systeme-de-grille-flexible-sass/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">521</post-id>	</item>
+		<item>
+		<title>Utiliser SASS dans ses projets WordPress</title>
+		<link>/utiliser-sass-projets-wordpress/</link>
+		<comments>/utiliser-sass-projets-wordpress/#respond</comments>
+		<pubDate>Sun, 10 Jan 2016 20:05:15 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[HTML/CSS]]></category>
+		<category><![CDATA[Non classé]]></category>
+		<category><![CDATA[sass]]></category>
+		<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[compass]]></category>
+
+		<guid isPermaLink="false">/?p=456</guid>
+		<description><![CDATA[<p>Sass est devenu pour moi un outil du quotidien. Je l&#8217;utilise dans presque tous mes projets. Le fait est que je travaille beaucoup avec WordPress. Il est donc devenu évident qu&#8217;il fallait que je développe une méthodologie pour le faire entrer dans ces projets-ci. Aujourd&#8217;hui je vous propose de découvrir de quelle manière intégrer Sass &#8230; <a href="/utiliser-sass-projets-wordpress/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Utiliser SASS dans ses projets WordPress</span></a></p>
+<p>L’article <a rel="nofollow" href="/utiliser-sass-projets-wordpress/">Utiliser SASS dans ses projets WordPress</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Sass est devenu pour moi un outil du quotidien. Je l&rsquo;utilise dans presque tous mes projets. Le fait est que je travaille beaucoup avec WordPress. Il est donc devenu évident qu&rsquo;il fallait que je développe une méthodologie pour le faire entrer dans ces projets-ci. Aujourd&rsquo;hui je vous propose de découvrir de quelle manière intégrer Sass dans vos projets WordPress.<span id="more-456"></span></p>
+<p>Un thème WordPress nécessite normalement 1 seul et unique fichier CSS, à la racine : style.css. Mais tout mettre au kilomètre dans ce fichier c&rsquo;est la garantie de rendre le projet difficile à maintenir et à faire évoluer. C&rsquo;est pourquoi on préfèrera découper son design en modules. Plusieurs méthodologies existent, mais celle qui fait sens à mes yeux se rapproche de SMACSS. Je vous invite à aller faire un tour sur <a href="https://smacss.com/" target="_blank">leur site</a>, on y apprend des choses très intéressantes sur les manières possibles de découper son design CSS.</p>
+<p>La puissance des préprocesseurs CSS n&rsquo;est plus à démontrer : ils nous permettent de s&rsquo;affranchir des préfixes vendeurs, d&rsquo;apporter de la logique dans nos feuilles de styles, de séparer proprement notre architecture, bref, de tout calibrer au plus juste sans se répéter. C&rsquo;est la méthode DRY (Don&rsquo;t repeat yourself). Globalement, on gagne en productivité, en stabilité, on limite les régressions et en plus on s&rsquo;éclate. Que demander de plus ?</p>
+<p><strong>Sass embrasse parfaitement cette philosophie du DRY et de la scalabilité. Mais pour l’installer sur WordPress comment ça se passe ?</strong></p>
+<p>Premièrement, il faut avoir déjà installé et configuré les outils sur sa machine. Dans mon cas, j&rsquo;utilise le framework COMPASS. Il est réputé pour être l&rsquo;un des plus complets avec une palette de mixins très étendue, et même si pas mal lui reprochent d&rsquo;être assez lourd / lent à la compilation, de mon point de vue c&rsquo;est à la marge. Car si vous n&rsquo;avez jamais utilisé SASS / COMPASS, il faut savoir que le code que vous générez est compilé à la volée en fichier css standards.</p>
+<p>Je pars du principe que les personnes qui lisent cet articles ont déjà COMPASS d&rsquo;installé et sont prêts à se lancer.</p>
+<p>Pour démarrer le projet (thème ou plugin) en mode SASS, il suffit d&rsquo;initialiser un projet COMPASS à la racine. Si je construit un thème, j&rsquo;ouvrirai le terminal à la racine de mon thème et je taperai :</p>
+<p></p><pre class="crayon-plain-tag">compass init</pre><p></p>
+<p>A la suite de quoi, je me retrouve avec un fichier config.rb, ainsi que 2 nouveaux dossiers : sass et stylesheets. Le dossier sass est celui dans lequel on va travailler à l&rsquo;avenir, mais avant, il faut aller un peu plus loin :</p>
+<p>Les fichiers scss contenu dans le dossier sass vont entrainer la création / modification de leur alter égo css contenu dans le dossier stylesheets, à chaque fois que j&rsquo;ajouterai / modifierai un fichier scss. Je vais donc devoir demander à compass de se mettre en « écoute », de manière à <em>catcher</em> les modifications au fur et à mesure. Je tape donc dans mon terminal, toujours à la racine de mon thème :</p>
+<p></p><pre class="crayon-plain-tag">compass watch</pre><p></p>
+<p>Le watcher est à présent en mode « écoute », et toutes les modifications effectuées dans le dossier sass seront automatiquement compilées dans le dossier stylesheets. Mais cela ne suffit pas. Il faut dès maintenant indiquer à WordPress comment récupérer / lire les fichiers css créés.</p>
+<p><strong>Voici la logique que j&rsquo;appliqu</strong>e :</p>
+<p>Mon fichier style.css à la racine de mon thème va dès à présent me servir de passerelle, en appelant un seul et unique fichier contenu dans le dossier stylesheets. Bien sûr, la création de ce fichier se passe d&rsquo;abord dans le dossier sass : je créé un fichier nommé « main.scss », et automatiquement, son copain « main.css » est créé. Il me suffit alors d&rsquo;importer ce fichier css dans mon « style.css » :</p>
+<p></p><pre class="crayon-plain-tag">@import url(stylesheets/main.css);</pre><p></p>
+<p>Mais alors, et les autres fichiers aussi il va falloir  les importer ? Oui et non. En fait ce qu&rsquo;on va faire c&rsquo;est créer uniquement des fichiers scss qui ne seront pas compilés en fichiers css. Le but n&rsquo;est pas de remplir le dossier stylesheets, mais de le maintenir avec un seul fichier : notre fameux main.css, et de dire à ce dernier de faire tous les imports des fichiers qu&rsquo;on va créer par la suite.</p>
+<p>Du coup on va préfixer tous nos nouveux fichiers scss avec un underscore « _ ». Par exemple, si je veux un fichier scss dédié à la navigation et un autre à mes modules, je vais les nommer respectivement « _navigation.scss » et « _modules.scss ». De cette manière je suis tranquille, je sais qu&rsquo;ils ne seront pas compilés en css. Il ne reste plus qu&rsquo;à les importer dans l&rsquo;ordre qui nous convient, dans le fichier main.scss (qui lui ne possède pas d&rsquo;underscore, et est donc compiler en main.css).</p>
+<p>Voici ce que j&rsquo;écris dans mon main.scss :</p>
+<p></p><pre class="crayon-plain-tag">@import "compass";
+@import "navigation";
+@import "modules";</pre><p></p>
+<p>Première chose à noter, j&rsquo;importe les fichiers en les appelant par leur nom, sans l&rsquo;underscore et sans leur extension. C&rsquo;est tout à fait normal. De plus je n&rsquo;utilise pas « url(nom du fichier) », je met directement le nom de mon fichier entre guillemets, et c&rsquo;est tout ! L&rsquo;import de « compass » est nécessaire mais non obligatoire : le fait d&rsquo;utiliser le compilateur de COMPASS ne vous oblige nullement à utiliser les mixins fournies, mais bon, ce serait dommage de se priver <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Pour ma part je recommande de ne pas importer COMPASS entièrement, mais de sélectionner les outils qui vous intéressent. Je vous laisse jeter un oeil à la <a href="http://compass-style.org/help/" target="_blank">documentation de compass</a> à ce sujet.</p>
+<p><strong>Si on récapitule :</strong></p>
+<p>j&rsquo;ai un fichier style.css qui importe le fichier main.css, qui lui même est issu de la compilation de main.scss, et c&rsquo;est dans main.scss qu&rsquo;on importe autres feuilles de style scss. C&rsquo;est aussi simple que ça ! Les modules importés sont préfixés d&rsquo;un underscore, de manière à ne pas générer un fichier css pour rien, mais de tout centraliser grâce à un seul et unique fichier : main.scss</p>
+<p>C&rsquo;est ainsi que je procède dans mes projets, une fois que tout est en place, il ne me reste qu&rsquo;à lancer mon watcher et tout se fait dans le dossier sass à la racine du thème. On ne peut faire plus simple, enfin pas tant que les navigateurs ne parleront pas autre chose que du css <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>L’article <a rel="nofollow" href="/utiliser-sass-projets-wordpress/">Utiliser SASS dans ses projets WordPress</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/utiliser-sass-projets-wordpress/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">456</post-id>	</item>
+	</channel>
+</rss>

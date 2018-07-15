@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>frontend &#8211; DesireLabs</title>
+	<atom:link href="/tag/frontend/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Développement web, marketing digital, et référencement</description>
+	<lastBuildDate>Tue, 06 Jun 2017 17:34:36 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.4</generator>
+<site xmlns="com-wordpress:feed-additions:1">67143140</site>	<item>
+		<title>Pourquoi trouver un bon développeur frontend est si difficile ? [en]</title>
+		<link>/pourquoi-trouver-un-bon-developpeur-frontend-est-si-difficile-en/</link>
+		<comments>/pourquoi-trouver-un-bon-developpeur-frontend-est-si-difficile-en/#respond</comments>
+		<pubDate>Sun, 29 Nov 2015 19:24:14 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Non classé]]></category>
+		<category><![CDATA[frontend]]></category>
+
+		<guid isPermaLink="false">/?p=460</guid>
+		<description><![CDATA[<p>View story at Medium.com</p>
+<p>L’article <a rel="nofollow" href="/pourquoi-trouver-un-bon-developpeur-frontend-est-si-difficile-en/">Pourquoi trouver un bon développeur frontend est si difficile ? [en]</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><script async src="https://static.medium.com/embed.js"></script><a class="m-story" href="https://medium.com/creative-business/why-is-it-so-hard-to-find-a-front-end-developer-cb92848a7c6f#.td67c1l2b" target="_blank" data-width="660" data-border="1" data-collapsed="">View story at Medium.com</a></p>
+<p>L’article <a rel="nofollow" href="/pourquoi-trouver-un-bon-developpeur-frontend-est-si-difficile-en/">Pourquoi trouver un bon développeur frontend est si difficile ? [en]</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/pourquoi-trouver-un-bon-developpeur-frontend-est-si-difficile-en/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">460</post-id>	</item>
+	</channel>
+</rss>

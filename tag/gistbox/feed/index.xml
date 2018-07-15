@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>gistbox &#8211; DesireLabs</title>
+	<atom:link href="/tag/gistbox/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Développement web, marketing digital, et référencement</description>
+	<lastBuildDate>Tue, 06 Jun 2017 17:34:36 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.4</generator>
+<site xmlns="com-wordpress:feed-additions:1">67143140</site>	<item>
+		<title>Outils &#8211; Organisez proprement vos snippets avec GistBox</title>
+		<link>/organisez-proprement-vos-snippets-gistbox/</link>
+		<comments>/organisez-proprement-vos-snippets-gistbox/#respond</comments>
+		<pubDate>Tue, 18 Nov 2014 15:10:21 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[En ligne]]></category>
+		<category><![CDATA[Outils]]></category>
+		<category><![CDATA[gist]]></category>
+		<category><![CDATA[gistbox]]></category>
+		<category><![CDATA[snippet]]></category>
+
+		<guid isPermaLink="false">/?p=279</guid>
+		<description><![CDATA[<p>La semaine dernière j&#8217;ai découvert GistBox, un chouette outil qui vous permet d&#8217;organiser vos code snippets. Depuis je l&#8217;utilise chaque jour, et du coup je vous le présente.J&#8217;aime bien avoir mes code snippets sous la main, mais depuis quelques temps c&#8217;est un peu le bordel j&#8217;avoue. C&#8217;est par l&#8217;intermédiaire du site de Djo, lafermeduweb que &#8230; <a href="/organisez-proprement-vos-snippets-gistbox/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Outils &#8211; Organisez proprement vos snippets avec GistBox</span></a></p>
+<p>L’article <a rel="nofollow" href="/organisez-proprement-vos-snippets-gistbox/">Outils &#8211; Organisez proprement vos snippets avec GistBox</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>La semaine dernière j&rsquo;ai découvert GistBox, un chouette outil qui vous permet d&rsquo;organiser vos code snippets. Depuis je l&rsquo;utilise chaque jour, et du coup je vous le présente.<span id="more-279"></span>J&rsquo;aime bien avoir mes code snippets sous la main, mais depuis quelques temps c&rsquo;est un peu le bordel j&rsquo;avoue. C&rsquo;est par l&rsquo;intermédiaire du site de Djo, <a href="http://www.lafermeduweb.net/billet/gistbox-une-interface-sexy-pour-gerer-ses-snippets-1595.html">lafermeduweb</a> que j&rsquo;ai découvert GistBox. Ce qu&rsquo;il fait c&rsquo;est qu&rsquo;il vous offre une interface claire et propre qui vous permet d&rsquo;enregistrer tous vos snippets, de les classer via des labels de couleur,  de les grouper. C&rsquo;est super intuitif, et surtout, vos snippets vous suivent partout car tout est stocké dans le cloud.</p>
+<p>Les plus malins auront remarqué le lien de parenté avec Gist de GitHub. En effet, la connexion s&rsquo;effectue via votre compte GitHub si vous en possédez un. Du coup vous retrouvez aussi tous vos snippets sur Gist. Alors l&rsquo;intérêt par rapport à Gist ? On simplifie au max l&rsquo;interface, on offre la possibilité de labeliser ses bout de code et exit le reste. Par défaut, les snippets sont privés, et si vous souhaitez les rendre publics, il faut se rendre sur Gist. oui, c&rsquo;est un peu relou, mais il y a fort à parier que d&rsquo;ici peu vous n&rsquo;aurez plus besoin de faire de va et vient.</p>
+<p>A delà de ça on peut aussi créer des groupes de travail et inviter des personnes pour leur partager de manière privée les snippets que vous souhaitez. Je trouve ça assez cool, même si pour l&rsquo;instant je n&rsquo;en ai pas l&rsquo;utilité.Pour finir sur les fonctions de partage, on peut mailer, twitter ou faire un embed de son gist à peu près où on veut. Exemple :</p>
+<p><script src="https://gist.github.com/neovea/157ba941203c8dcccb29.js"></script></p>
+<p>Plutôt chouette non ?</p>
+<p>Autre truc sympa : Au sein d&rsquo;un même gist, on peut mettre plusieurs snippets, plutôt utile quand on fait du html/css/javascript <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Très honnêtement, GistBox n&rsquo;est pas parfait et pas mal de choses restent à faire selon moi, mais c&rsquo;est vraiment un chouette outil qui fait la part belle à l&rsquo;utilisabilité tout en offrant à l&rsquo;utilisateur de coupler le tout avec son compte GitHub. Ce qu&rsquo;il manque par contre à mon avis :</p>
+<ul>
+<li>La possibilité de créer des labels avec des couleurs choisies via une palette dédiée</li>
+<li>Une gestion plus fine de la fonction de trie</li>
+<li>La possibilité de rendre public ou privé un snippet sans avoir à se rendre sur Gist</li>
+</ul>
+<p>EDIT du 18/11/2014 : En réalité, il est possible de spécifier le statut public ou privé d&rsquo;un gist, mais uniquement lors de sa création.</p>
+<p>Au delà de ça, si vous avez comme moi tout plein de snippets et que vous aimez y accéder où et quand vous voulez, alors n&rsquo;hésitez pas, l&rsquo;essayer c&rsquo;est l&rsquo;adopter !</p>
+<p>L’article <a rel="nofollow" href="/organisez-proprement-vos-snippets-gistbox/">Outils &#8211; Organisez proprement vos snippets avec GistBox</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/organisez-proprement-vos-snippets-gistbox/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">279</post-id>	</item>
+	</channel>
+</rss>

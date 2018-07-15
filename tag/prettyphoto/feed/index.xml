@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>prettyphoto &#8211; DesireLabs</title>
+	<atom:link href="/tag/prettyphoto/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Développement web, marketing digital, et référencement</description>
+	<lastBuildDate>Tue, 06 Jun 2017 17:34:36 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.4</generator>
+<site xmlns="com-wordpress:feed-additions:1">67143140</site>	<item>
+		<title>Astuce &#8211; Faire fonctionner dailymotion avec prettyphoto</title>
+		<link>/faire-fonctionner-dailymotion-prettyphoto/</link>
+		<comments>/faire-fonctionner-dailymotion-prettyphoto/#respond</comments>
+		<pubDate>Wed, 10 Sep 2014 14:59:56 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[jQuery]]></category>
+		<category><![CDATA[dailymotion]]></category>
+		<category><![CDATA[prettyphoto]]></category>
+
+		<guid isPermaLink="false">/?p=240</guid>
+		<description><![CDATA[<p>Je n&#8217;aime pas beaucoup prettyphoto, si vous avez lu l&#8217;article précédent, vous connaissez déjà où va ma préférence 😉 Cependant, quand on travaille avec des thèmes WordPress qu&#8217;on n&#8217;a pas soi même développés, bah des fois, on n&#8217;a pas le choix. Et si en plus les-dits thèmes ont été développés par des personnes non francophones(philes &#8230; <a href="/faire-fonctionner-dailymotion-prettyphoto/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Astuce &#8211; Faire fonctionner dailymotion avec prettyphoto</span></a></p>
+<p>L’article <a rel="nofollow" href="/faire-fonctionner-dailymotion-prettyphoto/">Astuce &#8211; Faire fonctionner dailymotion avec prettyphoto</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Je n&rsquo;aime pas beaucoup prettyphoto, si vous avez lu l&rsquo;article précédent, vous connaissez déjà où va ma préférence <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Cependant, quand on travaille avec des thèmes WordPress qu&rsquo;on n&rsquo;a pas soi même développés, bah des fois, on n&rsquo;a pas le choix. Et si en plus les-dits thèmes ont été développés par des personnes non francophones(philes ?), vous devinerez aisément qu&rsquo;ils supportent rarement (jamais) les services comme dailymotion. Alors le combo prettyphoto + dailymotion, c&rsquo;est le calvaire assuré. Alors voici la solution :<span id="more-240"></span>Pour faire fonctionner dailymotion avec prettyphoto, c&rsquo;est tout bête en fait. Il suffit de récupérer ou construite le lien comme suit :</p>
+<p></p><pre class="crayon-plain-tag">www.dailymotion.com/embed/video/id_video</pre><p></p>
+<p>en remplaçant « id_video » par le vrai id, puis de lui adjoindre quelques paramètres pour préciser le format à renvoyer :</p>
+<p></p><pre class="crayon-plain-tag">?iframe=true&amp;width=720&amp;height=480</pre><p></p>
+<p>Ce qui nous donne :</p>
+<p></p><pre class="crayon-plain-tag">www.dailymotion.com/embed/video/id_video?iframe=true&amp;width=720&amp;height=480</pre><p></p>
+<p>Voilà, on a le lien complet avec la taille à utiliser (là, c&rsquo;est à vous de voir), il suffit à présent de créer la balise prettyphoto qui va bien en modifiant l&rsquo;attribut rel (ou data-rel) avec « prettyphoto[iframes] »  :</p>
+<p></p><pre class="crayon-plain-tag">&lt;a data-rel="prettyPhoto[iframes]" class="thumb_icon video" title="Dailymotion" href="http://www.dailymotion.com/embed/video/xebd4g?iframe=true&amp;width=720&amp;height=480" style="top: 120%;"&gt;</pre><p></p>
+<p>J&rsquo;ai un peu suer pour trouver mes petits donc si vous aussi, n&rsquo;hésitez pas à partager l&rsquo;astuce <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>L’article <a rel="nofollow" href="/faire-fonctionner-dailymotion-prettyphoto/">Astuce &#8211; Faire fonctionner dailymotion avec prettyphoto</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/faire-fonctionner-dailymotion-prettyphoto/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">240</post-id>	</item>
+	</channel>
+</rss>

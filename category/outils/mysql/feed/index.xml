@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>MySql &#8211; DesireLabs</title>
+	<atom:link href="/category/outils/mysql/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Développement web, marketing digital, et référencement</description>
+	<lastBuildDate>Tue, 06 Jun 2017 17:34:36 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.4</generator>
+<site xmlns="com-wordpress:feed-additions:1">67143140</site>	<item>
+		<title>Tutoriel &#8211; Installer un serveur Apache &#8211; PHP &#8211; MySql manuellement sous Windows 7 et 10</title>
+		<link>/tuto-installer-serveur-apache-php-mysql-manuellement-windows-7/</link>
+		<comments>/tuto-installer-serveur-apache-php-mysql-manuellement-windows-7/#comments</comments>
+		<pubDate>Sat, 23 Aug 2014 11:29:09 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Apache]]></category>
+		<category><![CDATA[MySql]]></category>
+		<category><![CDATA[Tutoriels]]></category>
+		<category><![CDATA[apache]]></category>
+		<category><![CDATA[mysql]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[serveur]]></category>
+
+		<guid isPermaLink="false">/?p=229</guid>
+		<description><![CDATA[<p>Que ce soit pour avoir un environnement de développement le plus proche possible d&#8217;un environnement de production ou simplement pour enrichir ses connaissances personnelles, on a parfois besoin d&#8217;installer le trio Apache &#8211; PHP &#8211; MySql de manière séparée sur sa machine windows, sans passer par Wamp ou EasyPhp pour ne citer qu&#8217;eux. Cela laisse &#8230; <a href="/tuto-installer-serveur-apache-php-mysql-manuellement-windows-7/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Tutoriel &#8211; Installer un serveur Apache &#8211; PHP &#8211; MySql manuellement sous Windows 7 et 10</span></a></p>
+<p>L’article <a rel="nofollow" href="/tuto-installer-serveur-apache-php-mysql-manuellement-windows-7/">Tutoriel &#8211; Installer un serveur Apache &#8211; PHP &#8211; MySql manuellement sous Windows 7 et 10</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Que ce soit pour avoir un environnement de développement le plus proche possible d&rsquo;un environnement de production ou simplement pour enrichir ses connaissances personnelles, on a parfois besoin d&rsquo;installer le trio Apache &#8211; PHP &#8211; MySql de manière séparée sur sa machine windows, sans passer par Wamp ou EasyPhp pour ne citer qu&rsquo;eux.</p>
+<p>Cela laisse par ailleurs beaucoup de latitude quant aux versions des packages. Sous Linux, aucun problème : 3 coups de apt-get install et hop ! ça tourne <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Mais sous Windows c&rsquo;est une autre paire de manches. Je vous propose donc aujourd&rsquo;hui un tutoriel dédié à l&rsquo;installation d&rsquo;un serveur AMP sous windows 7. Ce tuto s&rsquo;inspire librement des différentes sources que j&rsquo;ai pu trouver sur le web, et tout particulièrement d&rsquo;un tuto en anglais dont je vous donne le lien à la fin de cet article.</p>
+<p>C&rsquo;est parti !</p>
+<h3><span id="more-229"></span>0 &#8211; Les prérequis :</h3>
+<p>Avoir ses packages Microsoft Visual C++ à jour. Si vous êtes en 64bits, vous devez posséder la version x86 ET x64.</p>
+<h3>1 &#8211; Installation / mise à jour des packages Visual C++ en tant qu&rsquo;administrateur</h3>
+<h4>&#8211; Visual C++ 2005</h4>
+<p>x86 &#8211; <a href="http://www.microsoft.com/fr-fr/download/details.aspx?id=3387" target="_blank">http://www.microsoft.com/fr-fr/download/details.aspx?id=3387</a><br />
+x64 &#8211; <a href="http://www.microsoft.com/fr-fr/download/details.aspx?id=18471" target="_blank">http://www.microsoft.com/fr-fr/download/details.aspx?id=18471</a></p>
+<h4>&#8211; Visual C++ 2008</h4>
+<p>x86 &#8211; <a href="http://www.microsoft.com/fr-fr/download/details.aspx?id=29" target="_blank">http://www.microsoft.com/fr-fr/download/details.aspx?id=29</a><br />
+x64 &#8211; <a href="http://www.microsoft.com/fr-fr/download/details.aspx?id=15336" target="_blank">http://www.microsoft.com/fr-fr/download/details.aspx?id=15336</a></p>
+<h4>&#8211; Visual C++ 2010</h4>
+<p>x86 &#8211; <a href="http://www.microsoft.com/fr-fr/download/details.aspx?id=5555" target="_blank">http://www.microsoft.com/fr-fr/download/details.aspx?id=5555</a><br />
+x64 &#8211; <a href="http://www.microsoft.com/fr-fr/download/details.aspx?id=14632" target="_blank">http://www.microsoft.com/fr-fr/download/details.aspx?id=14632</a></p>
+<h4>&#8211; Visual C++ 2012</h4>
+<p>x86 &amp; x64 &#8211; <a href="http://www.microsoft.com/fr-fr/download/details.aspx?id=30679" target="_blank">http://www.microsoft.com/fr-fr/download/details.aspx?id=30679</a></p>
+<h4>&#8211; Visual C++ 2013</h4>
+<p>x86 &amp; x64 &#8211; <a href="http://www.microsoft.com/fr-fr/download/details.aspx?id=40784" target="_blank">http://www.microsoft.com/fr-fr/download/details.aspx?id=40784</a></p>
+<h4>&#8211; Visual C++ 2015</h4>
+<p>x86 &amp; x64 &#8211; <a href="https://www.microsoft.com/fr-fr/download/details.aspx?id=48145" target="_blank">https://www.microsoft.com/fr-fr/download/details.aspx?id=48145</a></p>
+<h3>2 &#8211; Installation de Apache 2.4</h3>
+<p>Prérequis : Être authentifié en tant qu&rsquo;administrateur, sinon vous ne pourrez pas installer de service.</p>
+<ol>
+<li>Récupérer la dernière version Apache httpd 2.4.x-x64 &#8211; <a href="https://www.apachelounge.com/download/VC11/binaries/" target="_blank">https://www.apachelounge.com/download/VC11/binaries/</a> (nécéssite VC11 Update 4)</li>
+<li>Dézipper dans C:\Apache24</li>
+<li>dans C:\Apache24\conf\httpd.conf<br />
+changer documentRoot<br />
+par le chemin www souhaité</li>
+<li>Changer serverName en localhost:80 et décommentez la ligne</li>
+<li>vhost -&gt; décommenter le chemin<br />
+changer conf\extra\httpd-vhosts.conf avec ses propres vhost valides</li>
+<li>Rajoutez le chemin C:\Apache24\bin\ dans votre path windows</li>
+<li>tester les paramètres dans l&rsquo;invite de commande cmd en exécutant httpd.exe</li>
+<li>si tout test ok, installer le service via la commande httpd.exe -k install<br />
+Puis quitter cmd</li>
+<li>démarrer bin\ApacheMonitor.exe et tester que le serveur démarre</li>
+<li>Exécuter « services.smc » et arrêter le service Apache2.4</li>
+</ol>
+<h3>3 &#8211; Installation de PHP 5.5.x x64</h3>
+<ol>
+<li>Télécharger la version correspondante (x64) &#8211; <strong>Non Thread Safe ! (à moins de savoir ce que vous faites)</strong> &#8211; <a href="http://windows.php.net/download/" target="_blank">http://windows.php.net/download/</a></li>
+<li>Extraire l&rsquo;archive dans C:\php</li>
+<li>Dupliquer C:\php\php.ini-development en C:\php\php.ini</li>
+<li>Ajouter à la fin de C:\Apache24\conf\httpd.conf<br />
+<pre class="crayon-plain-tag">LoadModule php5_module C:/php/php5apache2_4.dll
+
+    DirectoryIndex index.html index.php
+    AddHandler application/x-httpd-php .php
+    PHPIniDir "C:/php"</pre>
+</li>
+<li>tester httpd.exe pour vérifier les erreurs dans cmd</li>
+<li>dans php.ini, décommenter les lignes :<br />
+extension_dir = « ext » (permet d&rsquo;aller chercher les extensions dans le dossier ext)<br />
+Remplacez « ext » par le chemin complet, à savoir « C:/php/ext » par précaution.<br />
+extension=php_mysql.dll<br />
+extension=php_mysqli.dll<br />
+extension=php_pdo_mysql.dll<br />
+et optionnellement :<br />
+extension=php_bz2.dll<br />
+extension=php_curl.dll<br />
+extension=php_gd2.dll<br />
+extension=php_imap.dll<br />
+extension=php_openssl.dll<br />
+extension=php_pdo_odbc.dll<br />
+extension=php_pdo_sqlite.dll</li>
+</ol>
+<h3>4 &#8211; Installer MySql</h3>
+<ol>
+<li>Télécharegr mysql-installer-web-community-5.6.20.0.msi &#8211; <a href="http://dev.mysql.com/get/Downloads/MySQLInstaller/mysql-installer-web-community-5.6.20.0.msi" target="_blank">http://dev.mysql.com/get/Downloads/MySQLInstaller/mysql-installer-web-community-5.6.20.0.msi</a></li>
+<li>Lancer l&rsquo;installation avec les paramètres par défaut et en sélectionnant la version Developer durant l&rsquo;installation</li>
+<li>A la fin de l&rsquo;installation il ne vous reste qu&rsquo;à renseigner les paramètres de connexion</li>
+</ol>
+<p>Démarrer Apache ! Et si tout s&rsquo;est bien déroulé, vous avez à présent un serveur AMP fonctionnel.</p>
+<h3>5 &#8211; Notes</h3>
+<p>Il est tout à fait possible d&rsquo;installer MySql en tant que service. Pour ce faire :</p>
+<ol>
+<li>Dans cmd, taper mysqld &#8211;install</li>
+<li>Puis mysqld start</li>
+</ol>
+<p>Vous remarquez au passage que lors de l&rsquo;installation de MySql, pas mal d&rsquo;autres outils ont été installés, comme MySql Notifier qui vous permet de gérer le service MySql directement dans la barre de notifications Windows, ainsi que MySql Workbench qui vous permet de gérer vos bases en l&rsquo;absence de phpMyAdmin.</p>
+<p>Cependant et pour des raisons purement pratiques je n&rsquo;utilise pas ce dernier et m&rsquo;en remet entièrement à la ligne de commande qui reste pour moi plus efficace et performante que n&rsquo;importe quelle interface, et surtout m&rsquo;offre une vraie maîtrise de cee que je fais.</p>
+<p>J&rsquo;espère que ce petit tuto vous aura été utile, n&rsquo;hésitez pas à poser vos questions si vous en avez ou vos remarques (je prends aussi ^^).</p>
+<p>Inspiré de : <a href="http://superuser.com/questions/748117/how-to-manually-install-apache-php-and-mysql-on-windows" target="_blank">http://superuser.com/questions/748117/how-to-manually-install-apache-php-and-mysql-on-windows</a></p>
+<p>L’article <a rel="nofollow" href="/tuto-installer-serveur-apache-php-mysql-manuellement-windows-7/">Tutoriel &#8211; Installer un serveur Apache &#8211; PHP &#8211; MySql manuellement sous Windows 7 et 10</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/tuto-installer-serveur-apache-php-mysql-manuellement-windows-7/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">229</post-id>	</item>
+		<item>
+		<title>Changer l&#8217;URL de son site</title>
+		<link>/changer-lurl-de-son-site/</link>
+		<comments>/changer-lurl-de-son-site/#respond</comments>
+		<pubDate>Tue, 28 Jan 2014 09:28:30 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[MySql]]></category>
+		<category><![CDATA[Php]]></category>
+
+		<guid isPermaLink="false">/?p=70</guid>
+		<description><![CDATA[<p>Quand l&#8217;url de son site change, on se retrouve systématiquement avec des liens morts, ou en tout cas qui ne pointent pas à l&#8217;endroit voulu. Pour éviter ça, il existe le script http://interconnectit.com / dont j&#8217;ai déjà parlé dans l&#8217;article précédent. Cette fois-ci je vais aller un peu plus dans le détail avec quelques captures d&#8217;écran &#8230; <a href="/changer-lurl-de-son-site/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Changer l&#8217;URL de son site</span></a></p>
+<p>L’article <a rel="nofollow" href="/changer-lurl-de-son-site/">Changer l&rsquo;URL de son site</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Quand l&rsquo;url de son site change, on se retrouve systématiquement avec des liens morts, ou en tout cas qui ne pointent pas à l&rsquo;endroit voulu. Pour éviter ça, il existe le script <a href="http://interconnectit.com/products/search-and-replace-for-wordpress-databases/">http://interconnectit.com/</a>  dont j&rsquo;ai déjà parlé dans l&rsquo;<a title="Effectuer des chercher remplacer dans sa base de données mysql" href="/effectuer-des-chercher-remplacer-dans-sa-base-de-donnees-mysql/">article précédent</a>. Cette fois-ci je vais aller un peu plus dans le détail avec quelques captures d&rsquo;écran à l&rsquo;appuie <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /><span id="more-70"></span>Qu&rsquo;il s&rsquo;agisse d&rsquo;effectuer la mise en production d&rsquo;un site ou sa migration, la problématique de son URL est très souvent une sacrée prise de tête. En effet, quand on installe son site quelque part et qu&rsquo;on le configure pour la première fois, le CMS installe en base de données l&rsquo;url courante pour la construction de son arborescence.</p>
+<p>On est donc tenté de faire un simple rechercher/remplacer dans sa base de données pour remédier à ce problème. ERREUR GRAVE ! Pourquoi ? Tout simplement parce que l&rsquo;url est sérialisée dans MySql et que si on la casse, bah le site fonctionnera plus. Et alors là, pour rattraper le coup, tu peux te brosser Martine.</p>
+<p>Je ne vous ferai pas de long laïus sur le script proposé par Interconnectit, c&rsquo;est une petite perle qu&rsquo;il fait toujours bon connaitre et avoir avec soi. C&rsquo;est fiable, facile, efficace et fonctionne sous quasiment tous les CMS PHP connectés à MySql. Tout ce que j&rsquo;aime <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<h3>Avertissement !</h3>
+<p><strong>Cette manipulation n&rsquo;est pas sans risque pour votre base de données, et une mauvaise manipulation ou un souci technique ne sont pas à exclure. Et je peux vous assurer que perdre une base de données complète le jour de la mise en production est typiquement le genre de chose qui vous donne envie de vous pendre à défaut de donner votre démission pour incompétence. Et ni moi ni l&rsquo;auteur du script ne saurait être tenu pour responsable si vous n&rsquo;avez pas pris la précaution de faire une sauvegarde de la base de données avant de procéder.</strong> <strong>Mais rassurez-vous, si vous faites tout bien comme il faut, il ne devrait pas y avoir de pépin <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></strong><br />
+<strong>Maintenant que vous avez bien flippé, on y va !</strong></p>
+<h3>Avant de commencer il faut :</h3>
+<p>Avoir un site fonctionnel avec la nouvelle adresse déjà configurée<br />
+Sauvegarder sa base de données MySql au cas tout vous exploserait à la figure<br />
+Le script est disponible ici <a href="http://interconnectit.com/products/search-and-replace-for-wordpress-databases/">http://interconnectit.com/</a></p>
+<h3>Le changement d&rsquo;url, comment ça marche ?</h3>
+<p>On part du principe que vous avez un site en développement qui a une adresse de type http://localhost/monsite ou bien http://dev.monsite.fr/ ou tout autre nom de domaine de « transition » avant la mise en production. Nous ce qu&rsquo;on veut c&rsquo;est que son adresse soit http://monsite.fr/ ou http://www.monsite.fr./ Qu&rsquo;à cela ne tienne !</p>
+<h3>Précédons par étape :</h3>
+<ol>
+<li>On décompresse le dossier contenant le script</li>
+<li>On renomme le script par sécurité et simplicité sans supprimer l&rsquo;extension .php</li>
+<li>On se connecte en ftp sur notre site et à la racine du dossier contenant le CMS, on dépose le script</li>
+<li>On se connecte à sa nouvelle adresse (e.g. http://www.monsite.fr)/ à laquelle on ajoute /nom_du_script.php, soit http://www.monsite.fr/nom_du_script.php</li>
+<li>On atterrit sur la page d&rsquo;accueil du script qui propose donc de charger les informations de connexion à la base de donnée de WordPress. On laisse la case « Pre-populate » cochée et on clique sur « Submit ».<br />
+<a href="/wp-content/uploads/2014/01/sar1.png"><img class="aligncenter size-medium wp-image-73" src="/wp-content/uploads/2014/01/sar1-300x107.png" alt="sar1" width="300" height="107" srcset="/wp-content/uploads/2014/01/sar1-300x107.png 300w, /wp-content/uploads/2014/01/sar1-624x223.png 624w, /wp-content/uploads/2014/01/sar1.png 788w" sizes="(max-width: 300px) 100vw, 300px" /></a></li>
+<li>Sur la page suivant s&rsquo;affichent donc les informations de connexion. Vérifier avec soin qu&rsquo;elles correspondent bien à celles de votre base de données. Le cas échéant, les corriger. Faites bien attention au charset utilisé qu&rsquo;il corresponde également. si tout est ok, cliquez sur « Submit DB details ».<br />
+<a href="/wp-content/uploads/2014/01/sar2.png"><img class="aligncenter" src="/wp-content/uploads/2014/01/sar2-300x196.png" alt="sar2" width="300" height="196" /></a></li>
+<li>L&rsquo;avant dernière page vous propose de sélectionner les tables dans lesquelles effectuer le rechercher/remplacer. Par défaut, tout est sélectionné. Dans notre cas, c&rsquo;est exactement ce que l&rsquo;on souhaite, donc on ne touche à rien, si ce n&rsquo;est qu&rsquo;on coche impérativement la case « Leave GUID column unchanged ». Je vous invite à lire la <a href="http://codex.wordpress.org/Changing_The_Site_URL#Important_GUID_Note">page du codex</a> concernée si vous voulez plus de détails, mais grosso modo, si vous ne la cochez pas, vous cassez vos flux RSS. On clique à présent sur « Continue » et « OK » à l&rsquo;avertissement.<br />
+<a href="/wp-content/uploads/2014/01/sar3.png"><img class="aligncenter size-medium wp-image-75" src="/wp-content/uploads/2014/01/sar3-300x201.png" alt="sar3" width="300" height="201" srcset="/wp-content/uploads/2014/01/sar3-300x201.png 300w, /wp-content/uploads/2014/01/sar3-624x419.png 624w, /wp-content/uploads/2014/01/sar3.png 788w" sizes="(max-width: 300px) 100vw, 300px" /></a></li>
+<li>Enfin, dernière étape de notre script, le chercher/remplacer. Dans le champs du haut on met le domaine à remplacer, et dans celui du bas, le nouveau nom de domaine. Il faut être vigilant et ne renseigner que le domaine. Donc concrètement, on ne met pas le http://,/ ni de slash (/) à la fin. Puis on clique sur « Submit Search String » et « OK » pour procéder.<br />
+<a href="/wp-content/uploads/2014/01/sar4.png"><img class="aligncenter size-medium wp-image-76" src="/wp-content/uploads/2014/01/sar4-300x130.png" alt="sar4" width="300" height="130" srcset="/wp-content/uploads/2014/01/sar4-300x130.png 300w, /wp-content/uploads/2014/01/sar4-624x270.png 624w, /wp-content/uploads/2014/01/sar4.png 788w" sizes="(max-width: 300px) 100vw, 300px" /></a></li>
+<li>Voilà, c&rsquo;est fait. Si tout est ok, le script affiche « Completed » ainsi qu&rsquo;un récap des modifications effectuées. Vérifiez votre site en navigant et constatez que votre nouvelle adresse ne bouge et est la même de partout, même pour les images.<br />
+<a href="/wp-content/uploads/2014/01/sar5.png"><img class="aligncenter size-medium wp-image-77" src="/wp-content/uploads/2014/01/sar5-300x90.png" alt="sar5" width="300" height="90" srcset="/wp-content/uploads/2014/01/sar5-300x90.png 300w, /wp-content/uploads/2014/01/sar5-624x189.png 624w, /wp-content/uploads/2014/01/sar5.png 788w" sizes="(max-width: 300px) 100vw, 300px" /></a></li>
+<li>Supprimez le script de votre ftp afin qu&rsquo;un petit malin ne vienne pas mettre le boxon dans votre installation.</li>
+</ol>
+<p><strong>Je rappelle que ce script est utilisable pour presque tous les CMS PHP utilisant MySql. Je l&rsquo;ai déjà testé avec succès sur WordPress, Drupal et CMS Made Simple. J&rsquo;insiste aussi encore sur une chose : Faites une sauvegarde de votre base de données avant de procéder !</strong></p>
+<p>Sur ce, enjoy <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>L’article <a rel="nofollow" href="/changer-lurl-de-son-site/">Changer l&rsquo;URL de son site</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/changer-lurl-de-son-site/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">70</post-id>	</item>
+		<item>
+		<title>Effectuer des chercher remplacer dans sa base de données mysql</title>
+		<link>/effectuer-des-chercher-remplacer-dans-sa-base-de-donnees-mysql/</link>
+		<comments>/effectuer-des-chercher-remplacer-dans-sa-base-de-donnees-mysql/#respond</comments>
+		<pubDate>Fri, 10 Jan 2014 15:37:30 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[MySql]]></category>
+		<category><![CDATA[Php]]></category>
+
+		<guid isPermaLink="false">/?p=62</guid>
+		<description><![CDATA[<p>Qui n&#8217;a jamais été confronté à cette problématique ? Chercher et remplacer simplement son contenu stocké en bdd sans risquer de tout péter, c&#8217;est possible ! Cependant, il faut impérativement faire une sauvegarde de la base avant de procéder. Le script qui suit fonctionne avec presque tous les CMS, mais de mon côté je m&#8217;en sers &#8230; <a href="/effectuer-des-chercher-remplacer-dans-sa-base-de-donnees-mysql/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Effectuer des chercher remplacer dans sa base de données mysql</span></a></p>
+<p>L’article <a rel="nofollow" href="/effectuer-des-chercher-remplacer-dans-sa-base-de-donnees-mysql/">Effectuer des chercher remplacer dans sa base de données mysql</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Qui n&rsquo;a jamais été confronté à cette problématique ? Chercher et remplacer simplement son contenu stocké en bdd sans risquer de tout péter, c&rsquo;est possible !<span id="more-62"></span></p>
+<p>Cependant, il faut<strong> impérativement faire une sauvegarde de la base</strong> avant de procéder.</p>
+<p>Le script qui suit fonctionne avec presque tous les CMS, mais de mon côté je m&rsquo;en sers essentiellement avec WordPress et Drupal. Principalement il me sert à changer les url stockées en dur dans la base, lors de la mise en production d&rsquo;un site. Je signal au passage qu&rsquo;il est recommandé par le Codex WordPress.</p>
+<p>Pourquoi se servir de ce script ? Car il prend en considération la sérialisation des chaînes php et évite donc d&rsquo;endommager vos tables.</p>
+<p>Il existe maintenant en v3, mais je ne l&rsquo;ai pas testé. Donc je vous laisse me donner vos retours là dessus <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Pour télécharger le script, c&rsquo;est par là : <a href="http://interconnectit.com/products/search-and-replace-for-wordpress-databases/">http://interconnectit.com/</a></p>
+<p>Il suffit de le mettre à la racine de votre site et de l&rsquo;exécuter. N&rsquo;oubliez pas de le supprimer une fois que vous avez terminé <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>L’article <a rel="nofollow" href="/effectuer-des-chercher-remplacer-dans-sa-base-de-donnees-mysql/">Effectuer des chercher remplacer dans sa base de données mysql</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/effectuer-des-chercher-remplacer-dans-sa-base-de-donnees-mysql/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">62</post-id>	</item>
+	</channel>
+</rss>

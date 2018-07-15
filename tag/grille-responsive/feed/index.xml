@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>grille responsive &#8211; DesireLabs</title>
+	<atom:link href="/tag/grille-responsive/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Développement web, marketing digital, et référencement</description>
+	<lastBuildDate>Tue, 06 Jun 2017 17:34:36 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.4</generator>
+<site xmlns="com-wordpress:feed-additions:1">67143140</site>	<item>
+		<title>Créer son propre système de grille flexible avec SASS</title>
+		<link>/creer-propre-systeme-de-grille-flexible-sass/</link>
+		<comments>/creer-propre-systeme-de-grille-flexible-sass/#respond</comments>
+		<pubDate>Tue, 18 Oct 2016 13:24:55 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[HTML/CSS]]></category>
+		<category><![CDATA[sass]]></category>
+		<category><![CDATA[grille responsive]]></category>
+
+		<guid isPermaLink="false">/?p=521</guid>
+		<description><![CDATA[<p>Dans la boîte à outils de l’intégrateur, il y a beaucoup de choses : des frameworks html et css, des générateurs de dégradés de couleur, un ou plusieurs préprocesseurs… et surtout il y a les grilles responsives. Quand on travaille avec un framework css, ces dernières sont souvent (voire systématiquement ) incluses. Impossible par ailleurs de &#8230; <a href="/creer-propre-systeme-de-grille-flexible-sass/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Créer son propre système de grille flexible avec SASS</span></a></p>
+<p>L’article <a rel="nofollow" href="/creer-propre-systeme-de-grille-flexible-sass/">Créer son propre système de grille flexible avec SASS</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p class="graf graf--p">Dans la boîte à outils de l’intégrateur, il y a beaucoup de choses : des frameworks html et css, des générateurs de dégradés de couleur, un ou plusieurs préprocesseurs… et surtout il y a les grilles responsives. Quand on travaille avec un framework css, ces dernières sont souvent (voire systématiquement ) incluses. Impossible par ailleurs de dénombrer les systèmes de grille existants tant il y en a. Ce qui est sûr, c’est que nous avons le choix ! Mais parfois, il arrive que l’on soit amené à créer sois même un système de grille pour des besoins très spécifiques… C’est ce qui m’est arrivé récemment.</p>
+<p class="graf graf--p">C’est pourquoi je vous propose une approche de création de grille reposant sur SASS. Il est entendu que c’est faisable en CSS, mais c’est beaucoup plus rapide en SASS, c’est la beauté de la chose <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p class="graf graf--p"><strong class="markup--strong markup--p-strong">Le découpage du travail sera comme suit</strong> : D’abord on définira les différentes variables nécessaires ainsi que les points de rupture de notre grille responsive. Ensuite, on s’attardera sur la mécanique standard pour la génération de la grille “desktop”. Enfin on fera de même pour nos <code>media-queries</code>.</p>
+<p class="graf graf--p"><strong class="markup--strong markup--p-strong">Définition de notre grille</strong> : Elle sera responsive bien sûr, on pourra choisir combien de colonnes on souhaite, la taille des gouttières, la largeur globale du conteneur, et les comportements des colonnes sur les différents appareils.</p>
+<p class="graf graf--p">Voici les variables que je définis en premier lieu :</p>
+<p></p><pre class="crayon-plain-tag">/* 1. valeurs de grille par d&eacute;faut */
+
+$cols: 12 !default;
+$gutter-width: 1.2rem !default;
+$max-width: 1180px !default;</pre><p></p>
+<p class="graf graf--p">On aura donc 12 colonnes, avec une gouttière de 1.2rem et une largeur maximum de 1200px. Ces valeurs sont suffisantes pour jeter les bases de la création de notre grille desktop. Ce que vous allons donc faire de ce pas :</p>
+<p></p><pre class="crayon-plain-tag">/* 2. D&eacute;finition de la grille */
+.container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: $max-width;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+  .row {
+  	margin-left: -$gutter-width / 2;
+  	margin-right: -$gutter-width / 2;
+  }
+  &amp;amp;:after {
+    content: &quot;&quot;;
+    display: table;
+    clear: both;
+  }
+  /* on divise la goutti&egrave;re par 2 car on en retire une partie de chaque c&ocirc;t&eacute; de la colonne */
+  .col {
+    float: left;
+    box-sizing: border-box;
+    padding: 0 $gutter-width / 2;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+
+    /* On va boucler sur les colonnes et calculer automatiquement leur taille en pourcentage
+     * un peu comme on pourrait le faire en javascript par exemple */
+    $i: 1;
+    @while $i &amp;lt;= $cols {
+      $perc: unquote((100 / ($cols / $i)) + &quot;%&quot;);
+      &amp;amp;.small-#{$i} {
+        width: $perc;
+      }
+      $i: $i + 1;
+    }
+  }
+}</pre><p></p>
+<p class="graf graf--p">Dans ce système, ce sont les paddings qui définissent la taille de la gouttière. Ce qui fait que l’on n’a pas à se casser la tête avec le calcul de marges, d’autant que ces dernières ne sont pas prises en compte par <code>box-sizing: border-box</code>. Et ça c’est c’est déjà un pas vers plus de flexibilité : on peut ajouter autant de colonnes que l’on souhaite à notre ligne. Par ailleurs, plus de <code>row</code> ou <code>row-fluid</code> à la Bootstrap 2 : désormais toutes nos lignes sont fluides. Point. Seul le conteneur définira la largeur maximale de rendu. Et étant donné que nos tailles sont calculées en % on est tranquilles <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p class="graf graf--p">A présent il ne reste plus qu’à générer cette grille pour les tailles d’écran choisies :</p>
+<p></p><pre class="crayon-plain-tag">@media screen and (min-width:721px) {
+
+      $i: 1;
+      @while $i &amp;lt;= $cols {
+        $perc: unquote((100 / ($cols / $i)) + &quot;%&quot;);
+        &amp;amp;.medium-#{$i} {
+          width: $perc;
+        }
+        $i: $i + 1
+      }
+    }
+
+    @media screen and (min-width:1025px) {
+
+      $i: 1;
+      @while $i &amp;lt;= $cols {
+        $perc: unquote((100 / ($cols / $i)) + &quot;%&quot;);
+        &amp;amp;.large-#{$i} {
+          width: $perc;
+        }
+        $i: $i + 1;
+      }
+    }</pre><p></p>
+<p class="graf graf--p">Et c’est tout ! Bon on pourrait aller beaucoup plus loin en définissant des comportements plus spécifiques, mais la base est là. Voici le résultat final :</p>
+<p></p><pre class="crayon-plain-tag">/* 1. valeurs de grille par d&eacute;faut */
+
+$cols: 12 !default;
+$gutter-width: 1.2rem !default;
+$max-width: 1200px !default;</pre><p></p><pre class="crayon-plain-tag">/* 2. D&eacute;finition de la grille */
+.container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: $max-width;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+  .row {
+  	margin-left: -$gutter-width / 2;
+  	margin-right: -$gutter-width / 2;
+  }
+  &amp;amp;:after {
+    content: &quot;&quot;;
+    display: table;
+    clear: both;
+  }
+  /* on divise la goutti&egrave;re par 2 car on en retire une partie de chaque c&ocirc;t&eacute; de la */
+  .col {
+    float: left;
+    box-sizing: border-box;
+    padding: 0 $gutter-width / 2;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+
+    /* On va boucler sur les colonnes et calculer automatiquement leur taille en pourcentage
+     * un peu comme on pourrait le faire en javascript par exemple */
+    $i: 1;
+    @while $i &amp;lt;= $cols {
+      $perc: unquote((100 / ($cols / $i)) + &quot;%&quot;);
+      &amp;amp;.small-#{$i} {
+        width: $perc;
+      }
+      $i: $i + 1;
+    }</pre><p></p><pre class="crayon-plain-tag">/* 3. Media Queries */
+    @media screen and (min-width:721px) {
+
+      $i: 1;
+      @while $i &amp;lt;= $cols {
+        $perc: unquote((100 / ($cols / $i)) + &quot;%&quot;);
+        &amp;amp;.medium-#{$i} {
+          width: $perc;
+        }
+        $i: $i + 1
+      }
+    }
+
+    @media screen and (min-width:1025px) {
+
+      $i: 1;
+      @while $i &amp;lt;= $cols {
+        $perc: unquote((100 / ($cols / $i)) + &quot;%&quot;);
+        &amp;amp;.large-#{$i} {
+          width: $perc;
+        }
+        $i: $i + 1;
+      }
+    }
+  }
+}</pre><p></p>
+<p class="graf graf--p">Il est entendu que la propriété flexbox tend à s’imposer pour ce qui est de la création de systèmes destinés à structurer le contenu. Je pense d’ailleurs qu’elle pourrait à terme remplacer nos systèmes de grille traditionnels. En revanche je pense que les systèmes comme celui que nous avons là on encore de beaux jours devant eux car ils restent à ce jour l’approche la plus stable car compatible avec n’importe quel navigateur / appareil.</p>
+<p class="graf graf--p">Mais je me penche depuis quelques temps déjà sur flexbox, il n’est donc pas impossible que je fasse un article sur le sujet dans les semaines à venir <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>L’article <a rel="nofollow" href="/creer-propre-systeme-de-grille-flexible-sass/">Créer son propre système de grille flexible avec SASS</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/creer-propre-systeme-de-grille-flexible-sass/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">521</post-id>	</item>
+	</channel>
+</rss>

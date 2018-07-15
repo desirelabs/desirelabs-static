@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>MultiSite &#8211; DesireLabs</title>
+	<atom:link href="/tag/multisite/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Développement web, marketing digital, et référencement</description>
+	<lastBuildDate>Tue, 06 Jun 2017 17:34:36 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.4</generator>
+<site xmlns="com-wordpress:feed-additions:1">67143140</site>	<item>
+		<title>Tutoriel &#8211; Installer WordPress MultiSite et cloner son instance de site maître</title>
+		<link>/multisite-wordpress-facile/</link>
+		<comments>/multisite-wordpress-facile/#comments</comments>
+		<pubDate>Mon, 13 Jul 2015 07:00:59 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Tutoriels]]></category>
+		<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[MultiSite]]></category>
+
+		<guid isPermaLink="false">/?p=351</guid>
+		<description><![CDATA[<p>Faire du MultiSite sous WordPress est très facile, mais demande tout de même un peu de réflexion avant de se lancer dans la bataille. Par ailleurs quand on souhaite des instances identiques en termes de structure et de contenu, ça peut vite devenir rébarbatif. Mais comme toujours, il y a une extension pour ça !Première &#8230; <a href="/multisite-wordpress-facile/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Tutoriel &#8211; Installer WordPress MultiSite et cloner son instance de site maître</span></a></p>
+<p>L’article <a rel="nofollow" href="/multisite-wordpress-facile/">Tutoriel &#8211; Installer WordPress MultiSite et cloner son instance de site maître</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Faire du MultiSite sous WordPress est très facile, mais demande tout de même un peu de réflexion avant de se lancer dans la bataille. Par ailleurs quand on souhaite des instances identiques en termes de structure et de contenu, ça peut vite devenir rébarbatif. Mais comme toujours, il y a une extension pour ça !<span id="more-351"></span><strong>Première question à se poser</strong> : sous-domaines ou sous-répertoires ? Ceci dépend de votre projet et de ses objectifs. En ce qui me concerne, je travail surtout en sous-domaines.</p>
+<p><strong>Ensuite vient la question de l&rsquo;organisation du travail à effectuer</strong> : si tous vos sites se ressemblent en termes de structure et de contenu, autant ne pas se fouler et utiliser un outil qui va industrialiser tout ça pour vous : <a href="https://wordpress.org/plugins/multisite-clone-duplicator/" target="_blank">MultiSite Clone Duplicator</a>. L&rsquo;idée de base est simple, on fait son site « maître », on active le multi, et on duplique.</p>
+<h2>Etape 1 : la création du site maître et l&rsquo;activation de WordPress MultiSite</h2>
+<p>On commence par créer sa première instance de site, et on active le multi en ajoutant à wp-config.php la ligne</p>
+<p></p><pre class="crayon-plain-tag">define( 'WP_ALLOW_MULTISITE', true );</pre><p></p>
+<p>juste au dessus du commentaire</p>
+<p></p><pre class="crayon-plain-tag">/* C'est tout, ne touchez pas à ce qui suit ! Bon blogging ! */</pre><p></p>
+<p>A partir de là, on se connecte à l&rsquo;administration, et sous le menu « Outils », une nouvelle entrée « Création du réseau » apparaît.</p>
+<p><a href="/wp-content/uploads/2015/07/creation_reseau.png"><img class="aligncenter" src="/wp-content/uploads/2015/07/creation_reseau.png" alt="creation_reseau" /></a></p>
+<p>Avant de cliquer, désactivez tous les plugins, ceci est impératif, sans quoi, vous ne pourrez pas poursuivre la configuration. A noter au passage que toute action sur un site au sein du réseau, nécessite que les plugins soient désactivés sous peine de voir apparaître des bugs.</p>
+<p>Vous arrivez ensuite sur la page de configuration où l&rsquo;on vous demande de choisir entre sous-domaines ou sous-dossiers. C&rsquo;est à vous de voir. Pour mes besoins, ce sera en sous-domaines. Vous n&rsquo;avez qu&rsquo;à suivre à la lettre les indications de cette page et de la suivante pour procéder en bonne et due forme à l&rsquo;activation de votre réseau.</p>
+<p><a href="/wp-content/uploads/2015/07/config_reseau.png"><img class="aligncenter" src="/wp-content/uploads/2015/07/config_reseau.png" alt="config_reseau" width="685" height="321" /></a></p>
+<p>Avant de modifier vos fichiers .htaccess et wp-config.php comme demandé à l&rsquo;étape suivante, je vous recommande de vous en faire une sauvegarde, <em>just in case</em> <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Une fois que les modifications sont faites, il vous suffit de vous reconnecter et d&rsquo;admirer votre nouveau menu d&rsquo;administration de réseau.</p>
+<p><a href="/wp-content/uploads/2015/07/admin_reseau.png"><img class="aligncenter" src="/wp-content/uploads/2015/07/admin_reseau.png" alt="admin_reseau" /></a></p>
+<p>Voilà ! Vous n&rsquo;avez plus rien à configurer, si ce n&rsquo;est votre site maître. Car votre installation est encore toute fraîche, il vous faut l&rsquo;alimenter, la paramétrer, créer vos <em>users</em> ainsi que vos pages principales.</p>
+<h2>Etape 2 : Cloner son site maître et créer un site enfant en sous-domaine</h2>
+<p>Cette étape consiste à dupliquer son site maître ainsi que tous ses réglages, contenus, utilisateurs vers une instance MultiSite. Ceci peut être assez pratique quand on a des sites dont la configuration est les contenus sont similaires, ou qu&rsquo;on utilise des shortcodes pour structurer ses pages. Il suffit d&rsquo;installer le plugin <a href="https://wordpress.org/plugins/multisite-clone-duplicator/" target="_blank">MultiSite Clone Duplicator</a> qui, comme son nom l&rsquo;indique, va créer pour vous vos instances avec les sous domaines qui vont bien, tout en dupliquant vos données d&rsquo;un site vers l&rsquo;autre. Son utilisation et sa fiabilité font de ce plugin un must have quand on fait du MultiSite.</p>
+<p>Pour installer le plugin, vous ne passez plus par le menu habituel, mais par le menu de « Mes sites » &gt; « Admin du réseau » &gt; « Extensions ». En effet les plugins et les thèmes sont des ressources partagées entre tous vos sites, que vous installez de manière globale. Mais rassurez vous, leur activation sur vos différents sites sont tout à fait libres. Installez donc ce plugin et cliquez sur « Activer sur le réseau », ce qui le rendra disponible pour tous vos sites. Une fois activé, une nouvelle entrée fait son apparition dans le menu d&rsquo;admin du réseau.</p>
+<p><a href="/wp-content/uploads/2015/07/duplication_reseau.png"><img class="aligncenter" src="/wp-content/uploads/2015/07/duplication_reseau.png" alt="duplication_reseau" /></a></p>
+<p>La page d&rsquo;option est très simple et vous demandera le sous-domaine souhaité (si c&rsquo;est l&rsquo;option que vous avez choisie), le titre du nouveau site ainsi que le mail du nouvel administrateur. Vous pourrez également choisir si vous souhaitez conserver les utilisateurs et rôles du site dupliqué, copier les fichiers du répertoire d&rsquo;upload, voire sauvegarder les logs dans un répertoire du plugin.</p>
+<p>Et c&rsquo;est tout ! Reste qu&rsquo;à appuyer sur le bouton <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p><strong>Nota Bene : Le Multi ne nous dispense pas de la création de nos vhosts pour rendre nos instances accessibles, mais ça c&rsquo;est une autre histoire !</strong></p>
+<p>C&rsquo;est à peu près tout, je ne suis pas trop rentré dans les détails car je souhaitais que ce petit tuto reste simple et accessible, mais je posterai d&rsquo;autres articles connexes au sujet de WordPress MultiSite. N&rsquo;hésitez pas à venir discuter si le sujet vous intéresse ou que certaines choses ne sont pas claires.</p>
+<p>L’article <a rel="nofollow" href="/multisite-wordpress-facile/">Tutoriel &#8211; Installer WordPress MultiSite et cloner son instance de site maître</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/multisite-wordpress-facile/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">351</post-id>	</item>
+	</channel>
+</rss>

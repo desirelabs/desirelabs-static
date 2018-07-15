@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>CMS &#8211; DesireLabs</title>
+	<atom:link href="/category/cms/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Développement web, marketing digital, et référencement</description>
+	<lastBuildDate>Tue, 06 Jun 2017 17:34:36 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.4</generator>
+<site xmlns="com-wordpress:feed-additions:1">67143140</site>	<item>
+		<title>Les CMS Headless, les CMS du future ?</title>
+		<link>/les-cms-headless-les-cms-du-future/</link>
+		<comments>/les-cms-headless-les-cms-du-future/#respond</comments>
+		<pubDate>Tue, 06 Jun 2017 11:43:47 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[CMS]]></category>
+		<category><![CDATA[caas]]></category>
+		<category><![CDATA[Headless cms]]></category>
+		<category><![CDATA[rest]]></category>
+
+		<guid isPermaLink="false">/?p=602</guid>
+		<description><![CDATA[<p>On entend partout parler de CMS Headless, de Content As A Service, mais qu&#8217;en est-il exactement ? Qu&#8217;est-ce que c&#8217;est, et surtout quel intérêt et quel impact pour les développeurs et les éditeurs de contenus ? C&#8217;est quoi une CMS Headless ? Les CMS Headless sont avant tout des systèmes d&#8217;édition de contenu ; ça &#8230; <a href="/les-cms-headless-les-cms-du-future/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Les CMS Headless, les CMS du future ?</span></a></p>
+<p>L’article <a rel="nofollow" href="/les-cms-headless-les-cms-du-future/">Les CMS Headless, les CMS du future ?</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>On entend partout parler de CMS Headless, de Content As A Service, mais qu&rsquo;en est-il exactement ? Qu&rsquo;est-ce que c&rsquo;est, et surtout quel intérêt et quel impact pour les développeurs et les éditeurs de contenus ?<span id="more-602"></span></p>
+<h2>C&rsquo;est quoi une CMS Headless ?</h2>
+<p>Les CMS Headless sont avant tout des systèmes d&rsquo;édition de contenu ; ça c&rsquo;est la partie CMS (Content Management System), mais qui ont une particularité bien spécifique, c&rsquo;est qu&rsquo;ils s&rsquo;affranchissent totalement de la façon dont ils sont affichés : par qui, par quoi ? Ils s&rsquo;en moquent. En d&rsquo;autres termes, ils sont totalement indépendants de toute plateforme d&rsquo;affichage et de canvas. Ce qui signifie qu&rsquo;ils ne dépendent pas d&rsquo;une technologie en particulier pour fonctionner. Et c&rsquo;est là toute leur puissance.</p>
+<p>En effet, si un contenu n&rsquo;est pas dépendant d&rsquo;une technologie particulière pour exister, cela signifie qu&rsquo;il peut être bien plus flexible dans la manière dont il va être distribué.</p>
+<h2>Et dans les faits ça donne quoi ?</h2>
+<p>Imaginons que l&rsquo;article que vous êtes en train de lire actuellement soit « Headless », pour moi qui écris cet article, ça signifie plusieurs choses :</p>
+<p>Pour commencer, je peux récupérer et utiliser ce contenu dans différentes applications. Pourtant je n&rsquo;ai pas à faire de réplication car la source du contenu restera inchangée. Si je souhaite que certains de mes articles soient affiché à la fois sur mon site mais aussi dans une application mobile de mon cru (ou de quelqu&rsquo;un d&rsquo;autre d&rsquo;ailleurs), je n&rsquo;ai qu&rsquo;à écrire mon contenu et « brancher » les applications concernée avec la plateforme sur laquelle j&rsquo;édite mon texte. Je ne suis pas forcé non plus d&rsquo;intégrer mon contenu via des procédés peu pratiques comme c&rsquo;est encore trop souvent le cas via des iframes. Non, tout ce que j&rsquo;ai à faire est d&rsquo;écrire mon contenu sur ma plateforme d&rsquo;édition et d&rsquo;accorder les permissions nécessaires aux différentes applications qui vont le consommer.</p>
+<h3>Quel est l&rsquo;intérêt ?</h3>
+<p>Je pense qu&rsquo;avec les lignes précédentes, l&rsquo;intérêt devrait vous sauter aux yeux : Pour faire simple, votre contenu peut être distribué vers n&rsquo;importe quelle application et son affichage ne dépend que de la plateforme sur laquelle il est affiché.</p>
+<p>Pour les publicateurs, c&rsquo;est du temps gagné : Une plateforme de publication unique, pas de « tweak » ni de pris de tête avec des considérations techniques. L&rsquo;écriture du contenu sera la seule considération.</p>
+<p>Pour les développeurs aussi c&rsquo;est du temps de gagné, car les données avec lesquels ils devront interagir seront toujours de même format : du JSON.</p>
+<p>Les avantages en termes de créativité sont conséquents qui plus est, car le choix des technologies de développement ne sera plus un frein lié au canvas d&rsquo;édition, comme ça peut être le cas avec des CMS Couplés type WordPress ou Liferay pour ne parler que d&rsquo;eux. En tant que développeur, on peut être tenté d&rsquo;utiliser une technologie qui n&rsquo;est pas adaptée dans le but de gagner du temps, parce qu&rsquo;on connait bien la dite technologie. Imaginons qu&rsquo;on souhaite créer une application qui délivre du contenu, le souci étant qu&rsquo;il faut permettre à notre client de pouvoir éditer son contenu avec un outil qui gère bien cette problématique. On peut être tenté d&rsquo;utiliser une CMS Couplé, puisqu&rsquo;ils gèrent normalement très bien la gestion de contenus (en même temps c&rsquo;est pour ça qu&rsquo;ils sont conçus). Les problèmes de cette solution sont nombreux :</p>
+<p>Pour commencer, ces CMS viennent souvent avec un arsenal de fonctionnalités dont on n&rsquo;a pas besoin. Ils viennent également avec des background techniques qui peuvent être assez lourd. C&rsquo;est le cas de Liferay par exemple, qui est un puissant outil de gestion de contenu, mais c&rsquo;est aussi, et avant tout un outil de création de portails qui pèse à lui seul plusieurs centaines de Mo. D&rsquo;autre part chaque CMS Couplé est tributaire d&rsquo;un environnement d&rsquo;exécution : ça peut être Php / Apache, Java etc, qui nécessitent des serveurs qu&rsquo;il faudra configurer et administrer. Ce sont des coûts supplémentaires non négligeables. Enfin, disons le simplement, c&rsquo;est souvent « overkill », ou dit plus simplement, ça revient à tuer des mouches avec un fusil.</p>
+<p>Alors attention, je ne dis pas que les CMS Headless n&rsquo;impliquent plus de développement et qu&rsquo;ils ne nécessitent pas d&rsquo;environnement d&rsquo;exécution, ce serait faux. Mais si l&rsquo;on envisage uniquement les CMS Headless As A Service, la facture finale ne concernera au mieux que la partie frontale de nos applications, et au pire quelques middlewares supplémentaires.</p>
+<p>L&rsquo;intérêt des CMS Headless est donc conséquent, tant pour l&rsquo;éditeur qui n&rsquo;aura plus à se soucier des aspects techniques, comme c&rsquo;est encore malheureusement le cas avec beaucoup de CMS populaires, mais aussi pour les développeurs qui peuvent travailler rapidement, grâce à l&rsquo;utilisation de langages simples comme json, et de conventions de communication standardisées comme REST. Et si l&rsquo;on est tout à fait ouvert à l&rsquo;idée de CaaS (Content As A Service) et que l&rsquo;on est prêt à embrasser ce que nous offre le cloud computing, les coûts de production seront drastiquement réduits pour les clients et les développeurs.</p>
+<h2>Quels service choisir ?</h2>
+<p>Bon, c&rsquo;est bien beau, mais alors quels CMS Headless méritent qu&rsquo;on s&rsquo;y arrête ? Vaste question à laquelle une réponse nuancée est de mise. Déjà il faut savoir si l&rsquo;on souhaite une solution auto-hébergée ou une solution As A Service. En ce qui me concerne je n&rsquo;ai pour le moment utilisé que des solutions Cloud. Le but ici n&rsquo;est pas non plus de faire un comparatif des offres qui existent sur le marché, d&rsquo;autres articles en parlent bien mieux que je ne le ferais. Mais les deux solutions qui me semblent aujourd&rsquo;hui viables, avec chacune une offre gratuite sont Contentful, DatoCms et Prismicio. J&rsquo;ai une préférence pour Prismicio : Support en français, équipe réactive, et l&rsquo;interface est vraiment sympa à utiliser. Seul « bémol » à l&rsquo;heure actuelle, il n&rsquo;est pas possible d&rsquo;éditer du contenu en dehors de leur application web. Mais l&rsquo;équipe y travaille actuellement d&rsquo;après ce que j&rsquo;ai appris de mes échanges avec eux.</p>
+<h2>Et les CMS Couplés dans tout ça ?</h2>
+<p>Mais du coup, est-ce que les CMS Headless signent l&rsquo;arrêt de mort des CMS Couplés ? Là aussi une réponse nuancée est de rigueur. D&rsquo;abord parce que certains acteurs du secteur sont en train de faire bouger les lignes : WordPress en tête, qui a amorcé un virage significatif ces trois dernières années en proposant de manière désormais standard, une api Rest. Drupal lui emboite le pas. La transition est donc marche. Quant à dire si les CMS tels que nous les connaissons vont mourir, j&rsquo;ai tendance à penser que oui. Je pense aussi que les dinosaures qui n&rsquo;auront pas su évoluer vers les contenus distribués disparaitront aussi. Quant à savoir quand tout cela se produira, je dirais qu&rsquo;au vu de la vitesse à laquelle les choses ont évolué ces cinq dernières années, cela va arriver vite. Très vite même.</p>
+<h2>Conclusion</h2>
+<p>En ce qui me concerne, je continue d&rsquo;utiliser les CMS Couplés, car à ce jour, ils bénéficient d&rsquo;écosystèmes riches en termes fonctionnalités notamment. Ils permettent donc de travailler rapidement sans être forcé de réinventer la roue. Mais je me tourne de plus en plus vers du développement Javascript pure, car le langage propose aujourd&rsquo;hui à peu près tout ce dont on a besoin pour développer des applications robustes et aux fonctionnalités riches. NodeJS et les framworks Javascripts comme Angular, VusJS et React sont en train de parachever cette transition, et c&rsquo;est un plaisir de travailler avec ces technologies. Je vous invite par ailleurs à jeter un oeil à mon site personnel que je viens de mettre en ligne et qui embrasse cette philosophie de Headless CMS : <a href="http://francklebas.fr/" target="_blank" rel="noopener noreferrer">http://francklebas.fr/</a></p>
+<p>Si vous souhaitez aller plus loin, je vous recommande les articles suivants :</p>
+<p><a href="https://pantheon.io/decoupled-cms" target="_blank" rel="noopener noreferrer">https://pantheon.io/decoupled-cms</a></p>
+<blockquote class="wp-embedded-content" data-secret="4qt5iNKcn6"><p><a href="http://faber-content.com/2017/05/9784/">Gestion de contenu : faut-il passer au headless CMS  et au Content as a service ?</a></p></blockquote>
+<p><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" src="http://faber-content.com/2017/05/9784/embed/#?secret=4qt5iNKcn6" data-secret="4qt5iNKcn6" width="600" height="338" title="« Gestion de contenu : faut-il passer au headless CMS  et au Content as a service ? » &#8212; " frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></p>
+<p>L’article <a rel="nofollow" href="/les-cms-headless-les-cms-du-future/">Les CMS Headless, les CMS du future ?</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/les-cms-headless-les-cms-du-future/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">602</post-id>	</item>
+		<item>
+		<title>Utiliser SASS dans ses projets WordPress</title>
+		<link>/utiliser-sass-projets-wordpress/</link>
+		<comments>/utiliser-sass-projets-wordpress/#respond</comments>
+		<pubDate>Sun, 10 Jan 2016 20:05:15 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[HTML/CSS]]></category>
+		<category><![CDATA[Non classé]]></category>
+		<category><![CDATA[sass]]></category>
+		<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[compass]]></category>
+
+		<guid isPermaLink="false">/?p=456</guid>
+		<description><![CDATA[<p>Sass est devenu pour moi un outil du quotidien. Je l&#8217;utilise dans presque tous mes projets. Le fait est que je travaille beaucoup avec WordPress. Il est donc devenu évident qu&#8217;il fallait que je développe une méthodologie pour le faire entrer dans ces projets-ci. Aujourd&#8217;hui je vous propose de découvrir de quelle manière intégrer Sass &#8230; <a href="/utiliser-sass-projets-wordpress/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Utiliser SASS dans ses projets WordPress</span></a></p>
+<p>L’article <a rel="nofollow" href="/utiliser-sass-projets-wordpress/">Utiliser SASS dans ses projets WordPress</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Sass est devenu pour moi un outil du quotidien. Je l&rsquo;utilise dans presque tous mes projets. Le fait est que je travaille beaucoup avec WordPress. Il est donc devenu évident qu&rsquo;il fallait que je développe une méthodologie pour le faire entrer dans ces projets-ci. Aujourd&rsquo;hui je vous propose de découvrir de quelle manière intégrer Sass dans vos projets WordPress.<span id="more-456"></span></p>
+<p>Un thème WordPress nécessite normalement 1 seul et unique fichier CSS, à la racine : style.css. Mais tout mettre au kilomètre dans ce fichier c&rsquo;est la garantie de rendre le projet difficile à maintenir et à faire évoluer. C&rsquo;est pourquoi on préfèrera découper son design en modules. Plusieurs méthodologies existent, mais celle qui fait sens à mes yeux se rapproche de SMACSS. Je vous invite à aller faire un tour sur <a href="https://smacss.com/" target="_blank">leur site</a>, on y apprend des choses très intéressantes sur les manières possibles de découper son design CSS.</p>
+<p>La puissance des préprocesseurs CSS n&rsquo;est plus à démontrer : ils nous permettent de s&rsquo;affranchir des préfixes vendeurs, d&rsquo;apporter de la logique dans nos feuilles de styles, de séparer proprement notre architecture, bref, de tout calibrer au plus juste sans se répéter. C&rsquo;est la méthode DRY (Don&rsquo;t repeat yourself). Globalement, on gagne en productivité, en stabilité, on limite les régressions et en plus on s&rsquo;éclate. Que demander de plus ?</p>
+<p><strong>Sass embrasse parfaitement cette philosophie du DRY et de la scalabilité. Mais pour l’installer sur WordPress comment ça se passe ?</strong></p>
+<p>Premièrement, il faut avoir déjà installé et configuré les outils sur sa machine. Dans mon cas, j&rsquo;utilise le framework COMPASS. Il est réputé pour être l&rsquo;un des plus complets avec une palette de mixins très étendue, et même si pas mal lui reprochent d&rsquo;être assez lourd / lent à la compilation, de mon point de vue c&rsquo;est à la marge. Car si vous n&rsquo;avez jamais utilisé SASS / COMPASS, il faut savoir que le code que vous générez est compilé à la volée en fichier css standards.</p>
+<p>Je pars du principe que les personnes qui lisent cet articles ont déjà COMPASS d&rsquo;installé et sont prêts à se lancer.</p>
+<p>Pour démarrer le projet (thème ou plugin) en mode SASS, il suffit d&rsquo;initialiser un projet COMPASS à la racine. Si je construit un thème, j&rsquo;ouvrirai le terminal à la racine de mon thème et je taperai :</p>
+<p></p><pre class="crayon-plain-tag">compass init</pre><p></p>
+<p>A la suite de quoi, je me retrouve avec un fichier config.rb, ainsi que 2 nouveaux dossiers : sass et stylesheets. Le dossier sass est celui dans lequel on va travailler à l&rsquo;avenir, mais avant, il faut aller un peu plus loin :</p>
+<p>Les fichiers scss contenu dans le dossier sass vont entrainer la création / modification de leur alter égo css contenu dans le dossier stylesheets, à chaque fois que j&rsquo;ajouterai / modifierai un fichier scss. Je vais donc devoir demander à compass de se mettre en « écoute », de manière à <em>catcher</em> les modifications au fur et à mesure. Je tape donc dans mon terminal, toujours à la racine de mon thème :</p>
+<p></p><pre class="crayon-plain-tag">compass watch</pre><p></p>
+<p>Le watcher est à présent en mode « écoute », et toutes les modifications effectuées dans le dossier sass seront automatiquement compilées dans le dossier stylesheets. Mais cela ne suffit pas. Il faut dès maintenant indiquer à WordPress comment récupérer / lire les fichiers css créés.</p>
+<p><strong>Voici la logique que j&rsquo;appliqu</strong>e :</p>
+<p>Mon fichier style.css à la racine de mon thème va dès à présent me servir de passerelle, en appelant un seul et unique fichier contenu dans le dossier stylesheets. Bien sûr, la création de ce fichier se passe d&rsquo;abord dans le dossier sass : je créé un fichier nommé « main.scss », et automatiquement, son copain « main.css » est créé. Il me suffit alors d&rsquo;importer ce fichier css dans mon « style.css » :</p>
+<p></p><pre class="crayon-plain-tag">@import url(stylesheets/main.css);</pre><p></p>
+<p>Mais alors, et les autres fichiers aussi il va falloir  les importer ? Oui et non. En fait ce qu&rsquo;on va faire c&rsquo;est créer uniquement des fichiers scss qui ne seront pas compilés en fichiers css. Le but n&rsquo;est pas de remplir le dossier stylesheets, mais de le maintenir avec un seul fichier : notre fameux main.css, et de dire à ce dernier de faire tous les imports des fichiers qu&rsquo;on va créer par la suite.</p>
+<p>Du coup on va préfixer tous nos nouveux fichiers scss avec un underscore « _ ». Par exemple, si je veux un fichier scss dédié à la navigation et un autre à mes modules, je vais les nommer respectivement « _navigation.scss » et « _modules.scss ». De cette manière je suis tranquille, je sais qu&rsquo;ils ne seront pas compilés en css. Il ne reste plus qu&rsquo;à les importer dans l&rsquo;ordre qui nous convient, dans le fichier main.scss (qui lui ne possède pas d&rsquo;underscore, et est donc compiler en main.css).</p>
+<p>Voici ce que j&rsquo;écris dans mon main.scss :</p>
+<p></p><pre class="crayon-plain-tag">@import "compass";
+@import "navigation";
+@import "modules";</pre><p></p>
+<p>Première chose à noter, j&rsquo;importe les fichiers en les appelant par leur nom, sans l&rsquo;underscore et sans leur extension. C&rsquo;est tout à fait normal. De plus je n&rsquo;utilise pas « url(nom du fichier) », je met directement le nom de mon fichier entre guillemets, et c&rsquo;est tout ! L&rsquo;import de « compass » est nécessaire mais non obligatoire : le fait d&rsquo;utiliser le compilateur de COMPASS ne vous oblige nullement à utiliser les mixins fournies, mais bon, ce serait dommage de se priver <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Pour ma part je recommande de ne pas importer COMPASS entièrement, mais de sélectionner les outils qui vous intéressent. Je vous laisse jeter un oeil à la <a href="http://compass-style.org/help/" target="_blank">documentation de compass</a> à ce sujet.</p>
+<p><strong>Si on récapitule :</strong></p>
+<p>j&rsquo;ai un fichier style.css qui importe le fichier main.css, qui lui même est issu de la compilation de main.scss, et c&rsquo;est dans main.scss qu&rsquo;on importe autres feuilles de style scss. C&rsquo;est aussi simple que ça ! Les modules importés sont préfixés d&rsquo;un underscore, de manière à ne pas générer un fichier css pour rien, mais de tout centraliser grâce à un seul et unique fichier : main.scss</p>
+<p>C&rsquo;est ainsi que je procède dans mes projets, une fois que tout est en place, il ne me reste qu&rsquo;à lancer mon watcher et tout se fait dans le dossier sass à la racine du thème. On ne peut faire plus simple, enfin pas tant que les navigateurs ne parleront pas autre chose que du css <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>L’article <a rel="nofollow" href="/utiliser-sass-projets-wordpress/">Utiliser SASS dans ses projets WordPress</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/utiliser-sass-projets-wordpress/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">456</post-id>	</item>
+		<item>
+		<title>Filtrer ses portfolios Jetpack grâce à Isotope</title>
+		<link>/filtrer-ses-portfolios-jetpack-grace-a-isotope/</link>
+		<comments>/filtrer-ses-portfolios-jetpack-grace-a-isotope/#respond</comments>
+		<pubDate>Tue, 10 Nov 2015 17:18:23 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[isotope]]></category>
+		<category><![CDATA[jetpack]]></category>
+		<category><![CDATA[portfolio]]></category>
+
+		<guid isPermaLink="false">/?p=450</guid>
+		<description><![CDATA[<p>Desire Portfolio Filter est un nouveau plugin qui ajoute à Jetpack les fameux filtres de la librairie javascript Isotope pour trier ses projets de portfolio. Je trouvais que ce qui manquait réellement à Jetpack Portfolio, c&#8217;était la possibilité de filtrer ses projets en fonction du type par exemple. Et comme je trouvais dommage d&#8217;installer un &#8230; <a href="/filtrer-ses-portfolios-jetpack-grace-a-isotope/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Filtrer ses portfolios Jetpack grâce à Isotope</span></a></p>
+<p>L’article <a rel="nofollow" href="/filtrer-ses-portfolios-jetpack-grace-a-isotope/">Filtrer ses portfolios Jetpack grâce à Isotope</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Desire Portfolio Filter est un nouveau plugin qui ajoute à Jetpack les fameux filtres de la librairie javascript Isotope pour trier ses projets de portfolio.</p>
+<p>Je trouvais que ce qui manquait réellement à Jetpack Portfolio, c&rsquo;était la possibilité de filtrer ses projets en fonction du type par exemple. Et comme je trouvais dommage d&rsquo;installer un autre plugin de portfolio juste pour cette featurette, j&rsquo;ai opté pour un plugin maison qui fait appel aux portfolio Jetpack. <strong>Donc vous ne pouvez pas utiliser ce plugin sans Jetpack.</strong></p>
+<p>Pour l&rsquo;heure, il utilise un template spécifique pour l&rsquo;affichage des portfolios, qu&rsquo;il faut choisir sur la page d&rsquo;affichage lors de l&rsquo;édition, en remplacement de l&rsquo;utilisation du shortcode fourni par automattic. Cela implique que l&rsquo;on n&rsquo;a plus la main sur les portfolios qu&rsquo;on affiche. Mais une version est en cours de développement afin de rendre à César ce qui est à César, et offrir à nouveau cette possibilité.</p>
+<p>Télécharger le plugin sur :</p>
+<p><a href="https://github.com/neovea/desire-portfolio-filter" target="_blank"><br />
+</a><a href="https://github.com/neovea/desire-portfolio-filter" target="_blank"><img class="aligncenter" src="/wp-content/uploads/2015/11/GitHub_Logo-300x123.png" alt="GitHub_Logo" width="163" height="67" /></a></p>
+<p>Ou sur :<br />
+<a href="https://wordpress.org/plugins/desire-portfolio-filter/" target="_blank"><img class="aligncenter" src="/wp-content/uploads/2015/11/wordpress-logo-hoz-rgb-300x100.jpg" alt="wordpress-logo-hoz-rgb" width="300" height="100" /></a></p>
+<p>Je vous laisse découvrir et me faire vos retours <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>L’article <a rel="nofollow" href="/filtrer-ses-portfolios-jetpack-grace-a-isotope/">Filtrer ses portfolios Jetpack grâce à Isotope</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/filtrer-ses-portfolios-jetpack-grace-a-isotope/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">450</post-id>	</item>
+		<item>
+		<title>Intégrer des widgets dans ses contenus WordPress</title>
+		<link>/integrer-des-widget-dans-ses-contenus-wordpress/</link>
+		<comments>/integrer-des-widget-dans-ses-contenus-wordpress/#respond</comments>
+		<pubDate>Sun, 01 Nov 2015 21:30:41 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[plugin wordpress]]></category>
+		<category><![CDATA[widget]]></category>
+
+		<guid isPermaLink="false">/?p=441</guid>
+		<description><![CDATA[<p>Ne vous est-il pas déjà arrivé de vouloir afficher un ou plusieurs widgets sur une page ou dans un article WordPress ? Ces petites boîtes sont devenues tellement nombreuses et sont si pratiques que ce serait dommage de cantonner leur usage à la sidebar uniquement 🙂 Aujourd&#8217;hui je vous offre un plugin très simple qui &#8230; <a href="/integrer-des-widget-dans-ses-contenus-wordpress/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Intégrer des widgets dans ses contenus WordPress</span></a></p>
+<p>L’article <a rel="nofollow" href="/integrer-des-widget-dans-ses-contenus-wordpress/">Intégrer des widgets dans ses contenus WordPress</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Ne vous est-il pas déjà arrivé de vouloir afficher un ou plusieurs widgets sur une page ou dans un article WordPress ? Ces petites boîtes sont devenues tellement nombreuses et sont si pratiques que ce serait dommage de cantonner leur usage à la sidebar uniquement <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Aujourd&rsquo;hui je vous offre un plugin très simple qui vous permet cela, mais pas que&#8230; <span id="more-441"></span>Je ne trouvais pas chaussure à mon pied, et aucune solution existante ne me séduisait. J&rsquo;ai donc codé ce petit plugin qui offre deux fonctionnalités :</p>
+<ol>
+<li>Pouvoir ajouter des widgets dans un contenu (page ou article par exemple) via un simple shortcode</li>
+<li>Pouvoir afficher une page dans un widget (pratique si l&rsquo;on souhaite faire un design one page)</li>
+</ol>
+<p>C&rsquo;est la version 1.0, ce qui signifie qu&rsquo;elle est stable bien sûr, mais aussi que pour l&rsquo;instant, il n&rsquo;y a aucune autre fonctionnalité que celles décrites plus haut. J&rsquo;ai déjà une petite liste d&rsquo;améliorations et d&rsquo;évolutions dans les cartons, so wait (try) and see <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Je ne vous décris pas son fonctionnement, je vous laisse découvrir ça par vous-même, car vous verrez c&rsquo;est très simple.</p>
+<p>Quelques captures d&rsquo;écran viendront bientôt, donc en attendant, si vous souhaitez tester l&rsquo;application, rendez-vous sur mon compte GitHub :</p>
+<p><a href="https://github.com/neovea/desire-page-widget" target="_blank"><br />
+</a><a href="https://github.com/neovea/desire-page-widget" target="_blank"><img class="aligncenter" src="/wp-content/uploads/2015/11/GitHub_Logo-300x123.png" alt="GitHub_Logo" width="163" height="67" /></a>Ou sur wordpress.org :</p>
+<p><a href="https://wordpress.org/plugins/desire-page-widget/" target="_blank"><img class="aligncenter" src="/wp-content/uploads/2015/11/wordpress-logo-hoz-rgb-300x100.jpg" alt="wordpress-logo-hoz-rgb" width="300" height="100" /></a></p>
+<p>N&rsquo;hésitez pas à me faire vos retours sur mon compte GitHub ou dans les commentaires. Merci <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>L’article <a rel="nofollow" href="/integrer-des-widget-dans-ses-contenus-wordpress/">Intégrer des widgets dans ses contenus WordPress</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/integrer-des-widget-dans-ses-contenus-wordpress/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">441</post-id>	</item>
+		<item>
+		<title>Tutoriel &#8211; Installer WordPress MultiSite et cloner son instance de site maître</title>
+		<link>/multisite-wordpress-facile/</link>
+		<comments>/multisite-wordpress-facile/#comments</comments>
+		<pubDate>Mon, 13 Jul 2015 07:00:59 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Tutoriels]]></category>
+		<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[MultiSite]]></category>
+
+		<guid isPermaLink="false">/?p=351</guid>
+		<description><![CDATA[<p>Faire du MultiSite sous WordPress est très facile, mais demande tout de même un peu de réflexion avant de se lancer dans la bataille. Par ailleurs quand on souhaite des instances identiques en termes de structure et de contenu, ça peut vite devenir rébarbatif. Mais comme toujours, il y a une extension pour ça !Première &#8230; <a href="/multisite-wordpress-facile/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Tutoriel &#8211; Installer WordPress MultiSite et cloner son instance de site maître</span></a></p>
+<p>L’article <a rel="nofollow" href="/multisite-wordpress-facile/">Tutoriel &#8211; Installer WordPress MultiSite et cloner son instance de site maître</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Faire du MultiSite sous WordPress est très facile, mais demande tout de même un peu de réflexion avant de se lancer dans la bataille. Par ailleurs quand on souhaite des instances identiques en termes de structure et de contenu, ça peut vite devenir rébarbatif. Mais comme toujours, il y a une extension pour ça !<span id="more-351"></span><strong>Première question à se poser</strong> : sous-domaines ou sous-répertoires ? Ceci dépend de votre projet et de ses objectifs. En ce qui me concerne, je travail surtout en sous-domaines.</p>
+<p><strong>Ensuite vient la question de l&rsquo;organisation du travail à effectuer</strong> : si tous vos sites se ressemblent en termes de structure et de contenu, autant ne pas se fouler et utiliser un outil qui va industrialiser tout ça pour vous : <a href="https://wordpress.org/plugins/multisite-clone-duplicator/" target="_blank">MultiSite Clone Duplicator</a>. L&rsquo;idée de base est simple, on fait son site « maître », on active le multi, et on duplique.</p>
+<h2>Etape 1 : la création du site maître et l&rsquo;activation de WordPress MultiSite</h2>
+<p>On commence par créer sa première instance de site, et on active le multi en ajoutant à wp-config.php la ligne</p>
+<p></p><pre class="crayon-plain-tag">define( 'WP_ALLOW_MULTISITE', true );</pre><p></p>
+<p>juste au dessus du commentaire</p>
+<p></p><pre class="crayon-plain-tag">/* C'est tout, ne touchez pas à ce qui suit ! Bon blogging ! */</pre><p></p>
+<p>A partir de là, on se connecte à l&rsquo;administration, et sous le menu « Outils », une nouvelle entrée « Création du réseau » apparaît.</p>
+<p><a href="/wp-content/uploads/2015/07/creation_reseau.png"><img class="aligncenter" src="/wp-content/uploads/2015/07/creation_reseau.png" alt="creation_reseau" /></a></p>
+<p>Avant de cliquer, désactivez tous les plugins, ceci est impératif, sans quoi, vous ne pourrez pas poursuivre la configuration. A noter au passage que toute action sur un site au sein du réseau, nécessite que les plugins soient désactivés sous peine de voir apparaître des bugs.</p>
+<p>Vous arrivez ensuite sur la page de configuration où l&rsquo;on vous demande de choisir entre sous-domaines ou sous-dossiers. C&rsquo;est à vous de voir. Pour mes besoins, ce sera en sous-domaines. Vous n&rsquo;avez qu&rsquo;à suivre à la lettre les indications de cette page et de la suivante pour procéder en bonne et due forme à l&rsquo;activation de votre réseau.</p>
+<p><a href="/wp-content/uploads/2015/07/config_reseau.png"><img class="aligncenter" src="/wp-content/uploads/2015/07/config_reseau.png" alt="config_reseau" width="685" height="321" /></a></p>
+<p>Avant de modifier vos fichiers .htaccess et wp-config.php comme demandé à l&rsquo;étape suivante, je vous recommande de vous en faire une sauvegarde, <em>just in case</em> <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Une fois que les modifications sont faites, il vous suffit de vous reconnecter et d&rsquo;admirer votre nouveau menu d&rsquo;administration de réseau.</p>
+<p><a href="/wp-content/uploads/2015/07/admin_reseau.png"><img class="aligncenter" src="/wp-content/uploads/2015/07/admin_reseau.png" alt="admin_reseau" /></a></p>
+<p>Voilà ! Vous n&rsquo;avez plus rien à configurer, si ce n&rsquo;est votre site maître. Car votre installation est encore toute fraîche, il vous faut l&rsquo;alimenter, la paramétrer, créer vos <em>users</em> ainsi que vos pages principales.</p>
+<h2>Etape 2 : Cloner son site maître et créer un site enfant en sous-domaine</h2>
+<p>Cette étape consiste à dupliquer son site maître ainsi que tous ses réglages, contenus, utilisateurs vers une instance MultiSite. Ceci peut être assez pratique quand on a des sites dont la configuration est les contenus sont similaires, ou qu&rsquo;on utilise des shortcodes pour structurer ses pages. Il suffit d&rsquo;installer le plugin <a href="https://wordpress.org/plugins/multisite-clone-duplicator/" target="_blank">MultiSite Clone Duplicator</a> qui, comme son nom l&rsquo;indique, va créer pour vous vos instances avec les sous domaines qui vont bien, tout en dupliquant vos données d&rsquo;un site vers l&rsquo;autre. Son utilisation et sa fiabilité font de ce plugin un must have quand on fait du MultiSite.</p>
+<p>Pour installer le plugin, vous ne passez plus par le menu habituel, mais par le menu de « Mes sites » &gt; « Admin du réseau » &gt; « Extensions ». En effet les plugins et les thèmes sont des ressources partagées entre tous vos sites, que vous installez de manière globale. Mais rassurez vous, leur activation sur vos différents sites sont tout à fait libres. Installez donc ce plugin et cliquez sur « Activer sur le réseau », ce qui le rendra disponible pour tous vos sites. Une fois activé, une nouvelle entrée fait son apparition dans le menu d&rsquo;admin du réseau.</p>
+<p><a href="/wp-content/uploads/2015/07/duplication_reseau.png"><img class="aligncenter" src="/wp-content/uploads/2015/07/duplication_reseau.png" alt="duplication_reseau" /></a></p>
+<p>La page d&rsquo;option est très simple et vous demandera le sous-domaine souhaité (si c&rsquo;est l&rsquo;option que vous avez choisie), le titre du nouveau site ainsi que le mail du nouvel administrateur. Vous pourrez également choisir si vous souhaitez conserver les utilisateurs et rôles du site dupliqué, copier les fichiers du répertoire d&rsquo;upload, voire sauvegarder les logs dans un répertoire du plugin.</p>
+<p>Et c&rsquo;est tout ! Reste qu&rsquo;à appuyer sur le bouton <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p><strong>Nota Bene : Le Multi ne nous dispense pas de la création de nos vhosts pour rendre nos instances accessibles, mais ça c&rsquo;est une autre histoire !</strong></p>
+<p>C&rsquo;est à peu près tout, je ne suis pas trop rentré dans les détails car je souhaitais que ce petit tuto reste simple et accessible, mais je posterai d&rsquo;autres articles connexes au sujet de WordPress MultiSite. N&rsquo;hésitez pas à venir discuter si le sujet vous intéresse ou que certaines choses ne sont pas claires.</p>
+<p>L’article <a rel="nofollow" href="/multisite-wordpress-facile/">Tutoriel &#8211; Installer WordPress MultiSite et cloner son instance de site maître</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/multisite-wordpress-facile/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">351</post-id>	</item>
+		<item>
+		<title>Outil &#8211; Scanner de vulnérabilités WordPress</title>
+		<link>/trouver-vulnerabilites-wordpress/</link>
+		<comments>/trouver-vulnerabilites-wordpress/#respond</comments>
+		<pubDate>Tue, 05 Aug 2014 13:16:58 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Outils]]></category>
+		<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[faille]]></category>
+		<category><![CDATA[securité]]></category>
+		<category><![CDATA[wpscan]]></category>
+
+		<guid isPermaLink="false">/?p=221</guid>
+		<description><![CDATA[<p>Bonjour, retour de vacances pour moi, et le moment de faire le point sur les projets en cours et faire un peu de ménage dans ceux passés. Du coup je me penche sur la sécurité. Et à ce propos, je viens de découvrir un outil fort pratique pour déceler les vulnérabilités d&#8217;un site WordPress. Il &#8230; <a href="/trouver-vulnerabilites-wordpress/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Outil &#8211; Scanner de vulnérabilités WordPress</span></a></p>
+<p>L’article <a rel="nofollow" href="/trouver-vulnerabilites-wordpress/">Outil &#8211; Scanner de vulnérabilités WordPress</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Bonjour, retour de vacances pour moi, et le moment de faire le point sur les projets en cours et faire un peu de ménage dans ceux passés. Du coup je me penche sur la sécurité. Et à ce propos, je viens de découvrir un outil fort pratique pour déceler les vulnérabilités d&rsquo;un site WordPress.<span id="more-221"></span></p>
+<p>Il s&rsquo;agit de WpScan. Tout en ruby, il s’installe sur une machine Linux. Tout site WP peut être scanner. Ce qui fait de cet outil un joujou de choix pour les hackers potentiels. Je l’ai installé sur mon serveur pour tester, et c’est plutôt efficace. De plus toutes les failles qu’il remonte sont documentées avec plusieurs sources. Bravo aux développeurs de cette perle !</p>
+<p>Je vous encourage à le tester. Voici le site ainsi que leur GitHub :</p>
+<p><a href="http://wpscan.org/">http://wpscan.org/</a></p>
+<p><a href="https://github.com/wpscanteam/wpscan">https://github.com/wpscanteam/wpscan</a></p>
+<p>Si vous aussi connaissez des outils similaires, n&rsquo;hésitez surtout pas à les partager !</p>
+<p>A+</p>
+<p>L’article <a rel="nofollow" href="/trouver-vulnerabilites-wordpress/">Outil &#8211; Scanner de vulnérabilités WordPress</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/trouver-vulnerabilites-wordpress/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">221</post-id>	</item>
+		<item>
+		<title>Tutoriel &#8211; Optimiser WordPress pour les performances</title>
+		<link>/optimiser-wordpress/</link>
+		<comments>/optimiser-wordpress/#respond</comments>
+		<pubDate>Sat, 12 Jul 2014 11:21:40 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Tutoriels]]></category>
+		<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[cache]]></category>
+		<category><![CDATA[vitesse de chargement]]></category>
+
+		<guid isPermaLink="false">/?p=209</guid>
+		<description><![CDATA[<p>Au sein de la famille des CMS, WordPress a plutôt mauvaise réputation. L&#8217;évolution de son code pour le faire passer de plate forme de blogging pur à l&#8217;état de véritable CMS a été (et est encore) laborieuse. Chaque version amène son lot de petites nouveautés, de fonctionnalités qui mises bout à bout sans une véritable &#8230; <a href="/optimiser-wordpress/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Tutoriel &#8211; Optimiser WordPress pour les performances</span></a></p>
+<p>L’article <a rel="nofollow" href="/optimiser-wordpress/">Tutoriel &#8211; Optimiser WordPress pour les performances</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Au sein de la famille des CMS, WordPress a plutôt mauvaise réputation. L&rsquo;évolution de son code pour le faire passer de plate forme de blogging pur à l&rsquo;état de véritable CMS a été (et est encore) laborieuse. Chaque version amène son lot de petites nouveautés, de fonctionnalités qui mises bout à bout sans une véritable refonte de son coeur, ont contribué à la dégradation de ses performances. Très récemment j&rsquo;ai du me pencher pour les besoins d&rsquo;un projet, sur les moyens à disposition afin d&rsquo;augmenter les performances de WordPress. Et je peux vous dire que les solutions existent bel et bien. Je vous expose ici mon expérience.</p>
+<p><span id="more-209"></span>Il est de notoriété publique qu&rsquo;un site qui met du temps à s&rsquo;afficher pose 2 problèmes majeurs :</p>
+<p>*Les visiteurs fuient<br />
+*Les moteurs de recherche pénalisent le site</p>
+<p>Les deux combinés contribuent à une dégradation notable du nombre de visites, une explosion du taux de rebond, et une mauvaise réputation.</p>
+<h3>Petit état des lieux</h3>
+<p>Un site c&rsquo;est avant tout un ensemble de ressources qui sont servies aux visiteurs. Ca comprend des données bien sûr, des feuilles de style CSS pour rendre le tout visuellement agréable à lire, et du javascript très souvent qui permet d&rsquo;apporter des fonctionnalités souvent discutables. Toutes ces ressources demandent de la bande passante et de la mémoire. La maîtrise de ces deux facteurs est la clé vers l&rsquo;optimisation d »un site de manière général, et tout particulièrement avec WordPress.</p>
+<h3>Première étape : Faire du ménage</h3>
+<p>La question qu&rsquo;il faut toujours se poser et garder à l&rsquo;esprit est la suivante :</p>
+<p style="text-align: center;">*est-ce que cette fonctionnalité sert le contenu (et par extension, les visiteurs) ?*</p>
+<p style="text-align: left;">Ca peut paraître bête dit comme ça, mais on a trop souvent tendance à rajouter des fonctionnalités pas toujours utiles à WordPress par l&rsquo;intermédiaire des extensions. Et c&rsquo;est compréhensible, avec plus de 32 000 plugins dispos sur le dépôt officiel, c&rsquo;est tentant. Alors on arrête les frais et on ne garde/installe que ce dont on a besoin. Une extension doit être pertinente et apporter une vraie plu-value à votre contenu. A titre d&rsquo;exemple, sur <a href="/">/</a> j&rsquo;ai en tout et pour tout 6 extensions installées :</p>
+<p style="text-align: left;">Akismet<br />
+Contact Form 7<br />
+Crayon Syntax Highlighter<br />
+WP-SEO<br />
+Jetpack par WordPress.com<br />
+WP Rocket</p>
+<p style="text-align: left;">Et honnêtement je n&rsquo;ai pas besoin de plus. Ces 6 extensions répondent à l&rsquo;ensemble de mes besoins. Pareil pour les bibliothèques javascript, souvent activées par défaut dans votre thème. Sachez que même si vous ne les utilisez pas, elles se chargent en même temps que votre page. A défaut de les supprimer, mettez les au moins en commentaire dans votre code afin de pouvoir y revenir si besoin.</p>
+<h3 style="text-align: left;">Externaliser les ressources</h3>
+<p>Les CDN (content delivery network), ça vous parle ? Ce sont des serveurs tiers qui hébergent tout type de ressource comme du javascript, vos images ou vos vidéos. Pourquoi faire appel à un CDN ? Pour économiser votre bande passante, tout simplement. Exemple, un fichier javascript qui pèse 40ko et qui se charge sur chaque page et pour chaque visiteur, ça peut vite chiffrer quand on en a une bonne dizaine. Alors pourquoi ne pas libérer cette bande passante pour vos contenus et laisser d&rsquo;autres faire le sale boulot à la place de votre site ?</p>
+<p>Quelques exemples de CDN :</p>
+<p><a href="www.jsdelivr.com">www.jsdelivr.com<br />
+developers.google.com</a><br />
+<a href="http://www.maxcdn.com/">www.maxcdn.com</a></p>
+<p>Il en existe des centaines, voire des milliers. Même les bibliothèques javascript les plus populaires possèdent leur propre CDN. Si vous utilisez un framewwork comme Bootstrap ou les icônes de fontawesome, vous y avez droit. Pourquoi se priver ?</p>
+<h3>Alléger vos pages de leurs <del>gadgets</del> widgets</h3>
+<p>Un petit encart pour le partage ici, les derniers articles par là, les archives par ci&#8230; Stop ! Les visiteurs s&rsquo;en tapent. S&rsquo;ils veulent trouver quelque chose, ils utiliseront la fonction recherche et la taxonomie présente sur votre site. Et s&rsquo;ils veulent partager vos contenus, ils le feront sans l&rsquo;aide de vos boutons. Au passage ça évite de nuire à la lecture de vos contenus.</p>
+<h3>Jouer à cache cache</h3>
+<p>WordPress permet d&rsquo;utiliser la mise en cache de vos contenus. Concrètement, un contenu qui a déjà été visite est servi directement de manière statique aux autres visiteurs. On évite les requêtes en base de donnée, ce qui n&rsquo;est pas un mal avec WordPress quand on sait qu&rsquo;il n&rsquo;utilise pas encore PDO MySql. Je crois pouvoir dire sans me tromper de beaucoup que c&rsquo;est la fonctionnalité la plus intéressante à votre disposition. Le hic, c&rsquo;est que pour en profiter, il faut un plugin. Et là, on a l&#8217;embarras du choix. En ce qui me concerne, j&rsquo;en ai testé plusieurs, et mon choix s&rsquo;est arrêté sur <a href="http://wp-rocket.me/fr/">WP-Rocket</a>. A ce jour, c&rsquo;est à mon avis la solution la plus aboutie, légère et complète en plus d&rsquo;être extrêmement simple à mettre en place. Parmi les options que cette extension propose : lazy loading, minification des css, html et javascripts, et bien d&rsquo;autres fonctionnalités bien sympa. A 29,00€ le plugin, c&rsquo;est du pain béni et une véritable cure de jouvence pour WordPress. Un vrai investissement quoi ! Sinon, parmi les gratuits, je recommanderais <a href="https://wordpress.org/plugins/w3-total-cache/">W3 Total Cache</a>.</p>
+<h3>Minification</h3>
+<p>La minification c&rsquo;est le fait de mettre tous ses fichiers de ressources css, js, html bout à bout et au kilomètre afin de se charger plus vite. Ce n&rsquo;est pas un gadget mais un véritable outil. Ajouté à la mise en cache, ce sont des performances accrues pour votre site et une meilleure disponibilité de vos contenus. Wp-Rocket inclut cette fonctionnalité, mais si vous recherchez un plugin gratuit : <a href="https://wordpress.org/plugins/bwp-minify/">Better WordPress Minify</a>.</p>
+<h3>Compression des données</h3>
+<p>Encore une véritable optimisation. Probablement l&rsquo;une des plus importantes avec la mise en cache. Il s&rsquo;agit de servir à vos visiteurs des contenus compressés. Cette manipulation n&rsquo;est pas triviale et s&rsquo;effectue côté serveur, à condition d&rsquo;avoir les bons modules apache activés et les bonnes directives dans votre fichier .htaccess. Je ne m&rsquo;étalerai pas sur ce sujet, car d&rsquo;autres sites bien plus spécialisés sauront le faire mieux que moi. Je vous donne tout de même un lien : <a href="http://www.alsacreations.com/article/lire/914-compression-pages-html-css-gzip-deflate.html">www.alsacreations.com</a>. Ceci est également proposé en standard par WP-Rocket (je vous l&rsquo;ai dit c&rsquo;est une petite bombe :p)</p>
+<h3>Maîtriser son image</h3>
+<p>Aujourd&rsquo;hui WordPress propose un outil pour la gestion des médias qui a bien évolué avec le temps. Beaucoup de tâches sont désormais possibles au travers de l&rsquo;interface offerte. Mais n&rsquo;oubliez pas qu&rsquo;une image destinée au web n&rsquo;est par défaut pas destinée à être imprimée. Donc on reste dans les standards du web et on optimise le poids des images en ajustant leur taille et leur résolution avant de les importer de préférence. Une image trop grande et de trop grande résolution ne sert à rien sur le net. 72dpi pour la résolution et 1024px de large maximum me semblent être un bon début. Au passage, pensez à bien nommer vos images avant import, pour le SEO, ça compte !</p>
+<h3>Mais que fait la police ?</h3>
+<p>Avant on n&rsquo;avait pas le choix pour les typos de son site : Arial, Times New Roman etc étaient les standards tristement incontournables. Aujourd&rsquo;hui ce n&rsquo;est plus le cas et on peut vraiment se lâcher. Du coup on fait un peu n&rsquo;importe quoi en servant des polices pas du tout optimisées pour le net. Là aussi il y a des services qui vous proposent des typos et ce sans trop alourdir votre site. Vous n&rsquo;avez plus besoin de choisir entre rapidité et esthétique. Mon préféré est <a href="http://www.fontsquirrel.com/">www.fontsquirrel.com</a> avec une pléthore de fonts disponibles et gratuites, des packs webfont prêt à l&#8217;emploi, et même un webfont generator. Sinon il y a <a href="https://www.google.com/fonts">www.google.com/fonts</a>. Pas mon préféré, mais il fait le job. Alors on arrête d&rsquo;importer des fonts qui pèsent un âne mort comme des bourrins <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<h3>Conclusion</h3>
+<p>J&rsquo;ai volontairement été succinct en vous donnant toutes les pistes exploitables pour optimiser votre WordPress, car je n&rsquo;ai pas la prétention d&rsquo;être expert dans ce domaine. Mais ces pistes doivent être à mon avis un point de départ vers l&rsquo;optimisation. Et ne jamais perdre de vue que ce qui prime sur un site c&rsquo;est son contenu. Et que ces optimisations doivent être à son service. Je vous donne encore quelques liens utiles avant de vous quitter ainsi que ceux dont je vous ai parlé dans cet article, histoire de pas vous laisser sur votre faim <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Si vous avez des remarques ou des idées et astuces pour améliorer les performances de votre site WordPress, ou que vous pensez qu&rsquo;il manque quelque chose dans la liste, venez en discuter via les commentaires <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<h4>Tester les performances de votre site et savoir ce qui cloche :</h4>
+<p><a href="https://developer.yahoo.com/yslow/">https://developer.yahoo.com/yslow/ (extension pour navigateur)</a></p>
+<p><a href="https://developers.google.com/speed/pagespeed/">https://developers.google.com/speed/pagespeed/</a></p>
+<p><a href="http://tools.pingdom.com/fpt/">http://tools.pingdom.com/fpt/</a></p>
+<p><a href="http://gtmetrix.com/">http://gtmetrix.com/</a></p>
+<h4>Les plugins qui passent bien :</h4>
+<p><a href="http://wp-rocket.me/fr/">http://wp-rocket.me/fr/</a></p>
+<p><a href="https://wordpress.org/plugins/w3-total-cache/">https://wordpress.org/plugins/w3-total-cache/</a></p>
+<p><a href="https://wordpress.org/plugins/bwp-minify/">https://wordpress.org/plugins/bwp-minify/</a></p>
+<p><a href="https://wordpress.org/plugins/p3-profiler/">https://wordpress.org/plugins/p3-profiler/</a> (pas mal pour voir quels sont les plugins qui mangent vos performances)</p>
+<h4>Les CDN</h4>
+<p><a href="www.jsdelivr.com">www.jsdelivr.com</a></p>
+<p><a href="https://developers.google.com/speed/libraries/devguide?hl=fr">developers.google.com</a></p>
+<p><a href="http://www.maxcdn.com/">www.maxcdn.com</a></p>
+<p>L’article <a rel="nofollow" href="/optimiser-wordpress/">Tutoriel &#8211; Optimiser WordPress pour les performances</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/optimiser-wordpress/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">209</post-id>	</item>
+		<item>
+		<title>Astuce &#8211; Appliquer des permissions à un ensemble de fichiers et dossiers de manière récursive dans WordPress</title>
+		<link>/wordpress-appliquer-permissions-fichiers-dossiers-maniere-recursive/</link>
+		<comments>/wordpress-appliquer-permissions-fichiers-dossiers-maniere-recursive/#respond</comments>
+		<pubDate>Thu, 03 Jul 2014 09:18:55 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Drupal]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[permissions]]></category>
+
+		<guid isPermaLink="false">/?p=190</guid>
+		<description><![CDATA[<p>Sur WordPress, mais aussi sur Drupal et d&#8217;autres CMS les fichiers doivent avoir des permissions spécifiques. Inutile de se fouler à les appliquer pour chaque dossier quand on peut appliquer des permissions à un ensemble de fichiers et dossiers de manière récursive en 2 lignes de commande.L&#8217;exemple suivant s&#8217;applique à WordPress, mais peut tout autant &#8230; <a href="/wordpress-appliquer-permissions-fichiers-dossiers-maniere-recursive/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Astuce &#8211; Appliquer des permissions à un ensemble de fichiers et dossiers de manière récursive dans WordPress</span></a></p>
+<p>L’article <a rel="nofollow" href="/wordpress-appliquer-permissions-fichiers-dossiers-maniere-recursive/">Astuce &#8211; Appliquer des permissions à un ensemble de fichiers et dossiers de manière récursive dans WordPress</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Sur WordPress, mais aussi sur Drupal et d&rsquo;autres CMS les fichiers doivent avoir des permissions spécifiques. Inutile de se fouler à les appliquer pour chaque dossier quand on peut appliquer des permissions à un ensemble de fichiers et dossiers de manière récursive en 2 lignes de commande.<span id="more-190"></span>L&rsquo;exemple suivant s&rsquo;applique à WordPress, mais peut tout autant l&rsquo;être à vos autres projets</p>
+<p></p><pre class="crayon-plain-tag">sudo find wordpress/ -type d -exec chmod 755 {} \;
+sudo find wordpress/ -type f -exec chmod 644 {} \;
+sudo find wordpress/wp-config.php -type f -exec chmod 444 {} \;</pre><p></p>
+<h3>Explications :</h3>
+<p><strong>find</strong> : c&rsquo;est la fonction de recherche<br />
+<strong>wordpress/</strong> : c&rsquo;est le répertoire à partir duquel chercher<br />
+<strong>-type</strong> : le type avec en argument  « f » pour « folder » et « d » pour « document »-exec : précise qu&rsquo;on va exécuter quelque chose pour les fichiers ou dossiers rencontrés<br />
+<strong>chmod</strong> : la commande pour changer les droits<br />
+<strong>755</strong> : permission pour les dossiers<br />
+<strong>644</strong> : permission pour les fichiers<br />
+<strong>444</strong> : permission pour les fichiers de configuration sensibles (qui contiennent vos identifiants mysql par exemple)</p>
+<p>Il va de soit que vous appliquez les permissions que vous voulez <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>L’article <a rel="nofollow" href="/wordpress-appliquer-permissions-fichiers-dossiers-maniere-recursive/">Astuce &#8211; Appliquer des permissions à un ensemble de fichiers et dossiers de manière récursive dans WordPress</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/wordpress-appliquer-permissions-fichiers-dossiers-maniere-recursive/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">190</post-id>	</item>
+		<item>
+		<title>Intégrer un uploader des fichiers dans Drupal avec le module wysiwyg</title>
+		<link>/integrer-uploader-fichiers-module-wysiwyg-drupal/</link>
+		<comments>/integrer-uploader-fichiers-module-wysiwyg-drupal/#respond</comments>
+		<pubDate>Thu, 08 May 2014 11:20:34 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Drupal]]></category>
+		<category><![CDATA[drupal]]></category>
+		<category><![CDATA[module]]></category>
+		<category><![CDATA[upload]]></category>
+
+		<guid isPermaLink="false">/?p=139</guid>
+		<description><![CDATA[<p>C&#8217;est une problématique que les Drupalien connaissent bien : Uploader des fichiers dans drupal via l&#8217;éditeur Wysiwyg de Drupal est une calamité ! A défaut d&#8217;une fonction out-of-ze-box, je vous propose de vous expliquer comment mettre en place un uploader de fichiers le plus simplement du monde ! Les prérequis : Avoir déjà installé le &#8230; <a href="/integrer-uploader-fichiers-module-wysiwyg-drupal/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Intégrer un uploader des fichiers dans Drupal avec le module wysiwyg</span></a></p>
+<p>L’article <a rel="nofollow" href="/integrer-uploader-fichiers-module-wysiwyg-drupal/">Intégrer un uploader des fichiers dans Drupal avec le module wysiwyg</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>C&rsquo;est une problématique que les Drupalien connaissent bien : Uploader des fichiers dans drupal via l&rsquo;éditeur Wysiwyg de Drupal est une calamité ! A défaut d&rsquo;une fonction out-of-ze-box, je vous propose de vous expliquer comment mettre en place un uploader de fichiers le plus simplement du monde !<span id="more-139"></span></p>
+<h2>Les prérequis :</h2>
+<p>Avoir déjà installé le module Wysiwyg et l&rsquo;éditeur de texte de votre choix. Je ne traiterai pas cette partie, d&rsquo;autres sites le font déjà très bien. Ici, j&rsquo;ai choisi TinyMce 3.5.</p>
+<h3>La suite de module suivante :</h3>
+<ul>
+<li><a href="https://drupal.org/project/ctools">Chaos Tool Suite</a></li>
+<li><a href="https://drupal.org/project/media">Media</a></li>
+<li><a href="https://drupal.org/project/file_entity">File Entity</a></li>
+</ul>
+<h3>L&rsquo;installation :</h3>
+<p>Une fois ces modules installés, activez-lez et rendez-vous dans :</p>
+<p><em>Administration » Configuration » Rédaction de contenu <em>»</em> Formats de texte<br />
+</em></p>
+<p>Éditez la configuration du format de texte souhaité, et cochez la case <em>Convert Media tags to markup.</em></p>
+<p><a href="/wp-content/uploads/2014/05/2014-05-07_221738.png"><img class="aligncenter size-full wp-image-141" src="/wp-content/uploads/2014/05/2014-05-07_221738.png" alt="2014-05-07_221738" width="916" height="261" srcset="/wp-content/uploads/2014/05/2014-05-07_221738.png 916w, /wp-content/uploads/2014/05/2014-05-07_221738-300x85.png 300w, /wp-content/uploads/2014/05/2014-05-07_221738-624x177.png 624w" sizes="(max-width: 916px) 100vw, 916px" /></a></p>
+<p>Sur la même page, tout en bas, dans <em>Balises HTML autorisées , </em>ajoutez la balise &lt;img&gt;.</p>
+<p><a href="/wp-content/uploads/2014/05/2014-05-07_221752.png"><img class="aligncenter size-full wp-image-142" src="/wp-content/uploads/2014/05/2014-05-07_221752.png" alt="2014-05-07_221752" width="570" height="96" srcset="/wp-content/uploads/2014/05/2014-05-07_221752.png 570w, /wp-content/uploads/2014/05/2014-05-07_221752-300x50.png 300w" sizes="(max-width: 570px) 100vw, 570px" /></a></p>
+<p>Rendez-vous enfin dans <em> Administration » Configuration » Rédaction de contenu <em>»</em> WYSIWYG Profile </em>et modifié le format de texte précédemment sélectionné. Dans la partie<em> <span class="fieldset-legend"><span class="fieldset-legend-prefix element-invisible">Afficher</span> Buttons and plugins, </span></em><span class="fieldset-legend">ajoutez à votre </span><span class="fieldset-legend">éditeur la fonction</span><em><span class="fieldset-legend"> Media browser.</span></em></p>
+<p><a href="/wp-content/uploads/2014/05/2014-05-07_221642.png"><img class="aligncenter size-full wp-image-143" src="/wp-content/uploads/2014/05/2014-05-07_221642.png" alt="2014-05-07_221642" width="638" height="253" srcset="/wp-content/uploads/2014/05/2014-05-07_221642.png 638w, /wp-content/uploads/2014/05/2014-05-07_221642-300x118.png 300w, /wp-content/uploads/2014/05/2014-05-07_221642-624x247.png 624w" sizes="(max-width: 638px) 100vw, 638px" /></a></p>
+<p>Pensez également à cocher l&rsquo;option <em>image </em>afin de pouvoir par la suite éditer votre fichier dans l&rsquo;éditeur de texte.</p>
+<p>Vous voilà paré ! Testez l&rsquo;édition d&rsquo;un contenu pour voir apparaître la nouvelle icône.</p>
+<p><a href="/wp-content/uploads/2014/05/2014-05-07_221619.png"><img class="aligncenter size-full wp-image-144" src="/wp-content/uploads/2014/05/2014-05-07_221619.png" alt="2014-05-07_221619" width="782" height="250" srcset="/wp-content/uploads/2014/05/2014-05-07_221619.png 782w, /wp-content/uploads/2014/05/2014-05-07_221619-300x95.png 300w, /wp-content/uploads/2014/05/2014-05-07_221619-624x199.png 624w" sizes="(max-width: 782px) 100vw, 782px" /></a></p>
+<p>Les fonctions sont assez sommaires, vous pouvez uploader du contenu ou parcourir le contenu précédemment uploadé et l&rsquo;insérer dans tout type de contenu pour lequel votre format de texte est activé.</p>
+<p>Voilà, vous pouvez à présent uploader des fichiers dans drupal. Enjoy !</p>
+<p>L’article <a rel="nofollow" href="/integrer-uploader-fichiers-module-wysiwyg-drupal/">Intégrer un uploader des fichiers dans Drupal avec le module wysiwyg</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/integrer-uploader-fichiers-module-wysiwyg-drupal/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">139</post-id>	</item>
+		<item>
+		<title>Traduire le chemin de page dans views</title>
+		<link>/traduire-le-chemin-de-page-dans-views/</link>
+		<comments>/traduire-le-chemin-de-page-dans-views/#respond</comments>
+		<pubDate>Mon, 24 Feb 2014 00:38:53 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Drupal]]></category>
+		<category><![CDATA[views]]></category>
+
+		<guid isPermaLink="false">/?p=87</guid>
+		<description><![CDATA[<p>Je suis sûr que tout comme moi, certains en ont bien bavé en voulant traduire le chemin de la page crée par l&#8217;intermédiaire de Views dans Drupal 7. Et la solution existe bel et bien ! Quand on créé des pages avec Views, on est forcé de traduire le chemin de page dans views. Or &#8230; <a href="/traduire-le-chemin-de-page-dans-views/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Traduire le chemin de page dans views</span></a></p>
+<p>L’article <a rel="nofollow" href="/traduire-le-chemin-de-page-dans-views/">Traduire le chemin de page dans views</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Je suis sûr que tout comme moi, certains en ont bien bavé en voulant traduire le chemin de la page crée par l&rsquo;intermédiaire de Views dans Drupal 7. Et la solution existe bel et bien ! <span id="more-87"></span></p>
+<p>Quand on créé des pages avec Views, on est forcé de traduire le chemin de page dans views. Or quand on bosse sur un site multilingue, on se retrouve avec le même alias quelque soit la langue. C&rsquo;est mal foutu, oui.</p>
+<p>Exemple, on créé une page actualités/toutes-les-actualités en fr, on se tape le même alias en anglais et consors. Alors pour avoir notre news/all-news, voici comment faire :</p>
+<p>Pour commencer on se rend sur la page de gestion des alias d&rsquo;url dans le panneau de configuration et on dégage et notre alias français et notre aalias anglais si ils sont déjà créés.</p>
+<p>Ensuite on créé sa page dans views en version anglais du site, soit « news/all-news ».<br />
+On retourne dans la page de gestion des alias, toujours en anglais, et on filtre pour retrouver l&rsquo;alias fraîchement généré par views, puis on l&rsquo;édite. Dans le champs « Existing system path » on retape notre alias anglais, et en dessous, dans « Path alias » on tape notre alias traduit en français par exemple. Dans le menu déroulant « Language » on sélectionne la langue de destination, français donc pour l&rsquo;exemple, et on valide. Et paf ! pastèque !</p>
+<p>Testez par vous même : vous avez à présent votre alias en anglais et en français <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Si vous devez gérer d&rsquo;autres langues, vous procédez de la même façon en retrournant modifier l&rsquo;alias d&rsquo;url anglais en en spécifiant le bon alias dans « Path alias » et en sélectionnant la langue dans la liste déroulante.</p>
+<p>Si jamais ça n&rsquo;a pas fonctionné, vérifiez que vous n&rsquo;avez pas déjà une page créée possède déjà l&rsquo;alias, recommencez toutes la procédure en vous assurant d&rsquo;avoir bien dégagé les alias dans la page dédiée à la gestion des alias pour toutes les langues et recommencez.</p>
+<p>Voilà, c&rsquo;est tout <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Au passage, de manière générale, quand vous construisez un site multilingue, prenez la bonne habitude de construire votre site en partant de la version anglaise, puis traduisez les contenus dans les autres langues enssuite afin de bien définir la langue maîtresse de votre site et ne pas vous emmêler les pinceau.</p>
+<p>L’article <a rel="nofollow" href="/traduire-le-chemin-de-page-dans-views/">Traduire le chemin de page dans views</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/traduire-le-chemin-de-page-dans-views/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">87</post-id>	</item>
+	</channel>
+</rss>

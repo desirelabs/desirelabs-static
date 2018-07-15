@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>hook &#8211; DesireLabs</title>
+	<atom:link href="/tag/hook/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Développement web, marketing digital, et référencement</description>
+	<lastBuildDate>Tue, 06 Jun 2017 17:34:36 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.4</generator>
+<site xmlns="com-wordpress:feed-additions:1">67143140</site>	<item>
+		<title>Ajouter une classe css personnalisée aux articles WordPress</title>
+		<link>/ajouter-une-classe-personnalisee-aux-articles-wordpress/</link>
+		<comments>/ajouter-une-classe-personnalisee-aux-articles-wordpress/#comments</comments>
+		<pubDate>Sun, 08 Dec 2013 13:25:03 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Php]]></category>
+		<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[hook]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[wordpress]]></category>
+
+		<guid isPermaLink="false">/?p=17</guid>
+		<description><![CDATA[<p>J&#8217;ai travaillé récemment sur un petit plugin WordPress dans lequel je voulais ajouter une image au niveau des titres d&#8217;article. J&#8217;ai voulu ajouter via mon plugin, une classe html personnalisée pour pouvoir cibler tous mes articles, peu importe la version de WordPress utilisée, et ce, sans passer par jQuery. Mais comment faire ? L&#8217;astuce est &#8230; <a href="/ajouter-une-classe-personnalisee-aux-articles-wordpress/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Ajouter une classe css personnalisée aux articles WordPress</span></a></p>
+<p>L’article <a rel="nofollow" href="/ajouter-une-classe-personnalisee-aux-articles-wordpress/">Ajouter une classe css personnalisée aux articles WordPress</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>J&rsquo;ai travaillé récemment sur un petit plugin WordPress dans lequel je voulais ajouter une image au niveau des titres d&rsquo;article. J&rsquo;ai voulu ajouter via mon plugin, une classe html personnalisée pour pouvoir cibler tous mes articles, peu importe la version de WordPress utilisée, et ce, sans passer par jQuery. Mais comment faire ?<span id="more-17"></span></p>
+<h3>L&rsquo;astuce est très simple en fait <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></h3>
+<p>Dans le script de mon plugin j&rsquo;ai rajouté ce petit bout de code :</p>
+<p></p><pre class="crayon-plain-tag">function fp_add_custom_post_class($classes) {
+    $classes[] = 'test-class';
+    return $classes;
+}
+add_filter('post_class','fp_add_custom_post_class');</pre><p></p>
+<p>Et le tour est joué, tous mes articles hériteront de ma nouvelle classe perso.<br />
+C&rsquo;est propre, efficace et léger <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Par extension, on peut appliquer ça au body avec le hook body_class.</p>
+<p>L’article <a rel="nofollow" href="/ajouter-une-classe-personnalisee-aux-articles-wordpress/">Ajouter une classe css personnalisée aux articles WordPress</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/ajouter-une-classe-personnalisee-aux-articles-wordpress/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">17</post-id>	</item>
+	</channel>
+</rss>

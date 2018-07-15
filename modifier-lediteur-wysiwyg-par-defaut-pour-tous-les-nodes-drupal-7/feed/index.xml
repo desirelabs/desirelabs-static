@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Commentaires sur : Modifier l&#8217;éditeur WYSIWYG par défaut pour tous les nodes Drupal 7</title>
+	<atom:link href="/modifier-lediteur-wysiwyg-par-defaut-pour-tous-les-nodes-drupal-7/feed/" rel="self" type="application/rss+xml" />
+	<link>/modifier-lediteur-wysiwyg-par-defaut-pour-tous-les-nodes-drupal-7/</link>
+	<description>Développement web, marketing digital, et référencement</description>
+	<lastBuildDate>Thu, 13 Apr 2017 19:39:14 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.4</generator>
+	<item>
+		<title>Par : Franck</title>
+		<link>/modifier-lediteur-wysiwyg-par-defaut-pour-tous-les-nodes-drupal-7/#comment-12</link>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+		<pubDate>Tue, 07 Jan 2014 08:18:45 +0000</pubDate>
+		<guid isPermaLink="false">/?p=44#comment-12</guid>
+		<description><![CDATA[Content que ça vous ait été utile :)]]></description>
+		<content:encoded><![CDATA[<p>Content que ça vous ait été utile 🙂</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>Par : Agence drupal</title>
+		<link>/modifier-lediteur-wysiwyg-par-defaut-pour-tous-les-nodes-drupal-7/#comment-7</link>
+		<dc:creator><![CDATA[Agence drupal]]></dc:creator>
+		<pubDate>Fri, 03 Jan 2014 09:02:45 +0000</pubDate>
+		<guid isPermaLink="false">/?p=44#comment-7</guid>
+		<description><![CDATA[Je ne connaissais pas du tout cette commande ! Après s&#039;être arracher les cheveux pour trouver la solutionje la trouve ici ! Merci beaucoup, votre site passe dans mes favoris :-)]]></description>
+		<content:encoded><![CDATA[<p>Je ne connaissais pas du tout cette commande ! Après s&rsquo;être arracher les cheveux pour trouver la solutionje la trouve ici ! Merci beaucoup, votre site passe dans mes favoris 🙂</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

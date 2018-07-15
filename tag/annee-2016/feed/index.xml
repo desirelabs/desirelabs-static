@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>année 2016 &#8211; DesireLabs</title>
+	<atom:link href="/tag/annee-2016/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Développement web, marketing digital, et référencement</description>
+	<lastBuildDate>Tue, 06 Jun 2017 17:34:36 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.4</generator>
+<site xmlns="com-wordpress:feed-additions:1">67143140</site>	<item>
+		<title>Edito &#8211; Calendrier de l&#8217;avent 2015 et nouvelle année</title>
+		<link>/calendrier-de-lavent-2015-et-nouvelle-annee/</link>
+		<comments>/calendrier-de-lavent-2015-et-nouvelle-annee/#respond</comments>
+		<pubDate>Sun, 03 Jan 2016 14:26:52 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Editorial]]></category>
+		<category><![CDATA[année 2016]]></category>
+		<category><![CDATA[celendrier de l'avent]]></category>
+		<category><![CDATA[plugin wordpress]]></category>
+		<category><![CDATA[theme wordpress]]></category>
+
+		<guid isPermaLink="false">/?p=474</guid>
+		<description><![CDATA[<p>Bonne année à toutes et tous ! Pas de rétrospective dans cet article, mais un petit retour le calendrier de l&#8217;avent et un point sur les perspectives du blog à l&#8217;horizon 2016.Premièrement, merci à toutes celles et ceux qui m&#8217;ont fait des retours sur le calendrier de l&#8217;avent 2015, il semble qu&#8217;il ait eu beaucoup &#8230; <a href="/calendrier-de-lavent-2015-et-nouvelle-annee/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Edito &#8211; Calendrier de l&#8217;avent 2015 et nouvelle année</span></a></p>
+<p>L’article <a rel="nofollow" href="/calendrier-de-lavent-2015-et-nouvelle-annee/">Edito &#8211; Calendrier de l&rsquo;avent 2015 et nouvelle année</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Bonne année à toutes et tous ! Pas de rétrospective dans cet article, mais un petit retour le calendrier de l&rsquo;avent et un point sur les perspectives du blog à l&rsquo;horizon 2016.<span id="more-474"></span>Premièrement, merci à toutes celles et ceux qui m&rsquo;ont fait des retours sur le calendrier de l&rsquo;avent 2015, il semble qu&rsquo;il ait eu beaucoup de succès <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Visiblement ce sont surtout les jeux qui ont fait fureur, mais j&rsquo;ai eu pas mal de retours aussi sur les « experiments ». A la base je comptais mettre des citations, car ce calendrier était destiné au plus grand nombre. Mais autant vous le dire de suite, cette entreprise m&rsquo;a semblée assez ennuyeuse. A la place j&rsquo;ai opté pour des expérimentations ou des petites bizarreries du monde du web. La plupart des posts sont issus de <a href="https://www.chromeexperiments.com/" target="_blank">Chrome experiments</a> et de <a href="https://developer.mozilla.org/fr/demos/" target="_blank">Mozilla demo studio</a>. Je vous invite donc à aller y faire un tour, il y a vraiment des perles !</p>
+<p>Petite parenthèse pour les utilisateurs Apple : Je vous présente mes excuses, car certains ont visiblement rencontré des soucis avec le calendrier. N&rsquo;ayant pas d&rsquo;appareil Apple pour déboguer, je ne m&rsquo;y suis pas attelé.</p>
+<p>Merci cependant à tous pour vos retours, ils vont m&rsquo;être précieux afin de proposer des contenus plus adaptés, ainsi qu&rsquo;un future « cadeau » de fin d&rsquo;année en 2016, promis <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Quant au blog, <a href="/edito-du-13-juin-2015/">j&rsquo;avais déjà par le passé exprimé ma volonté de migrer vers un autre outil de publication</a>. Mais je n&rsquo;ai malheureusement pas eu le temps de me pencher dessus. Entre le travail à l&rsquo;agence et les projets freelance, vraiment pas évident, donc relégué plus loin dans la liste des priorités. Par ailleurs, WordPress reste un outil finalement suffisamment puissant et flexible pour décider de continuer avec.</p>
+<p><a href="/edito-du-13-juin-2015/">Quant à la publication d&rsquo;un thème</a>, sachez qu&rsquo;il est en cours et qu&rsquo;il arrivera d&rsquo;ici ce printemps. J&rsquo;ai pris du retard, car les ambitions étaient assez importantes : proposer un thème qui soit à la fois léger, et modulaire via la création d&rsquo;options spécifiques qu&rsquo;on aura le choix d&rsquo;activer ou pas. Car j&rsquo;ai toujours regretté ces thèmes ultra complets, lourds et difficiles à maintenir. Ainsi on n&rsquo;active que ce dont on a besoin et puis c&rsquo;est tout. Ainsi on n&rsquo;alourdit pas inutilement sont site. Je travaille à l&rsquo;intégration d&rsquo;outils et librairies open source dont la communauté et les auteurs sont actifs, ce qui, je l&rsquo;espère permettra à ce thème d&rsquo;offrir à d&rsquo;autres développeurs les clés pour profiter d&rsquo;un thème puissant et facilement maintenable.</p>
+<p>Comme certains l&rsquo;ont vu, j&rsquo;ai également offert à la communauté WordPress 2 plugins, dont le développement est toujours actif :</p>
+<p><a href="/filtrer-ses-portfolios-jetpack-grace-a-isotope/">Desire Portfolio Filter</a> &#8211; qui ajoute les fonctions de filtres par type aux portfolio JetPack<br />
+<a href="/integrer-des-widget-dans-ses-contenus-wordpress/">Desire Page Widget</a> &#8211; qui permet l&rsquo;ajout d&rsquo;une sidebar de Widget dans le contenu via shortcode, ainsi que l&rsquo;inclusion de page via un widget dédié</p>
+<p>Ces deux plugins en sont à leurs débuts et ne proposent pour l&rsquo;instant que des fonctionnalités assez simples. Mais grâce aux retours des utilisateurs, ils devraient bientôt offrir plus. Donc si vous même vous les utilisez, n&rsquo;hésitez pas à faire un feedback, si possible dans les commentaires de leurs pages respectives, sur GitHub et WordPress.org. Les retours sont très important et permettent d&rsquo;améliorer et d&rsquo;offrir des outils pertinents. Deux autres plugins sont en cours de développement. Mais ça, je vous en reparlerai en temps et en heure <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Dernière chose, l&rsquo;activité sur le blog risque de ralentir ces prochains mois. Elle n&rsquo;était déjà pas énorme, d&rsquo;autant que je le tiens pour le plaisir d&rsquo;une part, et participer à la communauté d&rsquo;autre part, mais je vais opérer une migration de moi-même vers Toulouse ! Ceci arrivera fin juin (à priori). Je suis déjà en recherche active de rencontres, d&rsquo;agences et de confrères dans la ville rose. Une nouvelle aventure qui se prépare donc, et qui occupe pas mal de mon temps <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> D&rsquo;ailleurs si vous êtes de là bas, n&rsquo;hésitez pas à me contacter histoire qu&rsquo;on se rencontre ou échange une fois sur place, voire avant <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Je vous souhaite encore une bonne et heureuse année 2016, pleine de projets, de joie et de vie !</p>
+<p>Ciao !</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>L’article <a rel="nofollow" href="/calendrier-de-lavent-2015-et-nouvelle-annee/">Edito &#8211; Calendrier de l&rsquo;avent 2015 et nouvelle année</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/calendrier-de-lavent-2015-et-nouvelle-annee/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">474</post-id>	</item>
+	</channel>
+</rss>

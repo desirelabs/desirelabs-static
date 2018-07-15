@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>wordpress &#8211; DesireLabs</title>
+	<atom:link href="/tag/wordpress-2/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Développement web, marketing digital, et référencement</description>
+	<lastBuildDate>Tue, 06 Jun 2017 17:34:36 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.4</generator>
+<site xmlns="com-wordpress:feed-additions:1">67143140</site>	<item>
+		<title>WordPress 3.9, ou la sublimation des contenus</title>
+		<link>/wordpress-3-9-sublimation-contenus/</link>
+		<comments>/wordpress-3-9-sublimation-contenus/#respond</comments>
+		<pubDate>Fri, 18 Apr 2014 08:07:18 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Non classé]]></category>
+		<category><![CDATA[wordpress]]></category>
+
+		<guid isPermaLink="false">/?p=133</guid>
+		<description><![CDATA[<p>Ca y est c&#8217;est fait, WordPress débarque en version 3.9 avec au menu quelques améliorations loin d&#8217;être superflues ! Et c&#8217;est surtout au niveau des contenus de la médiathèque que le lifting s&#8217;est opéré. Et ce n&#8217;est pas pour déplaire !Parmi les évolutions qui méritent le détour selon moi : La possibilité de faire un &#8230; <a href="/wordpress-3-9-sublimation-contenus/" class="more-link">Continuer la lecture de <span class="screen-reader-text">WordPress 3.9, ou la sublimation des contenus</span></a></p>
+<p>L’article <a rel="nofollow" href="/wordpress-3-9-sublimation-contenus/">WordPress 3.9, ou la sublimation des contenus</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Ca y est c&rsquo;est fait, WordPress débarque en version 3.9 avec au menu quelques améliorations loin d&rsquo;être superflues ! Et c&rsquo;est surtout au niveau des contenus de la médiathèque que le lifting s&rsquo;est opéré. Et ce n&rsquo;est pas pour déplaire !<span id="more-133"></span>Parmi les évolutions qui méritent le détour selon moi :</p>
+<ul>
+<li>La possibilité de faire un glisser déposer de ses médias directement dans l&rsquo;éditeur de texte pour les uploader</li>
+<li>La prévisualisation de galeries directement dans l&rsquo;éditeur de texte, ça donne un véritable aperçu du résultat final</li>
+<li>L&rsquo;arrivée des listes de lecture pour la musique et la vidéo</li>
+<li>Un nouvel écran de prévisualisation des thèmes, avec possibilité d&rsquo;éditer la position et le contenu de ses widgets directement dans la fenêtre de prévisualisation du thème</li>
+<li>L&rsquo;intégration de la bibliothèque javascript Masonry 3</li>
+</ul>
+<p>Il y pas mal d&rsquo;autres petits détails sympas, mais je vous laisse aller <a href="http://www.wordpress-fr.net/2014/04/17/sortie-de-wordpress-3-9/">faire un tour ici</a> pour les découvrir, ou mieux, les tester par vous même <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>L’article <a rel="nofollow" href="/wordpress-3-9-sublimation-contenus/">WordPress 3.9, ou la sublimation des contenus</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/wordpress-3-9-sublimation-contenus/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">133</post-id>	</item>
+		<item>
+		<title>Ajouter une classe css personnalisée aux articles WordPress</title>
+		<link>/ajouter-une-classe-personnalisee-aux-articles-wordpress/</link>
+		<comments>/ajouter-une-classe-personnalisee-aux-articles-wordpress/#comments</comments>
+		<pubDate>Sun, 08 Dec 2013 13:25:03 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Php]]></category>
+		<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[hook]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[wordpress]]></category>
+
+		<guid isPermaLink="false">/?p=17</guid>
+		<description><![CDATA[<p>J&#8217;ai travaillé récemment sur un petit plugin WordPress dans lequel je voulais ajouter une image au niveau des titres d&#8217;article. J&#8217;ai voulu ajouter via mon plugin, une classe html personnalisée pour pouvoir cibler tous mes articles, peu importe la version de WordPress utilisée, et ce, sans passer par jQuery. Mais comment faire ? L&#8217;astuce est &#8230; <a href="/ajouter-une-classe-personnalisee-aux-articles-wordpress/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Ajouter une classe css personnalisée aux articles WordPress</span></a></p>
+<p>L’article <a rel="nofollow" href="/ajouter-une-classe-personnalisee-aux-articles-wordpress/">Ajouter une classe css personnalisée aux articles WordPress</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>J&rsquo;ai travaillé récemment sur un petit plugin WordPress dans lequel je voulais ajouter une image au niveau des titres d&rsquo;article. J&rsquo;ai voulu ajouter via mon plugin, une classe html personnalisée pour pouvoir cibler tous mes articles, peu importe la version de WordPress utilisée, et ce, sans passer par jQuery. Mais comment faire ?<span id="more-17"></span></p>
+<h3>L&rsquo;astuce est très simple en fait <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></h3>
+<p>Dans le script de mon plugin j&rsquo;ai rajouté ce petit bout de code :</p>
+<p></p><pre class="crayon-plain-tag">function fp_add_custom_post_class($classes) {
+    $classes[] = 'test-class';
+    return $classes;
+}
+add_filter('post_class','fp_add_custom_post_class');</pre><p></p>
+<p>Et le tour est joué, tous mes articles hériteront de ma nouvelle classe perso.<br />
+C&rsquo;est propre, efficace et léger <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Par extension, on peut appliquer ça au body avec le hook body_class.</p>
+<p>L’article <a rel="nofollow" href="/ajouter-une-classe-personnalisee-aux-articles-wordpress/">Ajouter une classe css personnalisée aux articles WordPress</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/ajouter-une-classe-personnalisee-aux-articles-wordpress/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">17</post-id>	</item>
+		<item>
+		<title>Résoudre le conflit entre Google XML Sitemap et Contact Form</title>
+		<link>/resoudre-le-conflit-entre-google-xml-sitemap-et-contact-form/</link>
+		<comments>/resoudre-le-conflit-entre-google-xml-sitemap-et-contact-form/#respond</comments>
+		<pubDate>Thu, 28 Nov 2013 09:45:04 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Php]]></category>
+		<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[wordpress]]></category>
+
+		<guid isPermaLink="false">/?p=5</guid>
+		<description><![CDATA[<p>Aujourd&#8217;hui, j&#8217;ai découvert qu&#8217;un conflit pouvait apparaître entre les plugins WordPress Google XML Sitemap et Contact Form 7. En tentant d&#8217;accéder au sitemap.xml, j&#8217;obtenais cette erreur : This page contains the following errors: error on line 11 at column 67: EntityRef: expecting &#8216;;&#8217; Below is a rendering of the page up to the first error. &#8230; <a href="/resoudre-le-conflit-entre-google-xml-sitemap-et-contact-form/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Résoudre le conflit entre Google XML Sitemap et Contact Form</span></a></p>
+<p>L’article <a rel="nofollow" href="/resoudre-le-conflit-entre-google-xml-sitemap-et-contact-form/">Résoudre le conflit entre Google XML Sitemap et Contact Form</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Aujourd&rsquo;hui, j&rsquo;ai découvert qu&rsquo;un conflit pouvait apparaître entre les plugins WordPress Google XML Sitemap et Contact Form 7. En tentant d&rsquo;accéder au sitemap.xml, j&rsquo;obtenais cette erreur :<span id="more-5"></span></p>
+<blockquote>
+<h3>This page contains the following errors:</h3>
+<div>error on line 11 at column 67: EntityRef: expecting &lsquo;;&rsquo;</div>
+<h3>Below is a rendering of the page up to the first error.</h3>
+</blockquote>
+<p>Cette erreur est dûe au « &amp; » interprété comme un caractère html spécial auquel il manque le « ; » de fin.</p>
+<h3>La solution</h3>
+<p>Pour corriger ce souci, il suffit d&rsquo;éditer le code source de Google XML Sitemap, de repérer la dernière condition if et la modifier comme suit :</p>
+<p></p><pre class="crayon-plain-tag">if ( ! empty( $post-&gt;post_title ) &amp;&amp; ( get_post_type( $post-&gt;ID ) != "wpcf7_contact_form" ) ) {
+    $xml .= "\t\n";
+    $xml .= "\t\t" . get_permalink( $post-&gt;ID ) . "\n";
+    $xml .= "\t\t" . mysql2date( 'Y-m-d\TH:i:s+00:00', $post-&gt;post_modified_gmt, false ) . "\n";
+    $xml .= "\t\t" . 'weekly' . "\n";
+    $xml .= "\t\t" . '0.8' . "\n";
+    $xml .= "\t\n";
+}</pre><p></p>
+<p>Cela supprimera tout bonnement la référence inutile <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /><br />
+Solution trouvée sur <a title="Google XML Sitemap erroring due to Contact Form 7" href="http://wordpress.org/support/topic/google-xml-sitemap-erroring-due-to-contact-form-7" target="_blank">http://wordpress.org/support/topic/google-xml-sitemap-erroring-due-to-contact-form-7</a></p>
+<p><strong>EDIT</strong> : Depuis je suis passé à WordPress SEO by Yoast, il s&rsquo;agit d&rsquo;un plugin qui comme son nom l&rsquo;indique apporte toutes les fonctionnalités SEO qu&rsquo;on peut attendre, dont la gestion de sitemap. Du coup plus de bug.<br />
+Je pense rédiger un article au sujet de ce plugin très bientôt, so stay plugged !</p>
+<p>L’article <a rel="nofollow" href="/resoudre-le-conflit-entre-google-xml-sitemap-et-contact-form/">Résoudre le conflit entre Google XML Sitemap et Contact Form</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/resoudre-le-conflit-entre-google-xml-sitemap-et-contact-form/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">5</post-id>	</item>
+	</channel>
+</rss>

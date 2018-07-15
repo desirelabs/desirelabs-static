@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Commentaires sur : Outil &#8211; Générateur de grille responsive fluide</title>
+	<atom:link href="/generateur-de-grille-responsive-fluide/feed/" rel="self" type="application/rss+xml" />
+	<link>/generateur-de-grille-responsive-fluide/</link>
+	<description>Développement web, marketing digital, et référencement</description>
+	<lastBuildDate>Thu, 13 Apr 2017 19:39:14 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.4</generator>
+	<item>
+		<title>Par : Franck</title>
+		<link>/generateur-de-grille-responsive-fluide/#comment-2129</link>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+		<pubDate>Thu, 04 Aug 2016 14:24:32 +0000</pubDate>
+		<guid isPermaLink="false">/?p=323#comment-2129</guid>
+		<description><![CDATA[Je soulignerai aussi quelque chose que j&#039;apprécie fortement avec Gridpack : la possibilité de générer des fichiers de grilles photoshop et illustrator. Je m&#039;en suis récemment servi pour re-designer les pages d&#039;un site tout en ayant exactement les même dimensions de colonnes et de gouttières ;)]]></description>
+		<content:encoded><![CDATA[<p>Je soulignerai aussi quelque chose que j&rsquo;apprécie fortement avec Gridpack : la possibilité de générer des fichiers de grilles photoshop et illustrator. Je m&rsquo;en suis récemment servi pour re-designer les pages d&rsquo;un site tout en ayant exactement les même dimensions de colonnes et de gouttières 😉</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>Par : Cardaire Gabriel</title>
+		<link>/generateur-de-grille-responsive-fluide/#comment-2103</link>
+		<dc:creator><![CDATA[Cardaire Gabriel]]></dc:creator>
+		<pubDate>Tue, 14 Jun 2016 14:49:20 +0000</pubDate>
+		<guid isPermaLink="false">/?p=323#comment-2103</guid>
+		<description><![CDATA[Très bel outil, on gagne un temps fou et j&#039;ajoute que Gridpak produit un résultat très propre avec un code très compréhensible.
+Très bon !!]]></description>
+		<content:encoded><![CDATA[<p>Très bel outil, on gagne un temps fou et j&rsquo;ajoute que Gridpak produit un résultat très propre avec un code très compréhensible.<br />
+Très bon !!</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

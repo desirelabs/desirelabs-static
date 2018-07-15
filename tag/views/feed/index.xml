@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>views &#8211; DesireLabs</title>
+	<atom:link href="/tag/views/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Développement web, marketing digital, et référencement</description>
+	<lastBuildDate>Tue, 06 Jun 2017 17:34:36 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.4</generator>
+<site xmlns="com-wordpress:feed-additions:1">67143140</site>	<item>
+		<title>Traduire le chemin de page dans views</title>
+		<link>/traduire-le-chemin-de-page-dans-views/</link>
+		<comments>/traduire-le-chemin-de-page-dans-views/#respond</comments>
+		<pubDate>Mon, 24 Feb 2014 00:38:53 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Drupal]]></category>
+		<category><![CDATA[views]]></category>
+
+		<guid isPermaLink="false">/?p=87</guid>
+		<description><![CDATA[<p>Je suis sûr que tout comme moi, certains en ont bien bavé en voulant traduire le chemin de la page crée par l&#8217;intermédiaire de Views dans Drupal 7. Et la solution existe bel et bien ! Quand on créé des pages avec Views, on est forcé de traduire le chemin de page dans views. Or &#8230; <a href="/traduire-le-chemin-de-page-dans-views/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Traduire le chemin de page dans views</span></a></p>
+<p>L’article <a rel="nofollow" href="/traduire-le-chemin-de-page-dans-views/">Traduire le chemin de page dans views</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Je suis sûr que tout comme moi, certains en ont bien bavé en voulant traduire le chemin de la page crée par l&rsquo;intermédiaire de Views dans Drupal 7. Et la solution existe bel et bien ! <span id="more-87"></span></p>
+<p>Quand on créé des pages avec Views, on est forcé de traduire le chemin de page dans views. Or quand on bosse sur un site multilingue, on se retrouve avec le même alias quelque soit la langue. C&rsquo;est mal foutu, oui.</p>
+<p>Exemple, on créé une page actualités/toutes-les-actualités en fr, on se tape le même alias en anglais et consors. Alors pour avoir notre news/all-news, voici comment faire :</p>
+<p>Pour commencer on se rend sur la page de gestion des alias d&rsquo;url dans le panneau de configuration et on dégage et notre alias français et notre aalias anglais si ils sont déjà créés.</p>
+<p>Ensuite on créé sa page dans views en version anglais du site, soit « news/all-news ».<br />
+On retourne dans la page de gestion des alias, toujours en anglais, et on filtre pour retrouver l&rsquo;alias fraîchement généré par views, puis on l&rsquo;édite. Dans le champs « Existing system path » on retape notre alias anglais, et en dessous, dans « Path alias » on tape notre alias traduit en français par exemple. Dans le menu déroulant « Language » on sélectionne la langue de destination, français donc pour l&rsquo;exemple, et on valide. Et paf ! pastèque !</p>
+<p>Testez par vous même : vous avez à présent votre alias en anglais et en français <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Si vous devez gérer d&rsquo;autres langues, vous procédez de la même façon en retrournant modifier l&rsquo;alias d&rsquo;url anglais en en spécifiant le bon alias dans « Path alias » et en sélectionnant la langue dans la liste déroulante.</p>
+<p>Si jamais ça n&rsquo;a pas fonctionné, vérifiez que vous n&rsquo;avez pas déjà une page créée possède déjà l&rsquo;alias, recommencez toutes la procédure en vous assurant d&rsquo;avoir bien dégagé les alias dans la page dédiée à la gestion des alias pour toutes les langues et recommencez.</p>
+<p>Voilà, c&rsquo;est tout <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Au passage, de manière générale, quand vous construisez un site multilingue, prenez la bonne habitude de construire votre site en partant de la version anglaise, puis traduisez les contenus dans les autres langues enssuite afin de bien définir la langue maîtresse de votre site et ne pas vous emmêler les pinceau.</p>
+<p>L’article <a rel="nofollow" href="/traduire-le-chemin-de-page-dans-views/">Traduire le chemin de page dans views</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/traduire-le-chemin-de-page-dans-views/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">87</post-id>	</item>
+	</channel>
+</rss>

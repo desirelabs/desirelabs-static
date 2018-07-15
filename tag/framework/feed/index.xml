@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>framework &#8211; DesireLabs</title>
+	<atom:link href="/tag/framework/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Développement web, marketing digital, et référencement</description>
+	<lastBuildDate>Tue, 06 Jun 2017 17:34:36 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.4</generator>
+<site xmlns="com-wordpress:feed-additions:1">67143140</site>	<item>
+		<title>Edito &#8211; La technologie n&#8217;est pas une fin en soi</title>
+		<link>/causes-echec-site/</link>
+		<comments>/causes-echec-site/#respond</comments>
+		<pubDate>Sat, 25 Jul 2015 09:40:36 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Editorial]]></category>
+		<category><![CDATA[framework]]></category>
+		<category><![CDATA[webdesign]]></category>
+
+		<guid isPermaLink="false">/?p=359</guid>
+		<description><![CDATA[<p>Ce matin je lisais un article fort intéressant en cela qu&#8217;il dissèque les raisons de l&#8217;échec d&#8217;un site : l&#8217;expérience utilisateur. Mais si effectivement l&#8217;auteur met en cause le choix d&#8217;une technologie, je pense qu&#8217;il est de bon aloi de revenir un peu en arrière et traiter plus en profondeur les raisons de son échec. &#8230; <a href="/causes-echec-site/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Edito &#8211; La technologie n&#8217;est pas une fin en soi</span></a></p>
+<p>L’article <a rel="nofollow" href="/causes-echec-site/">Edito &#8211; La technologie n&rsquo;est pas une fin en soi</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Ce matin je lisais un article fort intéressant en cela qu&rsquo;il dissèque les raisons de l&rsquo;échec d&rsquo;un site : l&rsquo;expérience utilisateur. Mais si effectivement l&rsquo;auteur met en cause le choix d&rsquo;une technologie, je pense qu&rsquo;il est de bon aloi de revenir un peu en arrière et traiter plus en profondeur les raisons de son échec.<span id="more-359"></span></p>
+<p><strong>Avant toute chose, je tiens à préciser que le but de cet article n&rsquo;est pas de critiquer gratuitement le travail d&rsquo;autrui, mais d&rsquo;utiliser son expérience pour appuyer mon propos. Car il n&rsquo;y a aucun doute pour ma part, sur le fait que cette personne est probablement très compétente. Mais elle décrit un écueil dans lequel il est très facile de tomber, même lorsqu&rsquo;on est rompu à la pratique du développement web. Par ailleurs, je tiens à souligner qu&rsquo;il n&rsquo;est pas évident de mettre en abîme son propre travail et de le critiquer publiquement. C&rsquo;est donc avec le plus grand respect que je traiterai ici de son échec à produire un site pour ses visiteurs.</strong></p>
+<p>C&rsquo;est parti donc, voici le site en question : <a href="http://aboutmeng.cf/" target="_blank">http://aboutmeng.cf/</a></p>
+<p>Je ne m&rsquo;arrêterai que brièvement dessus car l&rsquo;auteur lui même détaille très bien ce qui ne va pas. Je vous encourage d&rsquo;ailleurs à lire <a href="https://medium.com/the-things/post-mortem-of-a-failed-website-97e01ee0d8ea" target="_blank">son article</a>. Pour faire simple, l&rsquo;auteur a construit son site autour d&rsquo;un framework « Material Design ». Jusque là tout va bien, mais il a fait l&rsquo;impasse sur l&rsquo;indispensable lorsqu&rsquo;on construit un site : sa pré-conception, les tests et l&rsquo;optimisation.</p>
+<h2 class="western">Le choix des armes</h2>
+<p>Les framework front-end peuplent nos boîtes à outils de designer et nous avons tendance à les considérer sans faille et utilisables à tort et à travers sans jamais se poser la question de leur pertinence. « Est-ce un bon choix ? Répond-il à un besoin réel ? » ou encore « Quelles sont ses limites ? ». C&rsquo;est ce qui est arrivé à l&rsquo;auteur de cet article.</p>
+<p>Ce qui m&#8217;emmène au premier point lorsqu&rsquo;on développe un site : Le choix des outils. Ils doivent répondre à un besoin spécifique. Un site doit être développé pour ses utilisateurs, et pas seulement pour se faire plaisir. De fait la pertinence des choix à faire est primordiale. Avoir un site utilisable et qui permette à l&rsquo;utilisateur d&rsquo;accéder au contenu qui le concerne de manière simple, efficace et rapide doit être à mon avis au cœur des préoccupation du développeur. L&rsquo;accessibilité, trop souvent négligée au profit du beau, a tôt fait de pénaliser le site. Les internautes sont exigeants, mais pas plus en termes d&rsquo;esthétique que d&rsquo;utilisabilité. Car un site aura beau être beau, s&rsquo;il est inutilisable, ou tout du moins difficile à utiliser, il perd en pertinence et en crédibilité.</p>
+<p><strong>Choisir ses outils c&rsquo;est donc faire des choix crédibles vis à vis de l&rsquo;utilisabilité, mais aussi de la durabilité.</strong></p>
+<p>La pérennité est à considérer, car une librairie ou un framework qui est peu, pas ou mal maintenu aura un impact majeur sur le site qui l&rsquo;intègre, et à fortiori sur l&rsquo;expérience utilisateur (et je ne parle même pas de la sécurité).</p>
+<h2 class="western">Les tests navigateurs</h2>
+<p>Par ailleurs, et je suis extrêmement perplexe, car je pense que l&rsquo;auteur est compétent, mais il a, semble-t-il, eu une confiance quasiment aveugle en l&rsquo;outil utilisée au point de ne tester son design que dans un seul navigateur : Apple Safari. Je vous laisse méditer ceci 5 secondes.</p>
+<p>Ce que j&rsquo;ai appris avec le temps et l&rsquo;expérience, c&rsquo;est que la technologie n&rsquo;est pas une fin en soit, que chacune répond à un besoin spécifique comme je l&rsquo;ai déjà dit, et qu&rsquo;il faut se montrer à la fois humble et aussi peut être un peu paranoïaque (d&rsquo;où les tests, et multi-navigateur s&rsquo;il vous plaît !). Penser qu&rsquo;il suffit d&rsquo;intégrer un framework sans présupposer qu&rsquo;il possède des limites, c&rsquo;est se tirer une balle dans le pied.</p>
+<p><strong>Il est donc impératif de faire des tests multi-navigateur (voire multi-architecture).</strong></p>
+<p>Ceci est un impondérable lorsqu&rsquo;on développe un site. Au menu nous avons, Google Chrome, Apple Safari, Mozilla Firefox et le bien aimé Microsoft Internet Explorer. D&rsquo;ailleurs, pour ce dernier, il existe plusieurs versions utilisées de par le monde. Il est connu que la version la plus problématique aujourd&rsquo;hui reste la version 8. A celà vous pouvez aussi rajouter les navigateurs mobiles qui sont devenu autant voir plus utilisés que leurs homologues desktop. Avec l&rsquo;avènement de HTML 5 et CSS 3 il est très tentant de pousser toujours plus loin nos interfaces front-end. Mais beaucoup de nouvelles balises html et attribut css ne sont tout simplement pas compatibles avec tous les navigateurs. Heureusement, des librairies existent et offrent la possibilité de rendre au maximum ces outils compatibles avec un maximum de navigateurs. Je pense notamment à <a href="http://modernizr.com/" target="_blank">Modernizr</a> entre autres. D&rsquo;autres outils permettent aussi de savoir avec quelles versions de navigateurs sont compatibles certaines propriétés. Je vous renvois à l&rsquo;excellent <a href="http://caniuse.com/" target="_blank">caniuse</a>. Mais parfois, il peut aussi être judicieux de ne pas utiliser certaines propriétés offertes par ces langages. Ceci pourrait faire l&rsquo;objet d&rsquo;un débat, mais je pense que ce choix appartient à chacun, car finalement, quand on connaît les usagers finaux du site, on est normalement à même d&rsquo;avoir une idée des navigateurs utilisés. Et si ce n&rsquo;est pas le cas, il existe de très bons outils d’analyse, comme <a href="https://www.google.com/analytics/" target="_blank">Google Analytics</a> qui nous renseignent assez bien sur les comportement de nos visiteurs. Maintenant, je ne blâmerai pas ceux qui souaitent pousser l&rsquo;adoption de navigateurs modernes, mais je pense aussi qu&rsquo;il faut respecter ceux qui n&rsquo;ont pas cette possibilité. Chacun voit midi à sa porte comme on dit.</p>
+<h2 class="western">Analyser, tester, optimiser&#8230; recommencer</h2>
+<p>Alors certes, le but d&rsquo;un framework est de nous simplifier le travail, mais ça ne signifie pas qu&rsquo;il n&rsquo;y a pas de travail. Dans un projet par exemple, on a un ou plusieurs objectifs à atteindre. En fonction de ces besoins, on choisit les outils qu&rsquo;on pense pertinents. On fait le bilan des possibilités et des choses qu&rsquo;il va falloir nous même créer ou adapter pour coller aux autres pièces du puzzle. On déduit qu&rsquo;on va devoir développer soi-même ou adapter pour la version <a href="http://www.alsacreations.com/article/lire/1615-cest-quoi-le-responsive-web-design.html" target="_blank">Responsive</a> par exemple. On se lance, on teste, on corrige, on re-teste. Et une fois qu&rsquo;on a terminé on passe à la phase d&rsquo;optimisation ou « fine tuning ». C&rsquo;est par exemple à ce moment là qu&rsquo;on va se concentrer sur le poids des pages (ce qui implique qu&rsquo;on a déjà fait un travail d’optimisation de ses images, ou encore des librairies servies et de quelle manière on les sert) et éventuellement l&rsquo;optimisation côté serveur.</p>
+<p><strong>Il n&rsquo;y a pas de magie : il faut savoir se poser les bonnes questions avant même d&rsquo;avoir couché la moindre ligne de code. C&rsquo;est indispensable, car ceci constitue les fondations de tout projet, et par là même sa viabilité.</strong></p>
+<p>Il faut éviter aussi les amalgames : il ne pas confondre UI (user interface) et UX (user experience), car comme notre exemple nous le montre, on peut avoir un design du feu de dieu, pour une expérience utilisateur en carton pâte. Et l&rsquo;expérience nous prouve qu&rsquo;un utilisateur pour qui l&rsquo;interface n&rsquo;est pas adaptée, fera un gros <del>fuck</del> pied de nez à notre site. Donc un beau site n&rsquo;est pas à confondre avec un bon site.</p>
+<p>De fait quand on parle de « web design », on fait souvent un amalgame entre ce qui relève du « beau » de ce qui relève de « l&rsquo;utilisable ». Pourtant ces deux éléments sont les deux revers d&rsquo;une même médaille : c&rsquo;est ce qui fait qu&rsquo;un web designer peut, à mon avis, mériter ce titre. On ne peut pas (ou très difficilement) considérer ces deux qualités individuellement, car l&rsquo;une sans l&rsquo;autre n&rsquo;a aucune légitimité, ni aucune possibilité de promouvoir un site de manière pérenne.</p>
+<h2 class="western">Conclusion</h2>
+<p>Je terminerai en disant qu&rsquo;être web designer c&rsquo;est penser à la fois en termes de design (UI) et d&rsquo;ergonomie (UX). C&rsquo;est être capable de se poser les bonnes questions avant, ce qui permet de faire les bons choix et d&rsquo;avoir le moins de mauvaise surprise après coup. Et comme je l&rsquo;ai dit, faire preuve d&rsquo;humilité envers la technologie, car ce n&rsquo;est pas magique, mais pratique (ou pas).</p>
+<p>L’article <a rel="nofollow" href="/causes-echec-site/">Edito &#8211; La technologie n&rsquo;est pas une fin en soi</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/causes-echec-site/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">359</post-id>	</item>
+	</channel>
+</rss>

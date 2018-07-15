@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Outils &#8211; DesireLabs</title>
+	<atom:link href="/category/outils/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Développement web, marketing digital, et référencement</description>
+	<lastBuildDate>Tue, 06 Jun 2017 17:34:36 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.4</generator>
+<site xmlns="com-wordpress:feed-additions:1">67143140</site>	<item>
+		<title>Outil &#8211; Générateur de grille responsive fluide</title>
+		<link>/generateur-de-grille-responsive-fluide/</link>
+		<comments>/generateur-de-grille-responsive-fluide/#comments</comments>
+		<pubDate>Thu, 02 Apr 2015 10:58:32 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[HTML/CSS]]></category>
+		<category><![CDATA[Outils]]></category>
+		<category><![CDATA[css]]></category>
+		<category><![CDATA[html]]></category>
+		<category><![CDATA[responsive design]]></category>
+
+		<guid isPermaLink="false">/?p=323</guid>
+		<description><![CDATA[<p>Parce que parfois on a juste besoin d&#8217;une grille responsive qui fasse le job, il y a Gridpak.Le principe est simple, tout autant que l&#8217;interface : on rentre le nombre de colonnes, la taille des gouttières ainsi que la largeur finale (pas forcément utile vu que c&#8217;est un système fluide), et on génère. Le zip &#8230; <a href="/generateur-de-grille-responsive-fluide/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Outil &#8211; Générateur de grille responsive fluide</span></a></p>
+<p>L’article <a rel="nofollow" href="/generateur-de-grille-responsive-fluide/">Outil &#8211; Générateur de grille responsive fluide</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Parce que parfois on a juste besoin d&rsquo;une grille responsive qui fasse le job, il y a <a href="http://gridpak.com/">Gridpak</a>.<span id="more-323"></span>Le principe est simple, tout autant que l&rsquo;interface : on rentre le nombre de colonnes, la taille des gouttières ainsi que la largeur finale (pas forcément utile vu que c&rsquo;est un système fluide), et on génère. Le zip final contient un css, un less, un sass et un js. Autre petit plus que j&rsquo;ai particulièrement apprécié, la possibilité de générer ses grilles au format psd et ai, un must <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Juste ce qu&rsquo;il faut pour démarrer vite fait bien fait !</p>
+<p>L’article <a rel="nofollow" href="/generateur-de-grille-responsive-fluide/">Outil &#8211; Générateur de grille responsive fluide</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/generateur-de-grille-responsive-fluide/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">323</post-id>	</item>
+		<item>
+		<title>Astuce &#8211; Tester son code frontend dans toutes les versions d&#8217;Internet Explorer via CodePen.io</title>
+		<link>/tester-son-site-sur-toutes-les-versions-dinternet-explorer-via-codepen-io/</link>
+		<comments>/tester-son-site-sur-toutes-les-versions-dinternet-explorer-via-codepen-io/#respond</comments>
+		<pubDate>Thu, 02 Apr 2015 10:22:07 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[En ligne]]></category>
+		<category><![CDATA[codepen]]></category>
+
+		<guid isPermaLink="false">/?p=319</guid>
+		<description><![CDATA[<p>Découverte assez intéressante que j&#8217;ai faite aujourd&#8217;hui et qui permet de tester ses snippets html/css/js dans toutes les versions d&#8217;Internet Explorer. L&#8217;astuce est simple puisqu&#8217;elle utilise des VM (Machines Virtuelles) pour émuler les différentes versions d&#8217;IE. Pour résumer, on se connecte à son compte CodePen.io, on choisit son Pen, puis dans le menu à droite, &#8230; <a href="/tester-son-site-sur-toutes-les-versions-dinternet-explorer-via-codepen-io/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Astuce &#8211; Tester son code frontend dans toutes les versions d&#8217;Internet Explorer via CodePen.io</span></a></p>
+<p>L’article <a rel="nofollow" href="/tester-son-site-sur-toutes-les-versions-dinternet-explorer-via-codepen-io/">Astuce &#8211; Tester son code frontend dans toutes les versions d&rsquo;Internet Explorer via CodePen.io</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Découverte assez intéressante que j&rsquo;ai faite aujourd&rsquo;hui et qui permet de tester ses snippets html/css/js dans toutes les versions d&rsquo;Internet Explorer. <span id="more-319"></span>L&rsquo;astuce est simple puisqu&rsquo;elle utilise des VM (Machines Virtuelles) pour émuler les différentes versions d&rsquo;IE. Pour résumer, on se connecte à son compte CodePen.io, on choisit son Pen, puis dans le menu à droite, en fin de liste, on a « Open on CrossBrowserTesting ».</p>
+<p><a href="/wp-content/uploads/2015/03/codepen-crossbrowser-testing.png"><img class="aligncenter" src="/wp-content/uploads/2015/03/codepen-crossbrowser-testing.png" alt="codepen-crossbrowser-testing" /></a></p>
+<p>Suite à ça on est redirigé vers le site <a title="app.crossbrowsertesting.com" href="http://app.crossbrowsertesting.com/" target="_blank">app.crossbrowsertesting.com</a> sur lequel on créé un compte gratuit puis on sélectionne la version du navigateur ainsi que l&rsquo;OS voulu pour le test. C&rsquo;est simple et efficace !</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>L’article <a rel="nofollow" href="/tester-son-site-sur-toutes-les-versions-dinternet-explorer-via-codepen-io/">Astuce &#8211; Tester son code frontend dans toutes les versions d&rsquo;Internet Explorer via CodePen.io</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/tester-son-site-sur-toutes-les-versions-dinternet-explorer-via-codepen-io/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">319</post-id>	</item>
+		<item>
+		<title>Outils &#8211; Organisez proprement vos snippets avec GistBox</title>
+		<link>/organisez-proprement-vos-snippets-gistbox/</link>
+		<comments>/organisez-proprement-vos-snippets-gistbox/#respond</comments>
+		<pubDate>Tue, 18 Nov 2014 15:10:21 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[En ligne]]></category>
+		<category><![CDATA[Outils]]></category>
+		<category><![CDATA[gist]]></category>
+		<category><![CDATA[gistbox]]></category>
+		<category><![CDATA[snippet]]></category>
+
+		<guid isPermaLink="false">/?p=279</guid>
+		<description><![CDATA[<p>La semaine dernière j&#8217;ai découvert GistBox, un chouette outil qui vous permet d&#8217;organiser vos code snippets. Depuis je l&#8217;utilise chaque jour, et du coup je vous le présente.J&#8217;aime bien avoir mes code snippets sous la main, mais depuis quelques temps c&#8217;est un peu le bordel j&#8217;avoue. C&#8217;est par l&#8217;intermédiaire du site de Djo, lafermeduweb que &#8230; <a href="/organisez-proprement-vos-snippets-gistbox/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Outils &#8211; Organisez proprement vos snippets avec GistBox</span></a></p>
+<p>L’article <a rel="nofollow" href="/organisez-proprement-vos-snippets-gistbox/">Outils &#8211; Organisez proprement vos snippets avec GistBox</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>La semaine dernière j&rsquo;ai découvert GistBox, un chouette outil qui vous permet d&rsquo;organiser vos code snippets. Depuis je l&rsquo;utilise chaque jour, et du coup je vous le présente.<span id="more-279"></span>J&rsquo;aime bien avoir mes code snippets sous la main, mais depuis quelques temps c&rsquo;est un peu le bordel j&rsquo;avoue. C&rsquo;est par l&rsquo;intermédiaire du site de Djo, <a href="http://www.lafermeduweb.net/billet/gistbox-une-interface-sexy-pour-gerer-ses-snippets-1595.html">lafermeduweb</a> que j&rsquo;ai découvert GistBox. Ce qu&rsquo;il fait c&rsquo;est qu&rsquo;il vous offre une interface claire et propre qui vous permet d&rsquo;enregistrer tous vos snippets, de les classer via des labels de couleur,  de les grouper. C&rsquo;est super intuitif, et surtout, vos snippets vous suivent partout car tout est stocké dans le cloud.</p>
+<p>Les plus malins auront remarqué le lien de parenté avec Gist de GitHub. En effet, la connexion s&rsquo;effectue via votre compte GitHub si vous en possédez un. Du coup vous retrouvez aussi tous vos snippets sur Gist. Alors l&rsquo;intérêt par rapport à Gist ? On simplifie au max l&rsquo;interface, on offre la possibilité de labeliser ses bout de code et exit le reste. Par défaut, les snippets sont privés, et si vous souhaitez les rendre publics, il faut se rendre sur Gist. oui, c&rsquo;est un peu relou, mais il y a fort à parier que d&rsquo;ici peu vous n&rsquo;aurez plus besoin de faire de va et vient.</p>
+<p>A delà de ça on peut aussi créer des groupes de travail et inviter des personnes pour leur partager de manière privée les snippets que vous souhaitez. Je trouve ça assez cool, même si pour l&rsquo;instant je n&rsquo;en ai pas l&rsquo;utilité.Pour finir sur les fonctions de partage, on peut mailer, twitter ou faire un embed de son gist à peu près où on veut. Exemple :</p>
+<p><script src="https://gist.github.com/neovea/157ba941203c8dcccb29.js"></script></p>
+<p>Plutôt chouette non ?</p>
+<p>Autre truc sympa : Au sein d&rsquo;un même gist, on peut mettre plusieurs snippets, plutôt utile quand on fait du html/css/javascript <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Très honnêtement, GistBox n&rsquo;est pas parfait et pas mal de choses restent à faire selon moi, mais c&rsquo;est vraiment un chouette outil qui fait la part belle à l&rsquo;utilisabilité tout en offrant à l&rsquo;utilisateur de coupler le tout avec son compte GitHub. Ce qu&rsquo;il manque par contre à mon avis :</p>
+<ul>
+<li>La possibilité de créer des labels avec des couleurs choisies via une palette dédiée</li>
+<li>Une gestion plus fine de la fonction de trie</li>
+<li>La possibilité de rendre public ou privé un snippet sans avoir à se rendre sur Gist</li>
+</ul>
+<p>EDIT du 18/11/2014 : En réalité, il est possible de spécifier le statut public ou privé d&rsquo;un gist, mais uniquement lors de sa création.</p>
+<p>Au delà de ça, si vous avez comme moi tout plein de snippets et que vous aimez y accéder où et quand vous voulez, alors n&rsquo;hésitez pas, l&rsquo;essayer c&rsquo;est l&rsquo;adopter !</p>
+<p>L’article <a rel="nofollow" href="/organisez-proprement-vos-snippets-gistbox/">Outils &#8211; Organisez proprement vos snippets avec GistBox</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/organisez-proprement-vos-snippets-gistbox/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">279</post-id>	</item>
+		<item>
+		<title>Astuce &#8211; Vue du DOM en 3D sous Firefox</title>
+		<link>/vue-du-dom-en-3d-firefox/</link>
+		<comments>/vue-du-dom-en-3d-firefox/#respond</comments>
+		<pubDate>Fri, 17 Oct 2014 11:00:45 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Outils]]></category>
+		<category><![CDATA[3d]]></category>
+		<category><![CDATA[firefox]]></category>
+		<category><![CDATA[outils pour développeur]]></category>
+
+		<guid isPermaLink="false">/?p=264</guid>
+		<description><![CDATA[<p>J&#8217;aime Chrome pour mes développements, pourtant Firefox n&#8217;a pas à rougir. Ce dernier possède d&#8217;ailleurs un outil qui n&#8217;existe pas nativement sur Chrome : la vue du DOM en 3D. EDIT du 22/08/2015 : Cette fonctionnalité ne semble plus être disponible sur la version 42 developer edition. Tristesse&#8230; Alors ok, dit comme ça on se &#8230; <a href="/vue-du-dom-en-3d-firefox/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Astuce &#8211; Vue du DOM en 3D sous Firefox</span></a></p>
+<p>L’article <a rel="nofollow" href="/vue-du-dom-en-3d-firefox/">Astuce &#8211; Vue du DOM en 3D sous Firefox</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>J&rsquo;aime Chrome pour mes développements, pourtant Firefox n&rsquo;a pas à rougir. Ce dernier possède d&rsquo;ailleurs un outil qui n&rsquo;existe pas nativement sur Chrome : la vue du DOM en 3D.<span id="more-264"></span></p>
+<p><strong>EDIT du 22/08/2015 : Cette fonctionnalité ne semble plus être disponible sur la version 42 developer edition. Tristesse&#8230;</strong></p>
+<p>Alors ok, dit comme ça on se demande un peu ce que c&rsquo;est que ce gadget. Et bien à mon sens ça n&rsquo;en est pas un, car il me sauve souvent la mise lorsque je travaille sur de longues et lourdes pages au DOM chargé, surchargé et enchevêtré dans du code java ou php à n&rsquo;en plus pouvoir. Dans ce genre de cas, il arrive parfois de mal fermer une balise par exemple. Et alors quand il y a un millier de lignes je ne vous raconte pas l&rsquo;angoisse. Mais ça c&rsquo;était avant que je ne découvre cette fonctionnalité <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Grâce à elle, les blocs (entendre les blocs de balises) sont présentés en perspective 3D à la façon de calques superposés. On y voit de suite beaucoup plus clair <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Bon ça bouffe quand même des ressources matérielles, mais comme je m&rsquo;en sers ponctuellement, ça n&rsquo;est pas dramatique.</p>
+<p><a href="/wp-content/uploads/2014/10/vue-3d-firefox.jpg"><img class="aligncenter" src="/wp-content/uploads/2014/10/vue-3d-firefox.jpg" alt="vue-3d-firefox" /></a></p>
+<p>Par ailleurs on peut, dans cette vue sélectionner l&rsquo;élément voulu, et automatiquement, il l&rsquo;est aussi dans l&rsquo;inspecteur. Plutôt pratique !</p>
+<p>Pour activer cette fonctionnalité, il suffit d&rsquo;aller dans l&rsquo;inspecteur d&rsquo;élément de Firefox, puis dans les options des outils (petit engrenage en haut à droite), dans la partie « boutons de la boîte à outils », cocher « vue 3d ». Une nouvelle option apparaîtra en haut à droite de l&rsquo;inspecteur, vous permettant de basculer en vue 3d.</p>
+<p>Pour les allergiques de Firefox, il existe sous chrome une extension qui fait la même chose : <a href="https://chrome.google.com/webstore/detail/3d-view-for-webpages/noflnemoniodcoagmaapcdlmeljohdnm">3D View for Webpage</a>s. Mais je ne l&rsquo;ai pas testé et elle semble souffrir de quelques problèmes.</p>
+<p>L’article <a rel="nofollow" href="/vue-du-dom-en-3d-firefox/">Astuce &#8211; Vue du DOM en 3D sous Firefox</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/vue-du-dom-en-3d-firefox/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">264</post-id>	</item>
+		<item>
+		<title>Tutoriel &#8211; Installer un serveur Apache &#8211; PHP &#8211; MySql manuellement sous Windows 7 et 10</title>
+		<link>/tuto-installer-serveur-apache-php-mysql-manuellement-windows-7/</link>
+		<comments>/tuto-installer-serveur-apache-php-mysql-manuellement-windows-7/#comments</comments>
+		<pubDate>Sat, 23 Aug 2014 11:29:09 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Apache]]></category>
+		<category><![CDATA[MySql]]></category>
+		<category><![CDATA[Tutoriels]]></category>
+		<category><![CDATA[apache]]></category>
+		<category><![CDATA[mysql]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[serveur]]></category>
+
+		<guid isPermaLink="false">/?p=229</guid>
+		<description><![CDATA[<p>Que ce soit pour avoir un environnement de développement le plus proche possible d&#8217;un environnement de production ou simplement pour enrichir ses connaissances personnelles, on a parfois besoin d&#8217;installer le trio Apache &#8211; PHP &#8211; MySql de manière séparée sur sa machine windows, sans passer par Wamp ou EasyPhp pour ne citer qu&#8217;eux. Cela laisse &#8230; <a href="/tuto-installer-serveur-apache-php-mysql-manuellement-windows-7/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Tutoriel &#8211; Installer un serveur Apache &#8211; PHP &#8211; MySql manuellement sous Windows 7 et 10</span></a></p>
+<p>L’article <a rel="nofollow" href="/tuto-installer-serveur-apache-php-mysql-manuellement-windows-7/">Tutoriel &#8211; Installer un serveur Apache &#8211; PHP &#8211; MySql manuellement sous Windows 7 et 10</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Que ce soit pour avoir un environnement de développement le plus proche possible d&rsquo;un environnement de production ou simplement pour enrichir ses connaissances personnelles, on a parfois besoin d&rsquo;installer le trio Apache &#8211; PHP &#8211; MySql de manière séparée sur sa machine windows, sans passer par Wamp ou EasyPhp pour ne citer qu&rsquo;eux.</p>
+<p>Cela laisse par ailleurs beaucoup de latitude quant aux versions des packages. Sous Linux, aucun problème : 3 coups de apt-get install et hop ! ça tourne <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Mais sous Windows c&rsquo;est une autre paire de manches. Je vous propose donc aujourd&rsquo;hui un tutoriel dédié à l&rsquo;installation d&rsquo;un serveur AMP sous windows 7. Ce tuto s&rsquo;inspire librement des différentes sources que j&rsquo;ai pu trouver sur le web, et tout particulièrement d&rsquo;un tuto en anglais dont je vous donne le lien à la fin de cet article.</p>
+<p>C&rsquo;est parti !</p>
+<h3><span id="more-229"></span>0 &#8211; Les prérequis :</h3>
+<p>Avoir ses packages Microsoft Visual C++ à jour. Si vous êtes en 64bits, vous devez posséder la version x86 ET x64.</p>
+<h3>1 &#8211; Installation / mise à jour des packages Visual C++ en tant qu&rsquo;administrateur</h3>
+<h4>&#8211; Visual C++ 2005</h4>
+<p>x86 &#8211; <a href="http://www.microsoft.com/fr-fr/download/details.aspx?id=3387" target="_blank">http://www.microsoft.com/fr-fr/download/details.aspx?id=3387</a><br />
+x64 &#8211; <a href="http://www.microsoft.com/fr-fr/download/details.aspx?id=18471" target="_blank">http://www.microsoft.com/fr-fr/download/details.aspx?id=18471</a></p>
+<h4>&#8211; Visual C++ 2008</h4>
+<p>x86 &#8211; <a href="http://www.microsoft.com/fr-fr/download/details.aspx?id=29" target="_blank">http://www.microsoft.com/fr-fr/download/details.aspx?id=29</a><br />
+x64 &#8211; <a href="http://www.microsoft.com/fr-fr/download/details.aspx?id=15336" target="_blank">http://www.microsoft.com/fr-fr/download/details.aspx?id=15336</a></p>
+<h4>&#8211; Visual C++ 2010</h4>
+<p>x86 &#8211; <a href="http://www.microsoft.com/fr-fr/download/details.aspx?id=5555" target="_blank">http://www.microsoft.com/fr-fr/download/details.aspx?id=5555</a><br />
+x64 &#8211; <a href="http://www.microsoft.com/fr-fr/download/details.aspx?id=14632" target="_blank">http://www.microsoft.com/fr-fr/download/details.aspx?id=14632</a></p>
+<h4>&#8211; Visual C++ 2012</h4>
+<p>x86 &amp; x64 &#8211; <a href="http://www.microsoft.com/fr-fr/download/details.aspx?id=30679" target="_blank">http://www.microsoft.com/fr-fr/download/details.aspx?id=30679</a></p>
+<h4>&#8211; Visual C++ 2013</h4>
+<p>x86 &amp; x64 &#8211; <a href="http://www.microsoft.com/fr-fr/download/details.aspx?id=40784" target="_blank">http://www.microsoft.com/fr-fr/download/details.aspx?id=40784</a></p>
+<h4>&#8211; Visual C++ 2015</h4>
+<p>x86 &amp; x64 &#8211; <a href="https://www.microsoft.com/fr-fr/download/details.aspx?id=48145" target="_blank">https://www.microsoft.com/fr-fr/download/details.aspx?id=48145</a></p>
+<h3>2 &#8211; Installation de Apache 2.4</h3>
+<p>Prérequis : Être authentifié en tant qu&rsquo;administrateur, sinon vous ne pourrez pas installer de service.</p>
+<ol>
+<li>Récupérer la dernière version Apache httpd 2.4.x-x64 &#8211; <a href="https://www.apachelounge.com/download/VC11/binaries/" target="_blank">https://www.apachelounge.com/download/VC11/binaries/</a> (nécéssite VC11 Update 4)</li>
+<li>Dézipper dans C:\Apache24</li>
+<li>dans C:\Apache24\conf\httpd.conf<br />
+changer documentRoot<br />
+par le chemin www souhaité</li>
+<li>Changer serverName en localhost:80 et décommentez la ligne</li>
+<li>vhost -&gt; décommenter le chemin<br />
+changer conf\extra\httpd-vhosts.conf avec ses propres vhost valides</li>
+<li>Rajoutez le chemin C:\Apache24\bin\ dans votre path windows</li>
+<li>tester les paramètres dans l&rsquo;invite de commande cmd en exécutant httpd.exe</li>
+<li>si tout test ok, installer le service via la commande httpd.exe -k install<br />
+Puis quitter cmd</li>
+<li>démarrer bin\ApacheMonitor.exe et tester que le serveur démarre</li>
+<li>Exécuter « services.smc » et arrêter le service Apache2.4</li>
+</ol>
+<h3>3 &#8211; Installation de PHP 5.5.x x64</h3>
+<ol>
+<li>Télécharger la version correspondante (x64) &#8211; <strong>Non Thread Safe ! (à moins de savoir ce que vous faites)</strong> &#8211; <a href="http://windows.php.net/download/" target="_blank">http://windows.php.net/download/</a></li>
+<li>Extraire l&rsquo;archive dans C:\php</li>
+<li>Dupliquer C:\php\php.ini-development en C:\php\php.ini</li>
+<li>Ajouter à la fin de C:\Apache24\conf\httpd.conf<br />
+<pre class="crayon-plain-tag">LoadModule php5_module C:/php/php5apache2_4.dll
+
+    DirectoryIndex index.html index.php
+    AddHandler application/x-httpd-php .php
+    PHPIniDir "C:/php"</pre>
+</li>
+<li>tester httpd.exe pour vérifier les erreurs dans cmd</li>
+<li>dans php.ini, décommenter les lignes :<br />
+extension_dir = « ext » (permet d&rsquo;aller chercher les extensions dans le dossier ext)<br />
+Remplacez « ext » par le chemin complet, à savoir « C:/php/ext » par précaution.<br />
+extension=php_mysql.dll<br />
+extension=php_mysqli.dll<br />
+extension=php_pdo_mysql.dll<br />
+et optionnellement :<br />
+extension=php_bz2.dll<br />
+extension=php_curl.dll<br />
+extension=php_gd2.dll<br />
+extension=php_imap.dll<br />
+extension=php_openssl.dll<br />
+extension=php_pdo_odbc.dll<br />
+extension=php_pdo_sqlite.dll</li>
+</ol>
+<h3>4 &#8211; Installer MySql</h3>
+<ol>
+<li>Télécharegr mysql-installer-web-community-5.6.20.0.msi &#8211; <a href="http://dev.mysql.com/get/Downloads/MySQLInstaller/mysql-installer-web-community-5.6.20.0.msi" target="_blank">http://dev.mysql.com/get/Downloads/MySQLInstaller/mysql-installer-web-community-5.6.20.0.msi</a></li>
+<li>Lancer l&rsquo;installation avec les paramètres par défaut et en sélectionnant la version Developer durant l&rsquo;installation</li>
+<li>A la fin de l&rsquo;installation il ne vous reste qu&rsquo;à renseigner les paramètres de connexion</li>
+</ol>
+<p>Démarrer Apache ! Et si tout s&rsquo;est bien déroulé, vous avez à présent un serveur AMP fonctionnel.</p>
+<h3>5 &#8211; Notes</h3>
+<p>Il est tout à fait possible d&rsquo;installer MySql en tant que service. Pour ce faire :</p>
+<ol>
+<li>Dans cmd, taper mysqld &#8211;install</li>
+<li>Puis mysqld start</li>
+</ol>
+<p>Vous remarquez au passage que lors de l&rsquo;installation de MySql, pas mal d&rsquo;autres outils ont été installés, comme MySql Notifier qui vous permet de gérer le service MySql directement dans la barre de notifications Windows, ainsi que MySql Workbench qui vous permet de gérer vos bases en l&rsquo;absence de phpMyAdmin.</p>
+<p>Cependant et pour des raisons purement pratiques je n&rsquo;utilise pas ce dernier et m&rsquo;en remet entièrement à la ligne de commande qui reste pour moi plus efficace et performante que n&rsquo;importe quelle interface, et surtout m&rsquo;offre une vraie maîtrise de cee que je fais.</p>
+<p>J&rsquo;espère que ce petit tuto vous aura été utile, n&rsquo;hésitez pas à poser vos questions si vous en avez ou vos remarques (je prends aussi ^^).</p>
+<p>Inspiré de : <a href="http://superuser.com/questions/748117/how-to-manually-install-apache-php-and-mysql-on-windows" target="_blank">http://superuser.com/questions/748117/how-to-manually-install-apache-php-and-mysql-on-windows</a></p>
+<p>L’article <a rel="nofollow" href="/tuto-installer-serveur-apache-php-mysql-manuellement-windows-7/">Tutoriel &#8211; Installer un serveur Apache &#8211; PHP &#8211; MySql manuellement sous Windows 7 et 10</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/tuto-installer-serveur-apache-php-mysql-manuellement-windows-7/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">229</post-id>	</item>
+		<item>
+		<title>Outil &#8211; Scanner de vulnérabilités WordPress</title>
+		<link>/trouver-vulnerabilites-wordpress/</link>
+		<comments>/trouver-vulnerabilites-wordpress/#respond</comments>
+		<pubDate>Tue, 05 Aug 2014 13:16:58 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Outils]]></category>
+		<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[faille]]></category>
+		<category><![CDATA[securité]]></category>
+		<category><![CDATA[wpscan]]></category>
+
+		<guid isPermaLink="false">/?p=221</guid>
+		<description><![CDATA[<p>Bonjour, retour de vacances pour moi, et le moment de faire le point sur les projets en cours et faire un peu de ménage dans ceux passés. Du coup je me penche sur la sécurité. Et à ce propos, je viens de découvrir un outil fort pratique pour déceler les vulnérabilités d&#8217;un site WordPress. Il &#8230; <a href="/trouver-vulnerabilites-wordpress/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Outil &#8211; Scanner de vulnérabilités WordPress</span></a></p>
+<p>L’article <a rel="nofollow" href="/trouver-vulnerabilites-wordpress/">Outil &#8211; Scanner de vulnérabilités WordPress</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Bonjour, retour de vacances pour moi, et le moment de faire le point sur les projets en cours et faire un peu de ménage dans ceux passés. Du coup je me penche sur la sécurité. Et à ce propos, je viens de découvrir un outil fort pratique pour déceler les vulnérabilités d&rsquo;un site WordPress.<span id="more-221"></span></p>
+<p>Il s&rsquo;agit de WpScan. Tout en ruby, il s’installe sur une machine Linux. Tout site WP peut être scanner. Ce qui fait de cet outil un joujou de choix pour les hackers potentiels. Je l’ai installé sur mon serveur pour tester, et c’est plutôt efficace. De plus toutes les failles qu’il remonte sont documentées avec plusieurs sources. Bravo aux développeurs de cette perle !</p>
+<p>Je vous encourage à le tester. Voici le site ainsi que leur GitHub :</p>
+<p><a href="http://wpscan.org/">http://wpscan.org/</a></p>
+<p><a href="https://github.com/wpscanteam/wpscan">https://github.com/wpscanteam/wpscan</a></p>
+<p>Si vous aussi connaissez des outils similaires, n&rsquo;hésitez surtout pas à les partager !</p>
+<p>A+</p>
+<p>L’article <a rel="nofollow" href="/trouver-vulnerabilites-wordpress/">Outil &#8211; Scanner de vulnérabilités WordPress</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/trouver-vulnerabilites-wordpress/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">221</post-id>	</item>
+		<item>
+		<title>Mettre son dossier www dans home pour chaque utilisateur linux</title>
+		<link>/mettre-son-dossier-www-dans-home-pour-chaque-utilisateur-linux/</link>
+		<comments>/mettre-son-dossier-www-dans-home-pour-chaque-utilisateur-linux/#respond</comments>
+		<pubDate>Sat, 24 May 2014 08:36:55 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Apache]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[apache]]></category>
+		<category><![CDATA[userdir]]></category>
+		<category><![CDATA[vhost]]></category>
+		<category><![CDATA[virtual host]]></category>
+
+		<guid isPermaLink="false">/?p=170</guid>
+		<description><![CDATA[<p>Longtemps je me suis cassé la tête et les dents à coup de chmod et chown pour résoudre la question de comment mettre son dossier www dans home pour chaque utilisateur linux. Aujourd&#8217;hui, je vous présente un moyen simple d&#8217;y parvenir avec le module Apache userdir.Avant de connaitre l&#8217;astuce que je vais vous présenter, je &#8230; <a href="/mettre-son-dossier-www-dans-home-pour-chaque-utilisateur-linux/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Mettre son dossier www dans home pour chaque utilisateur linux</span></a></p>
+<p>L’article <a rel="nofollow" href="/mettre-son-dossier-www-dans-home-pour-chaque-utilisateur-linux/">Mettre son dossier www dans home pour chaque utilisateur linux</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Longtemps je me suis cassé la tête et les dents à coup de chmod et chown pour résoudre la question de comment mettre son dossier www dans home pour chaque utilisateur linux. Aujourd&rsquo;hui, je vous présente un moyen simple d&rsquo;y parvenir avec le module Apache userdir.<span id="more-170"></span>Avant de connaitre l&rsquo;astuce que je vais vous présenter, je me torturais, comme beaucoup d&rsquo;auters j&rsquo;imagine, à configurer apache d&rsquo;une part, et des permissions tarabiscotées à coup de chmod d&rsquo;autre part. C&rsquo;était sans compter sur un petit module apache fort pratique, à savoir userdir.</p>
+<h2>Pourquoi mettre son dossier www dans le répertoire /home de l&rsquo;utilisateur ?</h2>
+<p>D&rsquo;abord parce que c&rsquo;est plus propre : chaque utilisateur à son login et son mot de passe, et donc son répertoire. Ainsi on sépare bien toutes nos entités et on s&rsquo;y retrouve plus facilement.</p>
+<p>Ensuite, parce que c&rsquo;est plus sécurisé : Comme dit juste avant, on ferme tout et chaque utilisateur accède à son espace et pas celui des autres, grâce à son login/mot de passe. De plus, si comme moi vous avez installé votre /home sur une partition distincte de la partition système, vous ne risquez pas de perdre vos données web si jamais quelque chose tournait mal et que vous vouliez récupérer votre boulot.</p>
+<h2>Ce qu&rsquo;on va faire</h2>
+<p>Création d&rsquo;un espace individuel pour chaque site<br />
+Activation du module Apache UserDir<br />
+Configuration d&rsquo;un virtual host associé</p>
+<h2>Avant de commencer</h2>
+<p>Toutes les manipulations présentées ici sont réalisées sur un système Debian 7 Wheezy, mais ça fonctionne également sur tout système de base Debian avec Apache2 d&rsquo;installé, comme Ubuntu. Il va de soit que tout se passe en ligne de commande et qu&rsquo;un minimum de connaissance du shell est nécessaire.</p>
+<h2>On y va <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></h2>
+<h3>Création d&rsquo;un utilisateur</h3>
+<p></p><pre class="crayon-plain-tag">sudo adduser wplabs</pre><p></p>
+<h3>Activation du module Apache userdir</h3>
+<p>On active le module (1ère commande), puis on modifie sa configuration (2ème commande)</p><pre class="crayon-plain-tag">sudo a2enmod userdir
+sudo nano /etc/apache2/mods-available/userdir.conf</pre><p>Dans le fichier de config, on a juste un truc à modifier : public_html qu&rsquo;on va transformer en www aux lignes 2 et 5. On pourrait très bien garder le nom « public_html », mais on va garder la cohérence du dossier /var/www.</p><pre class="crayon-plain-tag">&lt;IfModule mod_userdir.c&gt;
+        UserDir public_html 
+        UserDir disabled root
+
+        &lt;Directory /home/*/public_html&gt;
+                AllowOverride FileInfo AuthConfig Limit Indexes
+                Options MultiViews Indexes SymLinksIfOwnerMatch IncludesNoExec
+                &lt;Limit GET POST OPTIONS&gt;
+                        Order allow,deny
+                        Allow from all
+                &lt;/Limit&gt;
+                &lt;LimitExcept GET POST OPTIONS&gt;
+                        Order deny,allow
+                        Deny from all
+                &lt;/LimitExcept&gt;
+        &lt;/Directory&gt;
+&lt;/IfModule&gt;</pre><p>Voilà ce que ça donne :<br />
+Ce qu&rsquo;on a fait ici c&rsquo;est simplement dire que les fichiers visibles et accessibles (nos sites) se trouvent toujours dans le dossier /home/*/www (l’astérisque sert à dire n&rsquo;importe quel utilisateur). Pensez à sauvegarder.</p><pre class="crayon-plain-tag">&lt;IfModule mod_userdir.c&gt;
+        UserDir www 
+        UserDir disabled root
+
+        &lt;Directory /home/*/www&gt;
+                AllowOverride FileInfo AuthConfig Limit Indexes
+                Options MultiViews Indexes SymLinksIfOwnerMatch IncludesNoExec
+                &lt;Limit GET POST OPTIONS&gt;
+                        Order allow,deny
+                        Allow from all
+                &lt;/Limit&gt;
+                &lt;LimitExcept GET POST OPTIONS&gt;
+                        Order deny,allow
+                        Deny from all
+                &lt;/LimitExcept&gt;
+        &lt;/Directory&gt;
+&lt;/IfModule&gt;</pre><p></p>
+<h3>Création du virtualhost</h3>
+<p>On se rend dans le dossier des vhost, et on commence par jeter un oeil à celui par défaut.</p><pre class="crayon-plain-tag">cd /etc/apache2/sites-available/
+sudo nano default</pre><p>Ça c&rsquo;est mon vhost par défaut. Le votre est peut etre différent, mais ce qui importe c&rsquo;est qu&rsquo;il indique DocumentRoot /home/*/www<br />
+Vous remarquez ? Comme dans mon userdir.conf <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p><pre class="crayon-plain-tag">&lt;VirtualHost *:80&gt;
+        ServerAdmin neovea@gmail.com
+        DocumentRoot /home/*/www
+        &lt;Directory /&gt;
+                Options FollowSymLinks
+                AllowOverride All
+        &lt;/Directory&gt;
+        &lt;Directory /home/*/www/&gt;
+                Options Indexes FollowSymLinks MultiViews
+                AllowOverride all
+                Order allow,deny
+                allow from all
+        &lt;/Directory&gt;
+&lt;/VirtualHost&gt;</pre><p>Vu qu&rsquo;il est bon, on le copie colle en le renommant du nom de notre site, et on l&rsquo;édite.</p><pre class="crayon-plain-tag">sudo cp default wplabs
+sudo nano wplabs</pre><p>Renseignez bien le chemin tel qu&rsquo;il existe cette fois ci, cf lignes 5 et 10, et faites en sorte d&rsquo;avoir un alias/name valide, sans quoi ça ne fonctionnera pas.</p><pre class="crayon-plain-tag">&lt;VirtualHost *:80&gt;
+        ServerAdmin neovea@gmail.com
+        ServerAlias wplabs.desirelabs.fr
+        ServerName wplabs.desirelabs.fr
+        DocumentRoot /home/wplabs/www
+        &lt;Directory /&gt;
+                Options FollowSymLinks
+                AllowOverride All
+        &lt;/Directory&gt;
+        &lt;Directory /home/wplabs/www/&gt;
+                Options Indexes FollowSymLinks MultiViews
+                AllowOverride all
+                Order allow,deny
+                allow from all
+        &lt;/Directory&gt;
+&lt;/VirtualHost&gt;</pre><p></p>
+<h3>Activation du site et reload d&rsquo;apache</h3>
+<p>Le reload est important, il permet de prendre en compte le nouveau site activé, mais aussi le module qui a été activé, userdir.</p><pre class="crayon-plain-tag">sudo a2ensite wplabs
+sudo service apache2 reload</pre><p></p>
+<h3>Création du site et tests</h3>
+<p>Rien de méchant, on se connecte avec le user qu&rsquo;on a créé précédemment, et on lui fait créer un dossier www dans son propre espace.</p><pre class="crayon-plain-tag">su wplabs
+cd
+mkdir www</pre><p>Alors oui c&rsquo;est vrai on pourrait mettre tous les fichiers du site à la racine du user, mais je préfère procéder ainsi et me garder la liberté de pouvoir mettre des choses à côté du répertoire de mon site si je le souhaite, comme mes backups de base de données par exemple, ou simplement une nouvelle version du site en cours de développement.</p>
+<p>Testez votre site en créant un bête index.html dans www et profitez <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Fini la prise de tête avec chmod !</p>
+<p>L’article <a rel="nofollow" href="/mettre-son-dossier-www-dans-home-pour-chaque-utilisateur-linux/">Mettre son dossier www dans home pour chaque utilisateur linux</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/mettre-son-dossier-www-dans-home-pour-chaque-utilisateur-linux/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">170</post-id>	</item>
+		<item>
+		<title>Principales commandes Git</title>
+		<link>/principales-commandes-git/</link>
+		<comments>/principales-commandes-git/#respond</comments>
+		<pubDate>Sun, 02 Mar 2014 11:42:56 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Git]]></category>
+		<category><![CDATA[versioning]]></category>
+
+		<guid isPermaLink="false">/?p=112</guid>
+		<description><![CDATA[<p>Cet article qui sera mis à jour régulièrement fait état des commandes git les plus utiles, en tout cas, celles dont je me sers le plus souvent. Si nécessaire, je créerai des articles connexes afin de développer certaines d&#8217;entres elles. Créer un dépot git local [crayon-5abddf3dca471715157616/] Article connexe sur la création d&#8217;un dépôt sur serveur &#8230; <a href="/principales-commandes-git/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Principales commandes Git</span></a></p>
+<p>L’article <a rel="nofollow" href="/principales-commandes-git/">Principales commandes Git</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Cet article qui sera mis à jour régulièrement fait état des commandes git les plus utiles, en tout cas, celles dont je me sers le plus souvent. Si nécessaire, je créerai des articles connexes afin de développer certaines d&rsquo;entres elles.<span id="more-112"></span></p>
+<h2>Créer un dépot git local</h2>
+<p></p><pre class="crayon-plain-tag">mkdir &lt;mon_depot_git&gt;
+cd &lt;mon_depot_git&gt;
+git init</pre><p></p>
+<p><a title="Versionnez vos projets sur serveur personnel avec Git" href="/versionnez-vos-projets-sur-serveur-personnel-avec-git/">Article connexe sur la création d&rsquo;un dépôt sur serveur privé.</a></p>
+<h2>Communiquer avec le dépôt git distant</h2>
+<h4>Cloner un dépôt git distant vers sa machine</h4>
+<p></p><pre class="crayon-plain-tag">git clone &lt;url du dépôt&gt;:&lt;dépôt git&gt;</pre><p></p>
+<h4>Sauvegarder son travail : procéder à des ajoutes et les commiter</h4>
+<p></p><pre class="crayon-plain-tag">git add .
+git commit -a</pre><p></p>
+<p>La première commande dit d&rsquo;ajouter tout ce qui se trouve dans le répertoire courant lors du prochain commit (exception faite des fichiers ou dossier précisés dans le fichier .gitignore)</p>
+<p>La seconde effectue la sauvegarde de tout ce qui a été modifié ou ajouté.</p>
+<h4>Envoyer son travail commité vers le dépôt distant</h4>
+<p></p><pre class="crayon-plain-tag">git push</pre><p></p>
+<h4>Procéder à une vérification des données disponibles sur le serveur distant et les rappatrier en local</h4>
+<p></p><pre class="crayon-plain-tag">git fetch
+git pull</pre><p></p>
+<h2>Changer le dépôt git distant d&rsquo;un projet</h2>
+<p></p><pre class="crayon-plain-tag">git remote set-url origin &lt;url du nouveau dépôt&gt;:&lt;nom du nouveau dépôt&gt;
+
+//exemple sur un serveur privé :
+git remote set-url origin git@desirelabs.fr:monprojet.git</pre><p></p>
+<h2>Utiliser les branches (version soft)</h2>
+<h4>Créer une nouvelle branche</h4>
+<p></p><pre class="crayon-plain-tag">git branch &lt;nom_de_la_branche&gt;</pre><p></p>
+<h4>Changer de branche</h4>
+<p></p><pre class="crayon-plain-tag">git checkout &lt;nom_de_la_branche&gt;</pre><p></p>
+<h4>Créer une branche et la choisir en même temps</h4>
+<p></p><pre class="crayon-plain-tag">git checkout -b &lt;nom_de_la_branche&gt;</pre><p></p>
+<h4>Afficher les branches disponibles</h4>
+<p></p><pre class="crayon-plain-tag">git branch</pre><p></p>
+<h4>Fusionner deux branches</h4>
+<p></p><pre class="crayon-plain-tag">// on retourne sur la branche principale
+git checkout master
+
+// et on 'merge' avec la branche souhaitée
+git merge &lt;branche_a_fusionner&gt;</pre><p></p>
+<h4>Supprimer une branche</h4>
+<p></p><pre class="crayon-plain-tag">git branch -D &lt;nom_de_la_branche&gt;</pre><p></p>
+<p>&nbsp;</p>
+<p>L’article <a rel="nofollow" href="/principales-commandes-git/">Principales commandes Git</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/principales-commandes-git/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">112</post-id>	</item>
+		<item>
+		<title>Changer l&#8217;URL de son site</title>
+		<link>/changer-lurl-de-son-site/</link>
+		<comments>/changer-lurl-de-son-site/#respond</comments>
+		<pubDate>Tue, 28 Jan 2014 09:28:30 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[MySql]]></category>
+		<category><![CDATA[Php]]></category>
+
+		<guid isPermaLink="false">/?p=70</guid>
+		<description><![CDATA[<p>Quand l&#8217;url de son site change, on se retrouve systématiquement avec des liens morts, ou en tout cas qui ne pointent pas à l&#8217;endroit voulu. Pour éviter ça, il existe le script http://interconnectit.com / dont j&#8217;ai déjà parlé dans l&#8217;article précédent. Cette fois-ci je vais aller un peu plus dans le détail avec quelques captures d&#8217;écran &#8230; <a href="/changer-lurl-de-son-site/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Changer l&#8217;URL de son site</span></a></p>
+<p>L’article <a rel="nofollow" href="/changer-lurl-de-son-site/">Changer l&rsquo;URL de son site</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Quand l&rsquo;url de son site change, on se retrouve systématiquement avec des liens morts, ou en tout cas qui ne pointent pas à l&rsquo;endroit voulu. Pour éviter ça, il existe le script <a href="http://interconnectit.com/products/search-and-replace-for-wordpress-databases/">http://interconnectit.com/</a>  dont j&rsquo;ai déjà parlé dans l&rsquo;<a title="Effectuer des chercher remplacer dans sa base de données mysql" href="/effectuer-des-chercher-remplacer-dans-sa-base-de-donnees-mysql/">article précédent</a>. Cette fois-ci je vais aller un peu plus dans le détail avec quelques captures d&rsquo;écran à l&rsquo;appuie <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /><span id="more-70"></span>Qu&rsquo;il s&rsquo;agisse d&rsquo;effectuer la mise en production d&rsquo;un site ou sa migration, la problématique de son URL est très souvent une sacrée prise de tête. En effet, quand on installe son site quelque part et qu&rsquo;on le configure pour la première fois, le CMS installe en base de données l&rsquo;url courante pour la construction de son arborescence.</p>
+<p>On est donc tenté de faire un simple rechercher/remplacer dans sa base de données pour remédier à ce problème. ERREUR GRAVE ! Pourquoi ? Tout simplement parce que l&rsquo;url est sérialisée dans MySql et que si on la casse, bah le site fonctionnera plus. Et alors là, pour rattraper le coup, tu peux te brosser Martine.</p>
+<p>Je ne vous ferai pas de long laïus sur le script proposé par Interconnectit, c&rsquo;est une petite perle qu&rsquo;il fait toujours bon connaitre et avoir avec soi. C&rsquo;est fiable, facile, efficace et fonctionne sous quasiment tous les CMS PHP connectés à MySql. Tout ce que j&rsquo;aime <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<h3>Avertissement !</h3>
+<p><strong>Cette manipulation n&rsquo;est pas sans risque pour votre base de données, et une mauvaise manipulation ou un souci technique ne sont pas à exclure. Et je peux vous assurer que perdre une base de données complète le jour de la mise en production est typiquement le genre de chose qui vous donne envie de vous pendre à défaut de donner votre démission pour incompétence. Et ni moi ni l&rsquo;auteur du script ne saurait être tenu pour responsable si vous n&rsquo;avez pas pris la précaution de faire une sauvegarde de la base de données avant de procéder.</strong> <strong>Mais rassurez-vous, si vous faites tout bien comme il faut, il ne devrait pas y avoir de pépin <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></strong><br />
+<strong>Maintenant que vous avez bien flippé, on y va !</strong></p>
+<h3>Avant de commencer il faut :</h3>
+<p>Avoir un site fonctionnel avec la nouvelle adresse déjà configurée<br />
+Sauvegarder sa base de données MySql au cas tout vous exploserait à la figure<br />
+Le script est disponible ici <a href="http://interconnectit.com/products/search-and-replace-for-wordpress-databases/">http://interconnectit.com/</a></p>
+<h3>Le changement d&rsquo;url, comment ça marche ?</h3>
+<p>On part du principe que vous avez un site en développement qui a une adresse de type http://localhost/monsite ou bien http://dev.monsite.fr/ ou tout autre nom de domaine de « transition » avant la mise en production. Nous ce qu&rsquo;on veut c&rsquo;est que son adresse soit http://monsite.fr/ ou http://www.monsite.fr./ Qu&rsquo;à cela ne tienne !</p>
+<h3>Précédons par étape :</h3>
+<ol>
+<li>On décompresse le dossier contenant le script</li>
+<li>On renomme le script par sécurité et simplicité sans supprimer l&rsquo;extension .php</li>
+<li>On se connecte en ftp sur notre site et à la racine du dossier contenant le CMS, on dépose le script</li>
+<li>On se connecte à sa nouvelle adresse (e.g. http://www.monsite.fr)/ à laquelle on ajoute /nom_du_script.php, soit http://www.monsite.fr/nom_du_script.php</li>
+<li>On atterrit sur la page d&rsquo;accueil du script qui propose donc de charger les informations de connexion à la base de donnée de WordPress. On laisse la case « Pre-populate » cochée et on clique sur « Submit ».<br />
+<a href="/wp-content/uploads/2014/01/sar1.png"><img class="aligncenter size-medium wp-image-73" src="/wp-content/uploads/2014/01/sar1-300x107.png" alt="sar1" width="300" height="107" srcset="/wp-content/uploads/2014/01/sar1-300x107.png 300w, /wp-content/uploads/2014/01/sar1-624x223.png 624w, /wp-content/uploads/2014/01/sar1.png 788w" sizes="(max-width: 300px) 100vw, 300px" /></a></li>
+<li>Sur la page suivant s&rsquo;affichent donc les informations de connexion. Vérifier avec soin qu&rsquo;elles correspondent bien à celles de votre base de données. Le cas échéant, les corriger. Faites bien attention au charset utilisé qu&rsquo;il corresponde également. si tout est ok, cliquez sur « Submit DB details ».<br />
+<a href="/wp-content/uploads/2014/01/sar2.png"><img class="aligncenter" src="/wp-content/uploads/2014/01/sar2-300x196.png" alt="sar2" width="300" height="196" /></a></li>
+<li>L&rsquo;avant dernière page vous propose de sélectionner les tables dans lesquelles effectuer le rechercher/remplacer. Par défaut, tout est sélectionné. Dans notre cas, c&rsquo;est exactement ce que l&rsquo;on souhaite, donc on ne touche à rien, si ce n&rsquo;est qu&rsquo;on coche impérativement la case « Leave GUID column unchanged ». Je vous invite à lire la <a href="http://codex.wordpress.org/Changing_The_Site_URL#Important_GUID_Note">page du codex</a> concernée si vous voulez plus de détails, mais grosso modo, si vous ne la cochez pas, vous cassez vos flux RSS. On clique à présent sur « Continue » et « OK » à l&rsquo;avertissement.<br />
+<a href="/wp-content/uploads/2014/01/sar3.png"><img class="aligncenter size-medium wp-image-75" src="/wp-content/uploads/2014/01/sar3-300x201.png" alt="sar3" width="300" height="201" srcset="/wp-content/uploads/2014/01/sar3-300x201.png 300w, /wp-content/uploads/2014/01/sar3-624x419.png 624w, /wp-content/uploads/2014/01/sar3.png 788w" sizes="(max-width: 300px) 100vw, 300px" /></a></li>
+<li>Enfin, dernière étape de notre script, le chercher/remplacer. Dans le champs du haut on met le domaine à remplacer, et dans celui du bas, le nouveau nom de domaine. Il faut être vigilant et ne renseigner que le domaine. Donc concrètement, on ne met pas le http://,/ ni de slash (/) à la fin. Puis on clique sur « Submit Search String » et « OK » pour procéder.<br />
+<a href="/wp-content/uploads/2014/01/sar4.png"><img class="aligncenter size-medium wp-image-76" src="/wp-content/uploads/2014/01/sar4-300x130.png" alt="sar4" width="300" height="130" srcset="/wp-content/uploads/2014/01/sar4-300x130.png 300w, /wp-content/uploads/2014/01/sar4-624x270.png 624w, /wp-content/uploads/2014/01/sar4.png 788w" sizes="(max-width: 300px) 100vw, 300px" /></a></li>
+<li>Voilà, c&rsquo;est fait. Si tout est ok, le script affiche « Completed » ainsi qu&rsquo;un récap des modifications effectuées. Vérifiez votre site en navigant et constatez que votre nouvelle adresse ne bouge et est la même de partout, même pour les images.<br />
+<a href="/wp-content/uploads/2014/01/sar5.png"><img class="aligncenter size-medium wp-image-77" src="/wp-content/uploads/2014/01/sar5-300x90.png" alt="sar5" width="300" height="90" srcset="/wp-content/uploads/2014/01/sar5-300x90.png 300w, /wp-content/uploads/2014/01/sar5-624x189.png 624w, /wp-content/uploads/2014/01/sar5.png 788w" sizes="(max-width: 300px) 100vw, 300px" /></a></li>
+<li>Supprimez le script de votre ftp afin qu&rsquo;un petit malin ne vienne pas mettre le boxon dans votre installation.</li>
+</ol>
+<p><strong>Je rappelle que ce script est utilisable pour presque tous les CMS PHP utilisant MySql. Je l&rsquo;ai déjà testé avec succès sur WordPress, Drupal et CMS Made Simple. J&rsquo;insiste aussi encore sur une chose : Faites une sauvegarde de votre base de données avant de procéder !</strong></p>
+<p>Sur ce, enjoy <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>L’article <a rel="nofollow" href="/changer-lurl-de-son-site/">Changer l&rsquo;URL de son site</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/changer-lurl-de-son-site/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">70</post-id>	</item>
+		<item>
+		<title>Effectuer des chercher remplacer dans sa base de données mysql</title>
+		<link>/effectuer-des-chercher-remplacer-dans-sa-base-de-donnees-mysql/</link>
+		<comments>/effectuer-des-chercher-remplacer-dans-sa-base-de-donnees-mysql/#respond</comments>
+		<pubDate>Fri, 10 Jan 2014 15:37:30 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[MySql]]></category>
+		<category><![CDATA[Php]]></category>
+
+		<guid isPermaLink="false">/?p=62</guid>
+		<description><![CDATA[<p>Qui n&#8217;a jamais été confronté à cette problématique ? Chercher et remplacer simplement son contenu stocké en bdd sans risquer de tout péter, c&#8217;est possible ! Cependant, il faut impérativement faire une sauvegarde de la base avant de procéder. Le script qui suit fonctionne avec presque tous les CMS, mais de mon côté je m&#8217;en sers &#8230; <a href="/effectuer-des-chercher-remplacer-dans-sa-base-de-donnees-mysql/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Effectuer des chercher remplacer dans sa base de données mysql</span></a></p>
+<p>L’article <a rel="nofollow" href="/effectuer-des-chercher-remplacer-dans-sa-base-de-donnees-mysql/">Effectuer des chercher remplacer dans sa base de données mysql</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Qui n&rsquo;a jamais été confronté à cette problématique ? Chercher et remplacer simplement son contenu stocké en bdd sans risquer de tout péter, c&rsquo;est possible !<span id="more-62"></span></p>
+<p>Cependant, il faut<strong> impérativement faire une sauvegarde de la base</strong> avant de procéder.</p>
+<p>Le script qui suit fonctionne avec presque tous les CMS, mais de mon côté je m&rsquo;en sers essentiellement avec WordPress et Drupal. Principalement il me sert à changer les url stockées en dur dans la base, lors de la mise en production d&rsquo;un site. Je signal au passage qu&rsquo;il est recommandé par le Codex WordPress.</p>
+<p>Pourquoi se servir de ce script ? Car il prend en considération la sérialisation des chaînes php et évite donc d&rsquo;endommager vos tables.</p>
+<p>Il existe maintenant en v3, mais je ne l&rsquo;ai pas testé. Donc je vous laisse me donner vos retours là dessus <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Pour télécharger le script, c&rsquo;est par là : <a href="http://interconnectit.com/products/search-and-replace-for-wordpress-databases/">http://interconnectit.com/</a></p>
+<p>Il suffit de le mettre à la racine de votre site et de l&rsquo;exécuter. N&rsquo;oubliez pas de le supprimer une fois que vous avez terminé <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>L’article <a rel="nofollow" href="/effectuer-des-chercher-remplacer-dans-sa-base-de-donnees-mysql/">Effectuer des chercher remplacer dans sa base de données mysql</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/effectuer-des-chercher-remplacer-dans-sa-base-de-donnees-mysql/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">62</post-id>	</item>
+	</channel>
+</rss>

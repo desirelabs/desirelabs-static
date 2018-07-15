@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Commentaires sur : Tutoriel &#8211; Installer un serveur Apache &#8211; PHP &#8211; MySql manuellement sous Windows 7 et 10</title>
+	<atom:link href="/tuto-installer-serveur-apache-php-mysql-manuellement-windows-7/feed/" rel="self" type="application/rss+xml" />
+	<link>/tuto-installer-serveur-apache-php-mysql-manuellement-windows-7/</link>
+	<description>Développement web, marketing digital, et référencement</description>
+	<lastBuildDate>Thu, 13 Apr 2017 19:39:14 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.4</generator>
+	<item>
+		<title>Par : Mat0380</title>
+		<link>/tuto-installer-serveur-apache-php-mysql-manuellement-windows-7/#comment-2050</link>
+		<dc:creator><![CDATA[Mat0380]]></dc:creator>
+		<pubDate>Fri, 03 Jun 2016 16:38:35 +0000</pubDate>
+		<guid isPermaLink="false">/?p=229#comment-2050</guid>
+		<description><![CDATA[Super tuto, merci...
+juste j&#039;ai rencontré un difficulté d&#039;installation de PHP à cause des versions, APache ne se lançait plus et me disait ne pas trouver le php5apache.dll. En fait, j&#039;avais pris une 5.6 VC11 et mon apache n&#039;était pas compatible, j&#039;ai dû me rabattre sur une php-5.4.45-Win32-VC9-x86 et ça roule]]></description>
+		<content:encoded><![CDATA[<p>Super tuto, merci&#8230;<br />
+juste j&rsquo;ai rencontré un difficulté d&rsquo;installation de PHP à cause des versions, APache ne se lançait plus et me disait ne pas trouver le php5apache.dll. En fait, j&rsquo;avais pris une 5.6 VC11 et mon apache n&rsquo;était pas compatible, j&rsquo;ai dû me rabattre sur une php-5.4.45-Win32-VC9-x86 et ça roule</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

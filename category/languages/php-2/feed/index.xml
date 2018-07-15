@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Php &#8211; DesireLabs</title>
+	<atom:link href="/category/languages/php-2/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Développement web, marketing digital, et référencement</description>
+	<lastBuildDate>Tue, 06 Jun 2017 17:34:36 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.4</generator>
+<site xmlns="com-wordpress:feed-additions:1">67143140</site>	<item>
+		<title>PHP fonction simple d&#8217;autoload de classes</title>
+		<link>/php-fonction-dautoload-de-classes/</link>
+		<comments>/php-fonction-dautoload-de-classes/#respond</comments>
+		<pubDate>Sat, 01 Mar 2014 15:24:39 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Php]]></category>
+		<category><![CDATA[snippet]]></category>
+
+		<guid isPermaLink="false">/?p=102</guid>
+		<description><![CDATA[<p>Ceci est ma fonction simple d&#8217;autoload de class pour wordpress. Au passage, cette version est une fonction anonyme. Ce procédé est possible uniquement à partir de la version 5.3 de php. On par du postulat que j&#8217;utiilise un fichier par classe, que ceux-ci sont stockés dans un dossier dédié, « classes », et se nomment tous « class.&#60;nom &#8230; <a href="/php-fonction-dautoload-de-classes/" class="more-link">Continuer la lecture de <span class="screen-reader-text">PHP fonction simple d&#8217;autoload de classes</span></a></p>
+<p>L’article <a rel="nofollow" href="/php-fonction-dautoload-de-classes/">PHP fonction simple d&rsquo;autoload de classes</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Ceci est ma fonction simple d&rsquo;autoload de class pour wordpress. <span id="more-102"></span></p>
+<p>Au passage, cette version est une fonction anonyme. Ce procédé est possible uniquement à partir de la version 5.3 de php.</p>
+<p>On par du postulat que j&rsquo;utiilise un fichier par classe, que ceux-ci sont stockés dans un dossier dédié, « classes », et se nomment tous « class.&lt;nom de la class&gt;.php ».</p>
+<p></p><pre class="crayon-plain-tag">/**
+ * Autoload classes
+ */
+spl_autoload_register(function($class){ 
+    $classFile = dirname(__FILE__) . '/classes/class.' .$class . '.php';
+    try {
+        // on vérifie si le fichier de la classe appelée existe
+        if (file_exists($classFile))
+            include 'classes/class.' . $class . '.php';
+    } 
+    catch (Exception $e) {
+        echo 'Classes non chargées : ' . $e-&gt;getMessage();
+    }
+});
+
+$maClass = new MaClass;
+$maClass2 = new MaClass2;
+$maClass3 = new MaClass3;</pre><p></p>
+<p>On peut ainsi instancier autant d&rsquo;objet que l&rsquo;on souhaite pour chaque classe référencée dans le dossier classes/ (si on utilise comme il se doit un fichier par classe).</p>
+<p>Si vous pensez que cette classe peut êtrre optimisée, n&rsquo;hésitez pas à poster un commentaire !</p>
+<p>L’article <a rel="nofollow" href="/php-fonction-dautoload-de-classes/">PHP fonction simple d&rsquo;autoload de classes</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/php-fonction-dautoload-de-classes/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">102</post-id>	</item>
+		<item>
+		<title>Changer l&#8217;URL de son site</title>
+		<link>/changer-lurl-de-son-site/</link>
+		<comments>/changer-lurl-de-son-site/#respond</comments>
+		<pubDate>Tue, 28 Jan 2014 09:28:30 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[MySql]]></category>
+		<category><![CDATA[Php]]></category>
+
+		<guid isPermaLink="false">/?p=70</guid>
+		<description><![CDATA[<p>Quand l&#8217;url de son site change, on se retrouve systématiquement avec des liens morts, ou en tout cas qui ne pointent pas à l&#8217;endroit voulu. Pour éviter ça, il existe le script http://interconnectit.com / dont j&#8217;ai déjà parlé dans l&#8217;article précédent. Cette fois-ci je vais aller un peu plus dans le détail avec quelques captures d&#8217;écran &#8230; <a href="/changer-lurl-de-son-site/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Changer l&#8217;URL de son site</span></a></p>
+<p>L’article <a rel="nofollow" href="/changer-lurl-de-son-site/">Changer l&rsquo;URL de son site</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Quand l&rsquo;url de son site change, on se retrouve systématiquement avec des liens morts, ou en tout cas qui ne pointent pas à l&rsquo;endroit voulu. Pour éviter ça, il existe le script <a href="http://interconnectit.com/products/search-and-replace-for-wordpress-databases/">http://interconnectit.com/</a>  dont j&rsquo;ai déjà parlé dans l&rsquo;<a title="Effectuer des chercher remplacer dans sa base de données mysql" href="/effectuer-des-chercher-remplacer-dans-sa-base-de-donnees-mysql/">article précédent</a>. Cette fois-ci je vais aller un peu plus dans le détail avec quelques captures d&rsquo;écran à l&rsquo;appuie <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /><span id="more-70"></span>Qu&rsquo;il s&rsquo;agisse d&rsquo;effectuer la mise en production d&rsquo;un site ou sa migration, la problématique de son URL est très souvent une sacrée prise de tête. En effet, quand on installe son site quelque part et qu&rsquo;on le configure pour la première fois, le CMS installe en base de données l&rsquo;url courante pour la construction de son arborescence.</p>
+<p>On est donc tenté de faire un simple rechercher/remplacer dans sa base de données pour remédier à ce problème. ERREUR GRAVE ! Pourquoi ? Tout simplement parce que l&rsquo;url est sérialisée dans MySql et que si on la casse, bah le site fonctionnera plus. Et alors là, pour rattraper le coup, tu peux te brosser Martine.</p>
+<p>Je ne vous ferai pas de long laïus sur le script proposé par Interconnectit, c&rsquo;est une petite perle qu&rsquo;il fait toujours bon connaitre et avoir avec soi. C&rsquo;est fiable, facile, efficace et fonctionne sous quasiment tous les CMS PHP connectés à MySql. Tout ce que j&rsquo;aime <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f600.png" alt="😀" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<h3>Avertissement !</h3>
+<p><strong>Cette manipulation n&rsquo;est pas sans risque pour votre base de données, et une mauvaise manipulation ou un souci technique ne sont pas à exclure. Et je peux vous assurer que perdre une base de données complète le jour de la mise en production est typiquement le genre de chose qui vous donne envie de vous pendre à défaut de donner votre démission pour incompétence. Et ni moi ni l&rsquo;auteur du script ne saurait être tenu pour responsable si vous n&rsquo;avez pas pris la précaution de faire une sauvegarde de la base de données avant de procéder.</strong> <strong>Mais rassurez-vous, si vous faites tout bien comme il faut, il ne devrait pas y avoir de pépin <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></strong><br />
+<strong>Maintenant que vous avez bien flippé, on y va !</strong></p>
+<h3>Avant de commencer il faut :</h3>
+<p>Avoir un site fonctionnel avec la nouvelle adresse déjà configurée<br />
+Sauvegarder sa base de données MySql au cas tout vous exploserait à la figure<br />
+Le script est disponible ici <a href="http://interconnectit.com/products/search-and-replace-for-wordpress-databases/">http://interconnectit.com/</a></p>
+<h3>Le changement d&rsquo;url, comment ça marche ?</h3>
+<p>On part du principe que vous avez un site en développement qui a une adresse de type http://localhost/monsite ou bien http://dev.monsite.fr/ ou tout autre nom de domaine de « transition » avant la mise en production. Nous ce qu&rsquo;on veut c&rsquo;est que son adresse soit http://monsite.fr/ ou http://www.monsite.fr./ Qu&rsquo;à cela ne tienne !</p>
+<h3>Précédons par étape :</h3>
+<ol>
+<li>On décompresse le dossier contenant le script</li>
+<li>On renomme le script par sécurité et simplicité sans supprimer l&rsquo;extension .php</li>
+<li>On se connecte en ftp sur notre site et à la racine du dossier contenant le CMS, on dépose le script</li>
+<li>On se connecte à sa nouvelle adresse (e.g. http://www.monsite.fr)/ à laquelle on ajoute /nom_du_script.php, soit http://www.monsite.fr/nom_du_script.php</li>
+<li>On atterrit sur la page d&rsquo;accueil du script qui propose donc de charger les informations de connexion à la base de donnée de WordPress. On laisse la case « Pre-populate » cochée et on clique sur « Submit ».<br />
+<a href="/wp-content/uploads/2014/01/sar1.png"><img class="aligncenter size-medium wp-image-73" src="/wp-content/uploads/2014/01/sar1-300x107.png" alt="sar1" width="300" height="107" srcset="/wp-content/uploads/2014/01/sar1-300x107.png 300w, /wp-content/uploads/2014/01/sar1-624x223.png 624w, /wp-content/uploads/2014/01/sar1.png 788w" sizes="(max-width: 300px) 100vw, 300px" /></a></li>
+<li>Sur la page suivant s&rsquo;affichent donc les informations de connexion. Vérifier avec soin qu&rsquo;elles correspondent bien à celles de votre base de données. Le cas échéant, les corriger. Faites bien attention au charset utilisé qu&rsquo;il corresponde également. si tout est ok, cliquez sur « Submit DB details ».<br />
+<a href="/wp-content/uploads/2014/01/sar2.png"><img class="aligncenter" src="/wp-content/uploads/2014/01/sar2-300x196.png" alt="sar2" width="300" height="196" /></a></li>
+<li>L&rsquo;avant dernière page vous propose de sélectionner les tables dans lesquelles effectuer le rechercher/remplacer. Par défaut, tout est sélectionné. Dans notre cas, c&rsquo;est exactement ce que l&rsquo;on souhaite, donc on ne touche à rien, si ce n&rsquo;est qu&rsquo;on coche impérativement la case « Leave GUID column unchanged ». Je vous invite à lire la <a href="http://codex.wordpress.org/Changing_The_Site_URL#Important_GUID_Note">page du codex</a> concernée si vous voulez plus de détails, mais grosso modo, si vous ne la cochez pas, vous cassez vos flux RSS. On clique à présent sur « Continue » et « OK » à l&rsquo;avertissement.<br />
+<a href="/wp-content/uploads/2014/01/sar3.png"><img class="aligncenter size-medium wp-image-75" src="/wp-content/uploads/2014/01/sar3-300x201.png" alt="sar3" width="300" height="201" srcset="/wp-content/uploads/2014/01/sar3-300x201.png 300w, /wp-content/uploads/2014/01/sar3-624x419.png 624w, /wp-content/uploads/2014/01/sar3.png 788w" sizes="(max-width: 300px) 100vw, 300px" /></a></li>
+<li>Enfin, dernière étape de notre script, le chercher/remplacer. Dans le champs du haut on met le domaine à remplacer, et dans celui du bas, le nouveau nom de domaine. Il faut être vigilant et ne renseigner que le domaine. Donc concrètement, on ne met pas le http://,/ ni de slash (/) à la fin. Puis on clique sur « Submit Search String » et « OK » pour procéder.<br />
+<a href="/wp-content/uploads/2014/01/sar4.png"><img class="aligncenter size-medium wp-image-76" src="/wp-content/uploads/2014/01/sar4-300x130.png" alt="sar4" width="300" height="130" srcset="/wp-content/uploads/2014/01/sar4-300x130.png 300w, /wp-content/uploads/2014/01/sar4-624x270.png 624w, /wp-content/uploads/2014/01/sar4.png 788w" sizes="(max-width: 300px) 100vw, 300px" /></a></li>
+<li>Voilà, c&rsquo;est fait. Si tout est ok, le script affiche « Completed » ainsi qu&rsquo;un récap des modifications effectuées. Vérifiez votre site en navigant et constatez que votre nouvelle adresse ne bouge et est la même de partout, même pour les images.<br />
+<a href="/wp-content/uploads/2014/01/sar5.png"><img class="aligncenter size-medium wp-image-77" src="/wp-content/uploads/2014/01/sar5-300x90.png" alt="sar5" width="300" height="90" srcset="/wp-content/uploads/2014/01/sar5-300x90.png 300w, /wp-content/uploads/2014/01/sar5-624x189.png 624w, /wp-content/uploads/2014/01/sar5.png 788w" sizes="(max-width: 300px) 100vw, 300px" /></a></li>
+<li>Supprimez le script de votre ftp afin qu&rsquo;un petit malin ne vienne pas mettre le boxon dans votre installation.</li>
+</ol>
+<p><strong>Je rappelle que ce script est utilisable pour presque tous les CMS PHP utilisant MySql. Je l&rsquo;ai déjà testé avec succès sur WordPress, Drupal et CMS Made Simple. J&rsquo;insiste aussi encore sur une chose : Faites une sauvegarde de votre base de données avant de procéder !</strong></p>
+<p>Sur ce, enjoy <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>L’article <a rel="nofollow" href="/changer-lurl-de-son-site/">Changer l&rsquo;URL de son site</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/changer-lurl-de-son-site/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">70</post-id>	</item>
+		<item>
+		<title>Effectuer des chercher remplacer dans sa base de données mysql</title>
+		<link>/effectuer-des-chercher-remplacer-dans-sa-base-de-donnees-mysql/</link>
+		<comments>/effectuer-des-chercher-remplacer-dans-sa-base-de-donnees-mysql/#respond</comments>
+		<pubDate>Fri, 10 Jan 2014 15:37:30 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[MySql]]></category>
+		<category><![CDATA[Php]]></category>
+
+		<guid isPermaLink="false">/?p=62</guid>
+		<description><![CDATA[<p>Qui n&#8217;a jamais été confronté à cette problématique ? Chercher et remplacer simplement son contenu stocké en bdd sans risquer de tout péter, c&#8217;est possible ! Cependant, il faut impérativement faire une sauvegarde de la base avant de procéder. Le script qui suit fonctionne avec presque tous les CMS, mais de mon côté je m&#8217;en sers &#8230; <a href="/effectuer-des-chercher-remplacer-dans-sa-base-de-donnees-mysql/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Effectuer des chercher remplacer dans sa base de données mysql</span></a></p>
+<p>L’article <a rel="nofollow" href="/effectuer-des-chercher-remplacer-dans-sa-base-de-donnees-mysql/">Effectuer des chercher remplacer dans sa base de données mysql</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Qui n&rsquo;a jamais été confronté à cette problématique ? Chercher et remplacer simplement son contenu stocké en bdd sans risquer de tout péter, c&rsquo;est possible !<span id="more-62"></span></p>
+<p>Cependant, il faut<strong> impérativement faire une sauvegarde de la base</strong> avant de procéder.</p>
+<p>Le script qui suit fonctionne avec presque tous les CMS, mais de mon côté je m&rsquo;en sers essentiellement avec WordPress et Drupal. Principalement il me sert à changer les url stockées en dur dans la base, lors de la mise en production d&rsquo;un site. Je signal au passage qu&rsquo;il est recommandé par le Codex WordPress.</p>
+<p>Pourquoi se servir de ce script ? Car il prend en considération la sérialisation des chaînes php et évite donc d&rsquo;endommager vos tables.</p>
+<p>Il existe maintenant en v3, mais je ne l&rsquo;ai pas testé. Donc je vous laisse me donner vos retours là dessus <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Pour télécharger le script, c&rsquo;est par là : <a href="http://interconnectit.com/products/search-and-replace-for-wordpress-databases/">http://interconnectit.com/</a></p>
+<p>Il suffit de le mettre à la racine de votre site et de l&rsquo;exécuter. N&rsquo;oubliez pas de le supprimer une fois que vous avez terminé <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>L’article <a rel="nofollow" href="/effectuer-des-chercher-remplacer-dans-sa-base-de-donnees-mysql/">Effectuer des chercher remplacer dans sa base de données mysql</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/effectuer-des-chercher-remplacer-dans-sa-base-de-donnees-mysql/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">62</post-id>	</item>
+		<item>
+		<title>Ajouter une classe css personnalisée aux articles WordPress</title>
+		<link>/ajouter-une-classe-personnalisee-aux-articles-wordpress/</link>
+		<comments>/ajouter-une-classe-personnalisee-aux-articles-wordpress/#comments</comments>
+		<pubDate>Sun, 08 Dec 2013 13:25:03 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Php]]></category>
+		<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[hook]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[wordpress]]></category>
+
+		<guid isPermaLink="false">/?p=17</guid>
+		<description><![CDATA[<p>J&#8217;ai travaillé récemment sur un petit plugin WordPress dans lequel je voulais ajouter une image au niveau des titres d&#8217;article. J&#8217;ai voulu ajouter via mon plugin, une classe html personnalisée pour pouvoir cibler tous mes articles, peu importe la version de WordPress utilisée, et ce, sans passer par jQuery. Mais comment faire ? L&#8217;astuce est &#8230; <a href="/ajouter-une-classe-personnalisee-aux-articles-wordpress/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Ajouter une classe css personnalisée aux articles WordPress</span></a></p>
+<p>L’article <a rel="nofollow" href="/ajouter-une-classe-personnalisee-aux-articles-wordpress/">Ajouter une classe css personnalisée aux articles WordPress</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>J&rsquo;ai travaillé récemment sur un petit plugin WordPress dans lequel je voulais ajouter une image au niveau des titres d&rsquo;article. J&rsquo;ai voulu ajouter via mon plugin, une classe html personnalisée pour pouvoir cibler tous mes articles, peu importe la version de WordPress utilisée, et ce, sans passer par jQuery. Mais comment faire ?<span id="more-17"></span></p>
+<h3>L&rsquo;astuce est très simple en fait <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></h3>
+<p>Dans le script de mon plugin j&rsquo;ai rajouté ce petit bout de code :</p>
+<p></p><pre class="crayon-plain-tag">function fp_add_custom_post_class($classes) {
+    $classes[] = 'test-class';
+    return $classes;
+}
+add_filter('post_class','fp_add_custom_post_class');</pre><p></p>
+<p>Et le tour est joué, tous mes articles hériteront de ma nouvelle classe perso.<br />
+C&rsquo;est propre, efficace et léger <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Par extension, on peut appliquer ça au body avec le hook body_class.</p>
+<p>L’article <a rel="nofollow" href="/ajouter-une-classe-personnalisee-aux-articles-wordpress/">Ajouter une classe css personnalisée aux articles WordPress</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/ajouter-une-classe-personnalisee-aux-articles-wordpress/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">17</post-id>	</item>
+		<item>
+		<title>Résoudre le conflit entre Google XML Sitemap et Contact Form</title>
+		<link>/resoudre-le-conflit-entre-google-xml-sitemap-et-contact-form/</link>
+		<comments>/resoudre-le-conflit-entre-google-xml-sitemap-et-contact-form/#respond</comments>
+		<pubDate>Thu, 28 Nov 2013 09:45:04 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Php]]></category>
+		<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[wordpress]]></category>
+
+		<guid isPermaLink="false">/?p=5</guid>
+		<description><![CDATA[<p>Aujourd&#8217;hui, j&#8217;ai découvert qu&#8217;un conflit pouvait apparaître entre les plugins WordPress Google XML Sitemap et Contact Form 7. En tentant d&#8217;accéder au sitemap.xml, j&#8217;obtenais cette erreur : This page contains the following errors: error on line 11 at column 67: EntityRef: expecting &#8216;;&#8217; Below is a rendering of the page up to the first error. &#8230; <a href="/resoudre-le-conflit-entre-google-xml-sitemap-et-contact-form/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Résoudre le conflit entre Google XML Sitemap et Contact Form</span></a></p>
+<p>L’article <a rel="nofollow" href="/resoudre-le-conflit-entre-google-xml-sitemap-et-contact-form/">Résoudre le conflit entre Google XML Sitemap et Contact Form</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Aujourd&rsquo;hui, j&rsquo;ai découvert qu&rsquo;un conflit pouvait apparaître entre les plugins WordPress Google XML Sitemap et Contact Form 7. En tentant d&rsquo;accéder au sitemap.xml, j&rsquo;obtenais cette erreur :<span id="more-5"></span></p>
+<blockquote>
+<h3>This page contains the following errors:</h3>
+<div>error on line 11 at column 67: EntityRef: expecting &lsquo;;&rsquo;</div>
+<h3>Below is a rendering of the page up to the first error.</h3>
+</blockquote>
+<p>Cette erreur est dûe au « &amp; » interprété comme un caractère html spécial auquel il manque le « ; » de fin.</p>
+<h3>La solution</h3>
+<p>Pour corriger ce souci, il suffit d&rsquo;éditer le code source de Google XML Sitemap, de repérer la dernière condition if et la modifier comme suit :</p>
+<p></p><pre class="crayon-plain-tag">if ( ! empty( $post-&gt;post_title ) &amp;&amp; ( get_post_type( $post-&gt;ID ) != "wpcf7_contact_form" ) ) {
+    $xml .= "\t\n";
+    $xml .= "\t\t" . get_permalink( $post-&gt;ID ) . "\n";
+    $xml .= "\t\t" . mysql2date( 'Y-m-d\TH:i:s+00:00', $post-&gt;post_modified_gmt, false ) . "\n";
+    $xml .= "\t\t" . 'weekly' . "\n";
+    $xml .= "\t\t" . '0.8' . "\n";
+    $xml .= "\t\n";
+}</pre><p></p>
+<p>Cela supprimera tout bonnement la référence inutile <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /><br />
+Solution trouvée sur <a title="Google XML Sitemap erroring due to Contact Form 7" href="http://wordpress.org/support/topic/google-xml-sitemap-erroring-due-to-contact-form-7" target="_blank">http://wordpress.org/support/topic/google-xml-sitemap-erroring-due-to-contact-form-7</a></p>
+<p><strong>EDIT</strong> : Depuis je suis passé à WordPress SEO by Yoast, il s&rsquo;agit d&rsquo;un plugin qui comme son nom l&rsquo;indique apporte toutes les fonctionnalités SEO qu&rsquo;on peut attendre, dont la gestion de sitemap. Du coup plus de bug.<br />
+Je pense rédiger un article au sujet de ce plugin très bientôt, so stay plugged !</p>
+<p>L’article <a rel="nofollow" href="/resoudre-le-conflit-entre-google-xml-sitemap-et-contact-form/">Résoudre le conflit entre Google XML Sitemap et Contact Form</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/resoudre-le-conflit-entre-google-xml-sitemap-et-contact-form/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">5</post-id>	</item>
+	</channel>
+</rss>

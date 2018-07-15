@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>caas &#8211; DesireLabs</title>
+	<atom:link href="/tag/caas/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Développement web, marketing digital, et référencement</description>
+	<lastBuildDate>Tue, 06 Jun 2017 17:34:36 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.4</generator>
+<site xmlns="com-wordpress:feed-additions:1">67143140</site>	<item>
+		<title>Les CMS Headless, les CMS du future ?</title>
+		<link>/les-cms-headless-les-cms-du-future/</link>
+		<comments>/les-cms-headless-les-cms-du-future/#respond</comments>
+		<pubDate>Tue, 06 Jun 2017 11:43:47 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[CMS]]></category>
+		<category><![CDATA[caas]]></category>
+		<category><![CDATA[Headless cms]]></category>
+		<category><![CDATA[rest]]></category>
+
+		<guid isPermaLink="false">/?p=602</guid>
+		<description><![CDATA[<p>On entend partout parler de CMS Headless, de Content As A Service, mais qu&#8217;en est-il exactement ? Qu&#8217;est-ce que c&#8217;est, et surtout quel intérêt et quel impact pour les développeurs et les éditeurs de contenus ? C&#8217;est quoi une CMS Headless ? Les CMS Headless sont avant tout des systèmes d&#8217;édition de contenu ; ça &#8230; <a href="/les-cms-headless-les-cms-du-future/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Les CMS Headless, les CMS du future ?</span></a></p>
+<p>L’article <a rel="nofollow" href="/les-cms-headless-les-cms-du-future/">Les CMS Headless, les CMS du future ?</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>On entend partout parler de CMS Headless, de Content As A Service, mais qu&rsquo;en est-il exactement ? Qu&rsquo;est-ce que c&rsquo;est, et surtout quel intérêt et quel impact pour les développeurs et les éditeurs de contenus ?<span id="more-602"></span></p>
+<h2>C&rsquo;est quoi une CMS Headless ?</h2>
+<p>Les CMS Headless sont avant tout des systèmes d&rsquo;édition de contenu ; ça c&rsquo;est la partie CMS (Content Management System), mais qui ont une particularité bien spécifique, c&rsquo;est qu&rsquo;ils s&rsquo;affranchissent totalement de la façon dont ils sont affichés : par qui, par quoi ? Ils s&rsquo;en moquent. En d&rsquo;autres termes, ils sont totalement indépendants de toute plateforme d&rsquo;affichage et de canvas. Ce qui signifie qu&rsquo;ils ne dépendent pas d&rsquo;une technologie en particulier pour fonctionner. Et c&rsquo;est là toute leur puissance.</p>
+<p>En effet, si un contenu n&rsquo;est pas dépendant d&rsquo;une technologie particulière pour exister, cela signifie qu&rsquo;il peut être bien plus flexible dans la manière dont il va être distribué.</p>
+<h2>Et dans les faits ça donne quoi ?</h2>
+<p>Imaginons que l&rsquo;article que vous êtes en train de lire actuellement soit « Headless », pour moi qui écris cet article, ça signifie plusieurs choses :</p>
+<p>Pour commencer, je peux récupérer et utiliser ce contenu dans différentes applications. Pourtant je n&rsquo;ai pas à faire de réplication car la source du contenu restera inchangée. Si je souhaite que certains de mes articles soient affiché à la fois sur mon site mais aussi dans une application mobile de mon cru (ou de quelqu&rsquo;un d&rsquo;autre d&rsquo;ailleurs), je n&rsquo;ai qu&rsquo;à écrire mon contenu et « brancher » les applications concernée avec la plateforme sur laquelle j&rsquo;édite mon texte. Je ne suis pas forcé non plus d&rsquo;intégrer mon contenu via des procédés peu pratiques comme c&rsquo;est encore trop souvent le cas via des iframes. Non, tout ce que j&rsquo;ai à faire est d&rsquo;écrire mon contenu sur ma plateforme d&rsquo;édition et d&rsquo;accorder les permissions nécessaires aux différentes applications qui vont le consommer.</p>
+<h3>Quel est l&rsquo;intérêt ?</h3>
+<p>Je pense qu&rsquo;avec les lignes précédentes, l&rsquo;intérêt devrait vous sauter aux yeux : Pour faire simple, votre contenu peut être distribué vers n&rsquo;importe quelle application et son affichage ne dépend que de la plateforme sur laquelle il est affiché.</p>
+<p>Pour les publicateurs, c&rsquo;est du temps gagné : Une plateforme de publication unique, pas de « tweak » ni de pris de tête avec des considérations techniques. L&rsquo;écriture du contenu sera la seule considération.</p>
+<p>Pour les développeurs aussi c&rsquo;est du temps de gagné, car les données avec lesquels ils devront interagir seront toujours de même format : du JSON.</p>
+<p>Les avantages en termes de créativité sont conséquents qui plus est, car le choix des technologies de développement ne sera plus un frein lié au canvas d&rsquo;édition, comme ça peut être le cas avec des CMS Couplés type WordPress ou Liferay pour ne parler que d&rsquo;eux. En tant que développeur, on peut être tenté d&rsquo;utiliser une technologie qui n&rsquo;est pas adaptée dans le but de gagner du temps, parce qu&rsquo;on connait bien la dite technologie. Imaginons qu&rsquo;on souhaite créer une application qui délivre du contenu, le souci étant qu&rsquo;il faut permettre à notre client de pouvoir éditer son contenu avec un outil qui gère bien cette problématique. On peut être tenté d&rsquo;utiliser une CMS Couplé, puisqu&rsquo;ils gèrent normalement très bien la gestion de contenus (en même temps c&rsquo;est pour ça qu&rsquo;ils sont conçus). Les problèmes de cette solution sont nombreux :</p>
+<p>Pour commencer, ces CMS viennent souvent avec un arsenal de fonctionnalités dont on n&rsquo;a pas besoin. Ils viennent également avec des background techniques qui peuvent être assez lourd. C&rsquo;est le cas de Liferay par exemple, qui est un puissant outil de gestion de contenu, mais c&rsquo;est aussi, et avant tout un outil de création de portails qui pèse à lui seul plusieurs centaines de Mo. D&rsquo;autre part chaque CMS Couplé est tributaire d&rsquo;un environnement d&rsquo;exécution : ça peut être Php / Apache, Java etc, qui nécessitent des serveurs qu&rsquo;il faudra configurer et administrer. Ce sont des coûts supplémentaires non négligeables. Enfin, disons le simplement, c&rsquo;est souvent « overkill », ou dit plus simplement, ça revient à tuer des mouches avec un fusil.</p>
+<p>Alors attention, je ne dis pas que les CMS Headless n&rsquo;impliquent plus de développement et qu&rsquo;ils ne nécessitent pas d&rsquo;environnement d&rsquo;exécution, ce serait faux. Mais si l&rsquo;on envisage uniquement les CMS Headless As A Service, la facture finale ne concernera au mieux que la partie frontale de nos applications, et au pire quelques middlewares supplémentaires.</p>
+<p>L&rsquo;intérêt des CMS Headless est donc conséquent, tant pour l&rsquo;éditeur qui n&rsquo;aura plus à se soucier des aspects techniques, comme c&rsquo;est encore malheureusement le cas avec beaucoup de CMS populaires, mais aussi pour les développeurs qui peuvent travailler rapidement, grâce à l&rsquo;utilisation de langages simples comme json, et de conventions de communication standardisées comme REST. Et si l&rsquo;on est tout à fait ouvert à l&rsquo;idée de CaaS (Content As A Service) et que l&rsquo;on est prêt à embrasser ce que nous offre le cloud computing, les coûts de production seront drastiquement réduits pour les clients et les développeurs.</p>
+<h2>Quels service choisir ?</h2>
+<p>Bon, c&rsquo;est bien beau, mais alors quels CMS Headless méritent qu&rsquo;on s&rsquo;y arrête ? Vaste question à laquelle une réponse nuancée est de mise. Déjà il faut savoir si l&rsquo;on souhaite une solution auto-hébergée ou une solution As A Service. En ce qui me concerne je n&rsquo;ai pour le moment utilisé que des solutions Cloud. Le but ici n&rsquo;est pas non plus de faire un comparatif des offres qui existent sur le marché, d&rsquo;autres articles en parlent bien mieux que je ne le ferais. Mais les deux solutions qui me semblent aujourd&rsquo;hui viables, avec chacune une offre gratuite sont Contentful, DatoCms et Prismicio. J&rsquo;ai une préférence pour Prismicio : Support en français, équipe réactive, et l&rsquo;interface est vraiment sympa à utiliser. Seul « bémol » à l&rsquo;heure actuelle, il n&rsquo;est pas possible d&rsquo;éditer du contenu en dehors de leur application web. Mais l&rsquo;équipe y travaille actuellement d&rsquo;après ce que j&rsquo;ai appris de mes échanges avec eux.</p>
+<h2>Et les CMS Couplés dans tout ça ?</h2>
+<p>Mais du coup, est-ce que les CMS Headless signent l&rsquo;arrêt de mort des CMS Couplés ? Là aussi une réponse nuancée est de rigueur. D&rsquo;abord parce que certains acteurs du secteur sont en train de faire bouger les lignes : WordPress en tête, qui a amorcé un virage significatif ces trois dernières années en proposant de manière désormais standard, une api Rest. Drupal lui emboite le pas. La transition est donc marche. Quant à dire si les CMS tels que nous les connaissons vont mourir, j&rsquo;ai tendance à penser que oui. Je pense aussi que les dinosaures qui n&rsquo;auront pas su évoluer vers les contenus distribués disparaitront aussi. Quant à savoir quand tout cela se produira, je dirais qu&rsquo;au vu de la vitesse à laquelle les choses ont évolué ces cinq dernières années, cela va arriver vite. Très vite même.</p>
+<h2>Conclusion</h2>
+<p>En ce qui me concerne, je continue d&rsquo;utiliser les CMS Couplés, car à ce jour, ils bénéficient d&rsquo;écosystèmes riches en termes fonctionnalités notamment. Ils permettent donc de travailler rapidement sans être forcé de réinventer la roue. Mais je me tourne de plus en plus vers du développement Javascript pure, car le langage propose aujourd&rsquo;hui à peu près tout ce dont on a besoin pour développer des applications robustes et aux fonctionnalités riches. NodeJS et les framworks Javascripts comme Angular, VusJS et React sont en train de parachever cette transition, et c&rsquo;est un plaisir de travailler avec ces technologies. Je vous invite par ailleurs à jeter un oeil à mon site personnel que je viens de mettre en ligne et qui embrasse cette philosophie de Headless CMS : <a href="http://francklebas.fr/" target="_blank" rel="noopener noreferrer">http://francklebas.fr/</a></p>
+<p>Si vous souhaitez aller plus loin, je vous recommande les articles suivants :</p>
+<p><a href="https://pantheon.io/decoupled-cms" target="_blank" rel="noopener noreferrer">https://pantheon.io/decoupled-cms</a></p>
+<blockquote class="wp-embedded-content" data-secret="4qt5iNKcn6"><p><a href="http://faber-content.com/2017/05/9784/">Gestion de contenu : faut-il passer au headless CMS  et au Content as a service ?</a></p></blockquote>
+<p><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" src="http://faber-content.com/2017/05/9784/embed/#?secret=4qt5iNKcn6" data-secret="4qt5iNKcn6" width="600" height="338" title="« Gestion de contenu : faut-il passer au headless CMS  et au Content as a service ? » &#8212; " frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></p>
+<p>L’article <a rel="nofollow" href="/les-cms-headless-les-cms-du-future/">Les CMS Headless, les CMS du future ?</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/les-cms-headless-les-cms-du-future/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">602</post-id>	</item>
+	</channel>
+</rss>

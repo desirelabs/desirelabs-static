@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Commentaires sur : Drupal : Fil d&#8217;ariane basé sur l&#8217;url</title>
+	<atom:link href="/drupal-fil-dariane-base-sur-lurl/feed/" rel="self" type="application/rss+xml" />
+	<link>/drupal-fil-dariane-base-sur-lurl/</link>
+	<description>Développement web, marketing digital, et référencement</description>
+	<lastBuildDate>Thu, 13 Apr 2017 19:39:14 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.4</generator>
+	<item>
+		<title>Par : Franck</title>
+		<link>/drupal-fil-dariane-base-sur-lurl/#comment-1499</link>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+		<pubDate>Tue, 12 May 2015 10:52:58 +0000</pubDate>
+		<guid isPermaLink="false">/?p=59#comment-1499</guid>
+		<description><![CDATA[Bonjour,
+
+A mon avis un simple test php de l&#039;url devrait pouvoir permettre ceci. Regardes du côté de &lt;code&gt;$_SERVER[&#039;REQUEST_URI&#039;]&lt;/code&gt;
+&lt;a href=&quot;http://php.net/manual/fr/reserved.variables.server.php&quot; rel=&quot;nofollow&quot;&gt;Variables Server en php (documentation officielle)&lt;/a&gt;
+
+Ps : désolé pour la réponse tardive]]></description>
+		<content:encoded><![CDATA[<p>Bonjour,</p>
+<p>A mon avis un simple test php de l&rsquo;url devrait pouvoir permettre ceci. Regardes du côté de <code>$_SERVER['REQUEST_URI']</code><br />
+<a href="http://php.net/manual/fr/reserved.variables.server.php" rel="nofollow">Variables Server en php (documentation officielle)</a></p>
+<p>Ps : désolé pour la réponse tardive</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>Par : mathieu</title>
+		<link>/drupal-fil-dariane-base-sur-lurl/#comment-1498</link>
+		<dc:creator><![CDATA[mathieu]]></dc:creator>
+		<pubDate>Sun, 03 May 2015 10:56:15 +0000</pubDate>
+		<guid isPermaLink="false">/?p=59#comment-1498</guid>
+		<description><![CDATA[Bonjour,
+
+merci pour ce tuto. Comment supprimer le fil d&#039;ariane de la page d&#039;accueil svp (je souhaite l&#039;avoir sur tout le site sauf le page d&#039;accueil)
+
+merci]]></description>
+		<content:encoded><![CDATA[<p>Bonjour,</p>
+<p>merci pour ce tuto. Comment supprimer le fil d&rsquo;ariane de la page d&rsquo;accueil svp (je souhaite l&rsquo;avoir sur tout le site sauf le page d&rsquo;accueil)</p>
+<p>merci</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

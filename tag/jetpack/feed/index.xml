@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>jetpack &#8211; DesireLabs</title>
+	<atom:link href="/tag/jetpack/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Développement web, marketing digital, et référencement</description>
+	<lastBuildDate>Tue, 06 Jun 2017 17:34:36 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.4</generator>
+<site xmlns="com-wordpress:feed-additions:1">67143140</site>	<item>
+		<title>Filtrer ses portfolios Jetpack grâce à Isotope</title>
+		<link>/filtrer-ses-portfolios-jetpack-grace-a-isotope/</link>
+		<comments>/filtrer-ses-portfolios-jetpack-grace-a-isotope/#respond</comments>
+		<pubDate>Tue, 10 Nov 2015 17:18:23 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Plugins]]></category>
+		<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[isotope]]></category>
+		<category><![CDATA[jetpack]]></category>
+		<category><![CDATA[portfolio]]></category>
+
+		<guid isPermaLink="false">/?p=450</guid>
+		<description><![CDATA[<p>Desire Portfolio Filter est un nouveau plugin qui ajoute à Jetpack les fameux filtres de la librairie javascript Isotope pour trier ses projets de portfolio. Je trouvais que ce qui manquait réellement à Jetpack Portfolio, c&#8217;était la possibilité de filtrer ses projets en fonction du type par exemple. Et comme je trouvais dommage d&#8217;installer un &#8230; <a href="/filtrer-ses-portfolios-jetpack-grace-a-isotope/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Filtrer ses portfolios Jetpack grâce à Isotope</span></a></p>
+<p>L’article <a rel="nofollow" href="/filtrer-ses-portfolios-jetpack-grace-a-isotope/">Filtrer ses portfolios Jetpack grâce à Isotope</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Desire Portfolio Filter est un nouveau plugin qui ajoute à Jetpack les fameux filtres de la librairie javascript Isotope pour trier ses projets de portfolio.</p>
+<p>Je trouvais que ce qui manquait réellement à Jetpack Portfolio, c&rsquo;était la possibilité de filtrer ses projets en fonction du type par exemple. Et comme je trouvais dommage d&rsquo;installer un autre plugin de portfolio juste pour cette featurette, j&rsquo;ai opté pour un plugin maison qui fait appel aux portfolio Jetpack. <strong>Donc vous ne pouvez pas utiliser ce plugin sans Jetpack.</strong></p>
+<p>Pour l&rsquo;heure, il utilise un template spécifique pour l&rsquo;affichage des portfolios, qu&rsquo;il faut choisir sur la page d&rsquo;affichage lors de l&rsquo;édition, en remplacement de l&rsquo;utilisation du shortcode fourni par automattic. Cela implique que l&rsquo;on n&rsquo;a plus la main sur les portfolios qu&rsquo;on affiche. Mais une version est en cours de développement afin de rendre à César ce qui est à César, et offrir à nouveau cette possibilité.</p>
+<p>Télécharger le plugin sur :</p>
+<p><a href="https://github.com/neovea/desire-portfolio-filter" target="_blank"><br />
+</a><a href="https://github.com/neovea/desire-portfolio-filter" target="_blank"><img class="aligncenter" src="/wp-content/uploads/2015/11/GitHub_Logo-300x123.png" alt="GitHub_Logo" width="163" height="67" /></a></p>
+<p>Ou sur :<br />
+<a href="https://wordpress.org/plugins/desire-portfolio-filter/" target="_blank"><img class="aligncenter" src="/wp-content/uploads/2015/11/wordpress-logo-hoz-rgb-300x100.jpg" alt="wordpress-logo-hoz-rgb" width="300" height="100" /></a></p>
+<p>Je vous laisse découvrir et me faire vos retours <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>L’article <a rel="nofollow" href="/filtrer-ses-portfolios-jetpack-grace-a-isotope/">Filtrer ses portfolios Jetpack grâce à Isotope</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/filtrer-ses-portfolios-jetpack-grace-a-isotope/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">450</post-id>	</item>
+	</channel>
+</rss>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>css target &#8211; DesireLabs</title>
+	<atom:link href="/tag/css-target/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Développement web, marketing digital, et référencement</description>
+	<lastBuildDate>Tue, 06 Jun 2017 17:34:36 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.4</generator>
+<site xmlns="com-wordpress:feed-additions:1">67143140</site>	<item>
+		<title>Créer un menu off-canvas entièrement en css</title>
+		<link>/creer-menu-off-canvas-entierement-css/</link>
+		<comments>/creer-menu-off-canvas-entierement-css/#respond</comments>
+		<pubDate>Thu, 22 Dec 2016 13:07:20 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Experiments]]></category>
+		<category><![CDATA[Non classé]]></category>
+		<category><![CDATA[sass]]></category>
+		<category><![CDATA[css target]]></category>
+
+		<guid isPermaLink="false">/?p=550</guid>
+		<description><![CDATA[<p>Ce que j&#8217;aime par dessus tout avec CSS3, c&#8217;est cette capacité qu&#8217;il offre de nous affranchir de javascript pour tout ce qui touche aux animations. Après m&#8217;être penché sur une solution de menus accordéons en full css (dont je parlerai bientôt), je vous propose une version revisitée du menu « off canvas » via css3, sans javascript. &#8230; <a href="/creer-menu-off-canvas-entierement-css/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Créer un menu off-canvas entièrement en css</span></a></p>
+<p>L’article <a rel="nofollow" href="/creer-menu-off-canvas-entierement-css/">Créer un menu off-canvas entièrement en css</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Ce que j&rsquo;aime par dessus tout avec CSS3, c&rsquo;est cette capacité qu&rsquo;il offre de nous affranchir de javascript pour tout ce qui touche aux animations. Après m&rsquo;être penché sur une solution de menus accordéons en full css (dont je parlerai bientôt), je vous propose une version revisitée du menu « off canvas » via css3, sans javascript.<span id="more-550"></span></p>
+<p data-height="265" data-theme-id="0" data-slug-hash="pNGadw" data-default-tab="css,result" data-user="neovea" data-embed-version="2" data-pen-title="Pure css off-canvas menu" class="codepen">See the Pen <a href="http://codepen.io/neovea/pen/pNGadw/">Pure css off-canvas menu</a> by Franck (<a href="http://codepen.io/neovea">@neovea</a>) on <a href="http://codepen.io/">CodePen</a>.</p>
+<p><script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script></p>
+<p>Cette solution m&rsquo;a été inspirée par <a href="http://csswizardry.com/2016/10/pure-css-content-filter/" target="_blank">csswizardry et ses filtres de contenu en full css grâce au sélecteur « :target »</a>. Je pense que les possibilités offertes par ce sélecteur sont nombreuses, et je me suis dit que j&rsquo;en testerais bien une.</p>
+<p>Pour commencer, que propose ce sélecteur au juste ? <a href="https://developer.mozilla.org/fr/docs/Web/CSS/:target" target="_blank">D&rsquo;après Mozilla Developer Network</a> :</p>
+<blockquote><p>La <a href="https://developer.mozilla.org/fr/docs/Web/CSS/Pseudo-classes">pseudo-classe</a><strong><code>:target</code></strong> permet de cibler l&rsquo;unique élément (s&rsquo;il existe) dont l&rsquo;attribut <code>id</code> correspond au fragment d&rsquo;identifiant de l&rsquo;URI du document.</p></blockquote>
+<p>En clair, cela signifie que je peux cibler un élément identifié comme c&rsquo;est le cas avec une ancre. Je clique sur un lien qui pointe vers une ancre (exemple href= »#mon-id »), je serai à même d&rsquo;appliquer à l&rsquo;élément ciblé par cette ancre un style&#8230; ou un comportement dans notre cas <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Je tiens à préciser que j&rsquo;utilise massivement sass dans cet article. Je met le code complet à la fin de l&rsquo;article, avec la feuille de style css compilée <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<h2>Démonstration</h2>
+<p>Considérons le code qui suit pour la partie html :</p><pre class="crayon-plain-tag">&lt;!DOCTYPE html&gt;
+&lt;html lang="fr"&gt;
+&lt;head&gt;
+	&lt;meta charset="UTF-8"&gt;
+	&lt;title&gt;Pure off canvas css menu&lt;/title&gt;
+	&lt;link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet"&gt;
+	&lt;link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"&gt;
+	&lt;link rel="stylesheet" href="stylesheets/main.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	
+  &lt;div id="menu"&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=""&gt;Lorem.&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=""&gt;Suscipit!&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=""&gt;Sapiente.&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+
+  &lt;div class="button-group"&gt;  
+    &lt;a class="menu-button" href="#menu"&gt;
+      &lt;span&gt;
+      	&lt;i class="fa fa-bars" aria-hidden="true"&gt;&lt;/i&gt;
+      	&lt;i class="fa fa-times" aria-hidden="true"&gt;&lt;/i&gt;
+      &lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class="menu-button off" href="#off-menu"&gt;&lt;/a&gt;
+  &lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre><p>J&rsquo;ai créé un menu portant l&rsquo;id « menu » ainsi qu&rsquo;un double bouton permettant de l&rsquo;ouvrir et le fermer.</p>
+<p>Remarquez au passage ce qui suit : Dans la balise portant la classe « button-group » nous avons en réalité 2 liens. Cet artifice permettra par la suite d&rsquo;avoir un bouton pour fermer le menu. Je vous donne plus de détails dans la partie consacrée à css.<br />
+autre chose, le menu porte un id, car pour designer son comportement, nous allons faire appel au pseudo élément <code>:target</code>, ce qui en simplifiant, revient à créer une ancre.</p>
+<h3>A présent que notre structure html est prête, passons à la partie amusante : la css <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></h3>
+<p>Voici comment on va procéder : lorsque le bouton sera cliqué, l&rsquo;élément ciblé via son attribut <code>href</code> sera sélectionné. A ce moment, le menu s&rsquo;ouvrira, et par la même occasion, le second bouton passera en premier plan de manière à nous permettre de le rendre cliquable et de refermer le menu.</p>
+<p>Commençons par opérer un « reset » sur notre page :</p><pre class="crayon-plain-tag">* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+}</pre><p>Ainsi nous aurons bien un menu bord à bord avec notre fenêtre. Ajoutons à cela le design de notre menu :</p><pre class="crayon-plain-tag">#menu {
+  position: absolute;
+  height: 100vh;
+  width: 300px;
+  margin: 0;
+  background-color: #000;
+  transform: translateX(-100%); /* Rend le menu invisible */
+  a {
+    color:#fff;
+    font-family: Cutive Mono;
+    text-decoration: none;
+  }
+}</pre><p>Rien d&rsquo;exotique ici, nous avons seulement placé le tout en position absolue, stipulé une translation négative de 100% de la largeur de l&rsquo;élément afin de masquer le menu.</p>
+<p>Passons aux boutons :</p><pre class="crayon-plain-tag">.button-group{
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  top: 0;
+  left: 0;
+  margin: 8px; /* histoire de ne pas avoir le bouton collé */
+}
+
+.menu-button {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  text-align: center;
+  color: #fff; 
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  span {
+    display: block;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+
+    .fa-times {
+      display: none;
+    }
+  }
+  
+  &amp;.off {
+    z-index: -1;
+  }
+}</pre><p>Ce qui est important ici est le positionnement absolu de notre groupe de boutons, mais aussi et surtout ce dont je parlais plus tôt : le second bouton est placé derrière le premier grâce à un <code>z-index</code> négatif. Ainsi, lorsque nous cliquerons la première fois, nous ne risquerons pas de cibler le mauvais bouton.</p>
+<p>Désormais, tout est près pour accueillir notre comportement. Il suffit d&rsquo;utiliser le sélecteur css <code>:target</code> sur le menu pour jouer notre astuce.</p><pre class="crayon-plain-tag">#menu:target {
+  transform: translateX(0);
+  +.button-group {
+    left: 300px;
+    
+    .menu-button:first-child {
+      span {
+        .fa-times {
+          display: block;
+        }
+        .fa-bars {
+          display: none;
+        }
+      }
+    }
+    
+    .off {
+      z-index: 0;
+      background-color: transparent;
+    }
+  }
+}</pre><p>On a donc ajouté notre sélecteur qui dit que s&rsquo;il est ciblé, notre menu opérera une translation vers la droite. On en profite au passage pour faire passer notre second bouton &#8211; celui qui ferme &#8211; au premier plan, en redéfinissant sont <code>z-index</code> à 0. Pour le cibler, rien de plus simple : notre groupe de boutons se trouve exactement après le menu dans le DOM. Du coup, on peut agir sur ses enfants simplement en utilisant le sélecteur <code>+</code>. On re-style aussi ce dernier pour se positionner à 300px du bord gauche du document.</p>
+<p>Pas encore satisfait ? Allons un peu plus loin en tirant parti des facultés de css en termes d&rsquo;animation et rendons tout cela un peu plus touchy&rsquo; <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Et puisque nous faisons du scss, créons une petite <code>@mixin</code> qui se chargera de créer nos transitions :</p><pre class="crayon-plain-tag">* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+}
+
+@mixin animation() {  
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.button-group{
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  top: 0;
+  left: 0;
+  margin: 8px; /* just to give some space*/
+  @include animation();
+}
+
+.menu-button {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  text-align: center;
+  color: #fff; 
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  span {
+    display: block;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+
+    .fa-times {
+      display: none;
+    }
+  }
+  
+  &amp;.off {
+    z-index: -1;
+  }
+}
+
+#menu {
+  position: absolute;
+  height: 100vh;
+  width: 300px;
+  margin: 0;
+  background-color: #000;
+  transform: translateX(-100%);
+  a {
+    color:#fff;
+    font-family: Cutive Mono;
+    text-decoration: none;
+  }
+  @include animation();
+  
+  &amp;:target {
+    transform: translateX(0);
+    +.button-group {
+      left: 300px;
+      
+      .menu-button:first-child {
+        span {
+          .fa-times {
+            display: block;
+          }
+          .fa-bars {
+            display: none;
+          }
+        }
+      }
+      
+      .off {
+        z-index: 0;
+        background-color: transparent;
+      }
+    }
+  }
+}</pre><p>Je trouve cette expérimentation &#8211; à défaut d&rsquo;être respectueuse des règles d&rsquo;accessibilité &#8211; très intéressante dans la mesure où elle remet en question l&rsquo;usage de javascript pour des usages d&rsquo;ordre fonctionnel ou esthétique. Ceci tend à rendre la frontière entre css et javascript un peu plus floue en rendant css auto suffisant lors de traitements fonctionnels un tantinet complexes.</p>
+<p>En revanche, attention ! rechargez votre page et l&rsquo;état du menu ne sera pas réinitialisé. En effet étant donné que nous utilisons une ancre, celle ci reste dans la barre d&rsquo;adresse. De plus, l&rsquo;état de votre menu est de fait enregistré dans votre historique.</p>
+<p style="text-align: center;"><a href="/wp-content/uploads/2016/12/pure-css-off-canvas-menu.zip" target="_blank">Télécharger les sources</a></p>
+<p>L’article <a rel="nofollow" href="/creer-menu-off-canvas-entierement-css/">Créer un menu off-canvas entièrement en css</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/creer-menu-off-canvas-entierement-css/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">550</post-id>	</item>
+	</channel>
+</rss>

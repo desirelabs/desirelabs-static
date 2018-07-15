@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>jQuery &#8211; DesireLabs</title>
+	<atom:link href="/category/languages/jquery/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Développement web, marketing digital, et référencement</description>
+	<lastBuildDate>Tue, 06 Jun 2017 17:34:36 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.4</generator>
+<site xmlns="com-wordpress:feed-additions:1">67143140</site>	<item>
+		<title>En attendant Noël, je vous offre un calendier de l&#8217;Avent 2.0</title>
+		<link>/en-attendant-noel-je-vous-offre-un-calendier-de-lavent-2-0/</link>
+		<comments>/en-attendant-noel-je-vous-offre-un-calendier-de-lavent-2-0/#respond</comments>
+		<pubDate>Tue, 01 Dec 2015 21:43:34 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[HTML/CSS]]></category>
+		<category><![CDATA[jQuery]]></category>
+
+		<guid isPermaLink="false">/?p=465</guid>
+		<description><![CDATA[<p>Chaque année je me dis que je vais faire des cartes de vœux à envoyer à mes proches, mes amis, ma famille, connaissances, partenaires. Et bien sûr je ne le fais jamais. Cette année, j&#8217;offre donc à toutes et tous un calendrier de l&#8217;Avent interactif. Vous pourrez chaque jour accéder à une surprise supplémentaire 🙂 &#8230; <a href="/en-attendant-noel-je-vous-offre-un-calendier-de-lavent-2-0/" class="more-link">Continuer la lecture de <span class="screen-reader-text">En attendant Noël, je vous offre un calendier de l&#8217;Avent 2.0</span></a></p>
+<p>L’article <a rel="nofollow" href="/en-attendant-noel-je-vous-offre-un-calendier-de-lavent-2-0/">En attendant Noël, je vous offre un calendier de l&rsquo;Avent 2.0</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Chaque année je me dis que je vais faire des cartes de vœux à envoyer à mes proches, mes amis, ma famille, connaissances, partenaires. Et bien sûr je ne le fais jamais. Cette année, j&rsquo;offre donc à toutes et tous un calendrier de l&rsquo;Avent interactif. Vous pourrez chaque jour accéder à une surprise supplémentaire <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Les cartes déjà découvertes resteront affichées tant que vous ne viderez pas votre cache navigateur.</p>
+<p><a class="btn" href="/noel.html">Cliquez ici pour accéder au calendrier.</a></p>
+<p>Joyeuses fêtes <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>L’article <a rel="nofollow" href="/en-attendant-noel-je-vous-offre-un-calendier-de-lavent-2-0/">En attendant Noël, je vous offre un calendier de l&rsquo;Avent 2.0</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/en-attendant-noel-je-vous-offre-un-calendier-de-lavent-2-0/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">465</post-id>	</item>
+		<item>
+		<title>jQuery Ajax, setInterval() et Internet Explorer</title>
+		<link>/jquery-ajax-setinterval-internet-explorer/</link>
+		<comments>/jquery-ajax-setinterval-internet-explorer/#respond</comments>
+		<pubDate>Wed, 08 Oct 2014 21:41:45 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[jQuery]]></category>
+		<category><![CDATA[ajax]]></category>
+		<category><![CDATA[internet explorer]]></category>
+		<category><![CDATA[setInterval]]></category>
+
+		<guid isPermaLink="false">/?p=258</guid>
+		<description><![CDATA[<p>Mes requêtes ajax ne passent pas sous IE alors qu&#8217;avec Firefox et Chrome aucun problème. Ce genre de cas de figure, lorsqu&#8217;on y est confronté peut devenir un vrai casse tête&#8230; quand on ne sait pas où chercher. Récemment j&#8217;ai travaillé sur un projet de taille dans lequel étaient générées des requêtes ajax, en boucle &#8230; <a href="/jquery-ajax-setinterval-internet-explorer/" class="more-link">Continuer la lecture de <span class="screen-reader-text">jQuery Ajax, setInterval() et Internet Explorer</span></a></p>
+<p>L’article <a rel="nofollow" href="/jquery-ajax-setinterval-internet-explorer/">jQuery Ajax, setInterval() et Internet Explorer</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Mes requêtes ajax ne passent pas sous IE alors qu&rsquo;avec Firefox et Chrome aucun problème. Ce genre de cas de figure, lorsqu&rsquo;on y est confronté peut devenir un vrai casse tête&#8230; quand on ne sait pas où chercher.<span id="more-258"></span></p>
+<p>Récemment j&rsquo;ai travaillé sur un projet de taille dans lequel étaient générées des requêtes ajax, en boucle tant que la réponse n&rsquo;était pas celle attendue. Grossomodo, ça ressemblait à ça :</p>
+<p></p><pre class="crayon-plain-tag">// Mon timer qui lance la requete ajax toutes les secondes
+var timer = setInterval(function(){
+    request()
+}, 1000);
+
+// Tant que la response n'est pas success, on recommence
+function request() {
+    $.ajax({
+        url,
+        data,
+        success: function(response) {
+            if(response === 'success')
+                clearInterval(timer);
+        }
+    });
+}</pre><p></p>
+<p>Sauf que setInterval() s&rsquo;exécute toutes les secondes, peu importe que la requête ait aboutie ou pas. Traduction, si la requête met plus d&rsquo;une seconde à s&rsquo;exécuter, mon timer s&rsquo;exécutera quand même, et donc on aura des requêtes multiples. Et ça, bah IE, il aime pas.</p>
+<p>En réalité dans ce genre de cas, c&rsquo;est setTimout() qu&rsquo;il faut utiliser en lieu et place de setInterval().</p>
+<p></p><pre class="crayon-plain-tag">// Mon timer qui lance la requete ajax toutes les secondes
+var timer = setTimeout(function(){
+    request()
+}, 1000);</pre><p></p>
+<p>A la difference de setInterval(), setTimeout() ne s&rsquo;exécute qu&rsquo;une fois que la requête a retourné une réponse. Du coup l&rsquo;interval entre les requêtes peut varier, en fonction de la vitesse à laquelle les réponses sont renvoyées, mais au moins pas de risque de voir des requêtes croisées, et hop ! plus de caca nerveux de IE.</p>
+<p>Alors bon, j&rsquo;ai quand même bien sué pour débugguer <del>cette bouse</del> ce casse tête mais c&rsquo;était une super expérience et une réelle satisfaction <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Au passage, ce qui m&rsquo;a mis sur la voie ce sont les requêtes dans la partie Network de la console de Firefox/Chrome (parce que celle d&rsquo;iE, merci&#8230;)</p>
+<p>hope this&rsquo;ll help <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>L’article <a rel="nofollow" href="/jquery-ajax-setinterval-internet-explorer/">jQuery Ajax, setInterval() et Internet Explorer</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/jquery-ajax-setinterval-internet-explorer/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">258</post-id>	</item>
+		<item>
+		<title>Astuce &#8211; Faire fonctionner dailymotion avec prettyphoto</title>
+		<link>/faire-fonctionner-dailymotion-prettyphoto/</link>
+		<comments>/faire-fonctionner-dailymotion-prettyphoto/#respond</comments>
+		<pubDate>Wed, 10 Sep 2014 14:59:56 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[jQuery]]></category>
+		<category><![CDATA[dailymotion]]></category>
+		<category><![CDATA[prettyphoto]]></category>
+
+		<guid isPermaLink="false">/?p=240</guid>
+		<description><![CDATA[<p>Je n&#8217;aime pas beaucoup prettyphoto, si vous avez lu l&#8217;article précédent, vous connaissez déjà où va ma préférence 😉 Cependant, quand on travaille avec des thèmes WordPress qu&#8217;on n&#8217;a pas soi même développés, bah des fois, on n&#8217;a pas le choix. Et si en plus les-dits thèmes ont été développés par des personnes non francophones(philes &#8230; <a href="/faire-fonctionner-dailymotion-prettyphoto/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Astuce &#8211; Faire fonctionner dailymotion avec prettyphoto</span></a></p>
+<p>L’article <a rel="nofollow" href="/faire-fonctionner-dailymotion-prettyphoto/">Astuce &#8211; Faire fonctionner dailymotion avec prettyphoto</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Je n&rsquo;aime pas beaucoup prettyphoto, si vous avez lu l&rsquo;article précédent, vous connaissez déjà où va ma préférence <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Cependant, quand on travaille avec des thèmes WordPress qu&rsquo;on n&rsquo;a pas soi même développés, bah des fois, on n&rsquo;a pas le choix. Et si en plus les-dits thèmes ont été développés par des personnes non francophones(philes ?), vous devinerez aisément qu&rsquo;ils supportent rarement (jamais) les services comme dailymotion. Alors le combo prettyphoto + dailymotion, c&rsquo;est le calvaire assuré. Alors voici la solution :<span id="more-240"></span>Pour faire fonctionner dailymotion avec prettyphoto, c&rsquo;est tout bête en fait. Il suffit de récupérer ou construite le lien comme suit :</p>
+<p></p><pre class="crayon-plain-tag">www.dailymotion.com/embed/video/id_video</pre><p></p>
+<p>en remplaçant « id_video » par le vrai id, puis de lui adjoindre quelques paramètres pour préciser le format à renvoyer :</p>
+<p></p><pre class="crayon-plain-tag">?iframe=true&amp;width=720&amp;height=480</pre><p></p>
+<p>Ce qui nous donne :</p>
+<p></p><pre class="crayon-plain-tag">www.dailymotion.com/embed/video/id_video?iframe=true&amp;width=720&amp;height=480</pre><p></p>
+<p>Voilà, on a le lien complet avec la taille à utiliser (là, c&rsquo;est à vous de voir), il suffit à présent de créer la balise prettyphoto qui va bien en modifiant l&rsquo;attribut rel (ou data-rel) avec « prettyphoto[iframes] »  :</p>
+<p></p><pre class="crayon-plain-tag">&lt;a data-rel="prettyPhoto[iframes]" class="thumb_icon video" title="Dailymotion" href="http://www.dailymotion.com/embed/video/xebd4g?iframe=true&amp;width=720&amp;height=480" style="top: 120%;"&gt;</pre><p></p>
+<p>J&rsquo;ai un peu suer pour trouver mes petits donc si vous aussi, n&rsquo;hésitez pas à partager l&rsquo;astuce <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>L’article <a rel="nofollow" href="/faire-fonctionner-dailymotion-prettyphoto/">Astuce &#8211; Faire fonctionner dailymotion avec prettyphoto</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/faire-fonctionner-dailymotion-prettyphoto/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">240</post-id>	</item>
+		<item>
+		<title>Au moins une raison possible au fait que fancybox ne s&#8217;exécute qu&#8217;au second click</title>
+		<link>/au-moins-raison-possible-au-fait-fancybox-sexecute-quau-second-click/</link>
+		<comments>/au-moins-raison-possible-au-fait-fancybox-sexecute-quau-second-click/#comments</comments>
+		<pubDate>Wed, 10 Sep 2014 09:07:48 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[jQuery]]></category>
+		<category><![CDATA[fancybox]]></category>
+
+		<guid isPermaLink="false">/?p=238</guid>
+		<description><![CDATA[<p>Je vais parler aujourd&#8217;hui d&#8217;une petite aventure qui m&#8217;est arrivée avec fancybox. Pour les besoins d&#8217;un projet WordPress utilisant le plugin Team, j&#8217;avais pour mission de masquer les éléments affichés sauf la photo, puis d&#8217;afficher ces éléments dans une fancybox au click sur la photo. Problème : fancybox ne s&#8217;exécute qu&#8217;au second click. Et il &#8230; <a href="/au-moins-raison-possible-au-fait-fancybox-sexecute-quau-second-click/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Au moins une raison possible au fait que fancybox ne s&#8217;exécute qu&#8217;au second click</span></a></p>
+<p>L’article <a rel="nofollow" href="/au-moins-raison-possible-au-fait-fancybox-sexecute-quau-second-click/">Au moins une raison possible au fait que fancybox ne s&rsquo;exécute qu&rsquo;au second click</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Je vais parler aujourd&rsquo;hui d&rsquo;une petite aventure qui m&rsquo;est arrivée avec fancybox. Pour les besoins d&rsquo;un projet WordPress utilisant le plugin Team, j&rsquo;avais pour mission de masquer les éléments affichés sauf la photo, puis d&rsquo;afficher ces éléments dans une fancybox au click sur la photo. Problème : fancybox ne s&rsquo;exécute qu&rsquo;au second click. Et il y a une raison à celà !<span id="more-238"></span>Voici la partie html :</p>
+<p></p><pre class="crayon-plain-tag">&lt;div class="ns-bp-team-box"&gt;
+    &lt;div class="ns-bp-team-box-inner"&gt;
+        &lt;div class="member-img"&gt;
+            &lt;img width="400" height="400" alt="17d560b" class="attachment-full wp-post-image" src="http://site.me/img/17d560b.jpg"&gt;
+        &lt;/div&gt;    &lt;a rel="lightbox" class="fancybox" href="#"&gt;
+            &lt;h4 style="text-decoration: underline; cursor: pointer;"&gt;Jane Do&lt;/h4&gt;
+        &lt;/a&gt;
+
+        &lt;div class="member-role"&gt;Project manager&lt;/div&gt;
+        &lt;p style="display: none;"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
+        &lt;div class="member-social"&gt;
+            &lt;ul&gt;
+                &lt;li class="member-social-email"&gt;&lt;a data-original-title="Mail" href="mailto:mail@mail.me"&gt;Email me&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre><p></p>
+<p>Le but du jeu est de masquer par exemple la balise &lt;p&gt; pour ensuite l&rsquo;injecter lors du clic sur le nom (&lt;a&gt; &lt;h4&gt;) dans une fancybox.</p>
+<h4>La démarche me semblait simple :</h4>
+<ul>masquer le contenu</p>
+<li>créer un click event</li>
+<li>récupérer le contenu dans une variable à ce moment là</li>
+<li>le passer en valeur de « content » dans fancybox</li>
+</ul>
+<p>Voici le code js :</p>
+<p></p><pre class="crayon-plain-tag">// Team View 
+$ = jQuery.noConflict();
+$(document).ready(function () {
+    var teamBox = $('.ns-bp-team-box');
+    // hide contents
+    var contents = teamBox.find($('.ns-bp-team-box-inner p')).hide();
+    // fancybox - on click on the name, fancybox appears with the p content text
+    $('.fancybox').on('click', function(e){
+        var content = $(this).parent().parent().find($('p')).text();
+        $(this).fancybox({
+            content: content,
+            padding : 20,
+            maxWidth : '600px',
+            maxHeigh : '800px'
+        });
+    });
+});</pre><p></p>
+<p><a href="http://jsfiddle.net/vv1hpn5L/8/" target="_blank">Voici le jsFiddle </a></p>
+<p><strong>Erreur</strong> : obligé de cliquer 2x pour faire apparaitre la fancybox.</p>
+<p>En réalité ce qui se passe, c&rsquo;est que lorsqu&rsquo;on attache l&rsquo;event click, on se contente de binder le lien .fancybox, mais aucun trigger event n&rsquo;est initialisé.<br />
+Ce qu&rsquo;il faut faire, c&rsquo;est chaîner le .fancybox() directement après l&rsquo;event click.</p>
+<p>Voici la partie html à nouveau avec un href qui pointe vers une div vide et masquée :</p>
+<p></p><pre class="crayon-plain-tag">&lt;div class="ns-bp-team-box"&gt;
+    &lt;div class="ns-bp-team-box-inner"&gt;
+        &lt;div class="member-img"&gt;
+            &lt;img width="400" height="400" alt="17d560b" class="attachment-full wp-post-image" src="http://site.me/img/17d560b.jpg"&gt;
+        &lt;/div&gt;    &lt;a rel="lightbox" class="fancybox" href="#target"&gt;
+            &lt;h4 style="text-decoration: underline; cursor: pointer;"&gt;Jane Do&lt;/h4&gt;
+        &lt;/a&gt;
+
+        &lt;div class="member-role"&gt;Project manager&lt;/div&gt;
+        &lt;p style="display: none;"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
+        &lt;div class="member-social"&gt;
+            &lt;ul&gt;
+                &lt;li class="member-social-email"&gt;&lt;a data-original-title="Mail" href="mailto:mail@mail.me"&gt;Email me&lt;/a&gt;
+
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div id="target" style="display:none"&gt;&lt;/div&gt;</pre><p></p>
+<p>et le js corrigé :</p>
+<p></p><pre class="crayon-plain-tag">// Team View 
+$ = jQuery.noConflict();
+$(document).ready(function () {
+    var teamBox = $('.ns-bp-team-box');
+    var content;
+    var target = $('#target');
+    // hide contents
+    var contents = $(this).find($('.ns-bp-team-box-inner p')).hide();
+    // Binds .fancybox to fancybox THEN trigger it right after
+    $('.fancybox').on('click', function (e) {
+        e.preventDefault();
+        // Get content and had it to the #target div
+        content = $(this).parent().parent().find($('p')).text();
+        target.html(content);
+    }).fancybox({ // trigger fancybox
+        content: target,
+        padding: 20,
+        maxWidth: '600px',
+        maxHeigh: '800px',
+        afterClose: function () {
+            // empty the #target
+            target.html();
+        }
+    });
+});</pre><p></p>
+<p><a href="http://jsfiddle.net/vfwa29tk/2/" target="_blank"> Et le jsFiddle <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></a></p>
+<p>Voilà, c&rsquo;est tout. Celà fait partie de ces subtilités inhérentes au javascript. Hope this&rsquo;ll help <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>L’article <a rel="nofollow" href="/au-moins-raison-possible-au-fait-fancybox-sexecute-quau-second-click/">Au moins une raison possible au fait que fancybox ne s&rsquo;exécute qu&rsquo;au second click</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/au-moins-raison-possible-au-fait-fancybox-sexecute-quau-second-click/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">238</post-id>	</item>
+	</channel>
+</rss>

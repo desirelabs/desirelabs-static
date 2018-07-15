@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>cache &#8211; DesireLabs</title>
+	<atom:link href="/tag/cache/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Développement web, marketing digital, et référencement</description>
+	<lastBuildDate>Tue, 06 Jun 2017 17:34:36 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.4</generator>
+<site xmlns="com-wordpress:feed-additions:1">67143140</site>	<item>
+		<title>Tutoriel &#8211; Optimiser WordPress pour les performances</title>
+		<link>/optimiser-wordpress/</link>
+		<comments>/optimiser-wordpress/#respond</comments>
+		<pubDate>Sat, 12 Jul 2014 11:21:40 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Tutoriels]]></category>
+		<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[cache]]></category>
+		<category><![CDATA[vitesse de chargement]]></category>
+
+		<guid isPermaLink="false">/?p=209</guid>
+		<description><![CDATA[<p>Au sein de la famille des CMS, WordPress a plutôt mauvaise réputation. L&#8217;évolution de son code pour le faire passer de plate forme de blogging pur à l&#8217;état de véritable CMS a été (et est encore) laborieuse. Chaque version amène son lot de petites nouveautés, de fonctionnalités qui mises bout à bout sans une véritable &#8230; <a href="/optimiser-wordpress/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Tutoriel &#8211; Optimiser WordPress pour les performances</span></a></p>
+<p>L’article <a rel="nofollow" href="/optimiser-wordpress/">Tutoriel &#8211; Optimiser WordPress pour les performances</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Au sein de la famille des CMS, WordPress a plutôt mauvaise réputation. L&rsquo;évolution de son code pour le faire passer de plate forme de blogging pur à l&rsquo;état de véritable CMS a été (et est encore) laborieuse. Chaque version amène son lot de petites nouveautés, de fonctionnalités qui mises bout à bout sans une véritable refonte de son coeur, ont contribué à la dégradation de ses performances. Très récemment j&rsquo;ai du me pencher pour les besoins d&rsquo;un projet, sur les moyens à disposition afin d&rsquo;augmenter les performances de WordPress. Et je peux vous dire que les solutions existent bel et bien. Je vous expose ici mon expérience.</p>
+<p><span id="more-209"></span>Il est de notoriété publique qu&rsquo;un site qui met du temps à s&rsquo;afficher pose 2 problèmes majeurs :</p>
+<p>*Les visiteurs fuient<br />
+*Les moteurs de recherche pénalisent le site</p>
+<p>Les deux combinés contribuent à une dégradation notable du nombre de visites, une explosion du taux de rebond, et une mauvaise réputation.</p>
+<h3>Petit état des lieux</h3>
+<p>Un site c&rsquo;est avant tout un ensemble de ressources qui sont servies aux visiteurs. Ca comprend des données bien sûr, des feuilles de style CSS pour rendre le tout visuellement agréable à lire, et du javascript très souvent qui permet d&rsquo;apporter des fonctionnalités souvent discutables. Toutes ces ressources demandent de la bande passante et de la mémoire. La maîtrise de ces deux facteurs est la clé vers l&rsquo;optimisation d »un site de manière général, et tout particulièrement avec WordPress.</p>
+<h3>Première étape : Faire du ménage</h3>
+<p>La question qu&rsquo;il faut toujours se poser et garder à l&rsquo;esprit est la suivante :</p>
+<p style="text-align: center;">*est-ce que cette fonctionnalité sert le contenu (et par extension, les visiteurs) ?*</p>
+<p style="text-align: left;">Ca peut paraître bête dit comme ça, mais on a trop souvent tendance à rajouter des fonctionnalités pas toujours utiles à WordPress par l&rsquo;intermédiaire des extensions. Et c&rsquo;est compréhensible, avec plus de 32 000 plugins dispos sur le dépôt officiel, c&rsquo;est tentant. Alors on arrête les frais et on ne garde/installe que ce dont on a besoin. Une extension doit être pertinente et apporter une vraie plu-value à votre contenu. A titre d&rsquo;exemple, sur <a href="/">/</a> j&rsquo;ai en tout et pour tout 6 extensions installées :</p>
+<p style="text-align: left;">Akismet<br />
+Contact Form 7<br />
+Crayon Syntax Highlighter<br />
+WP-SEO<br />
+Jetpack par WordPress.com<br />
+WP Rocket</p>
+<p style="text-align: left;">Et honnêtement je n&rsquo;ai pas besoin de plus. Ces 6 extensions répondent à l&rsquo;ensemble de mes besoins. Pareil pour les bibliothèques javascript, souvent activées par défaut dans votre thème. Sachez que même si vous ne les utilisez pas, elles se chargent en même temps que votre page. A défaut de les supprimer, mettez les au moins en commentaire dans votre code afin de pouvoir y revenir si besoin.</p>
+<h3 style="text-align: left;">Externaliser les ressources</h3>
+<p>Les CDN (content delivery network), ça vous parle ? Ce sont des serveurs tiers qui hébergent tout type de ressource comme du javascript, vos images ou vos vidéos. Pourquoi faire appel à un CDN ? Pour économiser votre bande passante, tout simplement. Exemple, un fichier javascript qui pèse 40ko et qui se charge sur chaque page et pour chaque visiteur, ça peut vite chiffrer quand on en a une bonne dizaine. Alors pourquoi ne pas libérer cette bande passante pour vos contenus et laisser d&rsquo;autres faire le sale boulot à la place de votre site ?</p>
+<p>Quelques exemples de CDN :</p>
+<p><a href="www.jsdelivr.com">www.jsdelivr.com<br />
+developers.google.com</a><br />
+<a href="http://www.maxcdn.com/">www.maxcdn.com</a></p>
+<p>Il en existe des centaines, voire des milliers. Même les bibliothèques javascript les plus populaires possèdent leur propre CDN. Si vous utilisez un framewwork comme Bootstrap ou les icônes de fontawesome, vous y avez droit. Pourquoi se priver ?</p>
+<h3>Alléger vos pages de leurs <del>gadgets</del> widgets</h3>
+<p>Un petit encart pour le partage ici, les derniers articles par là, les archives par ci&#8230; Stop ! Les visiteurs s&rsquo;en tapent. S&rsquo;ils veulent trouver quelque chose, ils utiliseront la fonction recherche et la taxonomie présente sur votre site. Et s&rsquo;ils veulent partager vos contenus, ils le feront sans l&rsquo;aide de vos boutons. Au passage ça évite de nuire à la lecture de vos contenus.</p>
+<h3>Jouer à cache cache</h3>
+<p>WordPress permet d&rsquo;utiliser la mise en cache de vos contenus. Concrètement, un contenu qui a déjà été visite est servi directement de manière statique aux autres visiteurs. On évite les requêtes en base de donnée, ce qui n&rsquo;est pas un mal avec WordPress quand on sait qu&rsquo;il n&rsquo;utilise pas encore PDO MySql. Je crois pouvoir dire sans me tromper de beaucoup que c&rsquo;est la fonctionnalité la plus intéressante à votre disposition. Le hic, c&rsquo;est que pour en profiter, il faut un plugin. Et là, on a l&#8217;embarras du choix. En ce qui me concerne, j&rsquo;en ai testé plusieurs, et mon choix s&rsquo;est arrêté sur <a href="http://wp-rocket.me/fr/">WP-Rocket</a>. A ce jour, c&rsquo;est à mon avis la solution la plus aboutie, légère et complète en plus d&rsquo;être extrêmement simple à mettre en place. Parmi les options que cette extension propose : lazy loading, minification des css, html et javascripts, et bien d&rsquo;autres fonctionnalités bien sympa. A 29,00€ le plugin, c&rsquo;est du pain béni et une véritable cure de jouvence pour WordPress. Un vrai investissement quoi ! Sinon, parmi les gratuits, je recommanderais <a href="https://wordpress.org/plugins/w3-total-cache/">W3 Total Cache</a>.</p>
+<h3>Minification</h3>
+<p>La minification c&rsquo;est le fait de mettre tous ses fichiers de ressources css, js, html bout à bout et au kilomètre afin de se charger plus vite. Ce n&rsquo;est pas un gadget mais un véritable outil. Ajouté à la mise en cache, ce sont des performances accrues pour votre site et une meilleure disponibilité de vos contenus. Wp-Rocket inclut cette fonctionnalité, mais si vous recherchez un plugin gratuit : <a href="https://wordpress.org/plugins/bwp-minify/">Better WordPress Minify</a>.</p>
+<h3>Compression des données</h3>
+<p>Encore une véritable optimisation. Probablement l&rsquo;une des plus importantes avec la mise en cache. Il s&rsquo;agit de servir à vos visiteurs des contenus compressés. Cette manipulation n&rsquo;est pas triviale et s&rsquo;effectue côté serveur, à condition d&rsquo;avoir les bons modules apache activés et les bonnes directives dans votre fichier .htaccess. Je ne m&rsquo;étalerai pas sur ce sujet, car d&rsquo;autres sites bien plus spécialisés sauront le faire mieux que moi. Je vous donne tout de même un lien : <a href="http://www.alsacreations.com/article/lire/914-compression-pages-html-css-gzip-deflate.html">www.alsacreations.com</a>. Ceci est également proposé en standard par WP-Rocket (je vous l&rsquo;ai dit c&rsquo;est une petite bombe :p)</p>
+<h3>Maîtriser son image</h3>
+<p>Aujourd&rsquo;hui WordPress propose un outil pour la gestion des médias qui a bien évolué avec le temps. Beaucoup de tâches sont désormais possibles au travers de l&rsquo;interface offerte. Mais n&rsquo;oubliez pas qu&rsquo;une image destinée au web n&rsquo;est par défaut pas destinée à être imprimée. Donc on reste dans les standards du web et on optimise le poids des images en ajustant leur taille et leur résolution avant de les importer de préférence. Une image trop grande et de trop grande résolution ne sert à rien sur le net. 72dpi pour la résolution et 1024px de large maximum me semblent être un bon début. Au passage, pensez à bien nommer vos images avant import, pour le SEO, ça compte !</p>
+<h3>Mais que fait la police ?</h3>
+<p>Avant on n&rsquo;avait pas le choix pour les typos de son site : Arial, Times New Roman etc étaient les standards tristement incontournables. Aujourd&rsquo;hui ce n&rsquo;est plus le cas et on peut vraiment se lâcher. Du coup on fait un peu n&rsquo;importe quoi en servant des polices pas du tout optimisées pour le net. Là aussi il y a des services qui vous proposent des typos et ce sans trop alourdir votre site. Vous n&rsquo;avez plus besoin de choisir entre rapidité et esthétique. Mon préféré est <a href="http://www.fontsquirrel.com/">www.fontsquirrel.com</a> avec une pléthore de fonts disponibles et gratuites, des packs webfont prêt à l&#8217;emploi, et même un webfont generator. Sinon il y a <a href="https://www.google.com/fonts">www.google.com/fonts</a>. Pas mon préféré, mais il fait le job. Alors on arrête d&rsquo;importer des fonts qui pèsent un âne mort comme des bourrins <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<h3>Conclusion</h3>
+<p>J&rsquo;ai volontairement été succinct en vous donnant toutes les pistes exploitables pour optimiser votre WordPress, car je n&rsquo;ai pas la prétention d&rsquo;être expert dans ce domaine. Mais ces pistes doivent être à mon avis un point de départ vers l&rsquo;optimisation. Et ne jamais perdre de vue que ce qui prime sur un site c&rsquo;est son contenu. Et que ces optimisations doivent être à son service. Je vous donne encore quelques liens utiles avant de vous quitter ainsi que ceux dont je vous ai parlé dans cet article, histoire de pas vous laisser sur votre faim <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Si vous avez des remarques ou des idées et astuces pour améliorer les performances de votre site WordPress, ou que vous pensez qu&rsquo;il manque quelque chose dans la liste, venez en discuter via les commentaires <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<h4>Tester les performances de votre site et savoir ce qui cloche :</h4>
+<p><a href="https://developer.yahoo.com/yslow/">https://developer.yahoo.com/yslow/ (extension pour navigateur)</a></p>
+<p><a href="https://developers.google.com/speed/pagespeed/">https://developers.google.com/speed/pagespeed/</a></p>
+<p><a href="http://tools.pingdom.com/fpt/">http://tools.pingdom.com/fpt/</a></p>
+<p><a href="http://gtmetrix.com/">http://gtmetrix.com/</a></p>
+<h4>Les plugins qui passent bien :</h4>
+<p><a href="http://wp-rocket.me/fr/">http://wp-rocket.me/fr/</a></p>
+<p><a href="https://wordpress.org/plugins/w3-total-cache/">https://wordpress.org/plugins/w3-total-cache/</a></p>
+<p><a href="https://wordpress.org/plugins/bwp-minify/">https://wordpress.org/plugins/bwp-minify/</a></p>
+<p><a href="https://wordpress.org/plugins/p3-profiler/">https://wordpress.org/plugins/p3-profiler/</a> (pas mal pour voir quels sont les plugins qui mangent vos performances)</p>
+<h4>Les CDN</h4>
+<p><a href="www.jsdelivr.com">www.jsdelivr.com</a></p>
+<p><a href="https://developers.google.com/speed/libraries/devguide?hl=fr">developers.google.com</a></p>
+<p><a href="http://www.maxcdn.com/">www.maxcdn.com</a></p>
+<p>L’article <a rel="nofollow" href="/optimiser-wordpress/">Tutoriel &#8211; Optimiser WordPress pour les performances</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/optimiser-wordpress/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">209</post-id>	</item>
+	</channel>
+</rss>

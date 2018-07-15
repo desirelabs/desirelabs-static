@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Commentaires pour DesireLabs</title>
+	<atom:link href="/comments/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Développement web, marketing digital, et référencement</description>
+	<lastBuildDate>Thu, 13 Apr 2017 19:39:14 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.4</generator>
+	<item>
+		<title>Commentaires sur Tutoriel &#8211; Installer WordPress MultiSite et cloner son instance de site maître par Sébastien DROUIN</title>
+		<link>/multisite-wordpress-facile/#comment-2957</link>
+		<dc:creator><![CDATA[Sébastien DROUIN]]></dc:creator>
+		<pubDate>Thu, 13 Apr 2017 19:39:14 +0000</pubDate>
+		<guid isPermaLink="false">/?p=351#comment-2957</guid>
+		<description><![CDATA[Pile poil ce que je cherchais afin de répondre à la demande d&#039;un client. Merci !]]></description>
+		<content:encoded><![CDATA[<p>Pile poil ce que je cherchais afin de répondre à la demande d&rsquo;un client. Merci !</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>Commentaires sur Ajouter une classe css personnalisée aux articles WordPress par Franck</title>
+		<link>/ajouter-une-classe-personnalisee-aux-articles-wordpress/#comment-2617</link>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+		<pubDate>Wed, 22 Feb 2017 19:02:53 +0000</pubDate>
+		<guid isPermaLink="false">/?p=17#comment-2617</guid>
+		<description><![CDATA[Oui, le code se place dans le fichier `functions.php`.
+Vérifiez que le thème utilise bien la fonction `post_class()` dans le template.]]></description>
+		<content:encoded><![CDATA[<p>Oui, le code se place dans le fichier <code>functions.php</code>.<br />
+Vérifiez que le thème utilise bien la fonction <code>post_class()</code> dans le template.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>Commentaires sur Ajouter une classe css personnalisée aux articles WordPress par cécé</title>
+		<link>/ajouter-une-classe-personnalisee-aux-articles-wordpress/#comment-2614</link>
+		<dc:creator><![CDATA[cécé]]></dc:creator>
+		<pubDate>Wed, 22 Feb 2017 15:17:51 +0000</pubDate>
+		<guid isPermaLink="false">/?p=17#comment-2614</guid>
+		<description><![CDATA[Ca ne marche pas, tu l&#039;as mis dans le function.php ?]]></description>
+		<content:encoded><![CDATA[<p>Ca ne marche pas, tu l&rsquo;as mis dans le function.php ?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>Commentaires sur Outil &#8211; Générateur de grille responsive fluide par Franck</title>
+		<link>/generateur-de-grille-responsive-fluide/#comment-2129</link>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+		<pubDate>Thu, 04 Aug 2016 14:24:32 +0000</pubDate>
+		<guid isPermaLink="false">/?p=323#comment-2129</guid>
+		<description><![CDATA[Je soulignerai aussi quelque chose que j&#039;apprécie fortement avec Gridpack : la possibilité de générer des fichiers de grilles photoshop et illustrator. Je m&#039;en suis récemment servi pour re-designer les pages d&#039;un site tout en ayant exactement les même dimensions de colonnes et de gouttières ;)]]></description>
+		<content:encoded><![CDATA[<p>Je soulignerai aussi quelque chose que j&rsquo;apprécie fortement avec Gridpack : la possibilité de générer des fichiers de grilles photoshop et illustrator. Je m&rsquo;en suis récemment servi pour re-designer les pages d&rsquo;un site tout en ayant exactement les même dimensions de colonnes et de gouttières 😉</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>Commentaires sur Outil &#8211; Générateur de grille responsive fluide par Cardaire Gabriel</title>
+		<link>/generateur-de-grille-responsive-fluide/#comment-2103</link>
+		<dc:creator><![CDATA[Cardaire Gabriel]]></dc:creator>
+		<pubDate>Tue, 14 Jun 2016 14:49:20 +0000</pubDate>
+		<guid isPermaLink="false">/?p=323#comment-2103</guid>
+		<description><![CDATA[Très bel outil, on gagne un temps fou et j&#039;ajoute que Gridpak produit un résultat très propre avec un code très compréhensible.
+Très bon !!]]></description>
+		<content:encoded><![CDATA[<p>Très bel outil, on gagne un temps fou et j&rsquo;ajoute que Gridpak produit un résultat très propre avec un code très compréhensible.<br />
+Très bon !!</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>Commentaires sur Tutoriel &#8211; Installer un serveur Apache &#8211; PHP &#8211; MySql manuellement sous Windows 7 et 10 par Mat0380</title>
+		<link>/tuto-installer-serveur-apache-php-mysql-manuellement-windows-7/#comment-2050</link>
+		<dc:creator><![CDATA[Mat0380]]></dc:creator>
+		<pubDate>Fri, 03 Jun 2016 16:38:35 +0000</pubDate>
+		<guid isPermaLink="false">/?p=229#comment-2050</guid>
+		<description><![CDATA[Super tuto, merci...
+juste j&#039;ai rencontré un difficulté d&#039;installation de PHP à cause des versions, APache ne se lançait plus et me disait ne pas trouver le php5apache.dll. En fait, j&#039;avais pris une 5.6 VC11 et mon apache n&#039;était pas compatible, j&#039;ai dû me rabattre sur une php-5.4.45-Win32-VC9-x86 et ça roule]]></description>
+		<content:encoded><![CDATA[<p>Super tuto, merci&#8230;<br />
+juste j&rsquo;ai rencontré un difficulté d&rsquo;installation de PHP à cause des versions, APache ne se lançait plus et me disait ne pas trouver le php5apache.dll. En fait, j&rsquo;avais pris une 5.6 VC11 et mon apache n&rsquo;était pas compatible, j&rsquo;ai dû me rabattre sur une php-5.4.45-Win32-VC9-x86 et ça roule</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>Commentaires sur Au moins une raison possible au fait que fancybox ne s&#8217;exécute qu&#8217;au second click par Vincent Schoener</title>
+		<link>/au-moins-raison-possible-au-fait-fancybox-sexecute-quau-second-click/#comment-1541</link>
+		<dc:creator><![CDATA[Vincent Schoener]]></dc:creator>
+		<pubDate>Thu, 08 Oct 2015 09:01:28 +0000</pubDate>
+		<guid isPermaLink="false">/?p=238#comment-1541</guid>
+		<description><![CDATA[Niquel l&#039;article j&#039;avais le même problème puis je cherchais à mettre du contenu HTML directement dans la fancy et à chaque fois que je le fais je ne me souviens plus de la bonne méthode pour y arriver, il devrait sincèrement pouvoir le proposer nativement avec comme cible le href d&#039;un lien cliqué href=&quot;#target-container&quot;, ça simplifierai les choses.
+
+Encore merci de l&#039;article :)]]></description>
+		<content:encoded><![CDATA[<p>Niquel l&rsquo;article j&rsquo;avais le même problème puis je cherchais à mettre du contenu HTML directement dans la fancy et à chaque fois que je le fais je ne me souviens plus de la bonne méthode pour y arriver, il devrait sincèrement pouvoir le proposer nativement avec comme cible le href d&rsquo;un lien cliqué href= »#target-container », ça simplifierai les choses.</p>
+<p>Encore merci de l&rsquo;article 🙂</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>Commentaires sur Drupal : Fil d&#8217;ariane basé sur l&#8217;url par Franck</title>
+		<link>/drupal-fil-dariane-base-sur-lurl/#comment-1499</link>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+		<pubDate>Tue, 12 May 2015 10:52:58 +0000</pubDate>
+		<guid isPermaLink="false">/?p=59#comment-1499</guid>
+		<description><![CDATA[Bonjour,
+
+A mon avis un simple test php de l&#039;url devrait pouvoir permettre ceci. Regardes du côté de &lt;code&gt;$_SERVER[&#039;REQUEST_URI&#039;]&lt;/code&gt;
+&lt;a href=&quot;http://php.net/manual/fr/reserved.variables.server.php&quot; rel=&quot;nofollow&quot;&gt;Variables Server en php (documentation officielle)&lt;/a&gt;
+
+Ps : désolé pour la réponse tardive]]></description>
+		<content:encoded><![CDATA[<p>Bonjour,</p>
+<p>A mon avis un simple test php de l&rsquo;url devrait pouvoir permettre ceci. Regardes du côté de <code>$_SERVER['REQUEST_URI']</code><br />
+<a href="http://php.net/manual/fr/reserved.variables.server.php" rel="nofollow">Variables Server en php (documentation officielle)</a></p>
+<p>Ps : désolé pour la réponse tardive</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>Commentaires sur Drupal : Fil d&#8217;ariane basé sur l&#8217;url par mathieu</title>
+		<link>/drupal-fil-dariane-base-sur-lurl/#comment-1498</link>
+		<dc:creator><![CDATA[mathieu]]></dc:creator>
+		<pubDate>Sun, 03 May 2015 10:56:15 +0000</pubDate>
+		<guid isPermaLink="false">/?p=59#comment-1498</guid>
+		<description><![CDATA[Bonjour,
+
+merci pour ce tuto. Comment supprimer le fil d&#039;ariane de la page d&#039;accueil svp (je souhaite l&#039;avoir sur tout le site sauf le page d&#039;accueil)
+
+merci]]></description>
+		<content:encoded><![CDATA[<p>Bonjour,</p>
+<p>merci pour ce tuto. Comment supprimer le fil d&rsquo;ariane de la page d&rsquo;accueil svp (je souhaite l&rsquo;avoir sur tout le site sauf le page d&rsquo;accueil)</p>
+<p>merci</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>Commentaires sur Au moins une raison possible au fait que fancybox ne s&#8217;exécute qu&#8217;au second click par Franck</title>
+		<link>/au-moins-raison-possible-au-fait-fancybox-sexecute-quau-second-click/#comment-1493</link>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+		<pubDate>Wed, 17 Sep 2014 10:11:00 +0000</pubDate>
+		<guid isPermaLink="false">/?p=238#comment-1493</guid>
+		<description><![CDATA[Exact. C&#039;est également le cas lorsqu&#039;on veut faire cohabiter plusieurs version différentes de jQuery (exemple avec Liferay...)]]></description>
+		<content:encoded><![CDATA[<p>Exact. C&rsquo;est également le cas lorsqu&rsquo;on veut faire cohabiter plusieurs version différentes de jQuery (exemple avec Liferay&#8230;)</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>permissions &#8211; DesireLabs</title>
+	<atom:link href="/tag/permissions/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Développement web, marketing digital, et référencement</description>
+	<lastBuildDate>Tue, 06 Jun 2017 17:34:36 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.4</generator>
+<site xmlns="com-wordpress:feed-additions:1">67143140</site>	<item>
+		<title>Astuce &#8211; Appliquer des permissions à un ensemble de fichiers et dossiers de manière récursive dans WordPress</title>
+		<link>/wordpress-appliquer-permissions-fichiers-dossiers-maniere-recursive/</link>
+		<comments>/wordpress-appliquer-permissions-fichiers-dossiers-maniere-recursive/#respond</comments>
+		<pubDate>Thu, 03 Jul 2014 09:18:55 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Drupal]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[permissions]]></category>
+
+		<guid isPermaLink="false">/?p=190</guid>
+		<description><![CDATA[<p>Sur WordPress, mais aussi sur Drupal et d&#8217;autres CMS les fichiers doivent avoir des permissions spécifiques. Inutile de se fouler à les appliquer pour chaque dossier quand on peut appliquer des permissions à un ensemble de fichiers et dossiers de manière récursive en 2 lignes de commande.L&#8217;exemple suivant s&#8217;applique à WordPress, mais peut tout autant &#8230; <a href="/wordpress-appliquer-permissions-fichiers-dossiers-maniere-recursive/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Astuce &#8211; Appliquer des permissions à un ensemble de fichiers et dossiers de manière récursive dans WordPress</span></a></p>
+<p>L’article <a rel="nofollow" href="/wordpress-appliquer-permissions-fichiers-dossiers-maniere-recursive/">Astuce &#8211; Appliquer des permissions à un ensemble de fichiers et dossiers de manière récursive dans WordPress</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Sur WordPress, mais aussi sur Drupal et d&rsquo;autres CMS les fichiers doivent avoir des permissions spécifiques. Inutile de se fouler à les appliquer pour chaque dossier quand on peut appliquer des permissions à un ensemble de fichiers et dossiers de manière récursive en 2 lignes de commande.<span id="more-190"></span>L&rsquo;exemple suivant s&rsquo;applique à WordPress, mais peut tout autant l&rsquo;être à vos autres projets</p>
+<p></p><pre class="crayon-plain-tag">sudo find wordpress/ -type d -exec chmod 755 {} \;
+sudo find wordpress/ -type f -exec chmod 644 {} \;
+sudo find wordpress/wp-config.php -type f -exec chmod 444 {} \;</pre><p></p>
+<h3>Explications :</h3>
+<p><strong>find</strong> : c&rsquo;est la fonction de recherche<br />
+<strong>wordpress/</strong> : c&rsquo;est le répertoire à partir duquel chercher<br />
+<strong>-type</strong> : le type avec en argument  « f » pour « folder » et « d » pour « document »-exec : précise qu&rsquo;on va exécuter quelque chose pour les fichiers ou dossiers rencontrés<br />
+<strong>chmod</strong> : la commande pour changer les droits<br />
+<strong>755</strong> : permission pour les dossiers<br />
+<strong>644</strong> : permission pour les fichiers<br />
+<strong>444</strong> : permission pour les fichiers de configuration sensibles (qui contiennent vos identifiants mysql par exemple)</p>
+<p>Il va de soit que vous appliquez les permissions que vous voulez <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>L’article <a rel="nofollow" href="/wordpress-appliquer-permissions-fichiers-dossiers-maniere-recursive/">Astuce &#8211; Appliquer des permissions à un ensemble de fichiers et dossiers de manière récursive dans WordPress</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/wordpress-appliquer-permissions-fichiers-dossiers-maniere-recursive/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">190</post-id>	</item>
+	</channel>
+</rss>

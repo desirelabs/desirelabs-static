@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Commentaires sur : Au moins une raison possible au fait que fancybox ne s&#8217;exécute qu&#8217;au second click</title>
+	<atom:link href="/au-moins-raison-possible-au-fait-fancybox-sexecute-quau-second-click/feed/" rel="self" type="application/rss+xml" />
+	<link>/au-moins-raison-possible-au-fait-fancybox-sexecute-quau-second-click/</link>
+	<description>Développement web, marketing digital, et référencement</description>
+	<lastBuildDate>Thu, 13 Apr 2017 19:39:14 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.4</generator>
+	<item>
+		<title>Par : Vincent Schoener</title>
+		<link>/au-moins-raison-possible-au-fait-fancybox-sexecute-quau-second-click/#comment-1541</link>
+		<dc:creator><![CDATA[Vincent Schoener]]></dc:creator>
+		<pubDate>Thu, 08 Oct 2015 09:01:28 +0000</pubDate>
+		<guid isPermaLink="false">/?p=238#comment-1541</guid>
+		<description><![CDATA[Niquel l&#039;article j&#039;avais le même problème puis je cherchais à mettre du contenu HTML directement dans la fancy et à chaque fois que je le fais je ne me souviens plus de la bonne méthode pour y arriver, il devrait sincèrement pouvoir le proposer nativement avec comme cible le href d&#039;un lien cliqué href=&quot;#target-container&quot;, ça simplifierai les choses.
+
+Encore merci de l&#039;article :)]]></description>
+		<content:encoded><![CDATA[<p>Niquel l&rsquo;article j&rsquo;avais le même problème puis je cherchais à mettre du contenu HTML directement dans la fancy et à chaque fois que je le fais je ne me souviens plus de la bonne méthode pour y arriver, il devrait sincèrement pouvoir le proposer nativement avec comme cible le href d&rsquo;un lien cliqué href= »#target-container », ça simplifierai les choses.</p>
+<p>Encore merci de l&rsquo;article 🙂</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>Par : Franck</title>
+		<link>/au-moins-raison-possible-au-fait-fancybox-sexecute-quau-second-click/#comment-1493</link>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+		<pubDate>Wed, 17 Sep 2014 10:11:00 +0000</pubDate>
+		<guid isPermaLink="false">/?p=238#comment-1493</guid>
+		<description><![CDATA[Exact. C&#039;est également le cas lorsqu&#039;on veut faire cohabiter plusieurs version différentes de jQuery (exemple avec Liferay...)]]></description>
+		<content:encoded><![CDATA[<p>Exact. C&rsquo;est également le cas lorsqu&rsquo;on veut faire cohabiter plusieurs version différentes de jQuery (exemple avec Liferay&#8230;)</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>Par : Regis TEDONE</title>
+		<link>/au-moins-raison-possible-au-fait-fancybox-sexecute-quau-second-click/#comment-1489</link>
+		<dc:creator><![CDATA[Regis TEDONE]]></dc:creator>
+		<pubDate>Fri, 12 Sep 2014 05:54:18 +0000</pubDate>
+		<guid isPermaLink="false">/?p=238#comment-1489</guid>
+		<description><![CDATA[$ = jQuery.noConflict();
+Cette ligne permet de redéclarer l&#039;objet jQuery en mode sans conflit, pour l&#039;utilisation éventuelle d&#039;une autre bibliothèque qui utiliserait également le symbole $ comme Mootools ou Angular.
+Redéfinir cet objet et le restoquer dans un $ n&#039;aura aucun effet.
+j = $ = jQuery.noConflict();
+j(document).ready(function () {
+.............
+
+On utilisera plutôt un nom d&#039;objet différent du $.
+
+Cheers.]]></description>
+		<content:encoded><![CDATA[<p>$ = jQuery.noConflict();<br />
+Cette ligne permet de redéclarer l&rsquo;objet jQuery en mode sans conflit, pour l&rsquo;utilisation éventuelle d&rsquo;une autre bibliothèque qui utiliserait également le symbole $ comme Mootools ou Angular.<br />
+Redéfinir cet objet et le restoquer dans un $ n&rsquo;aura aucun effet.<br />
+j = $ = jQuery.noConflict();<br />
+j(document).ready(function () {<br />
+&#8230;&#8230;&#8230;&#8230;.</p>
+<p>On utilisera plutôt un nom d&rsquo;objet différent du $.</p>
+<p>Cheers.</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

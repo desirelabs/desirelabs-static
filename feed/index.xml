@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>DesireLabs</title>
+	<atom:link href="/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Développement web, marketing digital, et référencement</description>
+	<lastBuildDate>Tue, 06 Jun 2017 17:34:36 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.4</generator>
+<site xmlns="com-wordpress:feed-additions:1">67143140</site>	<item>
+		<title>Les CMS Headless, les CMS du future ?</title>
+		<link>/les-cms-headless-les-cms-du-future/</link>
+		<comments>/les-cms-headless-les-cms-du-future/#respond</comments>
+		<pubDate>Tue, 06 Jun 2017 11:43:47 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[CMS]]></category>
+		<category><![CDATA[caas]]></category>
+		<category><![CDATA[Headless cms]]></category>
+		<category><![CDATA[rest]]></category>
+
+		<guid isPermaLink="false">/?p=602</guid>
+		<description><![CDATA[<p>On entend partout parler de CMS Headless, de Content As A Service, mais qu&#8217;en est-il exactement ? Qu&#8217;est-ce que c&#8217;est, et surtout quel intérêt et quel impact pour les développeurs et les éditeurs de contenus ? C&#8217;est quoi une CMS Headless ? Les CMS Headless sont avant tout des systèmes d&#8217;édition de contenu ; ça &#8230; <a href="/les-cms-headless-les-cms-du-future/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Les CMS Headless, les CMS du future ?</span></a></p>
+<p>L’article <a rel="nofollow" href="/les-cms-headless-les-cms-du-future/">Les CMS Headless, les CMS du future ?</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>On entend partout parler de CMS Headless, de Content As A Service, mais qu&rsquo;en est-il exactement ? Qu&rsquo;est-ce que c&rsquo;est, et surtout quel intérêt et quel impact pour les développeurs et les éditeurs de contenus ?<span id="more-602"></span></p>
+<h2>C&rsquo;est quoi une CMS Headless ?</h2>
+<p>Les CMS Headless sont avant tout des systèmes d&rsquo;édition de contenu ; ça c&rsquo;est la partie CMS (Content Management System), mais qui ont une particularité bien spécifique, c&rsquo;est qu&rsquo;ils s&rsquo;affranchissent totalement de la façon dont ils sont affichés : par qui, par quoi ? Ils s&rsquo;en moquent. En d&rsquo;autres termes, ils sont totalement indépendants de toute plateforme d&rsquo;affichage et de canvas. Ce qui signifie qu&rsquo;ils ne dépendent pas d&rsquo;une technologie en particulier pour fonctionner. Et c&rsquo;est là toute leur puissance.</p>
+<p>En effet, si un contenu n&rsquo;est pas dépendant d&rsquo;une technologie particulière pour exister, cela signifie qu&rsquo;il peut être bien plus flexible dans la manière dont il va être distribué.</p>
+<h2>Et dans les faits ça donne quoi ?</h2>
+<p>Imaginons que l&rsquo;article que vous êtes en train de lire actuellement soit « Headless », pour moi qui écris cet article, ça signifie plusieurs choses :</p>
+<p>Pour commencer, je peux récupérer et utiliser ce contenu dans différentes applications. Pourtant je n&rsquo;ai pas à faire de réplication car la source du contenu restera inchangée. Si je souhaite que certains de mes articles soient affiché à la fois sur mon site mais aussi dans une application mobile de mon cru (ou de quelqu&rsquo;un d&rsquo;autre d&rsquo;ailleurs), je n&rsquo;ai qu&rsquo;à écrire mon contenu et « brancher » les applications concernée avec la plateforme sur laquelle j&rsquo;édite mon texte. Je ne suis pas forcé non plus d&rsquo;intégrer mon contenu via des procédés peu pratiques comme c&rsquo;est encore trop souvent le cas via des iframes. Non, tout ce que j&rsquo;ai à faire est d&rsquo;écrire mon contenu sur ma plateforme d&rsquo;édition et d&rsquo;accorder les permissions nécessaires aux différentes applications qui vont le consommer.</p>
+<h3>Quel est l&rsquo;intérêt ?</h3>
+<p>Je pense qu&rsquo;avec les lignes précédentes, l&rsquo;intérêt devrait vous sauter aux yeux : Pour faire simple, votre contenu peut être distribué vers n&rsquo;importe quelle application et son affichage ne dépend que de la plateforme sur laquelle il est affiché.</p>
+<p>Pour les publicateurs, c&rsquo;est du temps gagné : Une plateforme de publication unique, pas de « tweak » ni de pris de tête avec des considérations techniques. L&rsquo;écriture du contenu sera la seule considération.</p>
+<p>Pour les développeurs aussi c&rsquo;est du temps de gagné, car les données avec lesquels ils devront interagir seront toujours de même format : du JSON.</p>
+<p>Les avantages en termes de créativité sont conséquents qui plus est, car le choix des technologies de développement ne sera plus un frein lié au canvas d&rsquo;édition, comme ça peut être le cas avec des CMS Couplés type WordPress ou Liferay pour ne parler que d&rsquo;eux. En tant que développeur, on peut être tenté d&rsquo;utiliser une technologie qui n&rsquo;est pas adaptée dans le but de gagner du temps, parce qu&rsquo;on connait bien la dite technologie. Imaginons qu&rsquo;on souhaite créer une application qui délivre du contenu, le souci étant qu&rsquo;il faut permettre à notre client de pouvoir éditer son contenu avec un outil qui gère bien cette problématique. On peut être tenté d&rsquo;utiliser une CMS Couplé, puisqu&rsquo;ils gèrent normalement très bien la gestion de contenus (en même temps c&rsquo;est pour ça qu&rsquo;ils sont conçus). Les problèmes de cette solution sont nombreux :</p>
+<p>Pour commencer, ces CMS viennent souvent avec un arsenal de fonctionnalités dont on n&rsquo;a pas besoin. Ils viennent également avec des background techniques qui peuvent être assez lourd. C&rsquo;est le cas de Liferay par exemple, qui est un puissant outil de gestion de contenu, mais c&rsquo;est aussi, et avant tout un outil de création de portails qui pèse à lui seul plusieurs centaines de Mo. D&rsquo;autre part chaque CMS Couplé est tributaire d&rsquo;un environnement d&rsquo;exécution : ça peut être Php / Apache, Java etc, qui nécessitent des serveurs qu&rsquo;il faudra configurer et administrer. Ce sont des coûts supplémentaires non négligeables. Enfin, disons le simplement, c&rsquo;est souvent « overkill », ou dit plus simplement, ça revient à tuer des mouches avec un fusil.</p>
+<p>Alors attention, je ne dis pas que les CMS Headless n&rsquo;impliquent plus de développement et qu&rsquo;ils ne nécessitent pas d&rsquo;environnement d&rsquo;exécution, ce serait faux. Mais si l&rsquo;on envisage uniquement les CMS Headless As A Service, la facture finale ne concernera au mieux que la partie frontale de nos applications, et au pire quelques middlewares supplémentaires.</p>
+<p>L&rsquo;intérêt des CMS Headless est donc conséquent, tant pour l&rsquo;éditeur qui n&rsquo;aura plus à se soucier des aspects techniques, comme c&rsquo;est encore malheureusement le cas avec beaucoup de CMS populaires, mais aussi pour les développeurs qui peuvent travailler rapidement, grâce à l&rsquo;utilisation de langages simples comme json, et de conventions de communication standardisées comme REST. Et si l&rsquo;on est tout à fait ouvert à l&rsquo;idée de CaaS (Content As A Service) et que l&rsquo;on est prêt à embrasser ce que nous offre le cloud computing, les coûts de production seront drastiquement réduits pour les clients et les développeurs.</p>
+<h2>Quels service choisir ?</h2>
+<p>Bon, c&rsquo;est bien beau, mais alors quels CMS Headless méritent qu&rsquo;on s&rsquo;y arrête ? Vaste question à laquelle une réponse nuancée est de mise. Déjà il faut savoir si l&rsquo;on souhaite une solution auto-hébergée ou une solution As A Service. En ce qui me concerne je n&rsquo;ai pour le moment utilisé que des solutions Cloud. Le but ici n&rsquo;est pas non plus de faire un comparatif des offres qui existent sur le marché, d&rsquo;autres articles en parlent bien mieux que je ne le ferais. Mais les deux solutions qui me semblent aujourd&rsquo;hui viables, avec chacune une offre gratuite sont Contentful, DatoCms et Prismicio. J&rsquo;ai une préférence pour Prismicio : Support en français, équipe réactive, et l&rsquo;interface est vraiment sympa à utiliser. Seul « bémol » à l&rsquo;heure actuelle, il n&rsquo;est pas possible d&rsquo;éditer du contenu en dehors de leur application web. Mais l&rsquo;équipe y travaille actuellement d&rsquo;après ce que j&rsquo;ai appris de mes échanges avec eux.</p>
+<h2>Et les CMS Couplés dans tout ça ?</h2>
+<p>Mais du coup, est-ce que les CMS Headless signent l&rsquo;arrêt de mort des CMS Couplés ? Là aussi une réponse nuancée est de rigueur. D&rsquo;abord parce que certains acteurs du secteur sont en train de faire bouger les lignes : WordPress en tête, qui a amorcé un virage significatif ces trois dernières années en proposant de manière désormais standard, une api Rest. Drupal lui emboite le pas. La transition est donc marche. Quant à dire si les CMS tels que nous les connaissons vont mourir, j&rsquo;ai tendance à penser que oui. Je pense aussi que les dinosaures qui n&rsquo;auront pas su évoluer vers les contenus distribués disparaitront aussi. Quant à savoir quand tout cela se produira, je dirais qu&rsquo;au vu de la vitesse à laquelle les choses ont évolué ces cinq dernières années, cela va arriver vite. Très vite même.</p>
+<h2>Conclusion</h2>
+<p>En ce qui me concerne, je continue d&rsquo;utiliser les CMS Couplés, car à ce jour, ils bénéficient d&rsquo;écosystèmes riches en termes fonctionnalités notamment. Ils permettent donc de travailler rapidement sans être forcé de réinventer la roue. Mais je me tourne de plus en plus vers du développement Javascript pure, car le langage propose aujourd&rsquo;hui à peu près tout ce dont on a besoin pour développer des applications robustes et aux fonctionnalités riches. NodeJS et les framworks Javascripts comme Angular, VusJS et React sont en train de parachever cette transition, et c&rsquo;est un plaisir de travailler avec ces technologies. Je vous invite par ailleurs à jeter un oeil à mon site personnel que je viens de mettre en ligne et qui embrasse cette philosophie de Headless CMS : <a href="http://francklebas.fr/" target="_blank" rel="noopener noreferrer">http://francklebas.fr/</a></p>
+<p>Si vous souhaitez aller plus loin, je vous recommande les articles suivants :</p>
+<p><a href="https://pantheon.io/decoupled-cms" target="_blank" rel="noopener noreferrer">https://pantheon.io/decoupled-cms</a></p>
+<blockquote class="wp-embedded-content" data-secret="4qt5iNKcn6"><p><a href="http://faber-content.com/2017/05/9784/">Gestion de contenu : faut-il passer au headless CMS  et au Content as a service ?</a></p></blockquote>
+<p><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" src="http://faber-content.com/2017/05/9784/embed/#?secret=4qt5iNKcn6" data-secret="4qt5iNKcn6" width="600" height="338" title="« Gestion de contenu : faut-il passer au headless CMS  et au Content as a service ? » &#8212; " frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></p>
+<p>L’article <a rel="nofollow" href="/les-cms-headless-les-cms-du-future/">Les CMS Headless, les CMS du future ?</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/les-cms-headless-les-cms-du-future/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">602</post-id>	</item>
+		<item>
+		<title>Configurez facilement l&#8217;envoi de mail sur vos sites</title>
+		<link>/configurez-facilement-lenvoi-de-mail-vos-sites/</link>
+		<comments>/configurez-facilement-lenvoi-de-mail-vos-sites/#respond</comments>
+		<pubDate>Thu, 30 Mar 2017 17:38:45 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Tutoriels]]></category>
+		<category><![CDATA[email]]></category>
+		<category><![CDATA[mailjet]]></category>
+
+		<guid isPermaLink="false">/?p=587</guid>
+		<description><![CDATA[<p>S&#8217;il y a bien une chose casse pieds à configurer lorsqu&#8217;on lance un site, c&#8217;est la configuration du sendmail. Oui, parce que pour envoyer des mails et faire en sorte qu&#8217;ils arrivent bien dans la boîte et non dans les spams, c&#8217;est quand même loin d&#8217;être simple, surtout quand on est profane. Quand on lance &#8230; <a href="/configurez-facilement-lenvoi-de-mail-vos-sites/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Configurez facilement l&#8217;envoi de mail sur vos sites</span></a></p>
+<p>L’article <a rel="nofollow" href="/configurez-facilement-lenvoi-de-mail-vos-sites/">Configurez facilement l&rsquo;envoi de mail sur vos sites</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>S&rsquo;il y a bien une chose casse pieds à configurer lorsqu&rsquo;on lance un site, c&rsquo;est la configuration du sendmail. Oui, parce que pour envoyer des mails et faire en sorte qu&rsquo;ils arrivent bien dans la boîte et non dans les spams, c&rsquo;est quand même loin d&rsquo;être simple, surtout quand on est profane.<span id="more-587"></span></p>
+<p>Quand on lance un site, il existe différents cas de figures dans lesquels il est nécessaire que ce dernier envoie des emails. Par exemple quand un visiteur utilise le formulaire de contact, ou encore quand vous recevez un commentaire pour votre blog, voire quand un utilisateur s&rsquo;inscrit.</p>
+<p>Avec une application fonctionnant avec php, il est possible de configurer le smtp qui sera utilisé par l&rsquo;application pour envoyer l&#8217;email. Le soucis est qu&rsquo;il faut que la machine qui exécute l&rsquo;application, le serveur donc, soit autorisé à le faire d&rsquo;une part, et que l&rsquo;adresse d&rsquo;envoie qu&rsquo;elle utilise existe.</p>
+<p>Celà implique d&#8217;emblé de devoir envoyer les mains dans les fichiers de configuration, de devoir configurer le sendmail, d&rsquo;autoriser l&rsquo;envoi au niveau de votre registrar&#8230; On a déjà mal à la tête et on n&rsquo;a pas forcément la garanti que ça fonctionnera. Alors que faire ?</p>
+<h2>La délégation de service</h2>
+<p>Des sociétés offrent de passer par leurs serveurs pour router les emails émis par vos applications et vous assurer de ne pas atterrir dans les spams. Souvent ces services offrent des formules très intéressantes et gratuites pour les faibles volumes d&rsquo;envoi. Pour en avoir testé quelques uns, j&rsquo;ai choisi de vous parler de celui que j&rsquo;utilise aujourd&rsquo;hui pour sa fiabilité et sa facilité de prise en mains : J&rsquo;ai nommé Mailjet !</p>
+<p>Alors oui, je fais de la publicité, et je ne suis pas rémunéré pour ça. Mais je pense que quand on découvre des services intéressants, c&rsquo;est bien de partager <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<h2>Mailjet c&rsquo;est quoi ?</h2>
+<p>Mailjet est un « copilotes pour l&#8217;emailing ». C&rsquo;est ainsi qu&rsquo;ils se définissent en offrant une plateforme facile à utiliser pour faire des newsletter, envoyer des mails, offrir des statistiques détaillées de vos campagnes, et même la création from scratch de vos templates d&#8217;email.</p>
+<p>Un des gros avantages de cette plateforme est qu&rsquo;elle permet de configurer l&rsquo;envoi d&#8217;emails à partir de votre domaine ou de votre adresse email, et ce gratuitement jusqu&rsquo;à 200 emails par jour.</p>
+<h2>Comment ça marche ?</h2>
+<p>Premièrement il faut se créer un compte. Une fois que c&rsquo;est fait, il faut se rendre dans la rubrique « Mon compte » pour atterrir sur votre tableau de bord.</p>
+<p><img class="aligncenter wp-image-588 size-large" src="/wp-content/uploads/2017/03/Sélection_002-1024x600.png" width="525" height="308" srcset="/wp-content/uploads/2017/03/Sélection_002-1024x600.png 1024w, /wp-content/uploads/2017/03/Sélection_002-300x176.png 300w, /wp-content/uploads/2017/03/Sélection_002-768x450.png 768w, /wp-content/uploads/2017/03/Sélection_002.png 1070w" sizes="(max-width: 525px) 100vw, 525px" /></p>
+<p>Rendez-vous dans la section « Ajout d&rsquo;un domaine ou d&rsquo;une adresse d’expéditeur ».</p>
+<p>La première chose à faire est de configurer le domaine à partir duquel les mails seront envoyés. Cliquez sur le bouton « + Ajouter un domaine » et remplissez les champs (nom du site et domaine) puis, validez.</p>
+<p><img class="aligncenter size-large wp-image-589" src="/wp-content/uploads/2017/03/Sélection_003-1024x520.png" alt="" width="525" height="267" srcset="/wp-content/uploads/2017/03/Sélection_003-1024x520.png 1024w, /wp-content/uploads/2017/03/Sélection_003-300x152.png 300w, /wp-content/uploads/2017/03/Sélection_003-768x390.png 768w, /wp-content/uploads/2017/03/Sélection_003.png 1032w" sizes="(max-width: 525px) 100vw, 525px" /></p>
+<p>Mailjet vous génère un fichier texte qu&rsquo;il faudra mettre à la racine de votre site afin de vérifier que vous êtes bien le propriétaire du domaine. Procédez comme demandé, ceci permet de lier votre compte Mailjet à votre domaine.</p>
+<p>Vient ensuite la configuration de l&#8217;email d&rsquo;envoi. Oui parce que bon on n&rsquo;a pas forcément envie que ce soit un email différent de notre domaine qui envoie tout nos mail hein <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>De retour sur la page des paramètres d&rsquo;envoi, ajoutez l&rsquo;adresse email qui est censée envoyer les emails à partir de votre domaine en cliquant sur le bouton « + ajouter une adresse email ».</p>
+<p>Remplissez les champs demandés et renseignez le « type d&#8217;email ». Dans mon cas c&rsquo;est pour les emails transactionnels, donc j&rsquo;ai coché l&rsquo;option  » E-mails de votre site ».</p>
+<p><img class="aligncenter size-large wp-image-590" src="/wp-content/uploads/2017/03/Sélection_004-1024x581.png" alt="" width="525" height="298" srcset="/wp-content/uploads/2017/03/Sélection_004-1024x581.png 1024w, /wp-content/uploads/2017/03/Sélection_004-300x170.png 300w, /wp-content/uploads/2017/03/Sélection_004-768x436.png 768w, /wp-content/uploads/2017/03/Sélection_004.png 1035w" sizes="(max-width: 525px) 100vw, 525px" /></p>
+<p>Voilà pour la configuration côté Mailjet. Passons à la configuration de votre application.</p>
+<h2>Configurer le smtp de Mailjet sur votre application</h2>
+<p>Je ne passerai pas en revue les différents moyen de configurer votre smtp, ceux ci étant relatif à votre serveur et / ou application. Ce qui est important c&rsquo;est que vous sachiez où vous devez configurer tout ça.</p>
+<p>Retournez sur votre tableau de bord, puis dans « paramètres SMTP et Send API ».</p>
+<p><img class="aligncenter size-large wp-image-591" src="/wp-content/uploads/2017/03/Sélection_002-1-1024x600.png" alt="" width="525" height="308" srcset="/wp-content/uploads/2017/03/Sélection_002-1-1024x600.png 1024w, /wp-content/uploads/2017/03/Sélection_002-1-300x176.png 300w, /wp-content/uploads/2017/03/Sélection_002-1-768x450.png 768w, /wp-content/uploads/2017/03/Sélection_002-1.png 1070w" sizes="(max-width: 525px) 100vw, 525px" /></p>
+<p>Sur la page suivante se trouve tout ce dont vous avez besoin pour configurer votre application : l&rsquo;adresse du serveur smtp, le port (préférez le 587 vu comme précisé que certains hébergeurs bloquent le port 25 désormais), ainsi que vos identifiants de connexion Mailjet si besoin.</p>
+<p>une fois que vous avez tout bien configuré, effectuez un petit test pour vous assurer que tout fonctionne <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Une fois terminé, vous pouvez supprimer le fichier texte qui se trouve à la racine de votre site et profiter de la vie sans prise de tête avec le mails B)</p>
+<p>J&rsquo;espère que cet article vous a plus, sachez que Mailjet propose aussi de l&#8217;emailing de masse pour les newsletter par exemple, mais n&rsquo;ayant pas essayé pour le moment, je vous en reparlerai quand ce sera fait <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>A bientôt !</p>
+<p>L’article <a rel="nofollow" href="/configurez-facilement-lenvoi-de-mail-vos-sites/">Configurez facilement l&rsquo;envoi de mail sur vos sites</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/configurez-facilement-lenvoi-de-mail-vos-sites/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">587</post-id>	</item>
+		<item>
+		<title>Créer un menu off-canvas entièrement en css</title>
+		<link>/creer-menu-off-canvas-entierement-css/</link>
+		<comments>/creer-menu-off-canvas-entierement-css/#respond</comments>
+		<pubDate>Thu, 22 Dec 2016 13:07:20 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Experiments]]></category>
+		<category><![CDATA[Non classé]]></category>
+		<category><![CDATA[sass]]></category>
+		<category><![CDATA[css target]]></category>
+
+		<guid isPermaLink="false">/?p=550</guid>
+		<description><![CDATA[<p>Ce que j&#8217;aime par dessus tout avec CSS3, c&#8217;est cette capacité qu&#8217;il offre de nous affranchir de javascript pour tout ce qui touche aux animations. Après m&#8217;être penché sur une solution de menus accordéons en full css (dont je parlerai bientôt), je vous propose une version revisitée du menu « off canvas » via css3, sans javascript. &#8230; <a href="/creer-menu-off-canvas-entierement-css/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Créer un menu off-canvas entièrement en css</span></a></p>
+<p>L’article <a rel="nofollow" href="/creer-menu-off-canvas-entierement-css/">Créer un menu off-canvas entièrement en css</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Ce que j&rsquo;aime par dessus tout avec CSS3, c&rsquo;est cette capacité qu&rsquo;il offre de nous affranchir de javascript pour tout ce qui touche aux animations. Après m&rsquo;être penché sur une solution de menus accordéons en full css (dont je parlerai bientôt), je vous propose une version revisitée du menu « off canvas » via css3, sans javascript.<span id="more-550"></span></p>
+<p data-height="265" data-theme-id="0" data-slug-hash="pNGadw" data-default-tab="css,result" data-user="neovea" data-embed-version="2" data-pen-title="Pure css off-canvas menu" class="codepen">See the Pen <a href="http://codepen.io/neovea/pen/pNGadw/">Pure css off-canvas menu</a> by Franck (<a href="http://codepen.io/neovea">@neovea</a>) on <a href="http://codepen.io/">CodePen</a>.</p>
+<p><script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script></p>
+<p>Cette solution m&rsquo;a été inspirée par <a href="http://csswizardry.com/2016/10/pure-css-content-filter/" target="_blank">csswizardry et ses filtres de contenu en full css grâce au sélecteur « :target »</a>. Je pense que les possibilités offertes par ce sélecteur sont nombreuses, et je me suis dit que j&rsquo;en testerais bien une.</p>
+<p>Pour commencer, que propose ce sélecteur au juste ? <a href="https://developer.mozilla.org/fr/docs/Web/CSS/:target" target="_blank">D&rsquo;après Mozilla Developer Network</a> :</p>
+<blockquote><p>La <a href="https://developer.mozilla.org/fr/docs/Web/CSS/Pseudo-classes">pseudo-classe</a><strong><code>:target</code></strong> permet de cibler l&rsquo;unique élément (s&rsquo;il existe) dont l&rsquo;attribut <code>id</code> correspond au fragment d&rsquo;identifiant de l&rsquo;URI du document.</p></blockquote>
+<p>En clair, cela signifie que je peux cibler un élément identifié comme c&rsquo;est le cas avec une ancre. Je clique sur un lien qui pointe vers une ancre (exemple href= »#mon-id »), je serai à même d&rsquo;appliquer à l&rsquo;élément ciblé par cette ancre un style&#8230; ou un comportement dans notre cas <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Je tiens à préciser que j&rsquo;utilise massivement sass dans cet article. Je met le code complet à la fin de l&rsquo;article, avec la feuille de style css compilée <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<h2>Démonstration</h2>
+<p>Considérons le code qui suit pour la partie html :</p><pre class="crayon-plain-tag">&lt;!DOCTYPE html&gt;
+&lt;html lang="fr"&gt;
+&lt;head&gt;
+	&lt;meta charset="UTF-8"&gt;
+	&lt;title&gt;Pure off canvas css menu&lt;/title&gt;
+	&lt;link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet"&gt;
+	&lt;link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"&gt;
+	&lt;link rel="stylesheet" href="stylesheets/main.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	
+  &lt;div id="menu"&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=""&gt;Lorem.&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=""&gt;Suscipit!&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=""&gt;Sapiente.&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+
+  &lt;div class="button-group"&gt;  
+    &lt;a class="menu-button" href="#menu"&gt;
+      &lt;span&gt;
+      	&lt;i class="fa fa-bars" aria-hidden="true"&gt;&lt;/i&gt;
+      	&lt;i class="fa fa-times" aria-hidden="true"&gt;&lt;/i&gt;
+      &lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class="menu-button off" href="#off-menu"&gt;&lt;/a&gt;
+  &lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre><p>J&rsquo;ai créé un menu portant l&rsquo;id « menu » ainsi qu&rsquo;un double bouton permettant de l&rsquo;ouvrir et le fermer.</p>
+<p>Remarquez au passage ce qui suit : Dans la balise portant la classe « button-group » nous avons en réalité 2 liens. Cet artifice permettra par la suite d&rsquo;avoir un bouton pour fermer le menu. Je vous donne plus de détails dans la partie consacrée à css.<br />
+autre chose, le menu porte un id, car pour designer son comportement, nous allons faire appel au pseudo élément <code>:target</code>, ce qui en simplifiant, revient à créer une ancre.</p>
+<h3>A présent que notre structure html est prête, passons à la partie amusante : la css <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></h3>
+<p>Voici comment on va procéder : lorsque le bouton sera cliqué, l&rsquo;élément ciblé via son attribut <code>href</code> sera sélectionné. A ce moment, le menu s&rsquo;ouvrira, et par la même occasion, le second bouton passera en premier plan de manière à nous permettre de le rendre cliquable et de refermer le menu.</p>
+<p>Commençons par opérer un « reset » sur notre page :</p><pre class="crayon-plain-tag">* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+}</pre><p>Ainsi nous aurons bien un menu bord à bord avec notre fenêtre. Ajoutons à cela le design de notre menu :</p><pre class="crayon-plain-tag">#menu {
+  position: absolute;
+  height: 100vh;
+  width: 300px;
+  margin: 0;
+  background-color: #000;
+  transform: translateX(-100%); /* Rend le menu invisible */
+  a {
+    color:#fff;
+    font-family: Cutive Mono;
+    text-decoration: none;
+  }
+}</pre><p>Rien d&rsquo;exotique ici, nous avons seulement placé le tout en position absolue, stipulé une translation négative de 100% de la largeur de l&rsquo;élément afin de masquer le menu.</p>
+<p>Passons aux boutons :</p><pre class="crayon-plain-tag">.button-group{
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  top: 0;
+  left: 0;
+  margin: 8px; /* histoire de ne pas avoir le bouton collé */
+}
+
+.menu-button {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  text-align: center;
+  color: #fff; 
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  span {
+    display: block;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+
+    .fa-times {
+      display: none;
+    }
+  }
+  
+  &amp;.off {
+    z-index: -1;
+  }
+}</pre><p>Ce qui est important ici est le positionnement absolu de notre groupe de boutons, mais aussi et surtout ce dont je parlais plus tôt : le second bouton est placé derrière le premier grâce à un <code>z-index</code> négatif. Ainsi, lorsque nous cliquerons la première fois, nous ne risquerons pas de cibler le mauvais bouton.</p>
+<p>Désormais, tout est près pour accueillir notre comportement. Il suffit d&rsquo;utiliser le sélecteur css <code>:target</code> sur le menu pour jouer notre astuce.</p><pre class="crayon-plain-tag">#menu:target {
+  transform: translateX(0);
+  +.button-group {
+    left: 300px;
+    
+    .menu-button:first-child {
+      span {
+        .fa-times {
+          display: block;
+        }
+        .fa-bars {
+          display: none;
+        }
+      }
+    }
+    
+    .off {
+      z-index: 0;
+      background-color: transparent;
+    }
+  }
+}</pre><p>On a donc ajouté notre sélecteur qui dit que s&rsquo;il est ciblé, notre menu opérera une translation vers la droite. On en profite au passage pour faire passer notre second bouton &#8211; celui qui ferme &#8211; au premier plan, en redéfinissant sont <code>z-index</code> à 0. Pour le cibler, rien de plus simple : notre groupe de boutons se trouve exactement après le menu dans le DOM. Du coup, on peut agir sur ses enfants simplement en utilisant le sélecteur <code>+</code>. On re-style aussi ce dernier pour se positionner à 300px du bord gauche du document.</p>
+<p>Pas encore satisfait ? Allons un peu plus loin en tirant parti des facultés de css en termes d&rsquo;animation et rendons tout cela un peu plus touchy&rsquo; <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Et puisque nous faisons du scss, créons une petite <code>@mixin</code> qui se chargera de créer nos transitions :</p><pre class="crayon-plain-tag">* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+}
+
+@mixin animation() {  
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.button-group{
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  top: 0;
+  left: 0;
+  margin: 8px; /* just to give some space*/
+  @include animation();
+}
+
+.menu-button {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  text-align: center;
+  color: #fff; 
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  span {
+    display: block;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+
+    .fa-times {
+      display: none;
+    }
+  }
+  
+  &amp;.off {
+    z-index: -1;
+  }
+}
+
+#menu {
+  position: absolute;
+  height: 100vh;
+  width: 300px;
+  margin: 0;
+  background-color: #000;
+  transform: translateX(-100%);
+  a {
+    color:#fff;
+    font-family: Cutive Mono;
+    text-decoration: none;
+  }
+  @include animation();
+  
+  &amp;:target {
+    transform: translateX(0);
+    +.button-group {
+      left: 300px;
+      
+      .menu-button:first-child {
+        span {
+          .fa-times {
+            display: block;
+          }
+          .fa-bars {
+            display: none;
+          }
+        }
+      }
+      
+      .off {
+        z-index: 0;
+        background-color: transparent;
+      }
+    }
+  }
+}</pre><p>Je trouve cette expérimentation &#8211; à défaut d&rsquo;être respectueuse des règles d&rsquo;accessibilité &#8211; très intéressante dans la mesure où elle remet en question l&rsquo;usage de javascript pour des usages d&rsquo;ordre fonctionnel ou esthétique. Ceci tend à rendre la frontière entre css et javascript un peu plus floue en rendant css auto suffisant lors de traitements fonctionnels un tantinet complexes.</p>
+<p>En revanche, attention ! rechargez votre page et l&rsquo;état du menu ne sera pas réinitialisé. En effet étant donné que nous utilisons une ancre, celle ci reste dans la barre d&rsquo;adresse. De plus, l&rsquo;état de votre menu est de fait enregistré dans votre historique.</p>
+<p style="text-align: center;"><a href="/wp-content/uploads/2016/12/pure-css-off-canvas-menu.zip" target="_blank">Télécharger les sources</a></p>
+<p>L’article <a rel="nofollow" href="/creer-menu-off-canvas-entierement-css/">Créer un menu off-canvas entièrement en css</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/creer-menu-off-canvas-entierement-css/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">550</post-id>	</item>
+		<item>
+		<title>Créer son propre système de grille flexible avec SASS</title>
+		<link>/creer-propre-systeme-de-grille-flexible-sass/</link>
+		<comments>/creer-propre-systeme-de-grille-flexible-sass/#respond</comments>
+		<pubDate>Tue, 18 Oct 2016 13:24:55 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[HTML/CSS]]></category>
+		<category><![CDATA[sass]]></category>
+		<category><![CDATA[grille responsive]]></category>
+
+		<guid isPermaLink="false">/?p=521</guid>
+		<description><![CDATA[<p>Dans la boîte à outils de l’intégrateur, il y a beaucoup de choses : des frameworks html et css, des générateurs de dégradés de couleur, un ou plusieurs préprocesseurs… et surtout il y a les grilles responsives. Quand on travaille avec un framework css, ces dernières sont souvent (voire systématiquement ) incluses. Impossible par ailleurs de &#8230; <a href="/creer-propre-systeme-de-grille-flexible-sass/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Créer son propre système de grille flexible avec SASS</span></a></p>
+<p>L’article <a rel="nofollow" href="/creer-propre-systeme-de-grille-flexible-sass/">Créer son propre système de grille flexible avec SASS</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p class="graf graf--p">Dans la boîte à outils de l’intégrateur, il y a beaucoup de choses : des frameworks html et css, des générateurs de dégradés de couleur, un ou plusieurs préprocesseurs… et surtout il y a les grilles responsives. Quand on travaille avec un framework css, ces dernières sont souvent (voire systématiquement ) incluses. Impossible par ailleurs de dénombrer les systèmes de grille existants tant il y en a. Ce qui est sûr, c’est que nous avons le choix ! Mais parfois, il arrive que l’on soit amené à créer sois même un système de grille pour des besoins très spécifiques… C’est ce qui m’est arrivé récemment.</p>
+<p class="graf graf--p">C’est pourquoi je vous propose une approche de création de grille reposant sur SASS. Il est entendu que c’est faisable en CSS, mais c’est beaucoup plus rapide en SASS, c’est la beauté de la chose <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p class="graf graf--p"><strong class="markup--strong markup--p-strong">Le découpage du travail sera comme suit</strong> : D’abord on définira les différentes variables nécessaires ainsi que les points de rupture de notre grille responsive. Ensuite, on s’attardera sur la mécanique standard pour la génération de la grille “desktop”. Enfin on fera de même pour nos <code>media-queries</code>.</p>
+<p class="graf graf--p"><strong class="markup--strong markup--p-strong">Définition de notre grille</strong> : Elle sera responsive bien sûr, on pourra choisir combien de colonnes on souhaite, la taille des gouttières, la largeur globale du conteneur, et les comportements des colonnes sur les différents appareils.</p>
+<p class="graf graf--p">Voici les variables que je définis en premier lieu :</p>
+<p></p><pre class="crayon-plain-tag">/* 1. valeurs de grille par d&eacute;faut */
+
+$cols: 12 !default;
+$gutter-width: 1.2rem !default;
+$max-width: 1180px !default;</pre><p></p>
+<p class="graf graf--p">On aura donc 12 colonnes, avec une gouttière de 1.2rem et une largeur maximum de 1200px. Ces valeurs sont suffisantes pour jeter les bases de la création de notre grille desktop. Ce que vous allons donc faire de ce pas :</p>
+<p></p><pre class="crayon-plain-tag">/* 2. D&eacute;finition de la grille */
+.container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: $max-width;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+  .row {
+  	margin-left: -$gutter-width / 2;
+  	margin-right: -$gutter-width / 2;
+  }
+  &amp;amp;:after {
+    content: &quot;&quot;;
+    display: table;
+    clear: both;
+  }
+  /* on divise la goutti&egrave;re par 2 car on en retire une partie de chaque c&ocirc;t&eacute; de la colonne */
+  .col {
+    float: left;
+    box-sizing: border-box;
+    padding: 0 $gutter-width / 2;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+
+    /* On va boucler sur les colonnes et calculer automatiquement leur taille en pourcentage
+     * un peu comme on pourrait le faire en javascript par exemple */
+    $i: 1;
+    @while $i &amp;lt;= $cols {
+      $perc: unquote((100 / ($cols / $i)) + &quot;%&quot;);
+      &amp;amp;.small-#{$i} {
+        width: $perc;
+      }
+      $i: $i + 1;
+    }
+  }
+}</pre><p></p>
+<p class="graf graf--p">Dans ce système, ce sont les paddings qui définissent la taille de la gouttière. Ce qui fait que l’on n’a pas à se casser la tête avec le calcul de marges, d’autant que ces dernières ne sont pas prises en compte par <code>box-sizing: border-box</code>. Et ça c’est c’est déjà un pas vers plus de flexibilité : on peut ajouter autant de colonnes que l’on souhaite à notre ligne. Par ailleurs, plus de <code>row</code> ou <code>row-fluid</code> à la Bootstrap 2 : désormais toutes nos lignes sont fluides. Point. Seul le conteneur définira la largeur maximale de rendu. Et étant donné que nos tailles sont calculées en % on est tranquilles <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p class="graf graf--p">A présent il ne reste plus qu’à générer cette grille pour les tailles d’écran choisies :</p>
+<p></p><pre class="crayon-plain-tag">@media screen and (min-width:721px) {
+
+      $i: 1;
+      @while $i &amp;lt;= $cols {
+        $perc: unquote((100 / ($cols / $i)) + &quot;%&quot;);
+        &amp;amp;.medium-#{$i} {
+          width: $perc;
+        }
+        $i: $i + 1
+      }
+    }
+
+    @media screen and (min-width:1025px) {
+
+      $i: 1;
+      @while $i &amp;lt;= $cols {
+        $perc: unquote((100 / ($cols / $i)) + &quot;%&quot;);
+        &amp;amp;.large-#{$i} {
+          width: $perc;
+        }
+        $i: $i + 1;
+      }
+    }</pre><p></p>
+<p class="graf graf--p">Et c’est tout ! Bon on pourrait aller beaucoup plus loin en définissant des comportements plus spécifiques, mais la base est là. Voici le résultat final :</p>
+<p></p><pre class="crayon-plain-tag">/* 1. valeurs de grille par d&eacute;faut */
+
+$cols: 12 !default;
+$gutter-width: 1.2rem !default;
+$max-width: 1200px !default;</pre><p></p><pre class="crayon-plain-tag">/* 2. D&eacute;finition de la grille */
+.container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: $max-width;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+  .row {
+  	margin-left: -$gutter-width / 2;
+  	margin-right: -$gutter-width / 2;
+  }
+  &amp;amp;:after {
+    content: &quot;&quot;;
+    display: table;
+    clear: both;
+  }
+  /* on divise la goutti&egrave;re par 2 car on en retire une partie de chaque c&ocirc;t&eacute; de la */
+  .col {
+    float: left;
+    box-sizing: border-box;
+    padding: 0 $gutter-width / 2;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+
+    /* On va boucler sur les colonnes et calculer automatiquement leur taille en pourcentage
+     * un peu comme on pourrait le faire en javascript par exemple */
+    $i: 1;
+    @while $i &amp;lt;= $cols {
+      $perc: unquote((100 / ($cols / $i)) + &quot;%&quot;);
+      &amp;amp;.small-#{$i} {
+        width: $perc;
+      }
+      $i: $i + 1;
+    }</pre><p></p><pre class="crayon-plain-tag">/* 3. Media Queries */
+    @media screen and (min-width:721px) {
+
+      $i: 1;
+      @while $i &amp;lt;= $cols {
+        $perc: unquote((100 / ($cols / $i)) + &quot;%&quot;);
+        &amp;amp;.medium-#{$i} {
+          width: $perc;
+        }
+        $i: $i + 1
+      }
+    }
+
+    @media screen and (min-width:1025px) {
+
+      $i: 1;
+      @while $i &amp;lt;= $cols {
+        $perc: unquote((100 / ($cols / $i)) + &quot;%&quot;);
+        &amp;amp;.large-#{$i} {
+          width: $perc;
+        }
+        $i: $i + 1;
+      }
+    }
+  }
+}</pre><p></p>
+<p class="graf graf--p">Il est entendu que la propriété flexbox tend à s’imposer pour ce qui est de la création de systèmes destinés à structurer le contenu. Je pense d’ailleurs qu’elle pourrait à terme remplacer nos systèmes de grille traditionnels. En revanche je pense que les systèmes comme celui que nous avons là on encore de beaux jours devant eux car ils restent à ce jour l’approche la plus stable car compatible avec n’importe quel navigateur / appareil.</p>
+<p class="graf graf--p">Mais je me penche depuis quelques temps déjà sur flexbox, il n’est donc pas impossible que je fasse un article sur le sujet dans les semaines à venir <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>L’article <a rel="nofollow" href="/creer-propre-systeme-de-grille-flexible-sass/">Créer son propre système de grille flexible avec SASS</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/creer-propre-systeme-de-grille-flexible-sass/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">521</post-id>	</item>
+		<item>
+		<title>Ajouter enclosure dans le flux RSS de WordPress pour les newsletters MailChimp</title>
+		<link>/ajouter-flux-rss-de-wordpress/</link>
+		<comments>/ajouter-flux-rss-de-wordpress/#respond</comments>
+		<pubDate>Fri, 29 Jul 2016 11:50:33 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Non classé]]></category>
+
+		<guid isPermaLink="false">/?p=504</guid>
+		<description><![CDATA[<p>Si comme moi vous utilisez mailchimp, vous avez surement dû trouver rageant le fait de ne pas avoir la main sur les images par votre flux RSS WordPress dans votre newsletter. Qu&#8217;à celà ne tienne, voici un petit script à insérer dans le fichier functions.php de votre thème (via duogeekdev &#8211; GitHub Gist) [crayon-5abdde428b4d3819864412/] Merci &#8230; <a href="/ajouter-flux-rss-de-wordpress/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Ajouter enclosure dans le flux RSS de WordPress pour les newsletters MailChimp</span></a></p>
+<p>L’article <a rel="nofollow" href="/ajouter-flux-rss-de-wordpress/">Ajouter enclosure dans le flux RSS de WordPress pour les newsletters MailChimp</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Si comme moi vous utilisez mailchimp, vous avez surement dû trouver rageant le fait de ne pas avoir la main sur les images par votre flux RSS WordPress dans votre newsletter. Qu&rsquo;à celà ne tienne, voici un petit script à insérer dans le fichier functions.php de votre thème (via <a href="https://duogeek.com/blog/add-featured-images-as-enclosures-in-wordpress-rss-feeds/" target="_blank">duogeekdev</a> &#8211; <a href="https://gist.github.com/duogeekdev/b51f035d3d6927f69e48#file-code-php" target="_blank">GitHub Gist</a>)</p><pre class="crayon-plain-tag">&lt;?php
+function add_featured_image_in_rss() {
+    if ( function_exists( 'get_the_image' ) &amp;&amp; ( $featured_image = get_the_image('format=array&amp;echo=0') ) ) {
+        $featured_image[0] = $featured_image['url'];
+    } elseif ( function_exists( 'has_post_thumbnail' ) and has_post_thumbnail() ) {
+        $featured_image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'post-thumbnail' );
+    } elseif ( function_exists( 'get_post_thumbnail_src' ) ) {
+        $featured_image = get_post_thumbnail_src();
+        if ( preg_match( '|^&lt;img src="([^"]+)"|', $featured_image[0], $m ) )
+            $featured_image[0] = $m[1];
+    } else {
+        $featured_image = false;
+    }
+    if ( ! empty( $featured_image ) ) {
+        echo "\t" . '&lt;enclosure url="' . $featured_image[0] . '" /&gt;' . "\n";
+    }
+    
+}
+add_action( 'rss2_item', 'add_featured_image_in_rss' );</pre><p>Merci à <a title="Posts by Sushi" href="https://duogeek.com/blog/author/duogeekadmin/" rel="author">Sushi</a> l&rsquo;auteur du script <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p><script src="https://gist.github.com/duogeekdev/b51f035d3d6927f69e48.js"></script></p>
+<p>L’article <a rel="nofollow" href="/ajouter-flux-rss-de-wordpress/">Ajouter enclosure dans le flux RSS de WordPress pour les newsletters MailChimp</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/ajouter-flux-rss-de-wordpress/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">504</post-id>	</item>
+		<item>
+		<title>Designers: earn your seat at the table &#8211; InVision Blog</title>
+		<link>/designers-earn-your-seat-at-the-table-invision-blog/</link>
+		<comments>/designers-earn-your-seat-at-the-table-invision-blog/#respond</comments>
+		<pubDate>Tue, 09 Feb 2016 07:21:02 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Non classé]]></category>
+
+		<guid isPermaLink="false">/?p=484</guid>
+		<description><![CDATA[<p>Design is a critical skillset for operating in the business world, but it’s up to you as the designer to show and tell this to your stakeholders. Source : Designers: earn your seat at the table &#8211; InVision Blog</p>
+<p>L’article <a rel="nofollow" href="/designers-earn-your-seat-at-the-table-invision-blog/">Designers: earn your seat at the table &#8211; InVision Blog</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<blockquote><p>Design is a critical skillset for operating in the business world, but it’s up to you as the designer to show and tell this to your stakeholders.</p></blockquote>
+<p>Source : <em><a href="http://blog.invisionapp.com/designers-earn-your-seat/">Designers: earn your seat at the table &#8211; InVision Blog</a></em></p>
+<p>L’article <a rel="nofollow" href="/designers-earn-your-seat-at-the-table-invision-blog/">Designers: earn your seat at the table &#8211; InVision Blog</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/designers-earn-your-seat-at-the-table-invision-blog/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">484</post-id>	</item>
+		<item>
+		<title>Utiliser SASS dans ses projets WordPress</title>
+		<link>/utiliser-sass-projets-wordpress/</link>
+		<comments>/utiliser-sass-projets-wordpress/#respond</comments>
+		<pubDate>Sun, 10 Jan 2016 20:05:15 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[HTML/CSS]]></category>
+		<category><![CDATA[Non classé]]></category>
+		<category><![CDATA[sass]]></category>
+		<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[compass]]></category>
+
+		<guid isPermaLink="false">/?p=456</guid>
+		<description><![CDATA[<p>Sass est devenu pour moi un outil du quotidien. Je l&#8217;utilise dans presque tous mes projets. Le fait est que je travaille beaucoup avec WordPress. Il est donc devenu évident qu&#8217;il fallait que je développe une méthodologie pour le faire entrer dans ces projets-ci. Aujourd&#8217;hui je vous propose de découvrir de quelle manière intégrer Sass &#8230; <a href="/utiliser-sass-projets-wordpress/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Utiliser SASS dans ses projets WordPress</span></a></p>
+<p>L’article <a rel="nofollow" href="/utiliser-sass-projets-wordpress/">Utiliser SASS dans ses projets WordPress</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Sass est devenu pour moi un outil du quotidien. Je l&rsquo;utilise dans presque tous mes projets. Le fait est que je travaille beaucoup avec WordPress. Il est donc devenu évident qu&rsquo;il fallait que je développe une méthodologie pour le faire entrer dans ces projets-ci. Aujourd&rsquo;hui je vous propose de découvrir de quelle manière intégrer Sass dans vos projets WordPress.<span id="more-456"></span></p>
+<p>Un thème WordPress nécessite normalement 1 seul et unique fichier CSS, à la racine : style.css. Mais tout mettre au kilomètre dans ce fichier c&rsquo;est la garantie de rendre le projet difficile à maintenir et à faire évoluer. C&rsquo;est pourquoi on préfèrera découper son design en modules. Plusieurs méthodologies existent, mais celle qui fait sens à mes yeux se rapproche de SMACSS. Je vous invite à aller faire un tour sur <a href="https://smacss.com/" target="_blank">leur site</a>, on y apprend des choses très intéressantes sur les manières possibles de découper son design CSS.</p>
+<p>La puissance des préprocesseurs CSS n&rsquo;est plus à démontrer : ils nous permettent de s&rsquo;affranchir des préfixes vendeurs, d&rsquo;apporter de la logique dans nos feuilles de styles, de séparer proprement notre architecture, bref, de tout calibrer au plus juste sans se répéter. C&rsquo;est la méthode DRY (Don&rsquo;t repeat yourself). Globalement, on gagne en productivité, en stabilité, on limite les régressions et en plus on s&rsquo;éclate. Que demander de plus ?</p>
+<p><strong>Sass embrasse parfaitement cette philosophie du DRY et de la scalabilité. Mais pour l’installer sur WordPress comment ça se passe ?</strong></p>
+<p>Premièrement, il faut avoir déjà installé et configuré les outils sur sa machine. Dans mon cas, j&rsquo;utilise le framework COMPASS. Il est réputé pour être l&rsquo;un des plus complets avec une palette de mixins très étendue, et même si pas mal lui reprochent d&rsquo;être assez lourd / lent à la compilation, de mon point de vue c&rsquo;est à la marge. Car si vous n&rsquo;avez jamais utilisé SASS / COMPASS, il faut savoir que le code que vous générez est compilé à la volée en fichier css standards.</p>
+<p>Je pars du principe que les personnes qui lisent cet articles ont déjà COMPASS d&rsquo;installé et sont prêts à se lancer.</p>
+<p>Pour démarrer le projet (thème ou plugin) en mode SASS, il suffit d&rsquo;initialiser un projet COMPASS à la racine. Si je construit un thème, j&rsquo;ouvrirai le terminal à la racine de mon thème et je taperai :</p>
+<p></p><pre class="crayon-plain-tag">compass init</pre><p></p>
+<p>A la suite de quoi, je me retrouve avec un fichier config.rb, ainsi que 2 nouveaux dossiers : sass et stylesheets. Le dossier sass est celui dans lequel on va travailler à l&rsquo;avenir, mais avant, il faut aller un peu plus loin :</p>
+<p>Les fichiers scss contenu dans le dossier sass vont entrainer la création / modification de leur alter égo css contenu dans le dossier stylesheets, à chaque fois que j&rsquo;ajouterai / modifierai un fichier scss. Je vais donc devoir demander à compass de se mettre en « écoute », de manière à <em>catcher</em> les modifications au fur et à mesure. Je tape donc dans mon terminal, toujours à la racine de mon thème :</p>
+<p></p><pre class="crayon-plain-tag">compass watch</pre><p></p>
+<p>Le watcher est à présent en mode « écoute », et toutes les modifications effectuées dans le dossier sass seront automatiquement compilées dans le dossier stylesheets. Mais cela ne suffit pas. Il faut dès maintenant indiquer à WordPress comment récupérer / lire les fichiers css créés.</p>
+<p><strong>Voici la logique que j&rsquo;appliqu</strong>e :</p>
+<p>Mon fichier style.css à la racine de mon thème va dès à présent me servir de passerelle, en appelant un seul et unique fichier contenu dans le dossier stylesheets. Bien sûr, la création de ce fichier se passe d&rsquo;abord dans le dossier sass : je créé un fichier nommé « main.scss », et automatiquement, son copain « main.css » est créé. Il me suffit alors d&rsquo;importer ce fichier css dans mon « style.css » :</p>
+<p></p><pre class="crayon-plain-tag">@import url(stylesheets/main.css);</pre><p></p>
+<p>Mais alors, et les autres fichiers aussi il va falloir  les importer ? Oui et non. En fait ce qu&rsquo;on va faire c&rsquo;est créer uniquement des fichiers scss qui ne seront pas compilés en fichiers css. Le but n&rsquo;est pas de remplir le dossier stylesheets, mais de le maintenir avec un seul fichier : notre fameux main.css, et de dire à ce dernier de faire tous les imports des fichiers qu&rsquo;on va créer par la suite.</p>
+<p>Du coup on va préfixer tous nos nouveux fichiers scss avec un underscore « _ ». Par exemple, si je veux un fichier scss dédié à la navigation et un autre à mes modules, je vais les nommer respectivement « _navigation.scss » et « _modules.scss ». De cette manière je suis tranquille, je sais qu&rsquo;ils ne seront pas compilés en css. Il ne reste plus qu&rsquo;à les importer dans l&rsquo;ordre qui nous convient, dans le fichier main.scss (qui lui ne possède pas d&rsquo;underscore, et est donc compiler en main.css).</p>
+<p>Voici ce que j&rsquo;écris dans mon main.scss :</p>
+<p></p><pre class="crayon-plain-tag">@import "compass";
+@import "navigation";
+@import "modules";</pre><p></p>
+<p>Première chose à noter, j&rsquo;importe les fichiers en les appelant par leur nom, sans l&rsquo;underscore et sans leur extension. C&rsquo;est tout à fait normal. De plus je n&rsquo;utilise pas « url(nom du fichier) », je met directement le nom de mon fichier entre guillemets, et c&rsquo;est tout ! L&rsquo;import de « compass » est nécessaire mais non obligatoire : le fait d&rsquo;utiliser le compilateur de COMPASS ne vous oblige nullement à utiliser les mixins fournies, mais bon, ce serait dommage de se priver <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Pour ma part je recommande de ne pas importer COMPASS entièrement, mais de sélectionner les outils qui vous intéressent. Je vous laisse jeter un oeil à la <a href="http://compass-style.org/help/" target="_blank">documentation de compass</a> à ce sujet.</p>
+<p><strong>Si on récapitule :</strong></p>
+<p>j&rsquo;ai un fichier style.css qui importe le fichier main.css, qui lui même est issu de la compilation de main.scss, et c&rsquo;est dans main.scss qu&rsquo;on importe autres feuilles de style scss. C&rsquo;est aussi simple que ça ! Les modules importés sont préfixés d&rsquo;un underscore, de manière à ne pas générer un fichier css pour rien, mais de tout centraliser grâce à un seul et unique fichier : main.scss</p>
+<p>C&rsquo;est ainsi que je procède dans mes projets, une fois que tout est en place, il ne me reste qu&rsquo;à lancer mon watcher et tout se fait dans le dossier sass à la racine du thème. On ne peut faire plus simple, enfin pas tant que les navigateurs ne parleront pas autre chose que du css <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>L’article <a rel="nofollow" href="/utiliser-sass-projets-wordpress/">Utiliser SASS dans ses projets WordPress</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/utiliser-sass-projets-wordpress/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">456</post-id>	</item>
+		<item>
+		<title>Edito &#8211; Calendrier de l&#8217;avent 2015 et nouvelle année</title>
+		<link>/calendrier-de-lavent-2015-et-nouvelle-annee/</link>
+		<comments>/calendrier-de-lavent-2015-et-nouvelle-annee/#respond</comments>
+		<pubDate>Sun, 03 Jan 2016 14:26:52 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Editorial]]></category>
+		<category><![CDATA[année 2016]]></category>
+		<category><![CDATA[celendrier de l'avent]]></category>
+		<category><![CDATA[plugin wordpress]]></category>
+		<category><![CDATA[theme wordpress]]></category>
+
+		<guid isPermaLink="false">/?p=474</guid>
+		<description><![CDATA[<p>Bonne année à toutes et tous ! Pas de rétrospective dans cet article, mais un petit retour le calendrier de l&#8217;avent et un point sur les perspectives du blog à l&#8217;horizon 2016.Premièrement, merci à toutes celles et ceux qui m&#8217;ont fait des retours sur le calendrier de l&#8217;avent 2015, il semble qu&#8217;il ait eu beaucoup &#8230; <a href="/calendrier-de-lavent-2015-et-nouvelle-annee/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Edito &#8211; Calendrier de l&#8217;avent 2015 et nouvelle année</span></a></p>
+<p>L’article <a rel="nofollow" href="/calendrier-de-lavent-2015-et-nouvelle-annee/">Edito &#8211; Calendrier de l&rsquo;avent 2015 et nouvelle année</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Bonne année à toutes et tous ! Pas de rétrospective dans cet article, mais un petit retour le calendrier de l&rsquo;avent et un point sur les perspectives du blog à l&rsquo;horizon 2016.<span id="more-474"></span>Premièrement, merci à toutes celles et ceux qui m&rsquo;ont fait des retours sur le calendrier de l&rsquo;avent 2015, il semble qu&rsquo;il ait eu beaucoup de succès <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Visiblement ce sont surtout les jeux qui ont fait fureur, mais j&rsquo;ai eu pas mal de retours aussi sur les « experiments ». A la base je comptais mettre des citations, car ce calendrier était destiné au plus grand nombre. Mais autant vous le dire de suite, cette entreprise m&rsquo;a semblée assez ennuyeuse. A la place j&rsquo;ai opté pour des expérimentations ou des petites bizarreries du monde du web. La plupart des posts sont issus de <a href="https://www.chromeexperiments.com/" target="_blank">Chrome experiments</a> et de <a href="https://developer.mozilla.org/fr/demos/" target="_blank">Mozilla demo studio</a>. Je vous invite donc à aller y faire un tour, il y a vraiment des perles !</p>
+<p>Petite parenthèse pour les utilisateurs Apple : Je vous présente mes excuses, car certains ont visiblement rencontré des soucis avec le calendrier. N&rsquo;ayant pas d&rsquo;appareil Apple pour déboguer, je ne m&rsquo;y suis pas attelé.</p>
+<p>Merci cependant à tous pour vos retours, ils vont m&rsquo;être précieux afin de proposer des contenus plus adaptés, ainsi qu&rsquo;un future « cadeau » de fin d&rsquo;année en 2016, promis <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Quant au blog, <a href="/edito-du-13-juin-2015/">j&rsquo;avais déjà par le passé exprimé ma volonté de migrer vers un autre outil de publication</a>. Mais je n&rsquo;ai malheureusement pas eu le temps de me pencher dessus. Entre le travail à l&rsquo;agence et les projets freelance, vraiment pas évident, donc relégué plus loin dans la liste des priorités. Par ailleurs, WordPress reste un outil finalement suffisamment puissant et flexible pour décider de continuer avec.</p>
+<p><a href="/edito-du-13-juin-2015/">Quant à la publication d&rsquo;un thème</a>, sachez qu&rsquo;il est en cours et qu&rsquo;il arrivera d&rsquo;ici ce printemps. J&rsquo;ai pris du retard, car les ambitions étaient assez importantes : proposer un thème qui soit à la fois léger, et modulaire via la création d&rsquo;options spécifiques qu&rsquo;on aura le choix d&rsquo;activer ou pas. Car j&rsquo;ai toujours regretté ces thèmes ultra complets, lourds et difficiles à maintenir. Ainsi on n&rsquo;active que ce dont on a besoin et puis c&rsquo;est tout. Ainsi on n&rsquo;alourdit pas inutilement sont site. Je travaille à l&rsquo;intégration d&rsquo;outils et librairies open source dont la communauté et les auteurs sont actifs, ce qui, je l&rsquo;espère permettra à ce thème d&rsquo;offrir à d&rsquo;autres développeurs les clés pour profiter d&rsquo;un thème puissant et facilement maintenable.</p>
+<p>Comme certains l&rsquo;ont vu, j&rsquo;ai également offert à la communauté WordPress 2 plugins, dont le développement est toujours actif :</p>
+<p><a href="/filtrer-ses-portfolios-jetpack-grace-a-isotope/">Desire Portfolio Filter</a> &#8211; qui ajoute les fonctions de filtres par type aux portfolio JetPack<br />
+<a href="/integrer-des-widget-dans-ses-contenus-wordpress/">Desire Page Widget</a> &#8211; qui permet l&rsquo;ajout d&rsquo;une sidebar de Widget dans le contenu via shortcode, ainsi que l&rsquo;inclusion de page via un widget dédié</p>
+<p>Ces deux plugins en sont à leurs débuts et ne proposent pour l&rsquo;instant que des fonctionnalités assez simples. Mais grâce aux retours des utilisateurs, ils devraient bientôt offrir plus. Donc si vous même vous les utilisez, n&rsquo;hésitez pas à faire un feedback, si possible dans les commentaires de leurs pages respectives, sur GitHub et WordPress.org. Les retours sont très important et permettent d&rsquo;améliorer et d&rsquo;offrir des outils pertinents. Deux autres plugins sont en cours de développement. Mais ça, je vous en reparlerai en temps et en heure <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Dernière chose, l&rsquo;activité sur le blog risque de ralentir ces prochains mois. Elle n&rsquo;était déjà pas énorme, d&rsquo;autant que je le tiens pour le plaisir d&rsquo;une part, et participer à la communauté d&rsquo;autre part, mais je vais opérer une migration de moi-même vers Toulouse ! Ceci arrivera fin juin (à priori). Je suis déjà en recherche active de rencontres, d&rsquo;agences et de confrères dans la ville rose. Une nouvelle aventure qui se prépare donc, et qui occupe pas mal de mon temps <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> D&rsquo;ailleurs si vous êtes de là bas, n&rsquo;hésitez pas à me contacter histoire qu&rsquo;on se rencontre ou échange une fois sur place, voire avant <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f609.png" alt="😉" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Je vous souhaite encore une bonne et heureuse année 2016, pleine de projets, de joie et de vie !</p>
+<p>Ciao !</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>L’article <a rel="nofollow" href="/calendrier-de-lavent-2015-et-nouvelle-annee/">Edito &#8211; Calendrier de l&rsquo;avent 2015 et nouvelle année</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/calendrier-de-lavent-2015-et-nouvelle-annee/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">474</post-id>	</item>
+		<item>
+		<title>En attendant Noël, je vous offre un calendier de l&#8217;Avent 2.0</title>
+		<link>/en-attendant-noel-je-vous-offre-un-calendier-de-lavent-2-0/</link>
+		<comments>/en-attendant-noel-je-vous-offre-un-calendier-de-lavent-2-0/#respond</comments>
+		<pubDate>Tue, 01 Dec 2015 21:43:34 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[HTML/CSS]]></category>
+		<category><![CDATA[jQuery]]></category>
+
+		<guid isPermaLink="false">/?p=465</guid>
+		<description><![CDATA[<p>Chaque année je me dis que je vais faire des cartes de vœux à envoyer à mes proches, mes amis, ma famille, connaissances, partenaires. Et bien sûr je ne le fais jamais. Cette année, j&#8217;offre donc à toutes et tous un calendrier de l&#8217;Avent interactif. Vous pourrez chaque jour accéder à une surprise supplémentaire 🙂 &#8230; <a href="/en-attendant-noel-je-vous-offre-un-calendier-de-lavent-2-0/" class="more-link">Continuer la lecture de <span class="screen-reader-text">En attendant Noël, je vous offre un calendier de l&#8217;Avent 2.0</span></a></p>
+<p>L’article <a rel="nofollow" href="/en-attendant-noel-je-vous-offre-un-calendier-de-lavent-2-0/">En attendant Noël, je vous offre un calendier de l&rsquo;Avent 2.0</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Chaque année je me dis que je vais faire des cartes de vœux à envoyer à mes proches, mes amis, ma famille, connaissances, partenaires. Et bien sûr je ne le fais jamais. Cette année, j&rsquo;offre donc à toutes et tous un calendrier de l&rsquo;Avent interactif. Vous pourrez chaque jour accéder à une surprise supplémentaire <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Les cartes déjà découvertes resteront affichées tant que vous ne viderez pas votre cache navigateur.</p>
+<p><a class="btn" href="/noel.html">Cliquez ici pour accéder au calendrier.</a></p>
+<p>Joyeuses fêtes <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>L’article <a rel="nofollow" href="/en-attendant-noel-je-vous-offre-un-calendier-de-lavent-2-0/">En attendant Noël, je vous offre un calendier de l&rsquo;Avent 2.0</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/en-attendant-noel-je-vous-offre-un-calendier-de-lavent-2-0/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">465</post-id>	</item>
+		<item>
+		<title>Pourquoi trouver un bon développeur frontend est si difficile ? [en]</title>
+		<link>/pourquoi-trouver-un-bon-developpeur-frontend-est-si-difficile-en/</link>
+		<comments>/pourquoi-trouver-un-bon-developpeur-frontend-est-si-difficile-en/#respond</comments>
+		<pubDate>Sun, 29 Nov 2015 19:24:14 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Non classé]]></category>
+		<category><![CDATA[frontend]]></category>
+
+		<guid isPermaLink="false">/?p=460</guid>
+		<description><![CDATA[<p>View story at Medium.com</p>
+<p>L’article <a rel="nofollow" href="/pourquoi-trouver-un-bon-developpeur-frontend-est-si-difficile-en/">Pourquoi trouver un bon développeur frontend est si difficile ? [en]</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p><script async src="https://static.medium.com/embed.js"></script><a class="m-story" href="https://medium.com/creative-business/why-is-it-so-hard-to-find-a-front-end-developer-cb92848a7c6f#.td67c1l2b" target="_blank" data-width="660" data-border="1" data-collapsed="">View story at Medium.com</a></p>
+<p>L’article <a rel="nofollow" href="/pourquoi-trouver-un-bon-developpeur-frontend-est-si-difficile-en/">Pourquoi trouver un bon développeur frontend est si difficile ? [en]</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/pourquoi-trouver-un-bon-developpeur-frontend-est-si-difficile-en/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">460</post-id>	</item>
+	</channel>
+</rss>

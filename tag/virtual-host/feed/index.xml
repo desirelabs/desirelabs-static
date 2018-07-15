@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>virtual host &#8211; DesireLabs</title>
+	<atom:link href="/tag/virtual-host/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Développement web, marketing digital, et référencement</description>
+	<lastBuildDate>Tue, 06 Jun 2017 17:34:36 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.4</generator>
+<site xmlns="com-wordpress:feed-additions:1">67143140</site>	<item>
+		<title>Mettre son dossier www dans home pour chaque utilisateur linux</title>
+		<link>/mettre-son-dossier-www-dans-home-pour-chaque-utilisateur-linux/</link>
+		<comments>/mettre-son-dossier-www-dans-home-pour-chaque-utilisateur-linux/#respond</comments>
+		<pubDate>Sat, 24 May 2014 08:36:55 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Apache]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[apache]]></category>
+		<category><![CDATA[userdir]]></category>
+		<category><![CDATA[vhost]]></category>
+		<category><![CDATA[virtual host]]></category>
+
+		<guid isPermaLink="false">/?p=170</guid>
+		<description><![CDATA[<p>Longtemps je me suis cassé la tête et les dents à coup de chmod et chown pour résoudre la question de comment mettre son dossier www dans home pour chaque utilisateur linux. Aujourd&#8217;hui, je vous présente un moyen simple d&#8217;y parvenir avec le module Apache userdir.Avant de connaitre l&#8217;astuce que je vais vous présenter, je &#8230; <a href="/mettre-son-dossier-www-dans-home-pour-chaque-utilisateur-linux/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Mettre son dossier www dans home pour chaque utilisateur linux</span></a></p>
+<p>L’article <a rel="nofollow" href="/mettre-son-dossier-www-dans-home-pour-chaque-utilisateur-linux/">Mettre son dossier www dans home pour chaque utilisateur linux</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>Longtemps je me suis cassé la tête et les dents à coup de chmod et chown pour résoudre la question de comment mettre son dossier www dans home pour chaque utilisateur linux. Aujourd&rsquo;hui, je vous présente un moyen simple d&rsquo;y parvenir avec le module Apache userdir.<span id="more-170"></span>Avant de connaitre l&rsquo;astuce que je vais vous présenter, je me torturais, comme beaucoup d&rsquo;auters j&rsquo;imagine, à configurer apache d&rsquo;une part, et des permissions tarabiscotées à coup de chmod d&rsquo;autre part. C&rsquo;était sans compter sur un petit module apache fort pratique, à savoir userdir.</p>
+<h2>Pourquoi mettre son dossier www dans le répertoire /home de l&rsquo;utilisateur ?</h2>
+<p>D&rsquo;abord parce que c&rsquo;est plus propre : chaque utilisateur à son login et son mot de passe, et donc son répertoire. Ainsi on sépare bien toutes nos entités et on s&rsquo;y retrouve plus facilement.</p>
+<p>Ensuite, parce que c&rsquo;est plus sécurisé : Comme dit juste avant, on ferme tout et chaque utilisateur accède à son espace et pas celui des autres, grâce à son login/mot de passe. De plus, si comme moi vous avez installé votre /home sur une partition distincte de la partition système, vous ne risquez pas de perdre vos données web si jamais quelque chose tournait mal et que vous vouliez récupérer votre boulot.</p>
+<h2>Ce qu&rsquo;on va faire</h2>
+<p>Création d&rsquo;un espace individuel pour chaque site<br />
+Activation du module Apache UserDir<br />
+Configuration d&rsquo;un virtual host associé</p>
+<h2>Avant de commencer</h2>
+<p>Toutes les manipulations présentées ici sont réalisées sur un système Debian 7 Wheezy, mais ça fonctionne également sur tout système de base Debian avec Apache2 d&rsquo;installé, comme Ubuntu. Il va de soit que tout se passe en ligne de commande et qu&rsquo;un minimum de connaissance du shell est nécessaire.</p>
+<h2>On y va <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></h2>
+<h3>Création d&rsquo;un utilisateur</h3>
+<p></p><pre class="crayon-plain-tag">sudo adduser wplabs</pre><p></p>
+<h3>Activation du module Apache userdir</h3>
+<p>On active le module (1ère commande), puis on modifie sa configuration (2ème commande)</p><pre class="crayon-plain-tag">sudo a2enmod userdir
+sudo nano /etc/apache2/mods-available/userdir.conf</pre><p>Dans le fichier de config, on a juste un truc à modifier : public_html qu&rsquo;on va transformer en www aux lignes 2 et 5. On pourrait très bien garder le nom « public_html », mais on va garder la cohérence du dossier /var/www.</p><pre class="crayon-plain-tag">&lt;IfModule mod_userdir.c&gt;
+        UserDir public_html 
+        UserDir disabled root
+
+        &lt;Directory /home/*/public_html&gt;
+                AllowOverride FileInfo AuthConfig Limit Indexes
+                Options MultiViews Indexes SymLinksIfOwnerMatch IncludesNoExec
+                &lt;Limit GET POST OPTIONS&gt;
+                        Order allow,deny
+                        Allow from all
+                &lt;/Limit&gt;
+                &lt;LimitExcept GET POST OPTIONS&gt;
+                        Order deny,allow
+                        Deny from all
+                &lt;/LimitExcept&gt;
+        &lt;/Directory&gt;
+&lt;/IfModule&gt;</pre><p>Voilà ce que ça donne :<br />
+Ce qu&rsquo;on a fait ici c&rsquo;est simplement dire que les fichiers visibles et accessibles (nos sites) se trouvent toujours dans le dossier /home/*/www (l’astérisque sert à dire n&rsquo;importe quel utilisateur). Pensez à sauvegarder.</p><pre class="crayon-plain-tag">&lt;IfModule mod_userdir.c&gt;
+        UserDir www 
+        UserDir disabled root
+
+        &lt;Directory /home/*/www&gt;
+                AllowOverride FileInfo AuthConfig Limit Indexes
+                Options MultiViews Indexes SymLinksIfOwnerMatch IncludesNoExec
+                &lt;Limit GET POST OPTIONS&gt;
+                        Order allow,deny
+                        Allow from all
+                &lt;/Limit&gt;
+                &lt;LimitExcept GET POST OPTIONS&gt;
+                        Order deny,allow
+                        Deny from all
+                &lt;/LimitExcept&gt;
+        &lt;/Directory&gt;
+&lt;/IfModule&gt;</pre><p></p>
+<h3>Création du virtualhost</h3>
+<p>On se rend dans le dossier des vhost, et on commence par jeter un oeil à celui par défaut.</p><pre class="crayon-plain-tag">cd /etc/apache2/sites-available/
+sudo nano default</pre><p>Ça c&rsquo;est mon vhost par défaut. Le votre est peut etre différent, mais ce qui importe c&rsquo;est qu&rsquo;il indique DocumentRoot /home/*/www<br />
+Vous remarquez ? Comme dans mon userdir.conf <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p><pre class="crayon-plain-tag">&lt;VirtualHost *:80&gt;
+        ServerAdmin neovea@gmail.com
+        DocumentRoot /home/*/www
+        &lt;Directory /&gt;
+                Options FollowSymLinks
+                AllowOverride All
+        &lt;/Directory&gt;
+        &lt;Directory /home/*/www/&gt;
+                Options Indexes FollowSymLinks MultiViews
+                AllowOverride all
+                Order allow,deny
+                allow from all
+        &lt;/Directory&gt;
+&lt;/VirtualHost&gt;</pre><p>Vu qu&rsquo;il est bon, on le copie colle en le renommant du nom de notre site, et on l&rsquo;édite.</p><pre class="crayon-plain-tag">sudo cp default wplabs
+sudo nano wplabs</pre><p>Renseignez bien le chemin tel qu&rsquo;il existe cette fois ci, cf lignes 5 et 10, et faites en sorte d&rsquo;avoir un alias/name valide, sans quoi ça ne fonctionnera pas.</p><pre class="crayon-plain-tag">&lt;VirtualHost *:80&gt;
+        ServerAdmin neovea@gmail.com
+        ServerAlias wplabs.desirelabs.fr
+        ServerName wplabs.desirelabs.fr
+        DocumentRoot /home/wplabs/www
+        &lt;Directory /&gt;
+                Options FollowSymLinks
+                AllowOverride All
+        &lt;/Directory&gt;
+        &lt;Directory /home/wplabs/www/&gt;
+                Options Indexes FollowSymLinks MultiViews
+                AllowOverride all
+                Order allow,deny
+                allow from all
+        &lt;/Directory&gt;
+&lt;/VirtualHost&gt;</pre><p></p>
+<h3>Activation du site et reload d&rsquo;apache</h3>
+<p>Le reload est important, il permet de prendre en compte le nouveau site activé, mais aussi le module qui a été activé, userdir.</p><pre class="crayon-plain-tag">sudo a2ensite wplabs
+sudo service apache2 reload</pre><p></p>
+<h3>Création du site et tests</h3>
+<p>Rien de méchant, on se connecte avec le user qu&rsquo;on a créé précédemment, et on lui fait créer un dossier www dans son propre espace.</p><pre class="crayon-plain-tag">su wplabs
+cd
+mkdir www</pre><p>Alors oui c&rsquo;est vrai on pourrait mettre tous les fichiers du site à la racine du user, mais je préfère procéder ainsi et me garder la liberté de pouvoir mettre des choses à côté du répertoire de mon site si je le souhaite, comme mes backups de base de données par exemple, ou simplement une nouvelle version du site en cours de développement.</p>
+<p>Testez votre site en créant un bête index.html dans www et profitez <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Fini la prise de tête avec chmod !</p>
+<p>L’article <a rel="nofollow" href="/mettre-son-dossier-www-dans-home-pour-chaque-utilisateur-linux/">Mettre son dossier www dans home pour chaque utilisateur linux</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/mettre-son-dossier-www-dans-home-pour-chaque-utilisateur-linux/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">170</post-id>	</item>
+	</channel>
+</rss>

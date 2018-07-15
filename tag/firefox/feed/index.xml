@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>firefox &#8211; DesireLabs</title>
+	<atom:link href="/tag/firefox/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Développement web, marketing digital, et référencement</description>
+	<lastBuildDate>Tue, 06 Jun 2017 17:34:36 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.4</generator>
+<site xmlns="com-wordpress:feed-additions:1">67143140</site>	<item>
+		<title>Astuce &#8211; Vue du DOM en 3D sous Firefox</title>
+		<link>/vue-du-dom-en-3d-firefox/</link>
+		<comments>/vue-du-dom-en-3d-firefox/#respond</comments>
+		<pubDate>Fri, 17 Oct 2014 11:00:45 +0000</pubDate>
+		<dc:creator><![CDATA[Franck]]></dc:creator>
+				<category><![CDATA[Outils]]></category>
+		<category><![CDATA[3d]]></category>
+		<category><![CDATA[firefox]]></category>
+		<category><![CDATA[outils pour développeur]]></category>
+
+		<guid isPermaLink="false">/?p=264</guid>
+		<description><![CDATA[<p>J&#8217;aime Chrome pour mes développements, pourtant Firefox n&#8217;a pas à rougir. Ce dernier possède d&#8217;ailleurs un outil qui n&#8217;existe pas nativement sur Chrome : la vue du DOM en 3D. EDIT du 22/08/2015 : Cette fonctionnalité ne semble plus être disponible sur la version 42 developer edition. Tristesse&#8230; Alors ok, dit comme ça on se &#8230; <a href="/vue-du-dom-en-3d-firefox/" class="more-link">Continuer la lecture de <span class="screen-reader-text">Astuce &#8211; Vue du DOM en 3D sous Firefox</span></a></p>
+<p>L’article <a rel="nofollow" href="/vue-du-dom-en-3d-firefox/">Astuce &#8211; Vue du DOM en 3D sous Firefox</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></description>
+				<content:encoded><![CDATA[<p>J&rsquo;aime Chrome pour mes développements, pourtant Firefox n&rsquo;a pas à rougir. Ce dernier possède d&rsquo;ailleurs un outil qui n&rsquo;existe pas nativement sur Chrome : la vue du DOM en 3D.<span id="more-264"></span></p>
+<p><strong>EDIT du 22/08/2015 : Cette fonctionnalité ne semble plus être disponible sur la version 42 developer edition. Tristesse&#8230;</strong></p>
+<p>Alors ok, dit comme ça on se demande un peu ce que c&rsquo;est que ce gadget. Et bien à mon sens ça n&rsquo;en est pas un, car il me sauve souvent la mise lorsque je travaille sur de longues et lourdes pages au DOM chargé, surchargé et enchevêtré dans du code java ou php à n&rsquo;en plus pouvoir. Dans ce genre de cas, il arrive parfois de mal fermer une balise par exemple. Et alors quand il y a un millier de lignes je ne vous raconte pas l&rsquo;angoisse. Mais ça c&rsquo;était avant que je ne découvre cette fonctionnalité <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p>Grâce à elle, les blocs (entendre les blocs de balises) sont présentés en perspective 3D à la façon de calques superposés. On y voit de suite beaucoup plus clair <img src="https://s.w.org/images/core/emoji/2.4/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Bon ça bouffe quand même des ressources matérielles, mais comme je m&rsquo;en sers ponctuellement, ça n&rsquo;est pas dramatique.</p>
+<p><a href="/wp-content/uploads/2014/10/vue-3d-firefox.jpg"><img class="aligncenter" src="/wp-content/uploads/2014/10/vue-3d-firefox.jpg" alt="vue-3d-firefox" /></a></p>
+<p>Par ailleurs on peut, dans cette vue sélectionner l&rsquo;élément voulu, et automatiquement, il l&rsquo;est aussi dans l&rsquo;inspecteur. Plutôt pratique !</p>
+<p>Pour activer cette fonctionnalité, il suffit d&rsquo;aller dans l&rsquo;inspecteur d&rsquo;élément de Firefox, puis dans les options des outils (petit engrenage en haut à droite), dans la partie « boutons de la boîte à outils », cocher « vue 3d ». Une nouvelle option apparaîtra en haut à droite de l&rsquo;inspecteur, vous permettant de basculer en vue 3d.</p>
+<p>Pour les allergiques de Firefox, il existe sous chrome une extension qui fait la même chose : <a href="https://chrome.google.com/webstore/detail/3d-view-for-webpages/noflnemoniodcoagmaapcdlmeljohdnm">3D View for Webpage</a>s. Mais je ne l&rsquo;ai pas testé et elle semble souffrir de quelques problèmes.</p>
+<p>L’article <a rel="nofollow" href="/vue-du-dom-en-3d-firefox/">Astuce &#8211; Vue du DOM en 3D sous Firefox</a> est apparu en premier sur <a rel="nofollow" href="/">DesireLabs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>/vue-du-dom-en-3d-firefox/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+	<post-id xmlns="com-wordpress:feed-additions:1">264</post-id>	</item>
+	</channel>
+</rss>
